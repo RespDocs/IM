@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    background:#f4f6f8;
+    color:#333;
+}
+
+h1{
+    margin-bottom:5px;
+}
+
+.actualizado{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.kpis{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin:0;
+    color:#666;
+}
+
+.card .valor{
+    font-size:2rem;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.alerta{
+    background:white;
+    border-left:5px solid #e53935;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+.offline{
+    background:white;
+    border-left:5px solid #616161;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+}
+
+.online{
+    color:green;
+    font-weight:bold;
+}
+
+.offline-text{
+    color:red;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🖨️ ImpresorasMonitor</h1>
+
+<div class="actualizado" id="actualizado"></div>
+
+<div class="kpis">
+
+    <div class="card">
+        <h3>IMPRESORAS</h3>
+        <div class="valor" id="total"></div>
+    </div>
+
+    <div class="card">
+        <h3>ONLINE</h3>
+        <div class="valor" id="online"></div>
+    </div>
+
+    <div class="card">
+        <h3>OFFLINE</h3>
+        <div class="valor" id="offline"></div>
+    </div>
+
+    <div class="card">
+        <h3>ALERTAS</h3>
+        <div class="valor" id="alertas"></div>
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>🔴 Alertas Críticas</h2>
+
+    <div id="alertasCriticas"></div>
+
+</div>
+
+<div class="section">
+
+    <h2>⚫ Equipos Offline</h2>
+
+    <div id="offlineList"></div>
+
+</div>
+
+<div class="section">
+
+    <h2>📋 Impresoras</h2>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Modelo</th>
+            <th>Contador</th>
+            <th>Estado</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="tablaImpresoras"></tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+fetch("dashboard.json")
+.then(r => r.json())
+.then(data => {
+
+    document.getElementById("actualizado")
+        .innerText =
+            "Actualizado: " +
+            data.actualizado;
+
+    document.getElementById("total")
+        .innerText =
+            data.metricas.impresoras.total;
+
+    document.getElementById("online")
+        .innerText =
+            data.metricas.impresoras.online;
+
+    document.getElementById("offline")
+        .innerText =
+            data.metricas.impresoras.offline;
+
+    document.getElementById("alertas")
+        .innerText =
+            data.metricas.alertas.abiertas;
+
+    const criticas =
+        document.getElementById(
+            "alertasCriticas"
+        );
+
+    data.alertas
+        .filter(
+            x =>
+                x.criticidad === "critico"
+                && x.estado === "notificado"
+        )
+        .forEach(alerta => {
+
+            criticas.innerHTML += `
+                <div class="alerta">
+                    <b>${alerta.equipo}</b><br>
+                    ${alerta.consumible}<br>
+                    ${alerta.porcentaje}%
+                </div>
+            `
+
+        });
+
+    const offline =
+        document.getElementById(
+            "offlineList"
+        );
+
+    data.impresoras
+        .filter(i => !i.online)
+        .forEach(i => {
+
+            offline.innerHTML += `
+                <div class="offline">
+                    <b>${i.nombre}</b><br>
+                    ${i.modelo}
+                </div>
+            `
+
+        });
+
+    const tabla =
+        document.getElementById(
+            "tablaImpresoras"
+        );
+
+    data.impresoras.forEach(i => {
+
+        tabla.innerHTML += `
+            <tr>
+                <td>${i.nombre}</td>
+                <td>${i.modelo}</td>
+                <td>${i.contador ?? "-"}</td>
+                <td>
+                    ${
+                        i.online
+                        ? '<span class="online">Online</span>'
+                        : '<span class="offline-text">Offline</span>'
+                    }
+                </td>
+            </tr>
+        `;
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
