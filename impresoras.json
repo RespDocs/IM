@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-29T16:38:49.228355",
+  "actualizado": "2026-07-29T17:24:28.063983",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -36,6 +36,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616670",
       "ip": "172.16.79.20"
+    },
+    {
+      "nombre": "Modulo6",
+      "modelo": "Xerox VersaLink B600",
+      "serial": "3394178631",
+      "ip": "172.16.79.200"
     },
     {
       "nombre": "Finanzas, Alameda 1845 piso 3",
@@ -98,6 +104,12 @@
       "ip": "172.16.79.31"
     },
     {
+      "nombre": "Rectoria",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3394991545",
+      "ip": "172.16.79.32"
+    },
+    {
       "nombre": "Facultad de Educacion 2do piso",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991685",
@@ -142,7 +154,7 @@
     {
       "nombre": "Facultad de Filosofia y Humanida",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940616998",
       "ip": "172.16.79.42"
     },
     {
@@ -174,6 +186,12 @@
       "modelo": "Xerox VersaLink C7025",
       "serial": "3391871700",
       "ip": "172.16.79.50"
+    },
+    {
+      "nombre": "LASER_UAH",
+      "modelo": "Xerox AltaLink B8075",
+      "serial": "3669690826",
+      "ip": "172.16.79.51"
     },
     {
       "nombre": "Derecho - Clinica Juridica",
@@ -230,12 +248,6 @@
       "ip": "172.16.79.64"
     },
     {
-      "nombre": "Facultad de Economia 2do piso",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940618249",
-      "ip": "172.16.79.65"
-    },
-    {
       "nombre": "Facultad Economia 1er piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399943565",
@@ -248,16 +260,22 @@
       "ip": "172.16.79.67"
     },
     {
+      "nombre": "Direccion de Comunicaciones",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616696",
+      "ip": "172.16.79.69"
+    },
+    {
       "nombre": "Facultad de Psicologia",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945398",
       "ip": "172.16.79.70"
     },
     {
-      "nombre": "Facultad de Geografia",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399946009",
-      "ip": "172.16.79.72"
+      "nombre": "Facultad de Psicologia sub",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616190",
+      "ip": "172.16.79.71"
     },
     {
       "nombre": "Direccion de Extension 2do piso",
@@ -284,7 +302,7 @@
       "ip": "172.16.79.76"
     },
     {
-      "nombre": "Antropologia",
+      "nombre": null,
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616513",
       "ip": "172.16.79.77"
