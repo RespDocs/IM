@@ -139,13 +139,13 @@
   },
   "Xerox VersaLink B7030": {
     "toner_black": {
-      "descripcion": "Cartucho de tÃ³ner, PN 106R03392;SN8031490227070000",
+      "descripcion": "Cartucho de tÃ³ner, PN 106R03392;SN80E1650D43070000",
       "pn": "106R03392",
       "vida_nominal": 30000,
       "origen": "snmp"
     },
     "drum_black": {
-      "descripcion": "Cartucho de cilindro, PN 113R00779;SN803869165B070000",
+      "descripcion": "Cartucho de cilindro, PN 113R00779;SN802660165B070000",
       "pn": "113R00779",
       "vida_nominal": 82700,
       "origen": "snmp"
@@ -366,14 +366,6 @@
       "descripcion": "Fuser, PN 115R00115",
       "pn": "115R00115",
       "vida_nominal": null,
-      "origen": "snmp"
-    }
-  },
-  "Xerox AltaLink B8075": {
-    "toner_black": {
-      "descripcion": "Toner Cartridge, PN 006R01604;SND0027D3E14122A6A",
-      "pn": "006R01604",
-      "vida_nominal": 4600,
       "origen": "snmp"
     }
   },

@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-07-29T18:14:16.809718",
+  "actualizado": "2026-07-29T18:17:31.775568",
   "metricas": {
-    "actualizado": "2026-07-29T18:14:16.680269",
+    "actualizado": "2026-07-29T18:17:31.611016",
     "impresoras": {
       "total": 59,
-      "online": 58,
-      "offline": 1
+      "online": 59,
+      "offline": 0
     },
     "alertas": {
       "abiertas": 24,
@@ -22,22 +22,6 @@
   },
   "impresoras": [
     {
-      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
-      "modelo": "Xerox WorkCentre 3655S v1",
-      "serial": "3353184511",
-      "ip": "172.16.79.100",
-      "contador": 43687,
-      "consumibles": {
-        "toner_black": 79
-      },
-      "online": true,
-      "ultima_lectura": "2026-07-29T18:11:41.604772",
-      "referencia": "",
-      "departamento": "",
-      "contacto": "",
-      "instalacion": ""
-    },
-    {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
       "serial": "3390576217",
@@ -48,7 +32,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:44.152970",
+      "ultima_lectura": "2026-07-29T18:14:45.844576",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -64,7 +48,7 @@
         "toner_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:45.240366",
+      "ultima_lectura": "2026-07-29T18:14:47.096557",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -80,7 +64,7 @@
         "toner_black": 67
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:46.517615",
+      "ultima_lectura": "2026-07-29T18:14:48.363508",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -97,7 +81,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:47.592863",
+      "ultima_lectura": "2026-07-29T18:14:49.442761",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -114,7 +98,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:48.703965",
+      "ultima_lectura": "2026-07-29T18:14:50.432747",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -131,7 +115,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:49.741612",
+      "ultima_lectura": "2026-07-29T18:14:52.740327",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -148,7 +132,7 @@
         "drum_black": 56
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:50.842169",
+      "ultima_lectura": "2026-07-29T18:14:53.832396",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -165,7 +149,7 @@
         "drum_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:51.923695",
+      "ultima_lectura": "2026-07-29T18:14:56.067560",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -182,7 +166,7 @@
         "drum_black": 39
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:53.170757",
+      "ultima_lectura": "2026-07-29T18:14:58.362956",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -199,7 +183,7 @@
         "drum_black": 42
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:54.486750",
+      "ultima_lectura": "2026-07-29T18:14:59.509530",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -216,7 +200,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:55.500899",
+      "ultima_lectura": "2026-07-29T18:15:00.572243",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -233,7 +217,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:56.532141",
+      "ultima_lectura": "2026-07-29T18:15:01.676543",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -256,7 +240,7 @@
         "drum_cyan": 77
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:11:57.575864",
+      "ultima_lectura": "2026-07-29T18:15:04.053180",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -273,7 +257,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:05.153690",
+      "ultima_lectura": "2026-07-29T18:15:08.158441",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -290,7 +274,7 @@
         "drum_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:06.243120",
+      "ultima_lectura": "2026-07-29T18:15:09.207524",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -309,7 +293,7 @@
         "toner_cyan": 8
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:07.674576",
+      "ultima_lectura": "2026-07-29T18:15:10.370548",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -326,7 +310,7 @@
         "drum_black": 45
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:12.144800",
+      "ultima_lectura": "2026-07-29T18:15:15.308598",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -343,7 +327,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:13.164031",
+      "ultima_lectura": "2026-07-29T18:15:16.410442",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -360,7 +344,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:14.182366",
+      "ultima_lectura": "2026-07-29T18:15:17.523141",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -377,7 +361,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:15.236845",
+      "ultima_lectura": "2026-07-29T18:15:18.923796",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -394,7 +378,7 @@
         "drum_black": 56
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:16.289113",
+      "ultima_lectura": "2026-07-29T18:15:19.904598",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -411,7 +395,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:17.304068",
+      "ultima_lectura": "2026-07-29T18:15:20.984615",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -428,7 +412,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:18.344646",
+      "ultima_lectura": "2026-07-29T18:15:22.103626",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -445,7 +429,7 @@
         "drum_black": 7
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:19.733697",
+      "ultima_lectura": "2026-07-29T18:15:23.278981",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -462,7 +446,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:20.811566",
+      "ultima_lectura": "2026-07-29T18:15:24.740140",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -479,7 +463,7 @@
         "drum_black": 77
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:23.015705",
+      "ultima_lectura": "2026-07-29T18:15:25.786815",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -496,7 +480,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:24.078828",
+      "ultima_lectura": "2026-07-29T18:15:28.131925",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -513,7 +497,7 @@
         "drum_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:26.428131",
+      "ultima_lectura": "2026-07-29T18:15:29.232173",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -530,7 +514,7 @@
         "drum_black": 4
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:28.513028",
+      "ultima_lectura": "2026-07-29T18:15:30.234524",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -553,7 +537,7 @@
         "drum_cyan": 31
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:31.005796",
+      "ultima_lectura": "2026-07-29T18:15:31.384669",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -564,8 +548,12 @@
       "modelo": "Xerox AltaLink B8075",
       "serial": "3669690826",
       "ip": "172.16.79.51",
-      "online": false,
-      "ultima_lectura": "2026-07-29T18:12:36.292800",
+      "contador": 1257114,
+      "consumibles": {
+        "toner_black": 57
+      },
+      "online": true,
+      "ultima_lectura": "2026-07-29T18:15:36.428237",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -582,7 +570,7 @@
         "drum_black": 60
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:38.775899",
+      "ultima_lectura": "2026-07-29T18:15:37.809983",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -599,7 +587,7 @@
         "drum_black": 96
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:39.950349",
+      "ultima_lectura": "2026-07-29T18:15:39.745185",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -616,14 +604,14 @@
         "drum_black": 77
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:41.500797",
+      "ultima_lectura": "2026-07-29T18:15:42.100549",
       "referencia": "",
       "departamento": "",
       "contacto": "",
       "instalacion": ""
     },
     {
-      "nombre": null,
+      "nombre": "Facultad de Ciencias Politicas",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616270",
       "ip": "172.16.79.55",
@@ -633,7 +621,23 @@
         "drum_black": 100
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:42.585595",
+      "ultima_lectura": "2026-07-29T18:15:43.465128",
+      "referencia": "",
+      "departamento": "",
+      "contacto": "",
+      "instalacion": ""
+    },
+    {
+      "nombre": "DARA-ADMISION",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "serial": "3353215298",
+      "ip": "172.16.79.56",
+      "contador": 121150,
+      "consumibles": {
+        "toner_black": 31
+      },
+      "online": true,
+      "ultima_lectura": "2026-07-29T18:15:44.725714",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -650,7 +654,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:43.735446",
+      "ultima_lectura": "2026-07-29T18:15:46.941329",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -667,7 +671,7 @@
         "drum_black": 61
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:44.775002",
+      "ultima_lectura": "2026-07-29T18:15:49.317753",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -684,7 +688,7 @@
         "drum_black": 27
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:45.890574",
+      "ultima_lectura": "2026-07-29T18:15:50.563272",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -701,7 +705,7 @@
         "drum_black": 97
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:47.040051",
+      "ultima_lectura": "2026-07-29T18:15:51.887841",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -718,7 +722,7 @@
         "drum_black": 73
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:48.207447",
+      "ultima_lectura": "2026-07-29T18:15:53.395600",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -735,7 +739,7 @@
         "drum_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:49.830370",
+      "ultima_lectura": "2026-07-29T18:15:56.301147",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -752,7 +756,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:51.398804",
+      "ultima_lectura": "2026-07-29T18:15:57.839163",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -769,7 +773,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:52.521749",
+      "ultima_lectura": "2026-07-29T18:16:00.355611",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -786,7 +790,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:53.839688",
+      "ultima_lectura": "2026-07-29T18:16:02.553299",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -803,7 +807,24 @@
         "drum_black": 91
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:55.132815",
+      "ultima_lectura": "2026-07-29T18:16:05.054897",
+      "referencia": "",
+      "departamento": "",
+      "contacto": "",
+      "instalacion": ""
+    },
+    {
+      "nombre": "Facultad de Psicologia sub",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616190",
+      "ip": "172.16.79.71",
+      "contador": 21546,
+      "consumibles": {
+        "toner_black": 51,
+        "drum_black": 65
+      },
+      "online": true,
+      "ultima_lectura": "2026-07-29T18:16:06.291519",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -820,7 +841,7 @@
         "drum_black": 86
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:57.207226",
+      "ultima_lectura": "2026-07-29T18:16:07.888067",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -839,7 +860,7 @@
         "toner_cyan": 64
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:12:58.295118",
+      "ultima_lectura": "2026-07-29T18:16:09.168199",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -856,7 +877,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:03.312880",
+      "ultima_lectura": "2026-07-29T18:16:14.610896",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -872,7 +893,7 @@
         "toner_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:04.441860",
+      "ultima_lectura": "2026-07-29T18:16:17.113222",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -889,24 +910,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:06.516628",
-      "referencia": "",
-      "departamento": "",
-      "contacto": "",
-      "instalacion": ""
-    },
-    {
-      "nombre": "Antropologia",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616513",
-      "ip": "172.16.79.77",
-      "contador": 644751,
-      "consumibles": {
-        "toner_black": 17,
-        "drum_black": 23
-      },
-      "online": true,
-      "ultima_lectura": "2026-07-29T18:13:11.798961",
+      "ultima_lectura": "2026-07-29T18:16:19.211415",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -923,7 +927,7 @@
         "drum_black": 36
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:14.946248",
+      "ultima_lectura": "2026-07-29T18:16:20.592170",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -940,7 +944,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:16.613725",
+      "ultima_lectura": "2026-07-29T18:16:22.011923",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -957,7 +961,7 @@
         "drum_black": 25
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:19.720553",
+      "ultima_lectura": "2026-07-29T18:16:24.745095",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -971,7 +975,7 @@
       "contador": 19798,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:20.947172",
+      "ultima_lectura": "2026-07-29T18:16:26.084131",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -987,7 +991,7 @@
         "toner_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:22.219559",
+      "ultima_lectura": "2026-07-29T18:16:27.609601",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1001,7 +1005,7 @@
       "contador": 117180,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:23.329372",
+      "ultima_lectura": "2026-07-29T18:16:28.966222",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1017,7 +1021,7 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-07-29T18:13:24.478565",
+      "ultima_lectura": "2026-07-29T18:16:30.378594",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1195,14 +1199,14 @@
     },
     {
       "equipo": "Antropologia",
-      "modelo": "Xerox VersaLink B605",
+      "modelo": null,
       "tipo": "consumible",
       "consumible": "toner_black",
       "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-28T12:13:39.375304",
-      "serial": "3940616513",
+      "serial": null,
       "pn": null
     },
     {
@@ -1252,11 +1256,11 @@
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
-      "modelo": "Xerox WorkCentre 3655S v1",
+      "modelo": null,
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-29T14:54:07.394743",
-      "serial": "3353184511",
+      "serial": null,
       "pn": null
     },
     {
@@ -1291,14 +1295,14 @@
     },
     {
       "equipo": null,
-      "modelo": "Xerox VersaLink B605",
+      "modelo": null,
       "tipo": "consumible",
       "consumible": "toner_black",
       "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-29T17:26:41.366574",
-      "serial": "3940616270",
+      "serial": null,
       "pn": null
     }
   ],
@@ -1315,18 +1319,5 @@
       "origen": "auto_detectado"
     }
   ],
-  "vida_consumibles": [
-    {
-      "equipo": null,
-      "modelo": "Xerox VersaLink B605",
-      "consumible": "drum_black",
-      "pn": "101R00582",
-      "vida_nominal": 60000,
-      "contador_instalacion": 473907,
-      "contador_actual": 473907,
-      "uso_real": 0,
-      "restante": 60000,
-      "restante_pct": 100
-    }
-  ]
+  "vida_consumibles": []
 }
