@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-28T13:42:35.036158",
+  "actualizado": "2026-07-29T14:52:14.085280",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -82,7 +82,7 @@
     {
       "nombre": "Rectoria",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3394991545",
+      "serial": null,
       "ip": "172.16.79.32"
     },
     {
@@ -164,12 +164,6 @@
       "ip": "172.16.79.50"
     },
     {
-      "nombre": "LASER_UAH",
-      "modelo": "Xerox AltaLink B8075",
-      "serial": "3669690826",
-      "ip": "172.16.79.51"
-    },
-    {
       "nombre": "Derecho - Clinica Juridica",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951738",
@@ -206,6 +200,12 @@
       "ip": "172.16.79.59"
     },
     {
+      "nombre": "Vice de Investigacion y Postgrad",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940617021",
+      "ip": "172.16.79.62"
+    },
+    {
       "nombre": "Direccion de Docencia",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951533",
@@ -218,6 +218,12 @@
       "ip": "172.16.79.64"
     },
     {
+      "nombre": "Facultad de Economia 2do piso",
+      "modelo": "Xerox VersaLink B605",
+      "serial": null,
+      "ip": "172.16.79.65"
+    },
+    {
       "nombre": "Facultad Economia 1er piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399943565",
@@ -228,12 +234,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616432",
       "ip": "172.16.79.67"
-    },
-    {
-      "nombre": "Centro Uni. Ignaciano 2do piso",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399952335",
-      "ip": "172.16.79.68"
     },
     {
       "nombre": "Direccion de Comunicaciones",

@@ -166,6 +166,33 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-28T13:44:50.377110"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 12,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-29T14:21:02.612621"
+    },
+    {
+      "equipo": "Vice de Investigacion y Postgrad",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-29T14:21:02.612744"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-29T14:54:07.394743"
     }
   ]
 }

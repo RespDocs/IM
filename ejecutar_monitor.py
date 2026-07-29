@@ -1,6 +1,8 @@
 import subprocess
 from datetime import datetime
 
+GIT = r"C:\Program Files\Git\cmd\git.exe"
+
 
 def ejecutar(script):
 
@@ -15,13 +17,67 @@ def ejecutar(script):
         text=True
     )
 
-    print(resultado.stdout)
+    if resultado.stdout:
+        print(resultado.stdout)
 
     if resultado.stderr:
-
         print("ERRORES:")
-
         print(resultado.stderr)
+
+
+def publicar_github():
+
+    print()
+    print("=" * 60)
+    print("PUBLICANDO EN GITHUB")
+    print("=" * 60)
+
+    try:
+
+        timestamp = datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+
+        subprocess.run(
+            [GIT, "add", "."],
+            check=True
+        )
+
+        commit = subprocess.run(
+            [
+                GIT,
+                "commit",
+                "-m",
+                f"Actualizacion {timestamp}"
+            ],
+            capture_output=True,
+            text=True
+        )
+
+        print(commit.stdout)
+
+        push = subprocess.run(
+            [GIT, "push"],
+            capture_output=True,
+            text=True
+        )
+
+        print(push.stdout)
+
+        if push.stderr:
+            print(push.stderr)
+
+        print()
+        print(
+            "✅ Dashboard publicado correctamente"
+        )
+
+    except Exception as e:
+
+        print()
+        print(
+            f"❌ Error publicando en GitHub: {e}"
+        )
 
 
 print()
@@ -49,6 +105,10 @@ ejecutar("resolver_alertas.py")
 ejecutar("calcular_vida.py")
 
 ejecutar("generar_metricas.py")
+
+ejecutar("generar_dashboard_json.py")
+
+publicar_github()
 
 print()
 print("=" * 60)
