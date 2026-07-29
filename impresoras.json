@@ -1,11 +1,17 @@
 {
-  "actualizado": "2026-07-29T15:01:09.300437",
+  "actualizado": "2026-07-29T15:16:26.674600",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
       "modelo": "Xerox WorkCentre 3655S v1",
       "serial": "3353184511",
       "ip": "172.16.79.100"
+    },
+    {
+      "nombre": "Modulo1",
+      "modelo": "Xerox VersaLink B7025",
+      "serial": "3390576217",
+      "ip": "172.16.79.124"
     },
     {
       "nombre": "Modulo5",
@@ -188,6 +194,12 @@
       "ip": "172.16.79.54"
     },
     {
+      "nombre": "Facultad de Ciencias Politicas",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616270",
+      "ip": "172.16.79.55"
+    },
+    {
       "nombre": "Tics 3er piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399952025",
@@ -270,6 +282,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
+    },
+    {
+      "nombre": "TicsDesarrollo",
+      "modelo": "Xerox Phaser 3330",
+      "serial": "3384970868",
+      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",

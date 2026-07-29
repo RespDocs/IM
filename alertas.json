@@ -200,6 +200,16 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-29T15:03:03.544397"
+    },
+    {
+      "equipo": "Modulo1",
+      "modelo": "Xerox VersaLink B7025",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 9,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-29T15:18:29.011419"
     }
   ]
 }
