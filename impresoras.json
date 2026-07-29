@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-29T18:15:42.009033",
+  "actualizado": "2026-07-29T18:17:36.185269",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -42,6 +42,12 @@
       "modelo": "Xerox VersaLink B600",
       "serial": "3394178631",
       "ip": "172.16.79.200"
+    },
+    {
+      "nombre": "Finanzas, Alameda 1845 piso 3",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399945932",
+      "ip": "172.16.79.21"
     },
     {
       "nombre": "PMI ( Plan de Mejoramiento Int.)",
@@ -102,12 +108,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991545",
       "ip": "172.16.79.32"
-    },
-    {
-      "nombre": "Facultad de Educacion 2do piso",
-      "modelo": "Xerox VersaLink B605",
-      "serial": null,
-      "ip": "172.16.79.34"
     },
     {
       "nombre": "Centro Uni Ignaciano Pastoral",
@@ -182,9 +182,15 @@
       "ip": "172.16.79.50"
     },
     {
+      "nombre": "LASER_UAH",
+      "modelo": "Xerox AltaLink B8075",
+      "serial": "3669690826",
+      "ip": "172.16.79.51"
+    },
+    {
       "nombre": "Derecho - Clinica Juridica",
       "modelo": "Xerox VersaLink B7030",
-      "serial": null,
+      "serial": "3399951738",
       "ip": "172.16.79.52"
     },
     {
@@ -230,6 +236,12 @@
       "ip": "172.16.79.63"
     },
     {
+      "nombre": "Direccion de Aprendizaje Institu",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940619229",
+      "ip": "172.16.79.64"
+    },
+    {
       "nombre": "Facultad de Economia 2do piso",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618249",
@@ -246,12 +258,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616432",
       "ip": "172.16.79.67"
-    },
-    {
-      "nombre": "Direccion de Comunicaciones",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616696",
-      "ip": "172.16.79.69"
     },
     {
       "nombre": "Facultad de Psicologia",
