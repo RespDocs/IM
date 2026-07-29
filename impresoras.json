@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-29T14:52:14.085280",
+  "actualizado": "2026-07-29T15:01:09.300437",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -82,7 +82,7 @@
     {
       "nombre": "Rectoria",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3394991545",
       "ip": "172.16.79.32"
     },
     {
@@ -164,6 +164,12 @@
       "ip": "172.16.79.50"
     },
     {
+      "nombre": "LASER_UAH",
+      "modelo": "Xerox AltaLink B8075",
+      "serial": "3669690826",
+      "ip": "172.16.79.51"
+    },
+    {
       "nombre": "Derecho - Clinica Juridica",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951738",
@@ -180,12 +186,6 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946262",
       "ip": "172.16.79.54"
-    },
-    {
-      "nombre": "Facultad de Ciencias Politicas",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616270",
-      "ip": "172.16.79.55"
     },
     {
       "nombre": "Tics 3er piso",
@@ -220,7 +220,7 @@
     {
       "nombre": "Facultad de Economia 2do piso",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940618249",
       "ip": "172.16.79.65"
     },
     {
@@ -270,12 +270,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
-    },
-    {
-      "nombre": "TicsDesarrollo",
-      "modelo": "Xerox Phaser 3330",
-      "serial": "3384970868",
-      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",
