@@ -1,6 +1,12 @@
 {
-  "actualizado": "2026-07-29T17:46:35.436114",
+  "actualizado": "2026-07-29T18:11:33.452035",
   "impresoras": [
+    {
+      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "serial": "3353184511",
+      "ip": "172.16.79.100"
+    },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
@@ -86,6 +92,12 @@
       "ip": "172.16.79.29"
     },
     {
+      "nombre": "DARA",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399952378",
+      "ip": "172.16.79.30"
+    },
+    {
       "nombre": "Rectoria Color",
       "modelo": "Xerox VersaLink C405",
       "serial": "3358981312",
@@ -146,6 +158,12 @@
       "ip": "172.16.79.42"
     },
     {
+      "nombre": "instituto de Teologia y Estudios",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940618834",
+      "ip": "172.16.79.43"
+    },
+    {
       "nombre": "Facultad de Periodismo",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394992100",
@@ -194,7 +212,7 @@
       "ip": "172.16.79.54"
     },
     {
-      "nombre": "Facultad de Ciencias Politicas",
+      "nombre": null,
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616270",
       "ip": "172.16.79.55"
@@ -236,7 +254,7 @@
       "ip": "172.16.79.65"
     },
     {
-      "nombre": null,
+      "nombre": "Facultad Economia 1er piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399943565",
       "ip": "172.16.79.66"
@@ -260,12 +278,6 @@
       "ip": "172.16.79.70"
     },
     {
-      "nombre": "Facultad de Psicologia sub",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616190",
-      "ip": "172.16.79.71"
-    },
-    {
       "nombre": "Facultad de Geografia",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946009",
@@ -282,6 +294,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
+    },
+    {
+      "nombre": "TicsDesarrollo",
+      "modelo": "Xerox Phaser 3330",
+      "serial": "3384970868",
+      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",
