@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#ffffff;
+    margin:20px;
+    color:#333;
+}
+
+h1{
+    margin-bottom:5px;
+}
+
+.actualizado{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.kpis{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.10);
+}
+
+.card h3{
+    margin:0;
+    color:#666;
+}
+
+.valor{
+    margin-top:10px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.alerta{
+    background:white;
+    border-left:5px solid #e53935;
+    margin-bottom:8px;
+    padding:10px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.offline{
+    background:white;
+    border-left:5px solid #424242;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:6px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    text-align:left;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+.online{
+    color:green;
+    font-weight:bold;
+}
+
+.offline-text{
+    color:red;
+    font-weight:bold;
+}
+
+#detalle{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,.6);
+}
+
+#detalleContenido{
+    background:white;
+    width:700px;
+    max-width:95%;
+    margin:30px auto;
+    padding:25px;
+    border-radius:10px;
+}
+
+.consumible{
+    margin-bottom:5px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:#1976d2;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#125aa2;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🖨️ ImpresorasMonitor</h1>
+
+<div
+    class="actualizado"
+    id="actualizado">
+</div>
+
+<div class="kpis">
+
+    <div class="card">
+        <h3>IMPRESORAS</h3>
+        <div id="total" class="valor"></div>
+    </div>
+
+    <div class="card">
+        <h3>ONLINE</h3>
+        <div id="online" class="valor"></div>
+    </div>
+
+    <div class="card">
+        <h3>OFFLINE</h3>
+        <div id="offline" class="valor"></div>
+    </div>
+
+    <div class="card">
+        <h3>ALERTAS</h3>
+        <div id="alertas" class="valor"></div>
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>🔴 Alertas Críticas</h2>
+
+    <div id="alertasCriticas"></div>
+
+</div>
+
+<div class="section">
+
+    <h2>⚫ Equipos Offline</h2>
+
+    <div id="offlineList"></div>
+
+</div>
+
+<div class="section">
+
+    <h2>📋 Impresoras</h2>
+
+    <div style="margin-bottom:15px;">
+
+        <input
+            id="busqueda"
+            type="text"
+            placeholder="Buscar serie o modelo..."
+        >
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Serie</th>
+                <th>Modelo</th>
+                <th>Contador</th>
+                <th>Estado</th>
+                <th>Última lectura</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="tablaImpresoras"></tbody>
+
+    </table>
+
+</div>
+
+<div id="detalle">
+
+    <div id="detalleContenido"></div>
+
+</div>
+
+<script>
+
+fetch("dashboard.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    document.getElementById("actualizado")
+        .innerText =
+        "Actualizado: "
+        + new Date(data.actualizado)
+        .toLocaleString("es-CL");
+
+    document.getElementById("total")
+        .innerText =
+        data.metricas.impresoras.total;
+
+    document.getElementById("online")
+        .innerText =
+        data.metricas.impresoras.online;
+
+    document.getElementById("offline")
+        .innerText =
+        data.metricas.impresoras.offline;
+
+    document.getElementById("alertas")
+        .innerText =
+        data.metricas.alertas.abiertas;
+
+const alertasCriticas =
+    document.getElementById(
+        "alertasCriticas"
+    );
+
+const mapaImpresoras = {};
+
+data.impresoras.forEach(i => {
+
+    mapaImpresoras[i.nombre] = {
+
+        serial: i.serial,
+        modelo: i.modelo
+
+    };
+
+});
+
+const nombresConsumibles = {
+
+    toner_black: "Tóner Negro",
+    toner_yellow: "Tóner Amarillo",
+    toner_magenta: "Tóner Magenta",
+    toner_cyan: "Tóner Cian",
+
+    drum_black: "Drum Negro",
+    drum_yellow: "Drum Amarillo",
+    drum_magenta: "Drum Magenta",
+    drum_cyan: "Drum Cian"
+
+};
+
+data.alertas.forEach(a => {
+
+    const info = mapaImpresoras[a.equipo];
+
+    const serial =
+        info?.serial ?? "-";
+
+    const modelo =
+        info?.modelo
+            ?.split(" ")
+            .pop()
+
+        ?? "-";
+
+    if(a.tipo === "offline"){
+
+        alertasCriticas.innerHTML += `
+
+            <div class="alerta">
+
+                ⚫ ${serial}
+                |
+                ${modelo}
+                |
+                Offline
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+    const consumible =
+
+        nombresConsumibles[
+            a.consumible
+        ]
+
+        ||
+
+        a.consumible;
+
+    const icono =
+
+        a.criticidad === "critico"
+
+        ?
+
+        "🔴"
+
+        :
+
+        "🟡";
+
+    alertasCriticas.innerHTML += `
+
+        <div class="alerta">
+
+            ${icono}
+            ${serial}
+            |
+            ${modelo}
+            |
+            ${consumible}
+            |
+            ${a.porcentaje}%
+
+        </div>
+
+    `;
+
+});
+
+
+    const offlineList =
+        document.getElementById(
+            "offlineList"
+        );
+
+    data.impresoras
+
+        .filter(i => !i.online)
+
+        .forEach(i => {
+
+            offlineList.innerHTML += `
+                <div class="offline">
+
+                    <b>${i.nombre}</b>
+
+                    <br>
+
+                    ${i.modelo}
+
+                </div>
+            `;
+
+        });
+
+    function modeloCorto(modelo){
+
+        const partes =
+            modelo.split(" ");
+
+        return partes[
+            partes.length - 1
+        ];
+
+    }
+
+    const tabla =
+        document.getElementById(
+            "tablaImpresoras"
+        );
+
+    const impresoras =
+        data.impresoras;
+
+    function renderTabla(filtro=""){
+
+        tabla.innerHTML = "";
+
+        impresoras
+
+            .filter(i => {
+
+                const texto = (
+
+                    (i.serial || "")
+                    + " "
+                    + (i.modelo || "")
+
+                ).toLowerCase();
+
+                return texto.includes(
+                    filtro.toLowerCase()
+                );
+
+            })
+
+            .forEach(i => {
+
+                const fila =
+                    document.createElement("tr");
+
+                fila.style.cursor =
+                    "pointer";
+
+                const ultima =
+                    i.ultima_lectura
+                    ? new Date(
+                        i.ultima_lectura
+                      ).toLocaleString("es-CL")
+                    : "-";
+
+                fila.innerHTML = `
+
+                    <td>${i.serial ?? "-"}</td>
+
+                    <td>${modeloCorto(i.modelo)}</td>
+
+                    <td>${i.contador ?? "-"}</td>
+
+                    <td>
+
+                        ${
+                            i.online
+                            ? '<span class="online">🟢 Online</span>'
+                            : '<span class="offline-text">🔴 Offline</span>'
+                        }
+
+                    </td>
+
+                    <td>${ultima}</td>
+
+                `;
+
+                fila.onclick = () => {
+
+                    document
+                    .getElementById(
+                        "detalle"
+                    )
+                    .style.display =
+                        "block";
+
+                    let consumibles =
+                        "";
+
+                    if(i.consumibles){
+
+                        for(const c in i.consumibles){
+
+                            consumibles += `
+                                <li class="consumible">
+                                    ${c}: ${i.consumibles[c]}%
+                                </li>
+                            `;
+
+                        }
+
+                    }
+
+                    document
+                    .getElementById(
+                        "detalleContenido"
+                    )
+                    .innerHTML = `
+
+                        <h2>${i.serial}</h2>
+
+                        <p>
+                            <b>Nombre:</b>
+                            ${i.nombre}
+                        </p>
+
+                        <p>
+                            <b>Modelo:</b>
+                            ${i.modelo}
+                        </p>
+
+                        <p>
+                            <b>IP:</b>
+                            ${i.ip}
+                        </p>
+
+                        <p>
+                            <b>Contador:</b>
+                            ${i.contador ?? "-"}
+                        </p>
+
+                        <p>
+                            <b>Última lectura:</b>
+                            ${ultima}
+                        </p>
+
+                        <h3>Consumibles</h3>
+
+                        <ul>
+
+                            ${consumibles}
+
+                        </ul>
+
+                        <button onclick="
+                            document.getElementById('detalle').style.display='none'
+                        ">
+                            Cerrar
+                        </button>
+
+                    `;
+
+                };
+
+                tabla.appendChild(
+                    fila
+                );
+
+            });
+
+    }
+
+    renderTabla();
+
+    document
+
+        .getElementById(
+            "busqueda"
+        )
+
+        .addEventListener(
+            "keyup",
+            e => {
+
+                renderTabla(
+                    e.target.value
+                );
+
+            }
+        );
+
+});
+
+document
+.getElementById("detalle")
+.addEventListener(
+    "click",
+    function(e){
+
+        if(
+            e.target.id === "detalle"
+        ){
+
+            this.style.display =
+                "none";
+
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>

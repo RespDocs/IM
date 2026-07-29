@@ -1,0 +1,297 @@
+{
+  "Xerox WorkCentre 3655S v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  },
+  "Xerox VersaLink B605": {
+    "toner_black": {
+      "descripcion": "Toner Cartridge;SNAC75852F89840000",
+      "pn": null,
+      "vida_nominal": 46700,
+      "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Drum Cartridge, PN 101R00582;SN4D00D8003C0F0000",
+      "pn": "101R00582",
+      "vida_nominal": 60000,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Transfer Roller, PN 116R00009",
+      "pn": "116R00009",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fuser, PN 115R00140",
+      "pn": "115R00140",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray1_roller": {
+      "descripcion": "Tray 1 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray2_roller": {
+      "descripcion": "Tray 2 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray3_roller": {
+      "descripcion": "Tray 3 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
+  "Xerox VersaLink B7030": {
+    "toner_black": {
+      "descripcion": "Cartucho de tÃ³ner, PN 106R03392;SN8031490227070000",
+      "pn": "106R03392",
+      "vida_nominal": 30000,
+      "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Cartucho de cilindro, PN 113R00779;SN803869165B070000",
+      "pn": "113R00779",
+      "vida_nominal": 82700,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Rodillo de transferencia, PN 115R00116",
+      "pn": "115R00116",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fusor, PN 115R00115",
+      "pn": "115R00115",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
+  "Xerox VersaLink C9000": {
+    "toner_black": {
+      "descripcion": "Cartucho de tÃ³ner negro, PN 106R04085;SN80B85E08DB070000",
+      "pn": "106R04085",
+      "vida_nominal": 30000,
+      "origen": "snmp"
+    },
+    "toner_yellow": {
+      "descripcion": "Cartucho de tÃ³ner amarillo, PN 106R04084;SN800F440DE5070000",
+      "pn": "106R04084",
+      "vida_nominal": 26000,
+      "origen": "snmp"
+    },
+    "toner_magenta": {
+      "descripcion": "Cartucho de tÃ³ner magenta, PN 106R04083;SN80115914E9070000",
+      "pn": "106R04083",
+      "vida_nominal": 26000,
+      "origen": "snmp"
+    },
+    "toner_cyan": {
+      "descripcion": "Cartucho de tÃ³ner cian, PN 106R04082;SN809E5C05E6070000",
+      "pn": "106R04082",
+      "vida_nominal": 26000,
+      "origen": "snmp"
+    },
+    "waste_toner": {
+      "descripcion": "Cartucho de residuos, PN 108R01504",
+      "pn": "108R01504",
+      "vida_nominal": 83000,
+      "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Cartucho de cilindro negro, PN 101R00602;SN8053590E43070000",
+      "pn": "101R00602",
+      "vida_nominal": 157000,
+      "origen": "snmp"
+    },
+    "drum_yellow": {
+      "descripcion": "Cartucho de cilindro amarillo, PN 101R00602;SN8056590E43070000",
+      "pn": "101R00602",
+      "vida_nominal": 157000,
+      "origen": "snmp"
+    },
+    "drum_magenta": {
+      "descripcion": "Cartucho de cilindro magenta, PN 101R00602;SN8054590E43070000",
+      "pn": "101R00602",
+      "vida_nominal": 157000,
+      "origen": "snmp"
+    },
+    "drum_cyan": {
+      "descripcion": "Cartucho de cilindro cian, PN 101R00602;SN8032560E43070000",
+      "pn": "101R00602",
+      "vida_nominal": 157000,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Rodillo de transferencia, PN 116R00015",
+      "pn": "116R00015",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fusor, PN 115R00143",
+      "pn": "115R00143",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "belt_cleaner": {
+      "descripcion": "Limpiador de la correa de transferencia, PN 104R00256",
+      "pn": "104R00256",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray1_roller": {
+      "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 1, PN 109R00790",
+      "pn": "109R00790",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray2_roller": {
+      "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 2, PN 109R00790",
+      "pn": "109R00790",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
+  "Xerox VersaLink C405": {
+    "toner_black": {
+      "descripcion": "Black Toner Cartridge, PN 106R03536;SN7000D2001D160000",
+      "pn": "106R03536",
+      "vida_nominal": 10500,
+      "origen": "snmp"
+    },
+    "toner_yellow": {
+      "descripcion": "Yellow Toner Cartridge, PN 106R03537;SN4D00190015670000",
+      "pn": "106R03537",
+      "vida_nominal": 8000,
+      "origen": "snmp"
+    },
+    "toner_magenta": {
+      "descripcion": "Magenta Toner Cartridge, PN 106R03539;SN5E00B4002A180000",
+      "pn": "106R03539",
+      "vida_nominal": 8000,
+      "origen": "snmp"
+    },
+    "toner_cyan": {
+      "descripcion": "Cyan Toner Cartridge, PN 106R03538;SN1500A60010080000",
+      "pn": "106R03538",
+      "vida_nominal": 8000,
+      "origen": "snmp"
+    },
+    "waste_toner": {
+      "descripcion": "Waste Cartridge, PN 108R01124",
+      "pn": "108R01124",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fuser, PN 115R00089",
+      "pn": "115R00089",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
+  "Xerox VersaLink B405": {},
+  "Xerox VersaLink C7025": {
+    "toner_black": {
+      "descripcion": "Black Toner Cartridge, PN 106R03733;SN803D4617F2070000",
+      "pn": "106R03733",
+      "vida_nominal": 22000,
+      "origen": "snmp"
+    },
+    "toner_yellow": {
+      "descripcion": "Yellow Toner Cartridge, PN 106R03734;SN80BE4406E6070000",
+      "pn": "106R03734",
+      "vida_nominal": 15000,
+      "origen": "snmp"
+    },
+    "toner_magenta": {
+      "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN80545F2908070000",
+      "pn": "106R03735",
+      "vida_nominal": 15000,
+      "origen": "snmp"
+    },
+    "toner_cyan": {
+      "descripcion": "Cyan Toner Cartridge, PN 106R03736;SN800706144F080000",
+      "pn": "106R03736",
+      "vida_nominal": 15000,
+      "origen": "snmp"
+    },
+    "waste_toner": {
+      "descripcion": "Waste Cartridge, PN 115R00128",
+      "pn": "115R00128",
+      "vida_nominal": 30000,
+      "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Black Drum Cartridge, PN 113R00780;SN804A220C44080000",
+      "pn": "113R00780",
+      "vida_nominal": 109200,
+      "origen": "snmp"
+    },
+    "drum_yellow": {
+      "descripcion": "Yellow Drum Cartridge, PN 113R00780;SN80175D2B03070000",
+      "pn": "113R00780",
+      "vida_nominal": 87000,
+      "origen": "snmp"
+    },
+    "drum_magenta": {
+      "descripcion": "Magenta Drum Cartridge, PN 113R00780;SN80B6080449080000",
+      "pn": "113R00780",
+      "vida_nominal": 87000,
+      "origen": "snmp"
+    },
+    "drum_cyan": {
+      "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80BE060449080000",
+      "pn": "113R00780",
+      "vida_nominal": 87000,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Transfer Roller, PN 115R00126",
+      "pn": "115R00126",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fuser, PN 115R00115",
+      "pn": "115R00115",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
+  "Xerox AltaLink B8075": {
+    "toner_black": {
+      "descripcion": "Toner Cartridge, PN 006R01604;SND0027D3E14122A6A",
+      "pn": "006R01604",
+      "vida_nominal": 4600,
+      "origen": "snmp"
+    }
+  },
+  "Xerox Phaser 3330": {
+    "toner_black": {
+      "descripcion": "Xerox Black Toner Cartridge, Replace with P/N 106R03625; S/N CRUM-23083119541",
+      "pn": null,
+      "vida_nominal": 11000,
+      "origen": "snmp"
+    }
+  },
+  "Xerox WorkCentre 3655X v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SNUnKnown",
+      "pn": "unknown",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  }
+}

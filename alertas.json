@@ -1,0 +1,171 @@
+{
+  "alertas": [
+    {
+      "equipo": "Modulo5",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 13,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T11:51:30.623285"
+    },
+    {
+      "equipo": "Rectoria Color",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "consumible",
+      "consumible": "toner_yellow",
+      "porcentaje": 9,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375065"
+    },
+    {
+      "equipo": "Rectoria Color",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "consumible",
+      "consumible": "toner_magenta",
+      "porcentaje": 13,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375122"
+    },
+    {
+      "equipo": "Rectoria Color",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "consumible",
+      "consumible": "toner_cyan",
+      "porcentaje": 8,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375136"
+    },
+    {
+      "equipo": "Rectoria",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 15,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375148"
+    },
+    {
+      "equipo": "Centro Uni Ignaciano Pastoral",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 13,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375161"
+    },
+    {
+      "equipo": "Facultad de Filosofia y Humanida",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 7,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375181"
+    },
+    {
+      "equipo": "Facultad de Ciencias Sociales",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 3,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375195"
+    },
+    {
+      "equipo": "DOP",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 4,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375209"
+    },
+    {
+      "equipo": "Central de Apuntes",
+      "modelo": "Xerox VersaLink C7025",
+      "tipo": "consumible",
+      "consumible": "toner_magenta",
+      "porcentaje": 1,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375221"
+    },
+    {
+      "equipo": "Direccion de Admision Patio",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 17,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375237"
+    },
+    {
+      "equipo": "Facultad de Ingenieria",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 1,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375252"
+    },
+    {
+      "equipo": "Centro Uni. Ignaciano 2do piso",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 15,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375272"
+    },
+    {
+      "equipo": "Facultad de Geografia",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 9,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375287"
+    },
+    {
+      "equipo": "Antropologia",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 17,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375304"
+    },
+    {
+      "equipo": "Facultad de Psicologia 2do piso",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 4,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T12:13:39.375316"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-28T13:44:50.377110"
+    }
+  ]
+}
