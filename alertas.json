@@ -227,6 +227,19 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-29T17:26:41.366574"
+    },
+    {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 4,
+      "criticidad": "critico",
+      "estado": "instalado",
+      "fecha_notificacion": "2026-07-29T18:54:08.424985",
+      "fecha_instalacion": "2026-07-29T18:14:16.403835",
+      "contador_instalacion": 473907,
+      "porcentaje_reemplazo": 4
     }
   ]
 }

@@ -247,7 +247,7 @@
     "departamento": "",
     "contacto": "",
     "instalacion": "",
-    "nombre": "DOP",
+    "nombre": null,
     "modelo": "Xerox VersaLink B7030",
     "ip": "172.16.79.46"
   },
@@ -556,5 +556,14 @@
     "nombre": "DARA-ADMISION",
     "modelo": "Xerox WorkCentre 3655X v1",
     "ip": "172.16.79.56"
+  },
+  "null": {
+    "referencia": "",
+    "departamento": "",
+    "contacto": "",
+    "instalacion": "",
+    "nombre": "Facultad de Geografia",
+    "modelo": "Xerox VersaLink B7030",
+    "ip": "172.16.79.72"
   }
 }
