@@ -1,45 +1,163 @@
 import json
 from datetime import datetime
 
-with open(
-    "metricas.json",
-    "r",
-    encoding="utf-8"
-) as f:
 
-    metricas = json.load(f)
+def cargar(nombre):
 
-with open(
-    "estado.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    try:
 
-    estado = json.load(f)
+        with open(
+            nombre,
+            "r",
+            encoding="utf-8"
+        ) as f:
 
-with open(
-    "alertas.json",
-    "r",
-    encoding="utf-8"
-) as f:
+            return json.load(f)
 
-    alertas = json.load(f)
+    except:
 
-with open(
-    "instalaciones.json",
-    "r",
-    encoding="utf-8"
-) as f:
+        return {}
 
-    instalaciones = json.load(f)
 
-with open(
-    "vida_consumibles.json",
-    "r",
-    encoding="utf-8"
-) as f:
+metricas = cargar(
+    "metricas.json"
+)
 
-    vida = json.load(f)
+estado = cargar(
+    "estado.json"
+)
+
+alertas = cargar(
+    "alertas.json"
+)
+
+instalaciones = cargar(
+    "instalaciones.json"
+)
+
+vida = cargar(
+    "vida_consumibles.json"
+)
+
+catalogo = cargar(
+    "catalogo_consumibles.json"
+)
+
+inventario = cargar(
+    "inventario_detalle.json"
+)
+
+
+# -------------------------------------------------
+# INVENTARIO
+# -------------------------------------------------
+
+for impresora in estado.get(
+    "impresoras",
+    []
+):
+
+    serial = impresora.get(
+        "serial"
+    )
+
+    if serial in inventario:
+
+        impresora.update(
+            inventario[serial]
+        )
+
+
+# -------------------------------------------------
+# ALERTAS ENRIQUECIDAS
+# -------------------------------------------------
+
+alertas_dashboard = []
+
+for alerta in alertas.get(
+    "alertas",
+    []
+):
+
+    equipo = next(
+
+        (
+            i
+            for i in estado.get(
+                "impresoras",
+                []
+            )
+            if i["nombre"]
+            == alerta["equipo"]
+        ),
+
+        None
+
+    )
+
+    serial = None
+    modelo = None
+    pn = None
+
+    if equipo:
+
+        serial = equipo.get(
+            "serial"
+        )
+
+        modelo = equipo.get(
+            "modelo"
+        )
+
+        if (
+
+            modelo in catalogo
+
+            and
+
+            alerta.get(
+                "consumible"
+            )
+
+            in catalogo[
+                modelo
+            ]
+
+        ):
+
+            pn = catalogo[
+                modelo
+            ][
+                alerta[
+                    "consumible"
+                ]
+            ].get(
+                "pn"
+            )
+
+    alerta_dashboard = {
+
+        **alerta,
+
+        "serial":
+            serial,
+
+        "modelo":
+            modelo,
+
+        "pn":
+            pn
+
+    }
+
+    alertas_dashboard.append(
+        alerta_dashboard
+    )
+
+
+# -------------------------------------------------
+# DASHBOARD
+# -------------------------------------------------
 
 dashboard = {
 
@@ -50,30 +168,48 @@ dashboard = {
         metricas,
 
     "impresoras":
-        estado["impresoras"],
+        estado.get(
+            "impresoras",
+            []
+        ),
 
     "alertas":
-        alertas["alertas"],
+        alertas_dashboard,
 
     "instalaciones":
-        instalaciones["instalaciones"],
+        instalaciones.get(
+            "instalaciones",
+            []
+        ),
 
     "vida_consumibles":
-        vida["consumibles"]
+        vida.get(
+            "consumibles",
+            []
+        )
 
 }
 
 with open(
+
     "dashboard.json",
+
     "w",
+
     encoding="utf-8"
+
 ) as f:
 
     json.dump(
+
         dashboard,
+
         f,
+
         indent=2,
+
         ensure_ascii=False
+
     )
 
 print(

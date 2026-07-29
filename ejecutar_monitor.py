@@ -34,13 +34,26 @@ def publicar_github():
 
     try:
 
-        timestamp = datetime.now().strftime(
-            "%Y-%m-%d %H:%M:%S"
-        )
-
         subprocess.run(
             [GIT, "add", "."],
             check=True
+        )
+
+        cambios = subprocess.run(
+            [GIT, "diff", "--cached", "--quiet"]
+        )
+
+        if cambios.returncode == 0:
+
+            print()
+            print(
+                "Sin cambios para publicar"
+            )
+
+            return
+
+        timestamp = datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
         )
 
         commit = subprocess.run(
@@ -54,7 +67,11 @@ def publicar_github():
             text=True
         )
 
-        print(commit.stdout)
+        if commit.stdout:
+            print(commit.stdout)
+
+        if commit.stderr:
+            print(commit.stderr)
 
         push = subprocess.run(
             [GIT, "push"],
@@ -62,15 +79,25 @@ def publicar_github():
             text=True
         )
 
-        print(push.stdout)
+        if push.stdout:
+            print(push.stdout)
 
         if push.stderr:
             print(push.stderr)
 
-        print()
-        print(
-            "✅ Dashboard publicado correctamente"
-        )
+        if push.returncode == 0:
+
+            print()
+            print(
+                "✅ Dashboard publicado correctamente"
+            )
+
+        else:
+
+            print()
+            print(
+                "❌ Error publicando dashboard"
+            )
 
     except Exception as e:
 
@@ -91,6 +118,8 @@ print(
 print("=" * 60)
 
 ejecutar("descubrir_impresoras.py")
+
+ejecutar("generar_inventario.py")
 
 ejecutar("generar_estado.py")
 
