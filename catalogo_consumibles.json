@@ -369,13 +369,13 @@
       "origen": "snmp"
     }
   },
-  "Xerox AltaLink B8075": {
+  "Xerox AltaLink B8075": {},
+  "Xerox WorkCentre 3655X v1": {
     "toner_black": {
-      "descripcion": "Toner Cartridge, PN 006R01604;SND0027D3E14122A6A",
-      "pn": "006R01604",
-      "vida_nominal": 4600,
+      "descripcion": "Black Toner, PN unknown;SNUnKnown",
+      "pn": "unknown",
+      "vida_nominal": null,
       "origen": "snmp"
     }
-  },
-  "Xerox WorkCentre 3655X v1": {}
+  }
 }
