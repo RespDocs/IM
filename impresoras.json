@@ -1,12 +1,6 @@
 {
-  "actualizado": "2026-07-30T15:11:30.080738",
+  "actualizado": "2026-07-30T15:30:20.951245",
   "impresoras": [
-    {
-      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
-      "modelo": "Xerox WorkCentre 3655S v1",
-      "serial": "3353184511",
-      "ip": "172.16.79.100"
-    },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
@@ -44,10 +38,10 @@
       "ip": "172.16.79.200"
     },
     {
-      "nombre": "PMI ( Plan de Mejoramiento Int.)",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940617056",
-      "ip": "172.16.79.23"
+      "nombre": "Finanzas, Alameda 1845 piso 3",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399945932",
+      "ip": "172.16.79.21"
     },
     {
       "nombre": "DARA 2do piso",
@@ -142,6 +136,12 @@
     {
       "nombre": "Facultad de Filosofia y Humanida",
       "modelo": "Xerox VersaLink B605",
+      "serial": "3940618842",
+      "ip": "172.16.79.41"
+    },
+    {
+      "nombre": "Facultad de Filosofia y Humanida",
+      "modelo": "Xerox VersaLink B605",
       "serial": "3940616998",
       "ip": "172.16.79.42"
     },
@@ -150,6 +150,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618834",
       "ip": "172.16.79.43"
+    },
+    {
+      "nombre": "Facultad de Periodismo",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3394992100",
+      "ip": "172.16.79.44"
     },
     {
       "nombre": "Facultad de Ciencias Sociales",
@@ -248,6 +254,12 @@
       "ip": "172.16.79.67"
     },
     {
+      "nombre": "Direccion de Comunicaciones",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616696",
+      "ip": "172.16.79.69"
+    },
+    {
       "nombre": "Facultad de Psicologia",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945398",
@@ -292,7 +304,7 @@
     {
       "nombre": "Antropologia",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3940616513",
+      "serial": null,
       "ip": "172.16.79.77"
     },
     {

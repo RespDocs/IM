@@ -195,9 +195,17 @@ button:hover{
 
 <div class="section">
 
+    <h2>🟡 Alertas Advertencia</h2>
+
+    <div id="alertasAdvertencia"></div>
+
+</div>
+
+<div class="section">
+
     <h2>⚫ Equipos Offline</h2>
 
-    <div id="offlineList"></div>
+    <div id="alertasOffline"></div>
 
 </div>
 
@@ -276,18 +284,15 @@ const alertasCriticas =
         "alertasCriticas"
     );
 
-const mapaImpresoras = {};
+const alertasAdvertencia =
+    document.getElementById(
+        "alertasAdvertencia"
+    );
 
-data.impresoras.forEach(i => {
-
-    mapaImpresoras[i.nombre] = {
-
-        serial: i.serial,
-        modelo: i.modelo
-
-    };
-
-});
+const alertasOffline =
+    document.getElementById(
+        "alertasOffline"
+    );
 
 const nombresConsumibles = {
 
@@ -305,25 +310,24 @@ const nombresConsumibles = {
 
 data.alertas.forEach(a => {
 
-    const info = mapaImpresoras[a.equipo];
-
     const serial =
-        info?.serial ?? "-";
+        a.serial ?? "-";
 
     const modelo =
-        info?.modelo
-            ?.split(" ")
-            .pop()
+        (a.modelo || "-")
+            .split(" ")
+            .pop();
 
-        ?? "-";
+    if (a.tipo === "offline") {
 
-    if(a.tipo === "offline"){
-
-        alertasCriticas.innerHTML += `
+        alertasOffline.innerHTML += `
 
             <div class="alerta">
 
-                ⚫ ${serial}
+                ⚫
+                ${a.id_alerta ?? "SIN_ID"}
+                |
+                ${serial}
                 |
                 ${modelo}
                 |
@@ -347,23 +351,18 @@ data.alertas.forEach(a => {
 
         a.consumible;
 
-    const icono =
-
-        a.criticidad === "critico"
-
-        ?
-
-        "🔴"
-
-        :
-
-        "🟡";
-
-    alertasCriticas.innerHTML += `
+    const linea = `
 
         <div class="alerta">
 
-            ${icono}
+            ${
+                a.criticidad === "critico"
+                ? "🔴"
+                : "🟡"
+            }
+
+            ${a.id_alerta ?? "SIN_ID"}
+            |
             ${serial}
             |
             ${modelo}
@@ -378,33 +377,23 @@ data.alertas.forEach(a => {
 
     `;
 
+    if (
+        a.criticidad === "critico"
+    ) {
+
+        alertasCriticas.innerHTML +=
+            linea;
+
+    }
+    else {
+
+        alertasAdvertencia.innerHTML +=
+            linea;
+
+    }
+
 });
 
-
-    const offlineList =
-        document.getElementById(
-            "offlineList"
-        );
-
-    data.impresoras
-
-        .filter(i => !i.online)
-
-        .forEach(i => {
-
-            offlineList.innerHTML += `
-                <div class="offline">
-
-                    <b>${i.nombre}</b>
-
-                    <br>
-
-                    ${i.modelo}
-
-                </div>
-            `;
-
-        });
 
     function modeloCorto(modelo){
 
