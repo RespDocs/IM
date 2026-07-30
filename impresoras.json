@@ -1,12 +1,6 @@
 {
-  "actualizado": "2026-07-30T16:11:07.621383",
+  "actualizado": "2026-07-30T16:37:51.599042",
   "impresoras": [
-    {
-      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
-      "modelo": "Xerox WorkCentre 3655S v1",
-      "serial": "3353184511",
-      "ip": "172.16.79.100"
-    },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
@@ -92,6 +86,12 @@
       "ip": "172.16.79.29"
     },
     {
+      "nombre": "DARA",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399952378",
+      "ip": "172.16.79.30"
+    },
+    {
       "nombre": "Rectoria Color",
       "modelo": "Xerox VersaLink C405",
       "serial": "3358981312",
@@ -130,7 +130,7 @@
     {
       "nombre": "Facultad de Musica",
       "modelo": "Xerox VersaLink B7030",
-      "serial": null,
+      "serial": "3399944995",
       "ip": "172.16.79.38"
     },
     {
@@ -180,12 +180,6 @@
       "modelo": "Xerox VersaLink C7025",
       "serial": "3391871700",
       "ip": "172.16.79.50"
-    },
-    {
-      "nombre": "LASER_UAH",
-      "modelo": "Xerox AltaLink B8075",
-      "serial": "3669690826",
-      "ip": "172.16.79.51"
     },
     {
       "nombre": "Derecho - Clinica Juridica",
@@ -280,7 +274,7 @@
     {
       "nombre": "Facultad de Geografia",
       "modelo": "Xerox VersaLink B7030",
-      "serial": "3399946009",
+      "serial": null,
       "ip": "172.16.79.72"
     },
     {
@@ -288,12 +282,6 @@
       "modelo": "Xerox VersaLink C405",
       "serial": "3356010522",
       "ip": "172.16.79.73"
-    },
-    {
-      "nombre": "Biblioteca San ignacio",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616416",
-      "ip": "172.16.79.74"
     },
     {
       "nombre": "TicsDesarrollo",
