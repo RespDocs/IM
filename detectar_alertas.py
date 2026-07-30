@@ -116,3 +116,166 @@ for impresora in estado["impresoras"]:
                     serial,
 
                 "modelo":
+                    modelo,
+
+                "tipo":
+                    "offline",
+
+                "estado":
+                    "notificado",
+
+                "fecha_notificacion":
+                    datetime.now().isoformat()
+
+            }
+
+            alertas["alertas"].append(
+                nueva_alerta
+            )
+
+            print(
+                f"OFFLINE - "
+                f"{nueva_alerta['id_alerta']} - "
+                f"{nombre}"
+            )
+
+        continue
+
+    # --------------------------------------------------
+    # CONSUMIBLES
+    # --------------------------------------------------
+
+    consumibles = impresora.get(
+        "consumibles",
+        {}
+    )
+
+    for consumible, porcentaje in consumibles.items():
+
+        criticidad = None
+
+        if porcentaje <= critico:
+
+            criticidad = "critico"
+
+        elif porcentaje <= advertencia:
+
+            criticidad = "advertencia"
+
+        else:
+
+            continue
+
+        existe = any(
+
+            a.get("equipo") == nombre
+
+            and
+
+            a.get("consumible") == consumible
+
+            and
+
+            a.get("estado") == "notificado"
+
+            for a in alertas["alertas"]
+
+        )
+
+        if existe:
+
+            continue
+
+        nueva_alerta = {
+
+            "id_alerta":
+                generar_id_alerta(),
+
+            "equipo":
+                nombre,
+
+            "serial":
+                serial,
+
+            "modelo":
+                modelo,
+
+            "tipo":
+                "consumible",
+
+            "consumible":
+                consumible,
+
+            "porcentaje":
+                porcentaje,
+
+            "criticidad":
+                criticidad,
+
+            "estado":
+                "notificado",
+
+            "fecha_notificacion":
+                datetime.now().isoformat()
+
+        }
+
+        alertas["alertas"].append(
+            nueva_alerta
+        )
+
+        print(
+
+            f"{criticidad.upper()} - "
+
+            f"{nueva_alerta['id_alerta']} - "
+
+            f"{nombre} - "
+
+            f"{consumible} "
+
+            f"({porcentaje}%)"
+
+        )
+
+
+# --------------------------------------------------
+# GUARDAR ALERTAS
+# --------------------------------------------------
+
+with open(
+    "alertas.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        alertas,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+
+# --------------------------------------------------
+# GUARDAR CONTROL IDS
+# --------------------------------------------------
+
+with open(
+    "control_alertas.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        control,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+
+print()
+print(
+    "alertas.json actualizado"
+)

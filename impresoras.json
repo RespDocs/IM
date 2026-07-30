@@ -1,6 +1,12 @@
 {
-  "actualizado": "2026-07-30T18:28:03.463543",
+  "actualizado": "2026-07-30T18:55:12.595147",
   "impresoras": [
+    {
+      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "serial": "3353184511",
+      "ip": "172.16.79.100"
+    },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
@@ -32,7 +38,7 @@
       "ip": "172.16.79.20"
     },
     {
-      "nombre": "Modulo6",
+      "nombre": null,
       "modelo": "Xerox VersaLink B600",
       "serial": "3394178631",
       "ip": "172.16.79.200"
@@ -80,12 +86,6 @@
       "ip": "172.16.79.28"
     },
     {
-      "nombre": "DARA 1er piso",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940617064",
-      "ip": "172.16.79.29"
-    },
-    {
       "nombre": "DARA",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399952378",
@@ -108,12 +108,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991685",
       "ip": "172.16.79.34"
-    },
-    {
-      "nombre": "Centro Uni Ignaciano Pastoral",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616505",
-      "ip": "172.16.79.35"
     },
     {
       "nombre": "Facultad Educacion",
@@ -150,12 +144,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616998",
       "ip": "172.16.79.42"
-    },
-    {
-      "nombre": "instituto de Teologia y Estudios",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940618834",
-      "ip": "172.16.79.43"
     },
     {
       "nombre": "Facultad de Periodismo",
