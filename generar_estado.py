@@ -200,7 +200,7 @@ async def procesar_impresora(impresora):
 async def main():
 
     with open(
-        "impresoras.json",
+        "inventario_master.json",
         "r",
         encoding="utf-8"
     ) as f:
