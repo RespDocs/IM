@@ -1,6 +1,12 @@
 {
-  "actualizado": "2026-07-30T16:37:51.599042",
+  "actualizado": "2026-07-30T17:11:10.646181",
   "impresoras": [
+    {
+      "nombre": "DIRECCION DE GESTION Y DESARROLLO",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "serial": "3353184511",
+      "ip": "172.16.79.100"
+    },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
@@ -182,6 +188,12 @@
       "ip": "172.16.79.50"
     },
     {
+      "nombre": "LASER_UAH",
+      "modelo": "Xerox AltaLink B8075",
+      "serial": "3669690826",
+      "ip": "172.16.79.51"
+    },
+    {
       "nombre": "Derecho - Clinica Juridica",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951738",
@@ -230,12 +242,6 @@
       "ip": "172.16.79.63"
     },
     {
-      "nombre": "Direccion de Aprendizaje Institu",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940619229",
-      "ip": "172.16.79.64"
-    },
-    {
       "nombre": "Facultad de Economia 2do piso",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618249",
@@ -274,7 +280,7 @@
     {
       "nombre": "Facultad de Geografia",
       "modelo": "Xerox VersaLink B7030",
-      "serial": null,
+      "serial": "3399946009",
       "ip": "172.16.79.72"
     },
     {
@@ -282,6 +288,12 @@
       "modelo": "Xerox VersaLink C405",
       "serial": "3356010522",
       "ip": "172.16.79.73"
+    },
+    {
+      "nombre": "Biblioteca San ignacio",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616416",
+      "ip": "172.16.79.74"
     },
     {
       "nombre": "TicsDesarrollo",
@@ -292,7 +304,7 @@
     {
       "nombre": "Decanato Facso",
       "modelo": "Xerox VersaLink B7030",
-      "serial": "3399950731",
+      "serial": null,
       "ip": "172.16.79.76"
     },
     {
