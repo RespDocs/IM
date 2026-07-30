@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-30T03:10:59.556297",
+  "actualizado": "2026-07-30T04:10:59.884603",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -266,6 +266,12 @@
       "ip": "172.16.79.67"
     },
     {
+      "nombre": "Direccion de Comunicaciones",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616696",
+      "ip": "172.16.79.69"
+    },
+    {
       "nombre": "Facultad de Psicologia",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945398",
@@ -294,6 +300,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
+    },
+    {
+      "nombre": "TicsDesarrollo",
+      "modelo": "Xerox Phaser 3330",
+      "serial": "3384970868",
+      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",
