@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-29T21:11:04.735151",
+  "actualizado": "2026-07-29T22:11:06.790460",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -48,6 +48,12 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945932",
       "ip": "172.16.79.21"
+    },
+    {
+      "nombre": "PMI ( Plan de Mejoramiento Int.)",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940617056",
+      "ip": "172.16.79.23"
     },
     {
       "nombre": "DARA 2do piso",
@@ -104,12 +110,6 @@
       "ip": "172.16.79.32"
     },
     {
-      "nombre": "Facultad de Educacion 2do piso",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3394991685",
-      "ip": "172.16.79.34"
-    },
-    {
       "nombre": "Centro Uni Ignaciano Pastoral",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616505",
@@ -120,18 +120,6 @@
       "modelo": "Xerox VersaLink B405",
       "serial": "3714669752",
       "ip": "172.16.79.36"
-    },
-    {
-      "nombre": "Facultad Educacion Doctorado",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616491",
-      "ip": "172.16.79.37"
-    },
-    {
-      "nombre": "Facultad de Musica",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399944995",
-      "ip": "172.16.79.38"
     },
     {
       "nombre": "Facultad de Literatura",
@@ -194,12 +182,6 @@
       "ip": "172.16.79.52"
     },
     {
-      "nombre": null,
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399952017",
-      "ip": "172.16.79.53"
-    },
-    {
       "nombre": "DERECHO",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946262",
@@ -208,7 +190,7 @@
     {
       "nombre": "Facultad de Ciencias Politicas",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3940616270",
+      "serial": null,
       "ip": "172.16.79.55"
     },
     {
@@ -236,16 +218,16 @@
       "ip": "172.16.79.63"
     },
     {
+      "nombre": "Direccion de Aprendizaje Institu",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940619229",
+      "ip": "172.16.79.64"
+    },
+    {
       "nombre": "Facultad de Economia 2do piso",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618249",
       "ip": "172.16.79.65"
-    },
-    {
-      "nombre": "Facultad Economia 1er piso",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399943565",
-      "ip": "172.16.79.66"
     },
     {
       "nombre": "Facultad de Economia Subterraneo",
@@ -288,6 +270,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
+    },
+    {
+      "nombre": "TicsDesarrollo",
+      "modelo": "Xerox Phaser 3330",
+      "serial": "3384970868",
+      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",
