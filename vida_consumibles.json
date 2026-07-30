@@ -1,3 +1,16 @@
 {
-  "consumibles": []
+  "consumibles": [
+    {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B605",
+      "consumible": "drum_black",
+      "pn": "101R00582",
+      "vida_nominal": 60000,
+      "contador_instalacion": 473907,
+      "contador_actual": 95521,
+      "uso_real": -378386,
+      "restante": 438386,
+      "restante_pct": 731
+    }
+  ]
 }
