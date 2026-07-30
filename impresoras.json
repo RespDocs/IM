@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-30T07:11:03.738514",
+  "actualizado": "2026-07-30T08:11:01.958747",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -52,14 +52,8 @@
     {
       "nombre": "PMI ( Plan de Mejoramiento Int.)",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940617056",
       "ip": "172.16.79.23"
-    },
-    {
-      "nombre": "DARA 2do piso",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399945967",
-      "ip": "172.16.79.24"
     },
     {
       "nombre": "Direccion de Asuntos Estudiantil",
@@ -218,6 +212,12 @@
       "ip": "172.16.79.55"
     },
     {
+      "nombre": "DARA-ADMISION",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "serial": "3353215298",
+      "ip": "172.16.79.56"
+    },
+    {
       "nombre": "Tics 3er piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399952025",
@@ -242,9 +242,15 @@
       "ip": "172.16.79.63"
     },
     {
+      "nombre": "Direccion de Aprendizaje Institu",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940619229",
+      "ip": "172.16.79.64"
+    },
+    {
       "nombre": "Facultad de Economia 2do piso",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940618249",
       "ip": "172.16.79.65"
     },
     {
@@ -278,6 +284,12 @@
       "ip": "172.16.79.71"
     },
     {
+      "nombre": "Facultad de Geografia",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399946009",
+      "ip": "172.16.79.72"
+    },
+    {
       "nombre": "Direccion de Extension 2do piso",
       "modelo": "Xerox VersaLink C405",
       "serial": "3356010522",
@@ -288,12 +300,6 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
-    },
-    {
-      "nombre": "TicsDesarrollo",
-      "modelo": "Xerox Phaser 3330",
-      "serial": "3384970868",
-      "ip": "172.16.79.75"
     },
     {
       "nombre": "Decanato Facso",
