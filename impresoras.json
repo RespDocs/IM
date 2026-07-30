@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-29T22:11:06.790460",
+  "actualizado": "2026-07-29T23:11:05.247166",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -104,10 +104,10 @@
       "ip": "172.16.79.31"
     },
     {
-      "nombre": "Rectoria",
+      "nombre": "Facultad de Educacion 2do piso",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3394991545",
-      "ip": "172.16.79.32"
+      "serial": "3394991685",
+      "ip": "172.16.79.34"
     },
     {
       "nombre": "Centro Uni Ignaciano Pastoral",
@@ -122,6 +122,18 @@
       "ip": "172.16.79.36"
     },
     {
+      "nombre": "Facultad Educacion Doctorado",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616491",
+      "ip": "172.16.79.37"
+    },
+    {
+      "nombre": "Facultad de Musica",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399944995",
+      "ip": "172.16.79.38"
+    },
+    {
       "nombre": "Facultad de Literatura",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945436",
@@ -130,7 +142,7 @@
     {
       "nombre": "Facultad de Filosofia y Humanida",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3940618842",
+      "serial": null,
       "ip": "172.16.79.41"
     },
     {
@@ -182,6 +194,12 @@
       "ip": "172.16.79.52"
     },
     {
+      "nombre": "Direccion de Admision Patio",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399952017",
+      "ip": "172.16.79.53"
+    },
+    {
       "nombre": "DERECHO",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946262",
@@ -190,8 +208,14 @@
     {
       "nombre": "Facultad de Ciencias Politicas",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940616270",
       "ip": "172.16.79.55"
+    },
+    {
+      "nombre": "DARA-ADMISION",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "serial": "3353215298",
+      "ip": "172.16.79.56"
     },
     {
       "nombre": "Tics 3er piso",
@@ -214,7 +238,7 @@
     {
       "nombre": "Direccion de Docencia",
       "modelo": "Xerox VersaLink B7030",
-      "serial": "3399951533",
+      "serial": null,
       "ip": "172.16.79.63"
     },
     {
@@ -228,6 +252,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618249",
       "ip": "172.16.79.65"
+    },
+    {
+      "nombre": "Facultad Economia 1er piso",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399943565",
+      "ip": "172.16.79.66"
     },
     {
       "nombre": "Facultad de Economia Subterraneo",
