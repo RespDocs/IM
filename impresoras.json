@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-30T12:11:03.621992",
+  "actualizado": "2026-07-30T13:11:02.095494",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -52,7 +52,7 @@
     {
       "nombre": "PMI ( Plan de Mejoramiento Int.)",
       "modelo": "Xerox VersaLink B605",
-      "serial": null,
+      "serial": "3940617056",
       "ip": "172.16.79.23"
     },
     {
@@ -116,6 +116,12 @@
       "ip": "172.16.79.34"
     },
     {
+      "nombre": "Centro Uni Ignaciano Pastoral",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616505",
+      "ip": "172.16.79.35"
+    },
+    {
       "nombre": "Facultad Educacion",
       "modelo": "Xerox VersaLink B405",
       "serial": "3714669752",
@@ -142,7 +148,7 @@
     {
       "nombre": "Facultad de Filosofia y Humanida",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3940618842",
+      "serial": null,
       "ip": "172.16.79.41"
     },
     {
@@ -166,7 +172,7 @@
     {
       "nombre": "Facultad de Ciencias Sociales",
       "modelo": "Xerox VersaLink B7030",
-      "serial": "3399945975",
+      "serial": null,
       "ip": "172.16.79.45"
     },
     {
@@ -210,6 +216,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616270",
       "ip": "172.16.79.55"
+    },
+    {
+      "nombre": "DARA-ADMISION",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "serial": "3353215298",
+      "ip": "172.16.79.56"
     },
     {
       "nombre": "Tics 3er piso",
@@ -258,6 +270,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616432",
       "ip": "172.16.79.67"
+    },
+    {
+      "nombre": "Direccion de Comunicaciones",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940616696",
+      "ip": "172.16.79.69"
     },
     {
       "nombre": "Facultad de Psicologia",
