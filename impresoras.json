@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-30T17:11:10.646181",
+  "actualizado": "2026-07-30T18:11:10.729313",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -60,12 +60,6 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945967",
       "ip": "172.16.79.24"
-    },
-    {
-      "nombre": "Direccion de Asuntos Estudiantil",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616424",
-      "ip": "172.16.79.25"
     },
     {
       "nombre": "Centro Universitario Ignaciano",
@@ -200,12 +194,6 @@
       "ip": "172.16.79.52"
     },
     {
-      "nombre": "Direccion de Admision Patio",
-      "modelo": "Xerox VersaLink B7030",
-      "serial": "3399952017",
-      "ip": "172.16.79.53"
-    },
-    {
       "nombre": "DERECHO",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946262",
@@ -240,6 +228,12 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951533",
       "ip": "172.16.79.63"
+    },
+    {
+      "nombre": "Direccion de Aprendizaje Institu",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940619229",
+      "ip": "172.16.79.64"
     },
     {
       "nombre": "Facultad de Economia 2do piso",
@@ -304,14 +298,8 @@
     {
       "nombre": "Decanato Facso",
       "modelo": "Xerox VersaLink B7030",
-      "serial": null,
+      "serial": "3399950731",
       "ip": "172.16.79.76"
-    },
-    {
-      "nombre": "Antropologia",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940616513",
-      "ip": "172.16.79.77"
     },
     {
       "nombre": "Facultad de Psicologia 2do piso",
