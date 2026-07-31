@@ -453,10 +453,10 @@ data.alertas.forEach(a => {
                     : "-";
 
                 fila.innerHTML = `
-                     <th style="text-align:center">${i.serial ?? "-"}</td>
-                     <th style="text-align:center">${modeloCorto(i.modelo)}</td>
-                     <th style="text-align:center">${i.ip ?? "-"}</td>
-                     <th style="text-align:center">${i.contador ?? "-"}</td>
+                     <td>${i.serial ?? "-"}</td>
+                      <td>${modeloCorto(i.modelo)}</td>
+                     <td>${i.ip ?? "-"}</td>
+                     <td>${i.contador ?? "-"}</td>
                      <td style="text-align:center">
                        ${
                             i.online
