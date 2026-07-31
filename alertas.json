@@ -248,8 +248,9 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T05:02:06.640374"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T05:02:06.640374",
+      "fecha_resolucion": "2026-07-31T18:13:21.121107"
     },
     {
       "equipo": "Facultad de Ingenieria",
@@ -267,6 +268,22 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-07-31T14:07:13.347482",
       "fecha_resolucion": "2026-07-31T17:29:14.036340"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-31T18:13:20.955380"
+    },
+    {
+      "equipo": "XRX9C934E754E90",
+      "serial": "3384970809",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-31T18:13:20.955461"
     }
   ]
 }

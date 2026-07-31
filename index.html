@@ -218,7 +218,7 @@ button:hover{
         <input
             id="busqueda"
             type="text"
-            placeholder="Buscar serie o modelo..."
+            placeholder="Buscar serie, nombre, modelo o IP..."
         >
 
     </div>
@@ -234,6 +234,7 @@ button:hover{
                 <th style="text-align:center">Contador</th>
                 <th style="text-align:center">Estado</th>
                 <th style="text-align:center">Última lectura</th>
+                <th style="text-align:center">Nombre</th>
             </tr>
 
         </thead>
@@ -429,7 +430,7 @@ data.alertas.forEach(a => {
                     + " "
                     + (i.ip || "")
                     + " "
-                    + (i.ip || "")
+                    + (i.nombre || "")
 
 
                 ).toLowerCase();
@@ -471,6 +472,10 @@ fila.innerHTML = `
 
     <td style="text-align:center">
         ${i.contador ?? "-"}
+    </td>
+
+    <td style="text-align:center">
+        ${i.nombre ?? "-"}
     </td>
 
     <td style="text-align:center">
