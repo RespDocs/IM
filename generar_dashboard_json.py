@@ -150,43 +150,43 @@ for alerta in alertas.get(
                 "pn"
             )
 
-gestion_alerta = {}
+    gestion_alerta = {}
 
-if alerta.get("id_alerta"):
+    if alerta.get("id_alerta"):
 
-    gestion_alerta = gestion.get(
-        alerta["id_alerta"],
-        {}
-    )
-
-estado_gestion = gestion_alerta.get(
-    "estado",
-    1
-)
-
-alerta_dashboard = {
-
-    **alerta,
-
-    "serial":
-        serial,
-
-    "modelo":
-        modelo,
-
-    "pn":
-        pn,
-
-    "estado_gestion":
-        estado_gestion,
-
-    "estado_texto":
-        ESTADOS.get(
-            estado_gestion,
-            "NOTIFICADO"
+        gestion_alerta = gestion.get(
+            alerta["id_alerta"],
+            {}
         )
 
-}
+    estado_gestion = gestion_alerta.get(
+        "estado",
+        1
+    )
+
+    alerta_dashboard = {
+
+        **alerta,
+
+        "serial":
+            serial,
+
+        "modelo":
+            modelo,
+
+        "pn":
+            pn,
+
+        "estado_gestion":
+            estado_gestion,
+
+        "estado_texto":
+            ESTADOS.get(
+                estado_gestion,
+                "NOTIFICADO"
+            )
+
+    }
 
     alertas_dashboard.append(
         alerta_dashboard
@@ -196,6 +196,14 @@ alerta_dashboard = {
 # -------------------------------------------------
 # DASHBOARD
 # -------------------------------------------------
+
+print(
+    f"Alertas originales: {len(alertas.get('alertas', []))}"
+)
+
+print(
+    f"Alertas dashboard: {len(alertas_dashboard)}"
+)
 
 dashboard = {
 
