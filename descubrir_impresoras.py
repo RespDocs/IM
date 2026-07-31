@@ -209,138 +209,32 @@ async def main():
             impresora
         )
 
-    import os
+        import os
 
-archivo_master = "inventario_master.json"
+    archivo_master = "inventario_master.json"
 
-if os.path.exists(
-    archivo_master
-):
-
-    with open(
-        archivo_master,
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        master = json.load(f)
-
-else:
-
-    master = {
-
-        "actualizado": "",
-
-        "impresoras": []
-
-    }
-
-existentes = {
-
-    i["serial"]: i
-
-    for i in master[
-        "impresoras"
-    ]
-
-}
-
-for impresora in impresoras:
-
-    serial = impresora[
-        "serial"
-    ]
-
-    if serial in existentes:
-
-        existentes[
-            serial
-        ][
-            "nombre"
-        ] = impresora[
-            "nombre"
-        ]
-
-        existentes[
-            serial
-        ][
-            "modelo"
-        ] = impresora[
-            "modelo"
-        ]
-
-        existentes[
-            serial
-        ][
-            "ip"
-        ] = impresora[
-            "ip"
-        ]
+    if os.path.exists(
+        archivo_master
+    ):
+        with open(
+            archivo_master,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            master = json.load(f)
 
     else:
+        master = {
+            "actualizado": "",
+            "impresoras": []
+        }
 
-        impresora[
-            "fecha_descubrimiento"
-        ] = datetime.now().strftime(
-            "%Y-%m-%d"
-        )
+    existentes = {
+        i["serial"]: i
+        for i in master["impresoras"]
+    }
 
-        impresora[
-            "activa"
-        ] = True
-
-        master[
-            "impresoras"
-        ].append(
-            impresora
-        )
-
-master[
-    "actualizado"
-] = datetime.now().isoformat()
-
-with open(
-    archivo_master,
-    "w",
-    encoding="utf-8"
-) as f:
-
-    json.dump(
-        master,
-        f,
-        indent=2,
-        ensure_ascii=False
-    )
-
-print(
-    "inventario_master.json actualizado"
-)
-
-    print()
-    print("-" * 50)
-
-    print(
-        f"Progreso: 100% "
-        f"({total_ips}/{total_ips})"
-    )
-
-    print(
-        f"Impresoras encontradas: "
-        f"{len(impresoras)}"
-    )
-
-    print("-" * 50)
-
-    print()
-
-    print(
-        f"Total Impresoras encontradas: "
-        f"{len(impresoras)}"
-    )
-
-    print(
-        "impresoras.json generado"
-    )
+    ...
 
 
 asyncio.run(main())
