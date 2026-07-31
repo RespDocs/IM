@@ -282,8 +282,17 @@
       "serial": "3384970809",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T18:13:20.955461",
+      "fecha_resolucion": "2026-07-31T19:13:19.263922"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T18:13:20.955461"
+      "fecha_notificacion": "2026-07-31T19:13:19.087548"
     }
   ]
 }
