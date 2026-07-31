@@ -22,4 +22,4 @@ async def main():
     for varBind in varBinds:
         print(varBind)
 
-asyncio.run(main())
+asyncio.run(main()) 

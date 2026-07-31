@@ -2,35 +2,56 @@ import json
 import os
 from datetime import datetime
 
-
 # --------------------------------------------------
 # CARGA ARCHIVOS
 # --------------------------------------------------
 
-with open(
+def cargar_json(nombre, defecto):
+
+    if os.path.exists(nombre):
+
+        with open(
+            nombre,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            return json.load(f)
+
+    return defecto
+
+
+estado = cargar_json(
     "estado.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {"impresoras": []}
+)
 
-    estado = json.load(f)
-
-with open(
+alertas = cargar_json(
     "alertas.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {"alertas": []}
+)
 
-    alertas = json.load(f)
-
-with open(
+config = cargar_json(
     "alertas_config.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {
+        "default": {
+            "advertencia": 20,
+            "critico": 10
+        }
+    }
+)
 
-    config = json.load(f)
+control = cargar_json(
+    "control_alertas.json",
+    {
+        "ultimo_id": 0
+    }
+)
 
+gestion = cargar_json(
+    "gestion_alertas.json",
+    {}
+)
 
 # --------------------------------------------------
 # CONFIG ALERTAS
@@ -39,29 +60,9 @@ with open(
 advertencia = config["default"]["advertencia"]
 critico = config["default"]["critico"]
 
-
 # --------------------------------------------------
-# CONTROL IDS
+# GENERADOR IDS
 # --------------------------------------------------
-
-if os.path.exists(
-    "control_alertas.json"
-):
-
-    with open(
-        "control_alertas.json",
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        control = json.load(f)
-
-else:
-
-    control = {
-        "ultimo_id": 0
-    }
-
 
 def generar_id_alerta():
 
@@ -74,29 +75,69 @@ def generar_id_alerta():
 
 
 # --------------------------------------------------
+# INDEXAR ALERTAS EXISTENTES
+# --------------------------------------------------
+
+alertas_consumibles = {}
+
+for alerta in alertas["alertas"]:
+
+    if alerta.get("tipo") != "consumible":
+        continue
+
+    clave = alerta.get(
+        "clave_alerta"
+    )
+
+    if clave:
+
+        alertas_consumibles[
+            clave
+        ] = alerta
+
+# --------------------------------------------------
 # RECORRER IMPRESORAS
 # --------------------------------------------------
 
-for impresora in estado["impresoras"]:
+for impresora in estado.get(
+    "impresoras",
+    []
+):
 
-    nombre = impresora["nombre"]
-    modelo = impresora["modelo"]
-    serial = impresora["serial"]
+    nombre = impresora.get(
+        "nombre"
+    )
+
+    modelo = impresora.get(
+        "modelo"
+    )
+
+    serial = impresora.get(
+        "serial"
+    )
+
+    online = impresora.get(
+        "online",
+        True
+    )
 
     # --------------------------------------------------
     # OFFLINE
     # --------------------------------------------------
 
-    if not impresora.get(
-        "online",
-        True
-    ):
+    if not online:
 
         existe = any(
 
-            a.get("equipo") == nombre
-            and a.get("tipo") == "offline"
-            and a.get("estado") == "notificado"
+            a.get("tipo") == "offline"
+
+            and
+
+            a.get("serial") == serial
+
+            and
+
+            a.get("estado") == "notificado"
 
             for a in alertas["alertas"]
 
@@ -104,10 +145,7 @@ for impresora in estado["impresoras"]:
 
         if not existe:
 
-            nueva_alerta = {
-
-                "id_alerta":
-                    generar_id_alerta(),
+            alertas["alertas"].append({
 
                 "equipo":
                     nombre,
@@ -127,17 +165,7 @@ for impresora in estado["impresoras"]:
                 "fecha_notificacion":
                     datetime.now().isoformat()
 
-            }
-
-            alertas["alertas"].append(
-                nueva_alerta
-            )
-
-            print(
-                f"OFFLINE - "
-                f"{nueva_alerta['id_alerta']} - "
-                f"{nombre}"
-            )
+            })
 
         continue
 
@@ -152,16 +180,6 @@ for impresora in estado["impresoras"]:
 
     for consumible, porcentaje in consumibles.items():
 
-       print(
-            "Advertencia:",
-            advertencia
-        )
-
-        print(
-            "Critico:",
-            critico
-        )
-       
         criticidad = None
 
         if porcentaje <= critico:
@@ -176,30 +194,52 @@ for impresora in estado["impresoras"]:
 
             continue
 
-        existe = any(
-
-            a.get("equipo") == nombre
-
-            and
-
-            a.get("consumible") == consumible
-
-            and
-
-            a.get("estado") == "notificado"
-
-            for a in alertas["alertas"]
-
+        clave_alerta = (
+            f"{serial}_"
+            f"{consumible}"
         )
 
-        if existe:
+        # ------------------------------------------
+        # ALERTA EXISTENTE
+        # ------------------------------------------
+
+        if clave_alerta in alertas_consumibles:
+
+            alerta = alertas_consumibles[
+                clave_alerta
+            ]
+
+            alerta[
+                "porcentaje"
+            ] = porcentaje
+
+            alerta[
+                "criticidad"
+            ] = criticidad
+
+            alerta[
+                "modelo"
+            ] = modelo
+
+            alerta[
+                "equipo"
+            ] = nombre
 
             continue
+
+        # ------------------------------------------
+        # NUEVA ALERTA
+        # ------------------------------------------
+
+        nuevo_id = generar_id_alerta()
 
         nueva_alerta = {
 
             "id_alerta":
-                generar_id_alerta(),
+                nuevo_id,
+
+            "clave_alerta":
+                clave_alerta,
 
             "equipo":
                 nombre,
@@ -234,11 +274,32 @@ for impresora in estado["impresoras"]:
             nueva_alerta
         )
 
+        alertas_consumibles[
+            clave_alerta
+        ] = nueva_alerta
+
+        # ------------------------------------------
+        # GESTION
+        # ------------------------------------------
+
+        gestion[
+            nuevo_id
+        ] = {
+
+            "estado": 1,
+
+            "fecha_actualizacion":
+                datetime.now().isoformat(),
+
+            "observacion": ""
+
+        }
+
         print(
 
             f"{criticidad.upper()} - "
 
-            f"{nueva_alerta['id_alerta']} - "
+            f"{nuevo_id} - "
 
             f"{nombre} - "
 
@@ -248,11 +309,19 @@ for impresora in estado["impresoras"]:
 
         )
 
-
-
 # --------------------------------------------------
 # GUARDAR ALERTAS
 # --------------------------------------------------
+
+print()
+print("TOTAL ALERTAS:")
+print(len(alertas["alertas"]))
+print()
+
+for a in alertas["alertas"][:3]:
+    print(a)
+
+print()
 
 with open(
     "alertas.json",
@@ -266,7 +335,6 @@ with open(
         indent=2,
         ensure_ascii=False
     )
-
 
 # --------------------------------------------------
 # GUARDAR CONTROL IDS
@@ -285,6 +353,22 @@ with open(
         ensure_ascii=False
     )
 
+# --------------------------------------------------
+# GUARDAR GESTION
+# --------------------------------------------------
+
+with open(
+    "gestion_alertas.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        gestion,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
 
 print()
 print(

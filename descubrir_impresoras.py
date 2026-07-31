@@ -209,37 +209,112 @@ async def main():
             impresora
         )
 
-    salida = {
+    import os
 
-        "actualizado":
-            datetime.now().isoformat(),
+archivo_master = "inventario_master.json"
 
-        "impresoras":
-            impresoras
+if os.path.exists(
+    archivo_master
+):
+
+    with open(
+        archivo_master,
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        master = json.load(f)
+
+else:
+
+    master = {
+
+        "actualizado": "",
+
+        "impresoras": []
 
     }
 
-    with open(
+existentes = {
 
-        "impresoras.json",
+    i["serial"]: i
 
-        "w",
+    for i in master[
+        "impresoras"
+    ]
 
-        encoding="utf-8"
+}
 
-    ) as f:
+for impresora in impresoras:
 
-        json.dump(
+    serial = impresora[
+        "serial"
+    ]
 
-            salida,
+    if serial in existentes:
 
-            f,
+        existentes[
+            serial
+        ][
+            "nombre"
+        ] = impresora[
+            "nombre"
+        ]
 
-            indent=2,
+        existentes[
+            serial
+        ][
+            "modelo"
+        ] = impresora[
+            "modelo"
+        ]
 
-            ensure_ascii=False
+        existentes[
+            serial
+        ][
+            "ip"
+        ] = impresora[
+            "ip"
+        ]
 
+    else:
+
+        impresora[
+            "fecha_descubrimiento"
+        ] = datetime.now().strftime(
+            "%Y-%m-%d"
         )
+
+        impresora[
+            "activa"
+        ] = True
+
+        master[
+            "impresoras"
+        ].append(
+            impresora
+        )
+
+master[
+    "actualizado"
+] = datetime.now().isoformat()
+
+with open(
+    archivo_master,
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        master,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+print(
+    "inventario_master.json actualizado"
+)
 
     print()
     print("-" * 50)

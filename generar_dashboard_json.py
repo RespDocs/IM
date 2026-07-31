@@ -47,6 +47,21 @@ inventario = cargar(
     "inventario_detalle.json"
 )
 
+gestion = cargar(
+    "gestion_alertas.json"
+)
+
+ESTADOS = {
+
+    1: "NOTIFICADO",
+
+    2: "SOLICITADO",
+
+    3: "DESPACHADO",
+
+    4: "INSTALADO"
+
+}
 
 # -------------------------------------------------
 # INVENTARIO
@@ -135,25 +150,47 @@ for alerta in alertas.get(
                 "pn"
             )
 
-    alerta_dashboard = {
+gestion_alerta = {}
 
-        **alerta,
+if alerta.get("id_alerta"):
 
-        "serial":
-            serial,
-
-        "modelo":
-            modelo,
-
-        "pn":
-            pn
-
-    }
-
-    alertas_dashboard.append(
-        alerta_dashboard
+    gestion_alerta = gestion.get(
+        alerta["id_alerta"],
+        {}
     )
 
+estado_gestion = gestion_alerta.get(
+    "estado",
+    1
+)
+
+alerta_dashboard = {
+
+    **alerta,
+
+    "serial":
+        serial,
+
+    "modelo":
+        modelo,
+
+    "pn":
+        pn,
+
+    "estado_gestion":
+        estado_gestion,
+
+    "estado_texto":
+        ESTADOS.get(
+            estado_gestion,
+            "NOTIFICADO"
+        )
+
+}
+
+alertas_dashboard.append(
+    alerta_dashboard
+)
 
 # -------------------------------------------------
 # DASHBOARD
