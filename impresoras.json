@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-31T00:13:26.634499",
+  "actualizado": "2026-07-31T01:12:01.662060",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -50,12 +50,6 @@
       "ip": "172.16.79.21"
     },
     {
-      "nombre": "PMI ( Plan de Mejoramiento Int.)",
-      "modelo": "Xerox VersaLink B605",
-      "serial": "3940617056",
-      "ip": "172.16.79.23"
-    },
-    {
       "nombre": "DARA 2do piso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945967",
@@ -76,7 +70,7 @@
     {
       "nombre": " Asuntos Estudiantiles Recepcion",
       "modelo": "Xerox VersaLink B605",
-      "serial": "3940616556",
+      "serial": null,
       "ip": "172.16.79.27"
     },
     {
@@ -318,6 +312,12 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616513",
       "ip": "172.16.79.77"
+    },
+    {
+      "nombre": "Facultad de Psicologia 2do piso",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940619199",
+      "ip": "172.16.79.78"
     },
     {
       "nombre": "Sec_Educa",

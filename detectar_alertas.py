@@ -152,6 +152,16 @@ for impresora in estado["impresoras"]:
 
     for consumible, porcentaje in consumibles.items():
 
+       print(
+            "Advertencia:",
+            advertencia
+        )
+
+        print(
+            "Critico:",
+            critico
+        )
+       
         criticidad = None
 
         if porcentaje <= critico:
@@ -237,6 +247,7 @@ for impresora in estado["impresoras"]:
             f"({porcentaje}%)"
 
         )
+
 
 
 # --------------------------------------------------
