@@ -188,9 +188,10 @@ alerta_dashboard = {
 
 }
 
-alertas_dashboard.append(
-    alerta_dashboard
-)
+    alertas_dashboard.append(
+        alerta_dashboard
+    )
+
 
 # -------------------------------------------------
 # DASHBOARD
