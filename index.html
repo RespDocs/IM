@@ -228,12 +228,11 @@ button:hover{
         <thead>
 
             <tr>
-                <th style="text-align:center">Serie</th>
-                <th style="text-align:center">Modelo</th>
-                <th style="text-align:center">IP</th>
-                <th style="text-align:center">Contador</th>
-                <th style="text-align:center">Estado</th>
-                <th style="text-align:center">Última lectura</th>
+                <th>Serie</th>
+                <th>Modelo</th>
+                <th>Contador</th>
+                <th>Estado</th>
+                <th>Última lectura</th>
             </tr>
 
         </thead>
@@ -453,18 +452,25 @@ data.alertas.forEach(a => {
                     : "-";
 
                 fila.innerHTML = `
-                     <th style="text-align:center">${i.serial ?? "-"}</td>
-                     <th style="text-align:center">${modeloCorto(i.modelo)}</td>
-                     <th style="text-align:center">${i.ip ?? "-"}</td>
-                     <th style="text-align:center">${i.contador ?? "-"}</td>
-                     <td style="text-align:center">
-                       ${
+
+                    <td>${i.serial ?? "-"}</td>
+
+                    <td>${modeloCorto(i.modelo)}</td>
+
+                    <td>${i.contador ?? "-"}</td>
+
+                    <td>
+
+                        ${
                             i.online
-                            ? '<span class="online">🟢</span>'
-                            : '<span class="offline-text">🔴</span>'
-                      }
-                  </td>
-                 <td>${ultima}</td>
+                            ? '<span class="online">🟢 Online</span>'
+                            : '<span class="offline-text">🔴 Offline</span>'
+                        }
+
+                    </td>
+
+                    <td>${ultima}</td>
+
                 `;
 
                 fila.onclick = () => {
