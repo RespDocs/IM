@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Inventario - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+.online{
+    color:green;
+}
+
+.offline{
+    color:red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Dashboard</a>
+    |
+    <a href="alertas.html">🚨 Alertas</a>
+</nav>
+
+<h1>🖨️ Inventario de Impresoras</h1>
+
+<input
+    id="busqueda"
+    type="text"
+    placeholder="Buscar nombre, serie, modelo o IP..."
+>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Nombre</th>
+    <th>Serie</th>
+    <th>Modelo</th>
+    <th>IP</th>
+    <th>Contador</th>
+    <th>Estado</th>
+    <th>Última lectura</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaImpresoras"></tbody>
+
+</table>
+
+<script>
+
+fetch("dashboard.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    const impresoras =
+        data.impresoras;
+
+    const tabla =
+        document.getElementById(
+            "tablaImpresoras"
+        );
+
+    function renderTabla(filtro=""){
+
+        tabla.innerHTML = "";
+
+        impresoras
+
+            .filter(i => {
+
+                const texto = (
+
+                    (i.nombre || "")
+                    + " "
+                    + (i.serial || "")
+                    + " "
+                    + (i.modelo || "")
+                    + " "
+                    + (i.ip || "")
+
+                ).toLowerCase();
+
+                return texto.includes(
+                    filtro.toLowerCase()
+                );
+
+            })
+
+            .forEach(i => {
+
+                const ultima =
+                    i.ultima_lectura
+                    ? new Date(
+                        i.ultima_lectura
+                    ).toLocaleString("es-CL")
+                    : "-";
+
+                tabla.innerHTML += `
+
+                <tr>
+
+                    <td>${i.nombre ?? "-"}</td>
+
+                    <td>${i.serial ?? "-"}</td>
+
+                    <td>${i.modelo ?? "-"}</td>
+
+                    <td>${i.ip ?? "-"}</td>
+
+                    <td>${i.contador ?? "-"}</td>
+
+                    <td>
+                        ${
+                            i.online
+                            ? "🟢"
+                            : "🔴"
+                        }
+                    </td>
+
+                    <td>${ultima}</td>
+
+                </tr>
+
+                `;
+
+            });
+
+    }
+
+    renderTabla();
+
+    document
+        .getElementById("busqueda")
+        .addEventListener(
+            "keyup",
+            e => {
+
+                renderTabla(
+                    e.target.value
+                );
+
+            }
+        );
+
+});
+
+</script>
+
+</body>
+</html>
