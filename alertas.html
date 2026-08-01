@@ -163,6 +163,23 @@ fetch("dashboard.json")
 .then(r => r.json())
 .then(data => {
 
+    console.log(data.alertas);
+
+    const tablaCriticas =
+        document.getElementById(
+            "tablaCriticas"
+        );
+
+    const tablaAdvertencias =
+        document.getElementById(
+            "tablaAdvertencias"
+        );
+
+    const tablaOffline =
+        document.getElementById(
+            "tablaOffline"
+        );
+
     const criticas =
         data.alertas.filter(
             a =>
