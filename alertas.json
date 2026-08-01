@@ -157,15 +157,6 @@
       "fecha_notificacion": "2026-07-31T01:42:47.300167"
     },
     {
-      "equipo": "LASER_UAH",
-      "serial": "3669690826",
-      "modelo": "Xerox AltaLink B8075",
-      "tipo": "offline",
-      "estado": "resuelto",
-      "fecha_notificacion": "2026-07-31T01:42:47.300937",
-      "fecha_resolucion": "2026-07-31T17:29:14.036285"
-    },
-    {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
       "equipo": "Direccion de Admision Patio",
@@ -258,6 +249,22 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T22:13:22.466207"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-31T22:59:31.168956"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-31T22:59:31.169117"
     }
   ]
 }

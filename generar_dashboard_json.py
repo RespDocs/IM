@@ -43,6 +43,10 @@ catalogo = cargar(
     "catalogo_consumibles.json"
 )
 
+catalogo_manual = cargar(
+    "catalogo_manual.json"
+)
+
 inventario = cargar(
     "inventario_detalle.json"
 )
@@ -127,13 +131,10 @@ for alerta in alertas.get(
         if (
 
             modelo in catalogo
-
             and
-
             alerta.get(
                 "consumible"
             )
-
             in catalogo[
                 modelo
             ]

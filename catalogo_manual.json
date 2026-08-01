@@ -1,0 +1,39 @@
+{
+  "Xerox VersaLink B605": {
+    "toner_black": {
+      "pn": "106R03945",
+      "descripcion": "Tóner Negro Alta Capacidad",
+      "vida_nominal": 46700
+    },
+    "drum_black": {
+      "pn": "101R00582",
+      "vida_nominal": 60000
+    }
+  },
+
+  "Xerox VersaLink B7030": {
+    "toner_black": {
+      "pn": "106R03392",
+      "vida_nominal": 30000
+    },
+    "drum_black": {
+      "pn": "113R00779",
+      "vida_nominal": 80000
+    }
+  },
+
+  "Xerox VersaLink C405": {
+    "toner_black": {
+      "pn": "106R03536"
+    },
+    "toner_yellow": {
+      "pn": "106R03537"
+    },
+    "toner_cyan": {
+      "pn": "106R03538"
+    },
+    "toner_magenta": {
+      "pn": "106R03539"
+    }
+  }
+}
