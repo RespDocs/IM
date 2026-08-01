@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Inventario - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#ffffff;
+    margin:20px;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.section{
+    margin-top:20px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+.online{
+    color:green;
+    font-weight:bold;
+}
+
+.offline-text{
+    color:red;
+    font-weight:bold;
+}
+
+#detalle{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,.6);
+}
+
+#detalleContenido{
+    background:white;
+    width:700px;
+    max-width:95%;
+    margin:30px auto;
+    padding:25px;
+    border-radius:10px;
+}
+
+.consumible{
+    margin-bottom:5px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:#1976d2;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#125aa2;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Dashboard</a>
+    |
+    <a href="alertas.html">🚨 Alertas</a>
+    |
+    <strong>🖨️ Inventario</strong>
+</nav>
+
+<h1>🖨️ Inventario de Impresoras</h1>
+
+<div class="section">
+
+    <input
+        id="busqueda"
+        type="text"
+        placeholder="Buscar nombre, serie, modelo o IP..."
+    >
+
+</div>
+
+<div class="section">
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Serie</th>
+            <th>Modelo</th>
+            <th>IP</th>
+            <th>Contador</th>
+            <th>Estado</th>
+            <th>Última lectura</th>
+        </tr>
+
+    </thead>
+
+    <tbody id="tablaImpresoras"></tbody>
+
+</table>
+
+</div>
+
+<div id="detalle">
+
+    <div id="detalleContenido"></div>
+
+</div>
+
+<script>
+
+function modeloCorto(modelo){
+
+    if(!modelo) return "-";
+
+    const partes = modelo.split(" ");
+
+    return partes[partes.length - 1];
+
+}
+
+fetch("dashboard.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    const tabla =
+        document.getElementById(
+            "tablaImpresoras"
+        );
+
+    const impresoras =
+        data.impresoras;
+
+    function renderTabla(filtro=""){
+
+        tabla.innerHTML = "";
+
+        impresoras
+
+            .filter(i => {
+
+                const texto = (
+
+                    (i.nombre || "")
+                    + " "
+                    + (i.serial || "")
+                    + " "
+                    + (i.modelo || "")
+                    + " "
+                    + (i.ip || "")
+

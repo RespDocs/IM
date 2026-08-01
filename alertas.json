@@ -239,8 +239,9 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T22:13:22.466161"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T22:13:22.466161",
+      "fecha_resolucion": "2026-07-31T23:53:45.173764"
     },
     {
       "equipo": "Facultad de Ingenieria",
@@ -255,16 +256,18 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T22:59:31.168956"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T22:59:31.168956",
+      "fecha_resolucion": "2026-07-31T23:53:45.173809"
     },
     {
       "equipo": "TicsDesarrollo",
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T22:59:31.169117"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T22:59:31.169117",
+      "fecha_resolucion": "2026-07-31T23:53:45.173824"
     }
   ]
 }

@@ -128,28 +128,42 @@ for alerta in alertas.get(
             "modelo"
         )
 
-        if (
+        # Obtener PN desde catálogo SNMP
 
-            modelo in catalogo
-            and
-            alerta.get(
-                "consumible"
-            )
-            in catalogo[
-                modelo
-            ]
+    if (
+        modelo in catalogo
+        and
+        alerta.get("consumible")
+        in catalogo[modelo]
+    ):
 
-        ):
+        pn = catalogo[
+            modelo
+        ][
+            alerta["consumible"]
+        ].get("pn")
 
-            pn = catalogo[
-                modelo
-            ][
-                alerta[
-                    "consumible"
-                ]
-            ].get(
-                "pn"
-            )
+
+# Si existe una definición manual,
+# ésta tiene prioridad
+
+if (
+    modelo in catalogo_manual
+    and
+    alerta.get("consumible")
+    in catalogo_manual[modelo]
+):
+
+    datos_manual = catalogo_manual[
+        modelo
+    ][
+        alerta["consumible"]
+    ]
+
+    pn = datos_manual.get(
+        "pn",
+        pn
+    )
 
     gestion_alerta = {}
 

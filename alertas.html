@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Alertas - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    background:#ffffff;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.kpis{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    margin:0;
+    color:#666;
+}
+
+.valor{
+    margin-top:10px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.section{
+    margin-top:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+.critico{
+    color:#d32f2f;
+    font-weight:bold;
+}
+
+.advertencia{
+    color:#ff8f00;
+    font-weight:bold;
+}
+
+.offline{
+    color:#424242;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    index.html
+</nav>
+
+<h1>🚨 Alertas</h1>
+
+<div class="kpis">
+
+    <div class="card">
+        <h3>Críticas</h3>
+        <div id="criticas" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <h3>Advertencias</h3>
+        <div id="advertencias" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <h3>Offline</h3>
+        <div id="offline" class="valor">0</div>
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>🔴 Alertas Críticas</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Modelo</th>
+                <th>Consumible</th>
+                <th>%</th>
+                <th>PN</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaCriticas"></tbody>
+
+    </table>
+
+</div>
+
+<div class="section">
+
+    <h2>🟡 Alertas Advertencia</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Modelo</th>
+                <th>Consumible</th>
+                <th>%</th>
+                <th>PN</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaAdvertencias"></tbody>
+
+    </table>
+
+</div>
+
+<div class="section">
+
+    <h2>⚫ Equipos Offline</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Modelo</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaOffline"></tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+const nombresConsumibles = {
+
+    toner_black:"Tóner Negro",
+    toner_yellow:"Tóner Amarillo",
+    toner_magenta:"Tóner Magenta",
+    toner_cyan:"Tóner Cian",
+
+    drum_black:"Drum Negro",
+    drum_yellow:"Drum Amarillo",
+    drum_magenta:"Drum Magenta",
+    drum_cyan:"Drum Cian"
+
+};
+
+function modeloCorto(modelo){
+
+    if(!modelo) return "-";
+
+    const partes = modelo.split(" ");
+
+    return partes[partes.length - 1];
+}
+
+fetch("dashboard.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    const criticas = data.alertas.filter(
+        a =>
+            a.tipo === "consumible"
+            &&
+            a.criticidad === "critico"
+    );
+
+    const advertencias = data.alertas.filter(
+        a =>
+            a.tipo === "consumible"
+            &&
+            a.criticidad === "advertencia"
+    );
+
+    const offline = data.alertas.filter(
+        a =>
+            a.tipo === "offline"
+            &&
+            a.estado === "notificado"
+    );
+
+    document.getElementById("criticas")
+        .innerText = criticas.length;
+
+    document.getElementById("advertencias")
+        .innerText = advertencias.length;
+
+    document.getElementById("offline")
+        .innerText = offline.length;
+
+    const tablaCriticas =
+        document.getElementById("tablaCriticas");
+
+    criticas.forEach(a => {
+
+        tablaCriticas.innerHTML += `
+            <tr>
+                <td>${a.id_alerta}</td>
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${modeloCorto(a.modelo)}</td>
+                <td>${nombresConsumibles[a.consumible] ?? a.consumible}</td>
+                <td>${a.porcentaje}%</td>
+                <td>${a.pn ?? "-"}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+            </tr>
+        `;
+    });
+
+    const tablaAdvertencias =
+        document.getElementById(
+            "tablaAdvertencias"
+        );
+
+    advertencias.forEach(a => {
+
+        tablaAdvertencias.innerHTML += `
+            <tr>
+                <td>${a.id_alerta}</td>
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${modeloCorto(a.modelo)}</td>
+                <td>${nombresConsumibles[a.consumible] ?? a.consumible}</td>
+                <td>${a.porcentaje}%</td>
+                <td>${a.pn ?? "-"}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+            </tr>
+        `;
+    });
+
+    const tablaOffline =
+        document.getElementById(
+            "tablaOffline"
+        );
+
+    offline.forEach(a => {
+
+        tablaOffline.innerHTML += `
+            <tr>
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${modeloCorto(a.modelo)}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+            </tr>
+        `;
+    });
+
+});
+
+</script>
+
+</body>
+</html>
