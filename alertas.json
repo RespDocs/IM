@@ -244,13 +244,12 @@
       "fecha_notificacion": "2026-07-31T01:42:47.303333"
     },
     {
-      "equipo": "TicsDesarrollo",
-      "serial": "3384970868",
-      "modelo": "Xerox Phaser 3330",
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "resuelto",
-      "fecha_notificacion": "2026-07-31T05:02:06.640374",
-      "fecha_resolucion": "2026-07-31T18:13:21.121107"
+      "estado": "notificado",
+      "fecha_notificacion": "2026-07-31T22:13:22.466161"
     },
     {
       "equipo": "Facultad de Ingenieria",
@@ -258,42 +257,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T09:02:03.267516"
-    },
-    {
-      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
-      "serial": "3353184511",
-      "modelo": "Xerox WorkCentre 3655S v1",
-      "tipo": "offline",
-      "estado": "resuelto",
-      "fecha_notificacion": "2026-07-31T14:07:13.347482",
-      "fecha_resolucion": "2026-07-31T17:29:14.036340"
-    },
-    {
-      "equipo": "LASER_UAH",
-      "serial": "3669690826",
-      "modelo": "Xerox AltaLink B8075",
-      "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T18:13:20.955380"
-    },
-    {
-      "equipo": "XRX9C934E754E90",
-      "serial": "3384970809",
-      "modelo": "Xerox Phaser 3330",
-      "tipo": "offline",
-      "estado": "resuelto",
-      "fecha_notificacion": "2026-07-31T18:13:20.955461",
-      "fecha_resolucion": "2026-07-31T19:13:19.263922"
-    },
-    {
-      "equipo": "TicsDesarrollo",
-      "serial": "3384970868",
-      "modelo": "Xerox Phaser 3330",
-      "tipo": "offline",
-      "estado": "resuelto",
-      "fecha_notificacion": "2026-07-31T19:13:19.087548",
-      "fecha_resolucion": "2026-07-31T20:13:04.516138"
+      "fecha_notificacion": "2026-07-31T22:13:22.466207"
     }
   ]
 }
