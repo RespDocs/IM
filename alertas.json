@@ -310,16 +310,18 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-01T08:59:16.120940"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-01T08:59:16.120940",
+      "fecha_resolucion": "2026-08-01T10:59:26.287000"
     },
     {
       "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-01T09:59:51.500837"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-01T09:59:51.500837",
+      "fecha_resolucion": "2026-08-01T10:59:26.287065"
     }
   ]
 }
