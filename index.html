@@ -39,6 +39,7 @@ h1{
     box-shadow:0 2px 5px rgba(0,0,0,.10);
 }
 
+.card h2,
 .card h3{
     margin:0;
     color:#666;
@@ -54,98 +55,14 @@ h1{
     margin-top:30px;
 }
 
-.alerta{
-    background:white;
-    border-left:5px solid #e53935;
-    margin-bottom:8px;
-    padding:10px;
-    border-radius:6px;
-    font-size:14px;
-    font-weight:bold;
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
 }
 
-.offline{
-    background:white;
-    border-left:5px solid #424242;
-    margin-bottom:10px;
-    padding:10px;
-    border-radius:6px;
-}
-
-input{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    font-size:15px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-}
-
-th{
-    background:#1976d2;
-    color:white;
-    text-align:center;
-    padding:10px;
-}
-
-td{
-    padding:10px;
-    border-bottom:1px solid #ddd;
-}
-
-tr:hover{
-    background:#f5f5f5;
-}
-
-.online{
-    color:green;
-    font-weight:bold;
-}
-
-.offline-text{
-    color:red;
-    font-weight:bold;
-}
-
-#detalle{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:rgba(0,0,0,.6);
-}
-
-#detalleContenido{
-    background:white;
-    width:700px;
-    max-width:95%;
-    margin:30px auto;
-    padding:25px;
-    border-radius:10px;
-}
-
-.consumible{
-    margin-bottom:5px;
-}
-
-button{
-    padding:10px 15px;
-    border:none;
-    background:#1976d2;
-    color:white;
-    border-radius:6px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#125aa2;
+.card-link:hover{
+    opacity:.95;
 }
 
 </style>
@@ -187,69 +104,80 @@ button:hover{
 
 <div class="section">
 
-    <h2>🔴 Alertas Críticas</h2>
+    alertas.html
 
-    <div id="alertasCriticas"></div>
+        <div class="card">
+
+            <h2>🚨 ALERTAS</h2>
+
+            <p>
+                🔴 Críticas:
+                <span id="criticas"></span>
+            </p>
+
+            <p>
+                🟡 Advertencias:
+                <span id="advertencias"></span>
+            </p>
+
+            <p>
+                ⚫ Offline:
+                <span id="offline_alertas"></span>
+            </p>
+
+            <p>
+                <b>Ver detalle →</b>
+            </p>
+
+        </div>
+
+    </a>
 
 </div>
 
 <div class="section">
 
-    <h2>🟡 Alertas Advertencia</h2>
+    inventario.html
 
-    <div id="alertasAdvertencia"></div>
+        <div class="card">
+
+            <h2>🖨️ INVENTARIO</h2>
+
+            <p>
+                Impresoras registradas:
+                <span id="inventario_total"></span>
+            </p>
+
+            <p>
+                <b>Ver inventario →</b>
+            </p>
+
+        </div>
+
+    </a>
 
 </div>
 
 <div class="section">
 
-    <h2>⚫ Equipos Offline</h2>
+    <div class="card">
 
-    <div id="alertasOffline"></div>
+        <h2>📦 INSTALACIONES</h2>
 
-</div>
+        <p>
+            Instalaciones detectadas:
+            <span id="instalaciones"></span>
+        </p>
 
-<div class="section">
-
-    <h2>📋 Impresoras</h2>
-
-    <div style="margin-bottom:15px;">
-
-        <input
-            id="busqueda"
-            type="text"
-            placeholder="Buscar serie, nombre, modelo o IP..."
-        >
+        <p>
+            <b>Próximamente</b>
+        </p>
 
     </div>
 
-    <table>
-
-        <thead>
-
-            <tr>
-                <th style="text-align:center">Serie</th>
-                <th style="text-align:center">Modelo</th>
-                <th style="text-align:center">IP</th>
-                <th style="text-align:center">Contador</th>
-                <th style="text-align:center">Estado</th>
-                <th style="text-align:center">Última lectura</th>
-                <th style="text-align:center">Nombre</th>
-            </tr>
-
-        </thead>
-
-        <tbody id="tablaImpresoras"></tbody>
-
-    </table>
-
 </div>
 
-<div id="detalle">
-
-    <div id="detalleContenido"></div>
-
-</div>
+<div class="section">
 
 <script>
 
@@ -259,364 +187,77 @@ fetch("dashboard.json")
 
 .then(data => {
 
-    document.getElementById("actualizado")
-        .innerText =
+    document.getElementById(
+        "actualizado"
+    ).innerText =
         "Actualizado: "
-        + new Date(data.actualizado)
-        .toLocaleString("es-CL");
+        +
+        new Date(
+            data.actualizado
+        ).toLocaleString("es-CL");
 
-    document.getElementById("total")
-        .innerText =
+    document.getElementById(
+        "total"
+    ).innerText =
         data.metricas.impresoras.total;
 
-    document.getElementById("online")
-        .innerText =
+    document.getElementById(
+        "online"
+    ).innerText =
         data.metricas.impresoras.online;
 
-    document.getElementById("offline")
-        .innerText =
+    document.getElementById(
+        "offline"
+    ).innerText =
         data.metricas.impresoras.offline;
 
-    document.getElementById("alertas")
-        .innerText =
+    document.getElementById(
+        "alertas"
+    ).innerText =
         data.metricas.alertas.abiertas;
 
-const alertasCriticas =
     document.getElementById(
-        "alertasCriticas"
-    );
+        "criticas"
+    ).innerText =
+        data.metricas.alertas.criticas;
 
-const alertasAdvertencia =
     document.getElementById(
-        "alertasAdvertencia"
-    );
+        "advertencias"
+    ).innerText =
+        data.metricas.alertas.advertencias;
 
-const alertasOffline =
     document.getElementById(
-        "alertasOffline"
+        "offline_alertas"
+    ).innerText =
+        data.alertas.filter(
+            a =>
+                a.tipo === "offline"
+                &&
+                a.estado === "notificado"
+        ).length;
+
+    document.getElementById(
+        "inventario_total"
+    ).innerText =
+        data.metricas.impresoras.total;
+
+    document.getElementById(
+        "instalaciones"
+    ).innerText =
+        data.instalaciones.length;
+
+})
+.catch(error => {
+
+    console.error(
+        "Error cargando dashboard:",
+        error
     );
-
-const nombresConsumibles = {
-
-    toner_black: "Tóner Negro",
-    toner_yellow: "Tóner Amarillo",
-    toner_magenta: "Tóner Magenta",
-    toner_cyan: "Tóner Cian",
-
-    drum_black: "Drum Negro",
-    drum_yellow: "Drum Amarillo",
-    drum_magenta: "Drum Magenta",
-    drum_cyan: "Drum Cian"
-
-};
-
-data.alertas.forEach(a => {
-
-    const serial =
-        a.serial ?? "-";
-
-    const modelo =
-        (a.modelo || "-")
-            .split(" ")
-            .pop();
-
-    if (a.tipo === "offline") {
-
-        alertasOffline.innerHTML += `
-
-            <div class="alerta">
-
-                ⚫
-                ${serial}
-                |
-                ${modelo}
-                |
-                Offline
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-    const consumible =
-
-        nombresConsumibles[
-            a.consumible
-        ]
-
-        ||
-
-        a.consumible;
-
-    const linea = `
-
-        <div class="alerta">
-
-            ${
-                a.criticidad === "critico"
-                ? "🔴"
-                : "🟡"
-            }
-
-            ${a.id_alerta ?? "SIN_ID"}
-            |
-            ${serial}
-            |
-            ${modelo}
-            |
-            ${consumible}
-            |
-            ${a.porcentaje}%
-            |
-            PN ${a.pn ?? "-"}
-
-        </div>
-
-    `;
-
-    if (
-        a.criticidad === "critico"
-    ) {
-
-        alertasCriticas.innerHTML +=
-            linea;
-
-    }
-    else {
-
-        alertasAdvertencia.innerHTML +=
-            linea;
-
-    }
 
 });
-
-
-    function modeloCorto(modelo){
-
-        const partes =
-            modelo.split(" ");
-
-        return partes[
-            partes.length - 1
-        ];
-
-    }
-
-    const tabla =
-        document.getElementById(
-            "tablaImpresoras"
-        );
-
-    const impresoras =
-        data.impresoras;
-
-    function renderTabla(filtro=""){
-
-        tabla.innerHTML = "";
-
-        impresoras
-
-            .filter(i => {
-
-                const texto = (
-
-                    (i.serial || "")
-                    + " "
-                    + (i.modelo || "")
-                    + " "
-                    + (i.ip || "")
-                    + " "
-                    + (i.nombre || "")
-
-
-                ).toLowerCase();
-
-                return texto.includes(
-                    filtro.toLowerCase()
-                );
-
-            })
-
-            .forEach(i => {
-
-                const fila =
-                    document.createElement("tr");
-
-                fila.style.cursor =
-                    "pointer";
-
-                const ultima =
-                    i.ultima_lectura
-                    ? new Date(
-                        i.ultima_lectura
-                      ).toLocaleString("es-CL")
-                    : "-";
-
-fila.innerHTML = `
-
-    <td style="text-align:center">
-        ${i.serial ?? "-"}
-    </td>
-
-    <td style="text-align:center">
-        ${modeloCorto(i.modelo)}
-    </td>
-
-    <td style="text-align:center">
-        ${i.ip ?? "-"}
-    </td>
-
-    <td style="text-align:center">
-        ${i.contador ?? "-"}
-    </td>
-
-    <td style="text-align:center">
-        ${i.nombre ?? "-"}
-    </td>
-
-    <td style="text-align:center">
-        ${
-            i.online
-            ? '<span class="online">🟢</span>'
-            : '<span class="offline-text">🔴</span>'
-        }
-    </td>
-
-    <td style="text-align:center">
-        ${ultima}
-    </td>
-
-`;
-
-                fila.onclick = () => {
-
-                    document
-                    .getElementById(
-                        "detalle"
-                    )
-                    .style.display =
-                        "block";
-
-                    let consumibles =
-                        "";
-
-                    if(i.consumibles){
-
-                        for(const c in i.consumibles){
-
-                            consumibles += `
-                                <li class="consumible">
-                                    ${c}: ${i.consumibles[c]}%
-                                </li>
-                            `;
-
-                        }
-
-                    }
-
-                    document
-                    .getElementById(
-                        "detalleContenido"
-                    )
-                    .innerHTML = `
-
-                        <h2>${i.serial}</h2>
-
-                        <p>
-                            <b>Nombre:</b>
-                            ${i.nombre}
-                        </p>
-
-                        <p>
-                            <b>Modelo:</b>
-                            ${i.modelo}
-                        </p>
-
-                        <p>
-                            <b>IP:</b>
-                            ${i.ip}
-                        </p>
-
-                        <p>
-                            <b>Contador:</b>
-                            ${i.contador ?? "-"}
-                        </p>
-
-                        <p>
-                            <b>Última lectura:</b>
-                            ${ultima}
-                        </p>
-
-                        <h3>Consumibles</h3>
-
-                        <ul>
-
-                            ${consumibles}
-
-                        </ul>
-
-                        <button onclick="
-                            document.getElementById('detalle').style.display='none'
-                        ">
-                            Cerrar
-                        </button>
-
-                    `;
-
-                };
-
-                tabla.appendChild(
-                    fila
-                );
-
-            });
-
-    }
-
-    renderTabla();
-
-    document
-
-        .getElementById(
-            "busqueda"
-        )
-
-        .addEventListener(
-            "keyup",
-            e => {
-
-                renderTabla(
-                    e.target.value
-                );
-
-            }
-        );
-
-});
-
-document
-.getElementById("detalle")
-.addEventListener(
-    "click",
-    function(e){
-
-        if(
-            e.target.id === "detalle"
-        ){
-
-            this.style.display =
-                "none";
-
-        }
-
-    }
-);
 
 </script>
 
 </body>
+
 </html>
