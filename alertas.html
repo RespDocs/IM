@@ -107,71 +107,92 @@ nav a{
 <h2>🔴 Alertas Críticas</h2>
 
 <table>
+
 <thead>
+
 <tr>
-<th>ID</th>
-<th>Serie</th>
-<th>Equipo</th>
-<th>Modelo</th>
-<th>Consumible</th>
-<th>%</th>
-<th>PN</th>
-<th>Estado</th>
-<th>Fecha</th>
+    <th>ID</th>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Modelo</th>
+    <th>Consumible</th>
+    <th>%</th>
+    <th>PN</th>
+    <th>Estado</th>
+    <th>Fecha</th>
 </tr>
+
 </thead>
 
 <tbody id="tablaCriticas"></tbody>
+
 </table>
 
 <h2>🟡 Alertas Advertencia</h2>
 
 <table>
+
 <thead>
+
 <tr>
-<th>ID</th>
-<th>Serie</th>
-<th>Equipo</th>
-<th>Modelo</th>
-<th>Consumible</th>
-<th>%</th>
-<th>PN</th>
-<th>Estado</th>
-<th>Fecha</th>
+    <th>ID</th>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Modelo</th>
+    <th>Consumible</th>
+    <th>%</th>
+    <th>PN</th>
+    <th>Estado</th>
+    <th>Fecha</th>
 </tr>
+
 </thead>
 
 <tbody id="tablaAdvertencias"></tbody>
+
 </table>
 
 <h2>⚫ Equipos Offline</h2>
 
 <table>
+
 <thead>
+
 <tr>
-<th>Serie</th>
-<th>Equipo</th>
-<th>Modelo</th>
-<th>Estado</th>
-<th>Fecha</th>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Modelo</th>
+    <th>Estado</th>
+    <th>Fecha</th>
 </tr>
+
 </thead>
 
 <tbody id="tablaOffline"></tbody>
+
 </table>
 
 <script>
 
+function formatoFecha(fecha){
+
+    if(!fecha){
+        return "-";
+    }
+
+    return new Date(
+        fecha
+    ).toLocaleString(
+        "es-CL"
+    );
+
+}
+
 fetch("dashboard.json")
+
 .then(r => r.json())
+
 .then(data => {
-
-    console.log(data.alertas);
-    console.log("DASHBOARD");
-    console.log(data);
-
-    console.log("ALERTAS");
-    console.log(data.alertas);
 
     const tablaCriticas =
         document.getElementById(
@@ -227,18 +248,33 @@ fetch("dashboard.json")
     criticas.forEach(a => {
 
         tablaCriticas.innerHTML += `
-        <tr>
-            <td>${a.id_alerta}</td>
-            <td>${a.serial ?? "-"}</td>
-            <td>${a.equipo ?? "-"}</td>
-            <td>${a.modelo ?? "-"}</td>
-            <td>${a.consumible ?? "-"}</td>
-            <td>${a.porcentaje ?? "-"}</td>
-            <td>${a.pn ?? "-"}</td>
-            <td>${a.estado_texto ?? "-"}</td>
-            <td>${a.fecha_notificacion ?? "-"}</td>
 
-            </tr>
+        <tr>
+
+            <td>${a.id_alerta ?? "-"}</td>
+
+            <td>${a.serial ?? "-"}</td>
+
+            <td>${a.equipo ?? "-"}</td>
+
+            <td>${a.modelo ?? "-"}</td>
+
+            <td>${a.consumible ?? "-"}</td>
+
+            <td>${a.porcentaje ?? "-"}</td>
+
+            <td>${a.pn ?? "-"}</td>
+
+            <td>${a.estado_texto ?? "-"}</td>
+
+            <td>
+                ${formatoFecha(
+                    a.fecha_notificacion
+                )}
+            </td>
+
+        </tr>
+
         `;
 
     });
@@ -246,17 +282,33 @@ fetch("dashboard.json")
     advertencias.forEach(a => {
 
         tablaAdvertencias.innerHTML += `
+
         <tr>
-            <td>${a.id_alerta}</td>
+
+            <td>${a.id_alerta ?? "-"}</td>
+
             <td>${a.serial ?? "-"}</td>
+
             <td>${a.equipo ?? "-"}</td>
+
             <td>${a.modelo ?? "-"}</td>
+
             <td>${a.consumible ?? "-"}</td>
+
             <td>${a.porcentaje ?? "-"}</td>
+
             <td>${a.pn ?? "-"}</td>
+
             <td>${a.estado_texto ?? "-"}</td>
-            <td>${a.fecha_notificacion ?? "-"}</td>
+
+            <td>
+                ${formatoFecha(
+                    a.fecha_notificacion
+                )}
+            </td>
+
         </tr>
+
         `;
 
     });
@@ -264,20 +316,42 @@ fetch("dashboard.json")
     offline.forEach(a => {
 
         tablaOffline.innerHTML += `
+
         <tr>
+
             <td>${a.serial ?? "-"}</td>
+
             <td>${a.equipo ?? "-"}</td>
+
             <td>${a.modelo ?? "-"}</td>
+
             <td>${a.estado_texto ?? "-"}</td>
-            <td>${a.fecha_notificacion ?? "-"}</td>
+
+            <td>
+                ${formatoFecha(
+                    a.fecha_notificacion
+                )}
+            </td>
+
         </tr>
+
         `;
 
     });
+
+})
+
+.catch(error => {
+
+    console.error(
+        "Error cargando alertas:",
+        error
+    );
 
 });
 
 </script>
 
 </body>
+
 </html>

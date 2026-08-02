@@ -409,16 +409,26 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-02T10:59:26.145258"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-02T10:59:26.145258",
+      "fecha_resolucion": "2026-08-02T13:00:15.651708"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-02T11:59:27.929400",
+      "fecha_resolucion": "2026-08-02T13:00:15.651742"
+    },
+    {
+      "equipo": "Facultad de Ciencias Politicas",
+      "serial": "3940616270",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-02T11:59:27.929400"
+      "fecha_notificacion": "2026-08-02T13:00:15.488841"
     }
   ]
 }

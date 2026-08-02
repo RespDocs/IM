@@ -31,13 +31,6 @@ input{
     padding:10px;
     border:1px solid #ccc;
     border-radius:6px;
-    margin-bottom:15px;
-}
-
-select{
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
     margin-bottom:20px;
 }
 
@@ -51,6 +44,7 @@ th{
     color:white;
     padding:10px;
     text-align:center;
+    cursor:pointer;
 }
 
 td{
@@ -61,6 +55,10 @@ td{
 
 tr:hover{
     background:#f5f5f5;
+}
+
+th:hover{
+    background:#1565c0;
 }
 
 </style>
@@ -83,53 +81,232 @@ tr:hover{
     placeholder="Buscar nombre, serie, modelo o IP..."
 >
 
-<br>
-
-<select id="orden">
-
-    <option value="nombre">
-        Ordenar por Nombre
-    </option>
-
-    <option value="ip">
-        Ordenar por IP
-    </option>
-
-    <option value="modelo">
-        Ordenar por Modelo
-    </option>
-
-    <option value="serial">
-        Ordenar por Serie
-    </option>
-
-    <option value="contador">
-        Ordenar por Contador
-    </option>
-
-</select>
-
 <table>
 
 <thead>
 
 <tr>
-    <th>Serie</th>
-    <th>Modelo</th>
-    <th>IP</th>
-    <th>Contador</th>
-    <th>Estado</th>
-    <th>Última lectura</th>
-    <th>Nombre</th>
+    <th onclick="ordenarPor('nombre')">
+        Nombre ▲▼
+    </th>
+
+    <th onclick="ordenarPor('serial')">
+        Serie ▲▼
+    </th>
+
+    <th onclick="ordenarPor('modelo')">
+        Modelo ▲▼
+    </th>
+
+    <th onclick="ordenarPor('ip')">
+        IP ▲▼
+    </th>
+
+    <th onclick="ordenarPor('contador')">
+        Contador ▲▼
+    </th>
+
+    <th onclick="ordenarPor('online')">
+        Estado ▲▼
+    </th>
+
+    <th onclick="ordenarPor('ultima_lectura')">
+        Última lectura ▲▼
+    </th>
+
 </tr>
 
 </thead>
 
-<tbody id="tablaImpresoras"></tbody>
+<tbody id="tablaImpresoras">
+</tbody>
 
 </table>
 
 <script>
+
+let impresoras = [];
+
+let columnaOrden = "nombre";
+
+let ascendente = true;
+
+function ordenarPor(columna){
+
+    if(columnaOrden === columna){
+
+        ascendente = !ascendente;
+
+    }
+    else{
+
+        columnaOrden = columna;
+
+        ascendente = true;
+
+    }
+
+    renderTabla(
+        document.getElementById(
+            "busqueda"
+        ).value
+    );
+
+}
+
+function renderTabla(
+    filtro = ""
+){
+
+    const tabla =
+        document.getElementById(
+            "tablaImpresoras"
+        );
+
+    tabla.innerHTML = "";
+
+    impresoras
+
+        .filter(i => {
+
+            const texto = (
+
+                (i.nombre || "")
+                + " "
+                + (i.serial || "")
+                + " "
+                + (i.modelo || "")
+                + " "
+                + (i.ip || "")
+
+            ).toLowerCase();
+
+            return texto.includes(
+                filtro.toLowerCase()
+            );
+
+        })
+
+        .sort((a,b) => {
+
+            let resultado = 0;
+
+            if(
+                columnaOrden === "contador"
+            ){
+
+                resultado =
+                    (a.contador || 0)
+                    -
+                    (b.contador || 0);
+
+            }
+
+            else if(
+                columnaOrden === "online"
+            ){
+
+                resultado =
+                    Number(a.online)
+                    -
+                    Number(b.online);
+
+            }
+
+            else if(
+                columnaOrden ===
+                "ultima_lectura"
+            ){
+
+                resultado =
+                    new Date(
+                        a.ultima_lectura || 0
+                    )
+                    -
+                    new Date(
+                        b.ultima_lectura || 0
+                    );
+
+            }
+
+            else{
+
+                resultado =
+
+                    String(
+                        a[columnaOrden] || ""
+                    )
+
+                    .localeCompare(
+
+                        String(
+                            b[columnaOrden] || ""
+                        )
+
+                    );
+
+            }
+
+            return ascendente
+                ? resultado
+                : -resultado;
+
+        })
+
+        .forEach(i => {
+
+            const ultima =
+                i.ultima_lectura
+                ? new Date(
+                    i.ultima_lectura
+                ).toLocaleString(
+                    "es-CL"
+                )
+                : "-";
+
+            tabla.innerHTML += `
+
+            <tr>
+
+                <td>
+                    ${i.nombre ?? "-"}
+                </td>
+
+                <td>
+                    ${i.serial ?? "-"}
+                </td>
+
+                <td>
+                    ${i.modelo ?? "-"}
+                </td>
+
+                <td>
+                    ${i.ip ?? "-"}
+                </td>
+
+                <td>
+                    ${i.contador ?? "-"}
+                </td>
+
+                <td>
+                    ${
+                        i.online
+                        ? "🟢"
+                        : "🔴"
+                    }
+                </td>
+
+                <td>
+                    ${ultima}
+                </td>
+
+            </tr>
+
+            `;
+
+        });
+
+}
 
 fetch("dashboard.json")
 
@@ -137,177 +314,17 @@ fetch("dashboard.json")
 
 .then(data => {
 
-    const impresoras =
+    impresoras =
         data.impresoras;
-
-    const tabla =
-        document.getElementById(
-            "tablaImpresoras"
-        );
-
-    function renderTabla(
-        filtro = ""
-    ){
-
-        tabla.innerHTML = "";
-
-        const orden =
-            document
-            .getElementById(
-                "orden"
-            )
-            .value;
-
-        impresoras
-
-            .filter(i => {
-
-                const texto = (
-
-                    (i.nombre || "")
-                    + " "
-                    + (i.serial || "")
-                    + " "
-                    + (i.modelo || "")
-                    + " "
-                    + (i.ip || "")
-
-                ).toLowerCase();
-
-                return texto.includes(
-                    filtro.toLowerCase()
-                );
-
-            })
-
-            .sort((a,b) => {
-
-                if(
-                    orden === "nombre"
-                ){
-
-                    return (
-                        a.nombre || ""
-                    ).localeCompare(
-                        b.nombre || ""
-                    );
-
-                }
-
-                if(
-                    orden === "ip"
-                ){
-
-                    return (
-                        a.ip || ""
-                    ).localeCompare(
-                        b.ip || ""
-                    );
-
-                }
-
-                if(
-                    orden === "modelo"
-                ){
-
-                    return (
-                        a.modelo || ""
-                    ).localeCompare(
-                        b.modelo || ""
-                    );
-
-                }
-
-                if(
-                    orden === "serial"
-                ){
-
-                    return (
-                        a.serial || ""
-                    ).localeCompare(
-                        b.serial || ""
-                    );
-
-                }
-
-                if(
-                    orden === "contador"
-                ){
-
-                    return (
-                        b.contador || 0
-                    ) - (
-                        a.contador || 0
-                    );
-
-                }
-
-                return 0;
-
-            })
-
-            .forEach(i => {
-
-                const ultima =
-                    i.ultima_lectura
-                    ? new Date(
-                        i.ultima_lectura
-                    ).toLocaleString(
-                        "es-CL"
-                    )
-                    : "-";
-
-                tabla.innerHTML += `
-
-                <tr>
-                
-                    <td>
-                        ${i.serial ?? "-"}
-                    </td>
-
-                    <td>
-                        ${i.modelo ?? "-"}
-                    </td>
-
-                    <td>
-                        ${i.ip ?? "-"}
-                    </td>
-
-                    <td>
-                        ${i.contador ?? "-"}
-                    </td>
-
-                    <td>
-                        ${
-                            i.online
-                            ? "🟢"
-                            : "🔴"
-                        }
-                    </td>
-
-                    <td>
-                        ${ultima}
-                    </td>
-
-                    <td>
-                        ${i.nombre ?? "-"}
-                    </td>
-
-
-                </tr>
-
-                `;
-
-            });
-
-    }
 
     renderTabla();
 
     document
+
         .getElementById(
             "busqueda"
         )
+
         .addEventListener(
             "keyup",
             e => {
@@ -319,29 +336,9 @@ fetch("dashboard.json")
             }
         );
 
-    document
-        .getElementById(
-            "orden"
-        )
-        .addEventListener(
-            "change",
-            () => {
-
-                renderTabla(
-                    document
-                    .getElementById(
-                        "busqueda"
-                    )
-                    .value
-                );
-
-            }
-        );
-
 });
 
 </script>
 
 </body>
-
 </html>
