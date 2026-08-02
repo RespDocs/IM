@@ -89,13 +89,13 @@ tr:hover{
 <thead>
 
 <tr>
-    <th>Nombre</th>
     <th>Serie</th>
     <th>Modelo</th>
     <th>IP</th>
     <th>Contador</th>
     <th>Estado</th>
     <th>Última lectura</th>
+    <th>Nombre</th>
 </tr>
 
 </thead>
@@ -146,6 +146,58 @@ fetch("dashboard.json")
 
             })
 
+            .sort((a,b) => {
+
+                if(orden === "nombre"){
+
+                return (a.nombre || "")
+                    .localeCompare(
+                        b.nombre || ""
+                        );
+
+            }
+
+        if(orden === "ip"){
+
+            return (a.ip || "")
+                .localeCompare(
+                    b.ip || ""
+                );
+
+        }
+
+        if(orden === "modelo"){
+
+            return (a.modelo || "")
+                .localeCompare(
+                    b.modelo || ""
+                );
+
+        }
+
+        if(orden === "serial"){
+
+            return (a.serial || "")
+                .localeCompare(
+                    b.serial || ""
+                );
+
+        }
+
+        if(orden === "contador"){
+
+            return (
+                b.contador || 0
+            ) - (
+                a.contador || 0
+            );
+
+        }
+
+        return 0;
+
+    })
+
             .forEach(i => {
 
                 const ultima =
@@ -158,9 +210,7 @@ fetch("dashboard.json")
                 tabla.innerHTML += `
 
                 <tr>
-
-                    <td>${i.nombre ?? "-"}</td>
-
+               
                     <td>${i.serial ?? "-"}</td>
 
                     <td>${i.modelo ?? "-"}</td>
@@ -169,6 +219,7 @@ fetch("dashboard.json")
 
                     <td>${i.contador ?? "-"}</td>
 
+                    <td>${i.nombre ?? "-"}</td>
                     <td>
                         ${
                             i.online

@@ -117,6 +117,7 @@ nav a{
 <th>%</th>
 <th>PN</th>
 <th>Estado</th>
+<th>Fecha</th>
 </tr>
 </thead>
 
@@ -136,6 +137,7 @@ nav a{
 <th>%</th>
 <th>PN</th>
 <th>Estado</th>
+<th>Fecha</th>
 </tr>
 </thead>
 
@@ -151,6 +153,7 @@ nav a{
 <th>Equipo</th>
 <th>Modelo</th>
 <th>Estado</th>
+<th>Fecha</th>
 </tr>
 </thead>
 
@@ -233,7 +236,9 @@ fetch("dashboard.json")
             <td>${a.porcentaje ?? "-"}</td>
             <td>${a.pn ?? "-"}</td>
             <td>${a.estado_texto ?? "-"}</td>
-        </tr>
+            <td>${a.fecha_notificacion ?? "-"}</td>
+
+            </tr>
         `;
 
     });
@@ -250,6 +255,7 @@ fetch("dashboard.json")
             <td>${a.porcentaje ?? "-"}</td>
             <td>${a.pn ?? "-"}</td>
             <td>${a.estado_texto ?? "-"}</td>
+            <td>${a.fecha_notificacion ?? "-"}</td>
         </tr>
         `;
 
@@ -263,6 +269,7 @@ fetch("dashboard.json")
             <td>${a.equipo ?? "-"}</td>
             <td>${a.modelo ?? "-"}</td>
             <td>${a.estado_texto ?? "-"}</td>
+            <td>${a.fecha_notificacion ?? "-"}</td>
         </tr>
         `;
 
