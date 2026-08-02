@@ -51,6 +51,11 @@ th{
     color:white;
     padding:10px;
     text-align:center;
+    cursor:pointer;
+}
+
+th:hover{
+    background:#1565c0;
 }
 
 td{
@@ -111,15 +116,15 @@ nav a{
 <thead>
 
 <tr>
-    <th>ID</th>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Modelo</th>
-    <th>Consumible</th>
-    <th>%</th>
-    <th>PN</th>
-    <th>Estado</th>
-    <th>Fecha</th>
+    <th onclick="ordenarCriticas('id_alerta')">ID ▲▼</th>
+    <th onclick="ordenarCriticas('serial')">Serie ▲▼</th>
+    <th onclick="ordenarCriticas('equipo')">Equipo ▲▼</th>
+    <th onclick="ordenarCriticas('modelo')">Modelo ▲▼</th>
+    <th onclick="ordenarCriticas('consumible')">Consumible ▲▼</th>
+    <th onclick="ordenarCriticas('porcentaje')">% ▲▼</th>
+    <th onclick="ordenarCriticas('pn')">PN ▲▼</th>
+    <th onclick="ordenarCriticas('estado_texto')">Estado ▲▼</th>
+    <th onclick="ordenarCriticas('fecha_notificacion')">Fecha ▲▼</th>
 </tr>
 
 </thead>
@@ -135,15 +140,15 @@ nav a{
 <thead>
 
 <tr>
-    <th>ID</th>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Modelo</th>
-    <th>Consumible</th>
-    <th>%</th>
-    <th>PN</th>
-    <th>Estado</th>
-    <th>Fecha</th>
+    <th onclick="ordenarAdvertencias('id_alerta')">ID ▲▼</th>
+    <th onclick="ordenarAdvertencias('serial')">Serie ▲▼</th>
+    <th onclick="ordenarAdvertencias('equipo')">Equipo ▲▼</th>
+    <th onclick="ordenarAdvertencias('modelo')">Modelo ▲▼</th>
+    <th onclick="ordenarAdvertencias('consumible')">Consumible ▲▼</th>
+    <th onclick="ordenarAdvertencias('porcentaje')">% ▲▼</th>
+    <th onclick="ordenarAdvertencias('pn')">PN ▲▼</th>
+    <th onclick="ordenarAdvertencias('estado_texto')">Estado ▲▼</th>
+    <th onclick="ordenarAdvertencias('fecha_notificacion')">Fecha ▲▼</th>
 </tr>
 
 </thead>
@@ -159,11 +164,11 @@ nav a{
 <thead>
 
 <tr>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Modelo</th>
-    <th>Estado</th>
-    <th>Fecha</th>
+    <th onclick="ordenarOffline('serial')">Serie ▲▼</th>
+    <th onclick="ordenarOffline('equipo')">Equipo ▲▼</th>
+    <th onclick="ordenarOffline('modelo')">Modelo ▲▼</th>
+    <th onclick="ordenarOffline('estado_texto')">Estado ▲▼</th>
+    <th onclick="ordenarOffline('fecha_notificacion')">Fecha ▲▼</th>
 </tr>
 
 </thead>
@@ -174,11 +179,22 @@ nav a{
 
 <script>
 
+let criticas = [];
+let advertencias = [];
+let offline = [];
+
+let ordenCriticas = "fecha_notificacion";
+let ascCriticas = false;
+
+let ordenAdvertencias = "fecha_notificacion";
+let ascAdvertencias = false;
+
+let ordenOff = "fecha_notificacion";
+let ascOff = false;
+
 function formatoFecha(fecha){
 
-    if(!fecha){
-        return "-";
-    }
+    if(!fecha) return "-";
 
     return new Date(
         fecha
@@ -188,28 +204,229 @@ function formatoFecha(fecha){
 
 }
 
+function ordenarCriticas(columna){
+
+    if(ordenCriticas === columna){
+        ascCriticas = !ascCriticas;
+    }else{
+        ordenCriticas = columna;
+        ascCriticas = true;
+    }
+
+    renderCriticas();
+
+}
+
+function ordenarAdvertencias(columna){
+
+    if(ordenAdvertencias === columna){
+        ascAdvertencias = !ascAdvertencias;
+    }else{
+        ordenAdvertencias = columna;
+        ascAdvertencias = true;
+    }
+
+    renderAdvertencias();
+
+}
+
+function ordenarOffline(columna){
+
+    if(ordenOff === columna){
+        ascOff = !ascOff;
+    }else{
+        ordenOff = columna;
+        ascOff = true;
+    }
+
+    renderOffline();
+
+}
+
+function comparar(a,b,columna,asc){
+
+    let resultado = 0;
+
+    if(
+        columna === "porcentaje"
+    ){
+
+        resultado =
+            (a[columna] || 0)
+            -
+            (b[columna] || 0);
+
+    }
+
+    else if(
+        columna === "fecha_notificacion"
+    ){
+
+        resultado =
+            new Date(
+                a[columna] || 0
+            )
+            -
+            new Date(
+                b[columna] || 0
+            );
+
+    }
+
+    else{
+
+        resultado =
+            String(
+                a[columna] || ""
+            ).localeCompare(
+                String(
+                    b[columna] || ""
+                )
+            );
+
+    }
+
+    return asc
+        ? resultado
+        : -resultado;
+
+}
+
+function renderCriticas(){
+
+    const tabla =
+        document.getElementById(
+            "tablaCriticas"
+        );
+
+    tabla.innerHTML = "";
+
+    criticas
+
+        .sort((a,b) =>
+            comparar(
+                a,
+                b,
+                ordenCriticas,
+                ascCriticas
+            )
+        )
+
+        .forEach(a => {
+
+            tabla.innerHTML += `
+
+            <tr>
+
+                <td>${a.id_alerta ?? "-"}</td>
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${a.modelo ?? "-"}</td>
+                <td>${a.consumible ?? "-"}</td>
+                <td>${a.porcentaje ?? "-"}</td>
+                <td>${a.pn ?? "-"}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+                <td>${formatoFecha(a.fecha_notificacion)}</td>
+
+            </tr>
+
+            `;
+
+        });
+
+}
+
+function renderAdvertencias(){
+
+    const tabla =
+        document.getElementById(
+            "tablaAdvertencias"
+        );
+
+    tabla.innerHTML = "";
+
+    advertencias
+
+        .sort((a,b) =>
+            comparar(
+                a,
+                b,
+                ordenAdvertencias,
+                ascAdvertencias
+            )
+        )
+
+        .forEach(a => {
+
+            tabla.innerHTML += `
+
+            <tr>
+
+                <td>${a.id_alerta ?? "-"}</td>
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${a.modelo ?? "-"}</td>
+                <td>${a.consumible ?? "-"}</td>
+                <td>${a.porcentaje ?? "-"}</td>
+                <td>${a.pn ?? "-"}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+                <td>${formatoFecha(a.fecha_notificacion)}</td>
+
+            </tr>
+
+            `;
+
+        });
+
+}
+
+function renderOffline(){
+
+    const tabla =
+        document.getElementById(
+            "tablaOffline"
+        );
+
+    tabla.innerHTML = "";
+
+    offline
+
+        .sort((a,b) =>
+            comparar(
+                a,
+                b,
+                ordenOff,
+                ascOff
+            )
+        )
+
+        .forEach(a => {
+
+            tabla.innerHTML += `
+
+            <tr>
+
+                <td>${a.serial ?? "-"}</td>
+                <td>${a.equipo ?? "-"}</td>
+                <td>${a.modelo ?? "-"}</td>
+                <td>${a.estado_texto ?? "-"}</td>
+                <td>${formatoFecha(a.fecha_notificacion)}</td>
+
+            </tr>
+
+            `;
+
+        });
+
+}
+
 fetch("dashboard.json")
 
 .then(r => r.json())
 
 .then(data => {
 
-    const tablaCriticas =
-        document.getElementById(
-            "tablaCriticas"
-        );
-
-    const tablaAdvertencias =
-        document.getElementById(
-            "tablaAdvertencias"
-        );
-
-    const tablaOffline =
-        document.getElementById(
-            "tablaOffline"
-        );
-
-    const criticas =
+    criticas =
         data.alertas.filter(
             a =>
                 a.tipo === "consumible"
@@ -217,7 +434,7 @@ fetch("dashboard.json")
                 a.criticidad === "critico"
         );
 
-    const advertencias =
+    advertencias =
         data.alertas.filter(
             a =>
                 a.tipo === "consumible"
@@ -225,7 +442,7 @@ fetch("dashboard.json")
                 a.criticidad === "advertencia"
         );
 
-    const offline =
+    offline =
         data.alertas.filter(
             a =>
                 a.tipo === "offline"
@@ -233,111 +450,24 @@ fetch("dashboard.json")
                 a.estado === "notificado"
         );
 
-    document.getElementById("criticas")
-        .innerText =
+    document.getElementById(
+        "criticas"
+    ).innerText =
         criticas.length;
 
-    document.getElementById("advertencias")
-        .innerText =
+    document.getElementById(
+        "advertencias"
+    ).innerText =
         advertencias.length;
 
-    document.getElementById("offline")
-        .innerText =
+    document.getElementById(
+        "offline"
+    ).innerText =
         offline.length;
 
-    criticas.forEach(a => {
-
-        tablaCriticas.innerHTML += `
-
-        <tr>
-
-            <td>${a.id_alerta ?? "-"}</td>
-
-            <td>${a.serial ?? "-"}</td>
-
-            <td>${a.equipo ?? "-"}</td>
-
-            <td>${a.modelo ?? "-"}</td>
-
-            <td>${a.consumible ?? "-"}</td>
-
-            <td>${a.porcentaje ?? "-"}</td>
-
-            <td>${a.pn ?? "-"}</td>
-
-            <td>${a.estado_texto ?? "-"}</td>
-
-            <td>
-                ${formatoFecha(
-                    a.fecha_notificacion
-                )}
-            </td>
-
-        </tr>
-
-        `;
-
-    });
-
-    advertencias.forEach(a => {
-
-        tablaAdvertencias.innerHTML += `
-
-        <tr>
-
-            <td>${a.id_alerta ?? "-"}</td>
-
-            <td>${a.serial ?? "-"}</td>
-
-            <td>${a.equipo ?? "-"}</td>
-
-            <td>${a.modelo ?? "-"}</td>
-
-            <td>${a.consumible ?? "-"}</td>
-
-            <td>${a.porcentaje ?? "-"}</td>
-
-            <td>${a.pn ?? "-"}</td>
-
-            <td>${a.estado_texto ?? "-"}</td>
-
-            <td>
-                ${formatoFecha(
-                    a.fecha_notificacion
-                )}
-            </td>
-
-        </tr>
-
-        `;
-
-    });
-
-    offline.forEach(a => {
-
-        tablaOffline.innerHTML += `
-
-        <tr>
-
-            <td>${a.serial ?? "-"}</td>
-
-            <td>${a.equipo ?? "-"}</td>
-
-            <td>${a.modelo ?? "-"}</td>
-
-            <td>${a.estado_texto ?? "-"}</td>
-
-            <td>
-                ${formatoFecha(
-                    a.fecha_notificacion
-                )}
-            </td>
-
-        </tr>
-
-        `;
-
-    });
+    renderCriticas();
+    renderAdvertencias();
+    renderOffline();
 
 })
 
@@ -353,5 +483,4 @@ fetch("dashboard.json")
 </script>
 
 </body>
-
 </html>
