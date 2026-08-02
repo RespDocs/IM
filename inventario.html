@@ -31,6 +31,13 @@ input{
     padding:10px;
     border:1px solid #ccc;
     border-radius:6px;
+    margin-bottom:15px;
+}
+
+select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
     margin-bottom:20px;
 }
 
@@ -56,14 +63,6 @@ tr:hover{
     background:#f5f5f5;
 }
 
-.online{
-    color:green;
-}
-
-.offline{
-    color:red;
-}
-
 </style>
 
 </head>
@@ -83,6 +82,32 @@ tr:hover{
     type="text"
     placeholder="Buscar nombre, serie, modelo o IP..."
 >
+
+<br>
+
+<select id="orden">
+
+    <option value="nombre">
+        Ordenar por Nombre
+    </option>
+
+    <option value="ip">
+        Ordenar por IP
+    </option>
+
+    <option value="modelo">
+        Ordenar por Modelo
+    </option>
+
+    <option value="serial">
+        Ordenar por Serie
+    </option>
+
+    <option value="contador">
+        Ordenar por Contador
+    </option>
+
+</select>
 
 <table>
 
@@ -120,9 +145,18 @@ fetch("dashboard.json")
             "tablaImpresoras"
         );
 
-    function renderTabla(filtro=""){
+    function renderTabla(
+        filtro = ""
+    ){
 
         tabla.innerHTML = "";
+
+        const orden =
+            document
+            .getElementById(
+                "orden"
+            )
+            .value;
 
         impresoras
 
@@ -148,55 +182,69 @@ fetch("dashboard.json")
 
             .sort((a,b) => {
 
-                if(orden === "nombre"){
+                if(
+                    orden === "nombre"
+                ){
 
-                return (a.nombre || "")
-                    .localeCompare(
+                    return (
+                        a.nombre || ""
+                    ).localeCompare(
                         b.nombre || ""
-                        );
+                    );
 
-            }
+                }
 
-        if(orden === "ip"){
+                if(
+                    orden === "ip"
+                ){
 
-            return (a.ip || "")
-                .localeCompare(
-                    b.ip || ""
-                );
+                    return (
+                        a.ip || ""
+                    ).localeCompare(
+                        b.ip || ""
+                    );
 
-        }
+                }
 
-        if(orden === "modelo"){
+                if(
+                    orden === "modelo"
+                ){
 
-            return (a.modelo || "")
-                .localeCompare(
-                    b.modelo || ""
-                );
+                    return (
+                        a.modelo || ""
+                    ).localeCompare(
+                        b.modelo || ""
+                    );
 
-        }
+                }
 
-        if(orden === "serial"){
+                if(
+                    orden === "serial"
+                ){
 
-            return (a.serial || "")
-                .localeCompare(
-                    b.serial || ""
-                );
+                    return (
+                        a.serial || ""
+                    ).localeCompare(
+                        b.serial || ""
+                    );
 
-        }
+                }
 
-        if(orden === "contador"){
+                if(
+                    orden === "contador"
+                ){
 
-            return (
-                b.contador || 0
-            ) - (
-                a.contador || 0
-            );
+                    return (
+                        b.contador || 0
+                    ) - (
+                        a.contador || 0
+                    );
 
-        }
+                }
 
-        return 0;
+                return 0;
 
-    })
+            })
 
             .forEach(i => {
 
@@ -204,22 +252,31 @@ fetch("dashboard.json")
                     i.ultima_lectura
                     ? new Date(
                         i.ultima_lectura
-                    ).toLocaleString("es-CL")
+                    ).toLocaleString(
+                        "es-CL"
+                    )
                     : "-";
 
                 tabla.innerHTML += `
 
                 <tr>
-               
-                    <td>${i.serial ?? "-"}</td>
+                
+                    <td>
+                        ${i.serial ?? "-"}
+                    </td>
 
-                    <td>${i.modelo ?? "-"}</td>
+                    <td>
+                        ${i.modelo ?? "-"}
+                    </td>
 
-                    <td>${i.ip ?? "-"}</td>
+                    <td>
+                        ${i.ip ?? "-"}
+                    </td>
 
-                    <td>${i.contador ?? "-"}</td>
+                    <td>
+                        ${i.contador ?? "-"}
+                    </td>
 
-                    <td>${i.nombre ?? "-"}</td>
                     <td>
                         ${
                             i.online
@@ -228,7 +285,14 @@ fetch("dashboard.json")
                         }
                     </td>
 
-                    <td>${ultima}</td>
+                    <td>
+                        ${ultima}
+                    </td>
+
+                    <td>
+                        ${i.nombre ?? "-"}
+                    </td>
+
 
                 </tr>
 
@@ -241,7 +305,9 @@ fetch("dashboard.json")
     renderTabla();
 
     document
-        .getElementById("busqueda")
+        .getElementById(
+            "busqueda"
+        )
         .addEventListener(
             "keyup",
             e => {
@@ -253,9 +319,29 @@ fetch("dashboard.json")
             }
         );
 
+    document
+        .getElementById(
+            "orden"
+        )
+        .addEventListener(
+            "change",
+            () => {
+
+                renderTabla(
+                    document
+                    .getElementById(
+                        "busqueda"
+                    )
+                    .value
+                );
+
+            }
+        );
+
 });
 
 </script>
 
 </body>
+
 </html>
