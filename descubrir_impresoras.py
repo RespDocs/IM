@@ -1,6 +1,7 @@
 from pysnmp.hlapi.v3arch.asyncio import *
 import asyncio
 import json
+import os
 from datetime import datetime
 
 
@@ -32,7 +33,11 @@ def expandir_rango(rango):
     ]
 
 
-async def consultar(ip, community, oid):
+async def consultar(
+    ip,
+    community,
+    oid
+):
 
     try:
 
@@ -40,11 +45,16 @@ async def consultar(ip, community, oid):
 
             SnmpEngine(),
 
-            CommunityData(community),
+            CommunityData(
+                community
+            ),
 
             await UdpTransportTarget.create(
 
-                (ip, 161),
+                (
+                    ip,
+                    161
+                ),
 
                 timeout=1,
 
@@ -55,13 +65,20 @@ async def consultar(ip, community, oid):
             ContextData(),
 
             ObjectType(
-                ObjectIdentity(oid)
+                ObjectIdentity(
+                    oid
+                )
             )
 
         )
 
-        errorIndication, errorStatus, errorIndex, varBinds = \
-            await iterator
+        (
+            errorIndication,
+            errorStatus,
+            errorIndex,
+            varBinds
+
+        ) = await iterator
 
         if errorIndication:
             return None
@@ -69,7 +86,9 @@ async def consultar(ip, community, oid):
         if errorStatus:
             return None
 
-        return str(varBinds[0][1])
+        return str(
+            varBinds[0][1]
+        )
 
     except Exception:
 
@@ -86,7 +105,9 @@ async def main():
 
         config = json.load(f)
 
-    community = config["community"]
+    community = config[
+        "community"
+    ]
 
     ips = set()
 
@@ -130,8 +151,13 @@ async def main():
         )
 
         if (
+
             porcentaje % 10 == 0
-            and porcentaje != progreso_anterior
+
+            and
+
+            porcentaje != progreso_anterior
+
         ):
 
             progreso_anterior = porcentaje
@@ -150,7 +176,6 @@ async def main():
             )
 
             print("-" * 50)
-
             print()
 
         modelo = await consultar(
@@ -189,6 +214,9 @@ async def main():
 
         )
 
+        if not serial:
+            continue
+
         impresora = {
 
             "nombre":
@@ -209,32 +237,156 @@ async def main():
             impresora
         )
 
-        import os
+    # -------------------------------------------------
+    # INVENTARIO MAESTRO
+    # -------------------------------------------------
 
-    archivo_master = "inventario_master.json"
+    archivo_master = (
+        "inventario_master.json"
+    )
 
     if os.path.exists(
         archivo_master
     ):
+
         with open(
             archivo_master,
             "r",
             encoding="utf-8"
         ) as f:
+
             master = json.load(f)
 
     else:
+
         master = {
+
             "actualizado": "",
+
             "impresoras": []
+
         }
 
     existentes = {
+
         i["serial"]: i
-        for i in master["impresoras"]
+
+        for i in master.get(
+            "impresoras",
+            []
+        )
+
     }
 
-    ...
+    nuevas = 0
+
+    actualizadas = 0
+
+    for impresora in impresoras:
+
+        serial = impresora[
+            "serial"
+        ]
+
+        if serial in existentes:
+
+            equipo = existentes[
+                serial
+            ]
+
+            if (
+                equipo.get("ip")
+                != impresora["ip"]
+            ):
+
+                print(
+                    f"Cambio IP detectado:"
+                )
+
+                print(
+                    f"  {equipo.get('nombre')}"
+                )
+
+                print(
+                    f"  {equipo.get('ip')}"
+                    f" -> "
+                    f"{impresora['ip']}"
+                )
+
+            equipo["nombre"] = (
+                impresora[
+                    "nombre"
+                ]
+            )
+
+            equipo["modelo"] = (
+                impresora[
+                    "modelo"
+                ]
+            )
+
+            equipo["ip"] = (
+                impresora[
+                    "ip"
+                ]
+            )
+
+            actualizadas += 1
+
+        else:
+
+            master[
+                "impresoras"
+            ].append(
+                impresora
+            )
+
+            nuevas += 1
+
+    master[
+        "actualizado"
+    ] = datetime.now().isoformat()
+
+    with open(
+
+        archivo_master,
+
+        "w",
+
+        encoding="utf-8"
+
+    ) as f:
+
+        json.dump(
+
+            master,
+
+            f,
+
+            indent=2,
+
+            ensure_ascii=False
+
+        )
+
+    print()
+    print(
+        f"Nuevas: {nuevas}"
+    )
+
+    print(
+        f"Actualizadas: {actualizadas}"
+    )
+
+    print(
+        f"Inventario maestro: "
+        f"{len(master['impresoras'])}"
+    )
+
+    print()
+    print(
+        "inventario_master.json actualizado"
+    )
 
 
 asyncio.run(main())

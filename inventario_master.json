@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-30T16:11:07.621383",
+  "actualizado": "2026-08-02T23:41:07.261501",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -323,7 +323,7 @@
       "nombre": "Sec_Educa",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3942937600",
-      "ip": "172.16.79.79"
+      "ip": "172.16.79.80"
     },
     {
       "nombre": "Modulo2",
@@ -354,6 +354,24 @@
       "modelo": "Xerox Phaser 3330",
       "serial": "3384970809",
       "ip": "172.16.79.99"
+    },
+    {
+      "nombre": "DARA",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399952378",
+      "ip": "172.16.79.30"
+    },
+    {
+      "nombre": "Facultad de Musica",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399944995",
+      "ip": "172.16.79.38"
+    },
+    {
+      "nombre": "DARA-ADMISION",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "serial": "3353215298",
+      "ip": "172.16.79.56"
     }
   ]
 }
