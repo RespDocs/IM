@@ -123,6 +123,10 @@ ejecutar("generar_inventario.py")
 
 ejecutar("generar_estado.py")
 
+ejecutar("generar_eventos.py")
+
+ejecutar("guardar_historico_contadores.py")
+
 ejecutar("catalogar_consumibles.py")
 
 ejecutar("detectar_alertas.py")
