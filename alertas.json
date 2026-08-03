@@ -154,7 +154,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 1,
+      "porcentaje": 0,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167"
@@ -690,8 +690,9 @@
       "serial": "3223580865",
       "modelo": "Xerox Phaser 3320",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T15:00:59.933414"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T15:00:59.933414",
+      "fecha_resolucion": "2026-08-03T16:00:37.066477"
     }
   ]
 }
