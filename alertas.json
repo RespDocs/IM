@@ -530,8 +530,9 @@
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.771943"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.771943",
+      "fecha_resolucion": "2026-08-03T11:00:44.122399"
     },
     {
       "equipo": "Facultad de Filosofia y Humanida",
@@ -616,8 +617,9 @@
       "serial": "3399945932",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:52:09.985150"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:52:09.985150",
+      "fecha_resolucion": "2026-08-03T11:00:44.122452"
     },
     {
       "equipo": "Facultad de Ingenieria",
@@ -632,16 +634,18 @@
       "serial": "3399952378",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:52:09.985287"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:52:09.985287",
+      "fecha_resolucion": "2026-08-03T11:00:44.122474"
     },
     {
       "equipo": "Facultad de Trabajo Social",
       "serial": "3940616548",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:52:09.985307"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:52:09.985307",
+      "fecha_resolucion": "2026-08-03T11:00:44.122487"
     }
   ]
 }
