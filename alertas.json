@@ -538,32 +538,36 @@
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772047"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.772047",
+      "fecha_resolucion": "2026-08-03T10:52:10.199603"
     },
     {
       "equipo": "Derecho - Clinica Juridica",
       "serial": "3399951738",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772092"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.772092",
+      "fecha_resolucion": "2026-08-03T10:52:10.199676"
     },
     {
       "equipo": "Sec_Educa",
       "serial": "3942937600",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772162"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.772162",
+      "fecha_resolucion": "2026-08-03T10:52:10.199707"
     },
     {
       "equipo": "Modulo2",
       "serial": "3942939786",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772192"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.772192",
+      "fecha_resolucion": "2026-08-03T10:52:10.199736"
     },
     {
       "equipo": "biblioteca P3",
@@ -598,6 +602,46 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-03T10:01:43.772276"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:52:09.985074"
+    },
+    {
+      "equipo": "Finanzas, Alameda 1845 piso 3",
+      "serial": "3399945932",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:52:09.985150"
+    },
+    {
+      "equipo": "Facultad de Ingenieria",
+      "serial": "3399952459",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:52:09.985226"
+    },
+    {
+      "equipo": "DARA",
+      "serial": "3399952378",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:52:09.985287"
+    },
+    {
+      "equipo": "Facultad de Trabajo Social",
+      "serial": "3940616548",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:52:09.985307"
     }
   ]
 }

@@ -86,6 +86,7 @@ th:hover{
 <thead>
 
 <tr>
+
     <th onclick="ordenarPor('nombre')">
         Nombre ▲▼
     </th>
@@ -229,6 +230,41 @@ function renderTabla(
 
             }
 
+            else if(
+                columnaOrden === "ip"
+            ){
+
+                const ipa =
+                    (a.ip || "0.0.0.0")
+                    .split(".")
+                    .map(Number);
+
+                const ipb =
+                    (b.ip || "0.0.0.0")
+                    .split(".")
+                    .map(Number);
+
+                for(
+                    let i = 0;
+                    i < 4;
+                    i++
+                ){
+
+                    if(
+                        ipa[i] !== ipb[i]
+                    ){
+
+                        resultado =
+                            ipa[i] - ipb[i];
+
+                        break;
+
+                    }
+
+                }
+
+            }
+
             else{
 
                 resultado =
@@ -341,4 +377,5 @@ fetch("dashboard.json")
 </script>
 
 </body>
+
 </html>
