@@ -156,8 +156,11 @@
       "consumible": "toner_magenta",
       "porcentaje": 0,
       "criticidad": "critico",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T01:42:47.300167"
+      "estado": "instalado",
+      "fecha_notificacion": "2026-07-31T01:42:47.300167",
+      "fecha_instalacion": "2026-08-03T17:01:14.828311",
+      "contador_instalacion": 323718,
+      "porcentaje_reemplazo": 0
     },
     {
       "id_alerta": "UAH_00013",
@@ -693,6 +696,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-03T15:00:59.933414",
       "fecha_resolucion": "2026-08-03T16:00:37.066477"
+    },
+    {
+      "equipo": "DARA 2do piso",
+      "serial": "3399945967",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T17:01:14.743030"
     }
   ]
 }

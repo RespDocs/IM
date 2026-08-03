@@ -172,7 +172,7 @@
     "toner_magenta": {
       "descripcion": "Cartucho de tÃ³ner magenta, PN 106R04083;SN80115914E9070000",
       "pn": "106R04083",
-      "vida_nominal": 26000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "toner_cyan": {
@@ -196,7 +196,7 @@
     "drum_yellow": {
       "descripcion": "Cartucho de cilindro amarillo, PN 101R00602;SN8056590E43070000",
       "pn": "101R00602",
-      "vida_nominal": 157000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "drum_magenta": {
@@ -223,12 +223,6 @@
       "vida_nominal": null,
       "origen": "snmp"
     },
-    "belt_cleaner": {
-      "descripcion": "Limpiador de la correa de transferencia, PN 104R00256",
-      "pn": "104R00256",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
     "tray1_roller": {
       "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 1, PN 109R00790",
       "pn": "109R00790",
@@ -249,21 +243,9 @@
       "vida_nominal": 10500,
       "origen": "snmp"
     },
-    "toner_yellow": {
-      "descripcion": "Yellow Toner Cartridge, PN 106R03537;SN4D00190015670000",
-      "pn": "106R03537",
-      "vida_nominal": 8000,
-      "origen": "snmp"
-    },
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03539;SN5E00B4002A180000",
       "pn": "106R03539",
-      "vida_nominal": 8000,
-      "origen": "snmp"
-    },
-    "toner_cyan": {
-      "descripcion": "Cyan Toner Cartridge, PN 106R03538;SN1500A60010080000",
-      "pn": "106R03538",
       "vida_nominal": 8000,
       "origen": "snmp"
     },
@@ -308,7 +290,7 @@
       "origen": "snmp"
     },
     "toner_magenta": {
-      "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN80545F2908070000",
+      "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN8009470558080000",
       "pn": "106R03735",
       "vida_nominal": 15000,
       "origen": "snmp"
