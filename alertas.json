@@ -73,7 +73,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.297506"
@@ -227,7 +227,7 @@
     {
       "id_alerta": "UAH_00018",
       "clave_alerta": "3940619199_toner_black",
-      "equipo": "Facultad de Psicologia 2do piso",
+      "equipo": null,
       "serial": "3940619199",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -626,8 +626,9 @@
       "serial": "3399952459",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:52:09.985226"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:52:09.985226",
+      "fecha_resolucion": "2026-08-03T13:00:52.978001"
     },
     {
       "equipo": "DARA",
@@ -652,24 +653,35 @@
       "serial": "3940616556",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T12:01:27.624687"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T12:01:27.624687",
+      "fecha_resolucion": "2026-08-03T13:00:52.978039"
     },
     {
       "equipo": "Direccion de Aprendizaje Institu",
       "serial": "3940619229",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T12:01:27.624803"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T12:01:27.624803",
+      "fecha_resolucion": "2026-08-03T13:00:52.978055"
     },
     {
       "equipo": "DARA-ADMISION",
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T12:01:27.624866",
+      "fecha_resolucion": "2026-08-03T13:00:52.978074"
+    },
+    {
+      "equipo": "Facultad de Ciencias Politicas",
+      "serial": "3940616270",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T12:01:27.624866"
+      "fecha_notificacion": "2026-08-03T13:00:52.807785"
     }
   ]
 }
