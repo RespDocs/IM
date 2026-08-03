@@ -499,16 +499,26 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-02T23:19:47.758018"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-02T23:19:47.758018",
+      "fecha_resolucion": "2026-08-03T00:00:22.259059"
     },
     {
       "equipo": "TicsDesarrollo",
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-02T23:19:47.758068",
+      "fecha_resolucion": "2026-08-03T00:00:22.259102"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-02T23:19:47.758068"
+      "fecha_notificacion": "2026-08-03T00:00:22.099109"
     }
   ]
 }
