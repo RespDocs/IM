@@ -1,9 +1,9 @@
 import json
 import os
 
-
-ARCHIVO_INVENTARIO = "inventario_detalle.json"
-
+ARCHIVO_INVENTARIO = (
+    "inventario_detalle.json"
+)
 
 with open(
     "impresoras.json",
@@ -12,7 +12,6 @@ with open(
 ) as f:
 
     impresoras = json.load(f)
-
 
 if os.path.exists(
     ARCHIVO_INVENTARIO
@@ -30,14 +29,19 @@ else:
 
     inventario = {}
 
+for impresora in impresoras[
+    "impresoras"
+]:
 
-for impresora in impresoras["impresoras"]:
-
-    serial = impresora["serial"]
+    serial = impresora[
+        "serial"
+    ]
 
     if serial not in inventario:
 
-        inventario[serial] = {
+        inventario[
+            serial
+        ] = {
 
             "referencia": "",
 
@@ -45,33 +49,9 @@ for impresora in impresoras["impresoras"]:
 
             "contacto": "",
 
-            "instalacion": "",
-
-            "nombre":
-                impresora["nombre"],
-
-            "modelo":
-                impresora["modelo"],
-
-            "ip":
-                impresora["ip"]
+            "instalacion": ""
 
         }
-
-    else:
-
-        inventario[serial][
-            "nombre"
-        ] = impresora["nombre"]
-
-        inventario[serial][
-            "modelo"
-        ] = impresora["modelo"]
-
-        inventario[serial][
-            "ip"
-        ] = impresora["ip"]
-
 
 with open(
     ARCHIVO_INVENTARIO,

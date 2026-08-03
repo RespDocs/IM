@@ -82,10 +82,20 @@ for impresora in estado.get(
 
     if serial in inventario:
 
-        impresora.update(
-            inventario[serial]
-        )
+        for campo, valor in inventario[
+            serial
+        ].items():
 
+            if campo not in (
+                "ip",
+                "nombre",
+                "modelo",
+                "serial"
+            ):
+
+                impresora[
+                    campo
+                ] = valor
 
 # -------------------------------------------------
 # ALERTAS ENRIQUECIDAS
