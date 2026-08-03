@@ -575,8 +575,9 @@
       "serial": "3353169172",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772221"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T10:01:43.772221",
+      "fecha_resolucion": "2026-08-03T15:01:00.158708"
     },
     {
       "id_alerta": "UAH_00019",
@@ -683,6 +684,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-03T13:00:52.807785",
       "fecha_resolucion": "2026-08-03T14:20:42.703032"
+    },
+    {
+      "equipo": "DirecciÃ³n de Finanzas",
+      "serial": "3223580865",
+      "modelo": "Xerox Phaser 3320",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T15:00:59.933414"
     }
   ]
 }

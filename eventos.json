@@ -308,5 +308,27 @@
     "equipo": "Facultad de Ciencias Politicas",
     "serial": "3940616270",
     "ip": "172.16.79.55"
+  },
+  {
+    "fecha": "2026-08-03T15:00:08.786517",
+    "tipo": "offline",
+    "equipo": "DirecciÃ³n de Finanzas",
+    "serial": "3223580865",
+    "ip": "172.16.79.148"
+  },
+  {
+    "fecha": "2026-08-03T15:00:08.786748",
+    "tipo": "cambio_ip",
+    "equipo": "Sec_Educa",
+    "serial": "3942937600",
+    "ip_anterior": "172.16.79.80",
+    "ip_nueva": "172.16.79.79"
+  },
+  {
+    "fecha": "2026-08-03T15:00:08.786772",
+    "tipo": "online",
+    "equipo": "biblioteca P3",
+    "serial": "3353169172",
+    "ip": "172.16.79.97"
   }
 ]
