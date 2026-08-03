@@ -99,7 +99,7 @@
       "modelo": "Xerox VersaLink B405",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.298383"
@@ -251,8 +251,9 @@
       "serial": "3399952459",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T22:13:22.466207"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-07-31T22:13:22.466207",
+      "fecha_resolucion": "2026-08-03T10:01:43.966977"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -523,6 +524,80 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-03T00:00:22.099109",
       "fecha_resolucion": "2026-08-03T01:00:05.620065"
+    },
+    {
+      "equipo": "Modulo5",
+      "serial": "3940617030",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.771943"
+    },
+    {
+      "equipo": "Facultad de Filosofia y Humanida",
+      "serial": "3940618842",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772047"
+    },
+    {
+      "equipo": "Derecho - Clinica Juridica",
+      "serial": "3399951738",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772092"
+    },
+    {
+      "equipo": "Sec_Educa",
+      "serial": "3942937600",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772162"
+    },
+    {
+      "equipo": "Modulo2",
+      "serial": "3942939786",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772192"
+    },
+    {
+      "equipo": "biblioteca P3",
+      "serial": "3353169172",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772221"
+    },
+    {
+      "id_alerta": "UAH_00019",
+      "clave_alerta": "3940618222_drum_black",
+      "equipo": "Direccion de Biblioteca",
+      "serial": "3940618222",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 11,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772242"
+    },
+    {
+      "id_alerta": "UAH_00020",
+      "clave_alerta": "3399952335_drum_black",
+      "equipo": "Centro Uni. Ignaciano 2do piso",
+      "serial": "3399952335",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 15,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772276"
     }
   ]
 }
