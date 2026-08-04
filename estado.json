@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-04T05:59:46.658173",
+  "actualizado": "2026-08-04T06:59:50.518163",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -7,7 +7,7 @@
       "serial": "3353184511",
       "ip": "172.16.79.100",
       "online": false,
-      "ultima_lectura": "2026-08-04T05:58:20.487221"
+      "ultima_lectura": "2026-08-04T06:58:23.116230"
     },
     {
       "nombre": "Modulo1",
@@ -20,7 +20,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:23.032099"
+      "ultima_lectura": "2026-08-04T06:58:25.670807"
     },
     {
       "nombre": "DIPER",
@@ -28,11 +28,9 @@
       "serial": "3384970914",
       "ip": "172.16.79.146",
       "contador": 26996,
-      "consumibles": {
-        "toner_black": 76
-      },
+      "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:23.952241"
+      "ultima_lectura": "2026-08-04T06:58:26.582137"
     },
     {
       "nombre": "DirecciÃ³n de Finanzas",
@@ -44,7 +42,7 @@
         "toner_black": 67
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:25.020965"
+      "ultima_lectura": "2026-08-04T06:58:29.924664"
     },
     {
       "nombre": "Modulo5",
@@ -57,7 +55,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:25.912604"
+      "ultima_lectura": "2026-08-04T06:58:30.810954"
     },
     {
       "nombre": "Vicerectoria de Adm y Finanzas",
@@ -70,7 +68,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:26.794783"
+      "ultima_lectura": "2026-08-04T06:58:33.073913"
     },
     {
       "nombre": "Modulo6",
@@ -83,7 +81,7 @@
         "drum_black": 61
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:27.665210"
+      "ultima_lectura": "2026-08-04T06:58:34.024417"
     },
     {
       "nombre": "Finanzas, Alameda 1845 piso 3",
@@ -96,7 +94,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:29.076231"
+      "ultima_lectura": "2026-08-04T06:58:35.670622"
     },
     {
       "nombre": "PMI ( Plan de Mejoramiento Int.)",
@@ -109,7 +107,7 @@
         "drum_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:32.651039"
+      "ultima_lectura": "2026-08-04T06:58:36.669633"
     },
     {
       "nombre": "DARA 2do piso",
@@ -122,15 +120,20 @@
         "drum_black": 39
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:33.832019"
+      "ultima_lectura": "2026-08-04T06:58:38.914389"
     },
     {
       "nombre": "Direccion de Asuntos Estudiantil",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616424",
       "ip": "172.16.79.25",
-      "online": false,
-      "ultima_lectura": "2026-08-04T05:58:34.868548"
+      "contador": 216424,
+      "consumibles": {
+        "toner_black": 56,
+        "drum_black": 42
+      },
+      "online": true,
+      "ultima_lectura": "2026-08-04T06:58:39.865969"
     },
     {
       "nombre": "Centro Universitario Ignaciano",
@@ -143,7 +146,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:37.305950"
+      "ultima_lectura": "2026-08-04T06:58:40.749765"
     },
     {
       "nombre": " Asuntos Estudiantiles Recepcion",
@@ -156,7 +159,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:38.186002"
+      "ultima_lectura": "2026-08-04T06:58:41.625788"
     },
     {
       "nombre": "DARA_COLOR",
@@ -175,7 +178,7 @@
         "drum_cyan": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:39.051758"
+      "ultima_lectura": "2026-08-04T06:58:43.309443"
     },
     {
       "nombre": "DARA 1er piso",
@@ -188,7 +191,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:43.658098"
+      "ultima_lectura": "2026-08-04T06:58:47.922428"
     },
     {
       "nombre": "Rectoria Color",
@@ -203,7 +206,7 @@
         "toner_cyan": 8
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:44.795844"
+      "ultima_lectura": "2026-08-04T06:58:48.789863"
     },
     {
       "nombre": "Rectoria",
@@ -216,7 +219,7 @@
         "drum_black": 45
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:48.025975"
+      "ultima_lectura": "2026-08-04T06:58:52.470102"
     },
     {
       "nombre": "Facultad de Educacion 2do piso",
@@ -229,7 +232,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:48.888595"
+      "ultima_lectura": "2026-08-04T06:58:54.343033"
     },
     {
       "nombre": "Centro Uni Ignaciano Pastoral",
@@ -242,7 +245,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:49.755160"
+      "ultima_lectura": "2026-08-04T06:58:55.233645"
     },
     {
       "nombre": "Facultad Educacion",
@@ -255,7 +258,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:50.618366"
+      "ultima_lectura": "2026-08-04T06:58:56.112542"
     },
     {
       "nombre": "Facultad Educacion Doctorado",
@@ -268,7 +271,7 @@
         "drum_black": 56
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:51.482654"
+      "ultima_lectura": "2026-08-04T06:58:56.977103"
     },
     {
       "nombre": "Facultad de Musica",
@@ -281,7 +284,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:52.439008"
+      "ultima_lectura": "2026-08-04T06:58:57.842617"
     },
     {
       "nombre": "Facultad de Literatura",
@@ -294,7 +297,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:53.308502"
+      "ultima_lectura": "2026-08-04T06:58:58.709671"
     },
     {
       "nombre": "Facultad de Filosofia y Humanida",
@@ -307,7 +310,7 @@
         "drum_black": 7
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:54.172973"
+      "ultima_lectura": "2026-08-04T06:58:59.574693"
     },
     {
       "nombre": "Facultad de Filosofia y Humanida",
@@ -320,7 +323,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:55.036426"
+      "ultima_lectura": "2026-08-04T06:59:00.483827"
     },
     {
       "nombre": "instituto de Teologia y Estudios",
@@ -333,7 +336,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:55.905350"
+      "ultima_lectura": "2026-08-04T06:59:01.585823"
     },
     {
       "nombre": "Facultad de Periodismo",
@@ -346,7 +349,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:56.985694"
+      "ultima_lectura": "2026-08-04T06:59:03.191102"
     },
     {
       "nombre": "Facultad de Ciencias Sociales",
@@ -359,7 +362,7 @@
         "drum_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:57.891298"
+      "ultima_lectura": "2026-08-04T06:59:04.057754"
     },
     {
       "nombre": "DOP",
@@ -372,7 +375,7 @@
         "drum_black": 4
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:58:58.758920"
+      "ultima_lectura": "2026-08-04T06:59:04.927752"
     },
     {
       "nombre": "Central de Apuntes",
@@ -391,7 +394,7 @@
         "drum_cyan": 31
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:00.340011"
+      "ultima_lectura": "2026-08-04T06:59:05.798093"
     },
     {
       "nombre": "LASER_UAH",
@@ -403,7 +406,7 @@
         "toner_black": 56
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:03.327100"
+      "ultima_lectura": "2026-08-04T06:59:09.907344"
     },
     {
       "nombre": "Derecho - Clinica Juridica",
@@ -416,7 +419,7 @@
         "drum_black": 60
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:04.200440"
+      "ultima_lectura": "2026-08-04T06:59:10.834683"
     },
     {
       "nombre": "Direccion de Admision Patio",
@@ -429,7 +432,7 @@
         "drum_black": 96
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:05.077717"
+      "ultima_lectura": "2026-08-04T06:59:11.990363"
     },
     {
       "nombre": "DERECHO",
@@ -442,7 +445,7 @@
         "drum_black": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:06.226800"
+      "ultima_lectura": "2026-08-04T06:59:12.867676"
     },
     {
       "nombre": "Facultad de Ciencias Politicas",
@@ -455,7 +458,7 @@
         "drum_black": 100
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:07.113629"
+      "ultima_lectura": "2026-08-04T06:59:14.873237"
     },
     {
       "nombre": "Tics 3er piso",
@@ -468,7 +471,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:08.688235"
+      "ultima_lectura": "2026-08-04T06:59:15.760764"
     },
     {
       "nombre": "Facultad de Ingenieria",
@@ -481,7 +484,7 @@
         "drum_black": 61
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:10.548703"
+      "ultima_lectura": "2026-08-04T06:59:16.637645"
     },
     {
       "nombre": "Vice de Investigacion y Postgrad",
@@ -494,7 +497,7 @@
         "drum_black": 27
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:11.432214"
+      "ultima_lectura": "2026-08-04T06:59:17.512367"
     },
     {
       "nombre": "Direccion de Docencia",
@@ -507,7 +510,7 @@
         "drum_black": 97
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:12.309646"
+      "ultima_lectura": "2026-08-04T06:59:18.394955"
     },
     {
       "nombre": "Direccion de Aprendizaje Institu",
@@ -520,7 +523,7 @@
         "drum_black": 73
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:13.241339"
+      "ultima_lectura": "2026-08-04T06:59:19.281175"
     },
     {
       "nombre": "Facultad de Economia 2do piso",
@@ -533,7 +536,7 @@
         "drum_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:14.133102"
+      "ultima_lectura": "2026-08-04T06:59:20.166075"
     },
     {
       "nombre": "Facultad Economia 1er piso",
@@ -546,7 +549,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:15.012712"
+      "ultima_lectura": "2026-08-04T06:59:21.109526"
     },
     {
       "nombre": "Facultad de Economia Subterraneo",
@@ -559,7 +562,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:15.943518"
+      "ultima_lectura": "2026-08-04T06:59:22.364018"
     },
     {
       "nombre": "Direccion de Comunicaciones",
@@ -572,7 +575,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:17.177071"
+      "ultima_lectura": "2026-08-04T06:59:23.245726"
     },
     {
       "nombre": "Facultad de Psicologia",
@@ -585,7 +588,7 @@
         "drum_black": 91
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:18.097045"
+      "ultima_lectura": "2026-08-04T06:59:24.392165"
     },
     {
       "nombre": "Facultad de Psicologia sub",
@@ -598,7 +601,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:18.977424"
+      "ultima_lectura": "2026-08-04T06:59:25.296674"
     },
     {
       "nombre": "Facultad de Geografia",
@@ -611,7 +614,7 @@
         "drum_black": 86
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:20.520671"
+      "ultima_lectura": "2026-08-04T06:59:27.088484"
     },
     {
       "nombre": "Direccion de Extension 2do piso",
@@ -626,7 +629,7 @@
         "toner_cyan": 64
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:21.861746"
+      "ultima_lectura": "2026-08-04T06:59:27.976791"
     },
     {
       "nombre": "Biblioteca San ignacio",
@@ -639,7 +642,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:25.962642"
+      "ultima_lectura": "2026-08-04T06:59:31.060221"
     },
     {
       "nombre": "TicsDesarrollo",
@@ -651,7 +654,7 @@
         "toner_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:26.950575"
+      "ultima_lectura": "2026-08-04T06:59:33.966485"
     },
     {
       "nombre": "Decanato Facso",
@@ -664,7 +667,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:27.875427"
+      "ultima_lectura": "2026-08-04T06:59:35.212422"
     },
     {
       "nombre": "Antropologia",
@@ -677,7 +680,7 @@
         "drum_black": 22
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:28.765318"
+      "ultima_lectura": "2026-08-04T06:59:36.574135"
     },
     {
       "nombre": "Facultad de Psicologia 2do piso",
@@ -690,7 +693,7 @@
         "drum_black": 36
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:30.089432"
+      "ultima_lectura": "2026-08-04T06:59:37.469725"
     },
     {
       "nombre": "Sec_Educa",
@@ -703,7 +706,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:33.097783"
+      "ultima_lectura": "2026-08-04T06:59:38.368753"
     },
     {
       "nombre": "Modulo2",
@@ -716,7 +719,7 @@
         "drum_black": 23
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:35.412441"
+      "ultima_lectura": "2026-08-04T06:59:39.260731"
     },
     {
       "nombre": "CentroDeportivoDAE",
@@ -726,7 +729,7 @@
       "contador": 19798,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:37.257094"
+      "ultima_lectura": "2026-08-04T06:59:40.154001"
     },
     {
       "nombre": "Cienfuego 33",
@@ -738,7 +741,7 @@
         "toner_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:38.324943"
+      "ultima_lectura": "2026-08-04T06:59:41.287159"
     },
     {
       "nombre": "biblioteca P3",
@@ -750,7 +753,7 @@
         "toner_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:39.229085"
+      "ultima_lectura": "2026-08-04T06:59:42.196603"
     },
     {
       "nombre": "XRX9C934E754E90",
@@ -762,7 +765,7 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:40.138777"
+      "ultima_lectura": "2026-08-04T06:59:43.096740"
     },
     {
       "nombre": "DARA",
@@ -775,7 +778,7 @@
         "drum_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:41.226763"
+      "ultima_lectura": "2026-08-04T06:59:44.172481"
     },
     {
       "nombre": "Facultad de Musica",
@@ -788,7 +791,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:42.122537"
+      "ultima_lectura": "2026-08-04T06:59:45.105974"
     },
     {
       "nombre": "DARA-ADMISION",
@@ -800,7 +803,7 @@
         "toner_black": 31
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:43.065430"
+      "ultima_lectura": "2026-08-04T06:59:46.195921"
     },
     {
       "nombre": "Direccion de Biblioteca",
@@ -813,7 +816,7 @@
         "drum_black": 11
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:43.963008"
+      "ultima_lectura": "2026-08-04T06:59:47.087230"
     },
     {
       "nombre": "Facultad de Trabajo Social",
@@ -826,7 +829,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:44.862656"
+      "ultima_lectura": "2026-08-04T06:59:47.983251"
     },
     {
       "nombre": "Centro Uni. Ignaciano 2do piso",
@@ -839,7 +842,7 @@
         "drum_black": 15
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T05:59:45.760710"
+      "ultima_lectura": "2026-08-04T06:59:48.882850"
     }
   ]
 }
