@@ -32,7 +32,7 @@
     {
       "id_alerta": "UAH_00003",
       "clave_alerta": "3358981312_toner_yellow",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -45,7 +45,7 @@
     {
       "id_alerta": "UAH_00004",
       "clave_alerta": "3358981312_toner_magenta",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -58,7 +58,7 @@
     {
       "id_alerta": "UAH_00005",
       "clave_alerta": "3358981312_toner_cyan",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -827,32 +827,44 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T15:00:59.107018"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T15:00:59.107018",
+      "fecha_resolucion": "2026-08-04T17:00:23.266427"
     },
     {
       "equipo": "Sec_Educa",
       "serial": "3942937600",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T16:01:43.357384"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T16:01:43.357384",
+      "fecha_resolucion": "2026-08-04T17:00:23.266469"
     },
     {
       "equipo": "Facultad de Musica",
       "serial": "3399944995",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T16:01:43.357445"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T16:01:43.357445",
+      "fecha_resolucion": "2026-08-04T17:00:23.266484"
     },
     {
       "equipo": "Centro Uni. Ignaciano 2do piso",
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T16:01:43.357473",
+      "fecha_resolucion": "2026-08-04T17:00:23.266497"
+    },
+    {
+      "equipo": "Facultad de Filosofia y Humanida",
+      "serial": "3940616998",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T16:01:43.357473"
+      "fecha_notificacion": "2026-08-04T17:00:23.085951"
     }
   ]
 }
