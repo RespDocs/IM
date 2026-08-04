@@ -10,18 +10,8 @@
 
 <style>
 
-.card-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-}
-
-.card-link:hover{
-    opacity:.95;
-}
-
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#ffffff;
     margin:20px;
     color:#333;
@@ -38,7 +28,11 @@ h1{
 
 .kpis{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(180px,1fr)
+        );
     gap:15px;
 }
 
@@ -46,7 +40,9 @@ h1{
     background:white;
     border-radius:10px;
     padding:20px;
-    box-shadow:0 2px 5px rgba(0,0,0,.10);
+    box-shadow:
+        0 2px 5px
+        rgba(0,0,0,.10);
 }
 
 .card h2,
@@ -75,6 +71,15 @@ h1{
     opacity:.95;
 }
 
+.evento{
+    padding:6px 0;
+    border-bottom:1px solid #eee;
+}
+
+.evento:last-child{
+    border-bottom:none;
+}
+
 </style>
 
 </head>
@@ -85,42 +90,51 @@ h1{
 
 <div
     class="actualizado"
-    id="actualizado">
-</div>
+    id="actualizado"
+></div>
 
 <div class="kpis">
 
     <div class="card">
         <h3>IMPRESORAS</h3>
-        <div id="total" class="valor"></div>
+        <div
+            id="total"
+            class="valor"
+        ></div>
     </div>
 
     <div class="card">
         <h3>ONLINE</h3>
-        <div id="online" class="valor"></div>
+        <div
+            id="online"
+            class="valor"
+        ></div>
     </div>
 
     <div class="card">
         <h3>OFFLINE</h3>
-        <div id="offline" class="valor"></div>
+        <div
+            id="offline"
+            class="valor"
+        ></div>
     </div>
 
     <div class="card">
         <h3>ALERTAS</h3>
-        <div id="alertas" class="valor"></div>
+        <div
+            id="alertas"
+            class="valor"
+        ></div>
     </div>
 
 </div>
 
 <div class="section">
 
-    alertas.html
-
-    <a
-        href="alertas.html"
+    alertas.html"
         class="card-link"
+    >
 
-    >    
         <div class="card">
 
             <h2>🚨 ALERTAS</h2>
@@ -178,34 +192,6 @@ h1{
 
 <div class="section">
 
-    "
-        class="card-link"
-    >
-
-        <div class="card">
-
-            <h2>🔔 ACTIVIDAD RECIENTE</h2>
-
-            <div id="actividad_reciente">
-
-                Cargando eventos...
-
-            </div>
-
-            <p>
-
-                <b>Ver detalle →</b>
-
-            </p>
-
-        </div>
-
-    </a>
-
-</div>
-
-<div class="section">
-
     <div class="card">
 
         <h2>📦 INSTALACIONES</h2>
@@ -225,7 +211,27 @@ h1{
 
 <div class="section">
 
-    
+    eventos.html
+
+        <div class="card">
+
+            <h2>🔔 ACTIVIDAD RECIENTE</h2>
+
+            <div id="actividad_reciente">
+
+                Cargando eventos...
+
+            </div>
+
+            <p>
+                <b>Ver detalle →</b>
+            </p>
+
+        </div>
+
+    </a>
+
+</div>
 
 <script>
 
@@ -238,63 +244,91 @@ fetch("dashboard.json")
     document.getElementById(
         "actualizado"
     ).innerText =
+
         "Actualizado: "
+
         +
+
         new Date(
             data.actualizado
-        ).toLocaleString("es-CL");
+        ).toLocaleString(
+            "es-CL"
+        );
 
     document.getElementById(
         "total"
     ).innerText =
+
         data.metricas.impresoras.total;
 
     document.getElementById(
         "online"
     ).innerText =
+
         data.metricas.impresoras.online;
 
     document.getElementById(
         "offline"
     ).innerText =
+
         data.metricas.impresoras.offline;
 
     document.getElementById(
         "alertas"
     ).innerText =
+
         data.metricas.alertas.abiertas;
 
     document.getElementById(
         "criticas"
     ).innerText =
+
         data.metricas.alertas.criticas;
 
     document.getElementById(
         "advertencias"
     ).innerText =
+
         data.metricas.alertas.advertencias;
 
     document.getElementById(
         "offline_alertas"
     ).innerText =
+
         data.alertas.filter(
+
             a =>
+
                 a.tipo === "offline"
+
                 &&
+
                 a.estado === "notificado"
+
         ).length;
 
     document.getElementById(
         "inventario_total"
     ).innerText =
+
         data.metricas.impresoras.total;
 
     document.getElementById(
         "instalaciones"
     ).innerText =
+
         data.instalaciones.length;
 
 })
+
+.catch(error => {
+
+    console.error(
+        "Error cargando dashboard:",
+        error
+    );
+
+});
 
 fetch("eventos.json")
 
@@ -345,7 +379,7 @@ fetch("eventos.json")
 
             contenedor.innerHTML += `
 
-                <p>
+                <div class="evento">
 
                     ${icono}
                     <b>${evento.equipo}</b>
@@ -357,18 +391,18 @@ fetch("eventos.json")
                         ?? evento.tipo
                     }
 
-                </p>
+                </div>
 
             `;
 
         });
 
-});
+})
 
 .catch(error => {
 
     console.error(
-        "Error cargando dashboard:",
+        "Error cargando eventos:",
         error
     );
 
