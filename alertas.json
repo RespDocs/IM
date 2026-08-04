@@ -721,8 +721,17 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-03T23:00:35.840170",
+      "fecha_resolucion": "2026-08-04T00:00:36.805386"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T23:00:35.840170"
+      "fecha_notificacion": "2026-08-04T00:00:36.639365"
     }
   ]
 }
