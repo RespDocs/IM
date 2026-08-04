@@ -13,12 +13,6 @@
       "vida_nominal": 84800,
       "origen": "snmp"
     },
-    "transfer": {
-      "descripcion": "Transfer Roller, PN 115R00116",
-      "pn": "115R00116",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
     "fuser": {
       "descripcion": "Fuser, PN 115R00115",
       "pn": "115R00115",
@@ -44,7 +38,7 @@
   },
   "Xerox VersaLink B605": {
     "toner_black": {
-      "descripcion": "Toner Cartridge;SNAC75852F89840000",
+      "descripcion": "Toner Cartridge;SN558070489CD30000",
       "pn": null,
       "vida_nominal": 46700,
       "origen": "snmp"
