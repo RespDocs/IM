@@ -775,8 +775,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T12:01:10.617445"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T12:01:10.617445",
+      "fecha_resolucion": "2026-08-04T12:19:38.820733"
     },
     {
       "id_alerta": "UAH_00021",
@@ -786,10 +787,18 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-04T12:01:10.617597"
+    },
+    {
+      "equipo": "Facultad Economia 1er piso",
+      "serial": "3399943565",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-04T12:19:38.460541"
     }
   ]
 }

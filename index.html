@@ -178,6 +178,34 @@ h1{
 
 <div class="section">
 
+    "
+        class="card-link"
+    >
+
+        <div class="card">
+
+            <h2>🔔 ACTIVIDAD RECIENTE</h2>
+
+            <div id="actividad_reciente">
+
+                Cargando eventos...
+
+            </div>
+
+            <p>
+
+                <b>Ver detalle →</b>
+
+            </p>
+
+        </div>
+
+    </a>
+
+</div>
+
+<div class="section">
+
     <div class="card">
 
         <h2>📦 INSTALACIONES</h2>
@@ -196,6 +224,8 @@ h1{
 </div>
 
 <div class="section">
+
+    
 
 <script>
 
@@ -265,6 +295,76 @@ fetch("dashboard.json")
         data.instalaciones.length;
 
 })
+
+fetch("eventos.json")
+
+.then(r => r.json())
+
+.then(eventos => {
+
+    const contenedor =
+        document.getElementById(
+            "actividad_reciente"
+        );
+
+    contenedor.innerHTML = "";
+
+    eventos
+
+        .slice()
+        .reverse()
+        .slice(0, 5)
+
+        .forEach(evento => {
+
+            let icono = "ℹ️";
+
+            if(
+                evento.tipo === "cambio_ip"
+            ){
+                icono = "🔄";
+            }
+
+            if(
+                evento.tipo === "offline"
+            ){
+                icono = "⚫";
+            }
+
+            if(
+                evento.tipo === "online"
+            ){
+                icono = "🟢";
+            }
+
+            if(
+                evento.tipo === "instalacion"
+            ){
+                icono = "✅";
+            }
+
+            contenedor.innerHTML += `
+
+                <p>
+
+                    ${icono}
+                    <b>${evento.equipo}</b>
+
+                    <br>
+
+                    ${
+                        evento.detalle
+                        ?? evento.tipo
+                    }
+
+                </p>
+
+            `;
+
+        });
+
+});
+
 .catch(error => {
 
     console.error(
