@@ -21,8 +21,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294388"
     },
@@ -757,16 +757,18 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T10:01:32.784999"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T10:01:32.784999",
+      "fecha_resolucion": "2026-08-04T11:07:19.714162"
     },
     {
       "equipo": "Facultad de Periodismo",
       "serial": "3394992100",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T10:01:32.785114"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T10:01:32.785114",
+      "fecha_resolucion": "2026-08-04T11:07:19.714231"
     }
   ]
 }

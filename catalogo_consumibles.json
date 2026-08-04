@@ -1,5 +1,12 @@
 {
-  "Xerox WorkCentre 3655S v1": {},
+  "Xerox WorkCentre 3655S v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B7025": {
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN80053C015E080000",
@@ -178,7 +185,7 @@
     "toner_cyan": {
       "descripcion": "Cartucho de tÃ³ner cian, PN 106R04082;SN809E5C05E6070000",
       "pn": "106R04082",
-      "vida_nominal": null,
+      "vida_nominal": 26000,
       "origen": "snmp"
     },
     "waste_toner": {
@@ -196,7 +203,7 @@
     "drum_yellow": {
       "descripcion": "Cartucho de cilindro amarillo, PN 101R00602;SN8056590E43070000",
       "pn": "101R00602",
-      "vida_nominal": null,
+      "vida_nominal": 157000,
       "origen": "snmp"
     },
     "drum_magenta": {
@@ -231,6 +238,12 @@
     },
     "tray1_roller": {
       "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 1, PN 109R00790",
+      "pn": "109R00790",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray2_roller": {
+      "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 2, PN 109R00790",
       "pn": "109R00790",
       "vida_nominal": null,
       "origen": "snmp"
@@ -289,6 +302,12 @@
     }
   },
   "Xerox VersaLink C7025": {
+    "toner_black": {
+      "descripcion": "Black Toner Cartridge, PN 106R03733;SN803D4617F2070000",
+      "pn": "106R03733",
+      "vida_nominal": 22000,
+      "origen": "snmp"
+    },
     "toner_yellow": {
       "descripcion": "Yellow Toner Cartridge, PN 106R03734;SN80BE4406E6070000",
       "pn": "106R03734",
@@ -301,10 +320,16 @@
       "vida_nominal": 15000,
       "origen": "snmp"
     },
+    "toner_cyan": {
+      "descripcion": "Cyan Toner Cartridge, PN 106R03736;SN800706144F080000",
+      "pn": "106R03736",
+      "vida_nominal": 15000,
+      "origen": "snmp"
+    },
     "waste_toner": {
       "descripcion": "Waste Cartridge, PN 115R00128",
       "pn": "115R00128",
-      "vida_nominal": null,
+      "vida_nominal": 30000,
       "origen": "snmp"
     },
     "drum_black": {
@@ -344,10 +369,17 @@
       "origen": "snmp"
     }
   },
-  "Xerox AltaLink B8075": {},
+  "Xerox AltaLink B8075": {
+    "toner_black": {
+      "descripcion": "Toner Cartridge, PN 006R01604;SND0027D3E14122A6A",
+      "pn": "006R01604",
+      "vida_nominal": 4600,
+      "origen": "snmp"
+    }
+  },
   "Xerox WorkCentre 3655X v1": {
     "toner_black": {
-      "descripcion": "Black Toner, PN unknown;SNb5b5010a0100013121",
+      "descripcion": "Black Toner, PN unknown;SNb5010a0100013121",
       "pn": "unknown",
       "vida_nominal": 25000,
       "origen": "snmp"
