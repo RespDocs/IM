@@ -10,18 +10,8 @@
 
 <style>
 
-.card-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
-}
-
-.card-link:hover{
-    opacity:.95;
-}
-
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#ffffff;
     margin:20px;
     color:#333;
@@ -75,6 +65,15 @@ h1{
     opacity:.95;
 }
 
+.evento{
+    padding:6px 0;
+    border-bottom:1px solid #eee;
+}
+
+.evento:last-child{
+    border-bottom:none;
+}
+
 </style>
 
 </head>
@@ -96,8 +95,8 @@ h1{
     </div>
 
     <div class="card">
-        <h3>ONLINE</h3>
-        <div id="online" class="valor"></div>
+        <h3>ALERTAS</h3>
+        <div id="alertas" class="valor"></div>
     </div>
 
     <div class="card">
@@ -106,19 +105,18 @@ h1{
     </div>
 
     <div class="card">
-        <h3>ALERTAS</h3>
-        <div id="alertas" class="valor"></div>
+        <h3>ACTUALIZACIÓN</h3>
+        <div id="ultima_actualizacion" class="valor"></div>
     </div>
 
 </div>
-
 <div class="section">
 
     <a
         href="alertas.html"
         class="card-link"
+    >
 
-    >    
         <div class="card">
 
             <h2>🚨 ALERTAS</h2>
@@ -173,28 +171,61 @@ h1{
     </a>
 
 </div>
-
 <div class="section">
+    <a
+        href="metricas.html"
+        class="card-link"
+    >
 
-    <div class="card">
+        <div class="card">
 
-        <h2>📦 INSTALACIONES</h2>
+            <h2>📊 MÉTRICAS</h2>
 
-        <p>
-            Instalaciones detectadas:
-            <span id="instalaciones"></span>
-        </p>
+            <p>
+                Consumo histórico
+            </p>
 
-        <p>
-            <b>Próximamente</b>
-        </p>
+            <p>
+                Contadores por período
+            </p>
 
-    </div>
+            <p>
+                <b>Ver métricas →</b>
+            </p>
+
+        </div>
+
+    </a>
 
 </div>
 
 <div class="section">
 
+    <a
+        href="eventos.html"
+        class="card-link
+
+    >
+
+        <div class="card">
+
+            <h2>🔔 ACTIVIDAD RECIENTE</h2>
+
+            <div id="actividad_reciente">
+
+                Cargando eventos...
+
+            </div>
+
+            <p>
+                <b>Ver detalle →</b>
+            </p>
+
+        </div>
+
+    </a>
+
+</div>
 <script>
 
 fetch("dashboard.json")
@@ -206,21 +237,35 @@ fetch("dashboard.json")
     document.getElementById(
         "actualizado"
     ).innerText =
+
         "Actualizado: "
+
         +
+
         new Date(
             data.actualizado
-        ).toLocaleString("es-CL");
+        ).toLocaleString(
+            "es-CL"
+        );
+
+    document.getElementById(
+        "ultima_actualizacion"
+    ).innerText =
+
+        new Date(
+            data.actualizado
+        ).toLocaleTimeString(
+            "es-CL",
+            {
+                hour:"2-digit",
+                minute:"2-digit"
+            }
+        );
 
     document.getElementById(
         "total"
     ).innerText =
         data.metricas.impresoras.total;
-
-    document.getElementById(
-        "online"
-    ).innerText =
-        data.metricas.impresoras.online;
 
     document.getElementById(
         "offline"
@@ -245,11 +290,15 @@ fetch("dashboard.json")
     document.getElementById(
         "offline_alertas"
     ).innerText =
+
         data.alertas.filter(
+
             a =>
+
                 a.tipo === "offline"
                 &&
                 a.estado === "notificado"
+
         ).length;
 
     document.getElementById(
@@ -257,12 +306,8 @@ fetch("dashboard.json")
     ).innerText =
         data.metricas.impresoras.total;
 
-    document.getElementById(
-        "instalaciones"
-    ).innerText =
-        data.instalaciones.length;
-
 })
+
 .catch(error => {
 
     console.error(
@@ -272,8 +317,85 @@ fetch("dashboard.json")
 
 });
 
+fetch("eventos.json")
+
+.then(r => r.json())
+
+.then(eventos => {
+
+    const contenedor =
+        document.getElementById(
+            "actividad_reciente"
+        );
+
+    contenedor.innerHTML = "";
+
+    eventos
+
+        .slice()
+        .reverse()
+        .slice(0, 5)
+
+        .forEach(evento => {
+
+            let icono = "ℹ️";
+
+            if(
+                evento.tipo === "offline"
+            ){
+                icono = "⚫";
+            }
+
+            if(
+                evento.tipo === "online"
+            ){
+                icono = "🟢";
+            }
+
+            if(
+                evento.tipo === "cambio_ip"
+            ){
+                icono = "🔄";
+            }
+
+            if(
+                evento.tipo === "instalacion"
+            ){
+                icono = "✅";
+            }
+
+            contenedor.innerHTML += `
+
+                <div class="evento">
+
+                    ${icono}
+                    <b>${evento.equipo}</b>
+
+                    <br>
+
+                    ${
+                        evento.detalle
+                        || evento.tipo
+                    }
+
+                </div>
+
+            `;
+
+        });
+
+})
+
+.catch(error => {
+
+    console.error(
+        "Error cargando eventos:",
+        error
+    );
+
+});
+
 </script>
 
 </body>
-
 </html>
