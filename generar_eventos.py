@@ -1,6 +1,8 @@
 import json
 from datetime import datetime
 
+ARCHIVO_EVENTOS = "eventos.json"
+
 
 def cargar(nombre):
 
@@ -19,9 +21,9 @@ def cargar(nombre):
         return {}
 
 
-# -------------------------
+# -------------------------------------------------
 # CARGA
-# -------------------------
+# -------------------------------------------------
 
 estado_anterior = cargar(
     "estado_anterior.json"
@@ -32,7 +34,7 @@ estado_actual = cargar(
 )
 
 eventos = cargar(
-    "eventos.json"
+    ARCHIVO_EVENTOS
 )
 
 if not isinstance(
@@ -43,36 +45,46 @@ if not isinstance(
     eventos = []
 
 
-# -------------------------
+# -------------------------------------------------
 # INDICES POR SERIAL
-# -------------------------
+# -------------------------------------------------
 
 anteriores = {
 
-    i.get("serial"): i
+    str(
+        i.get("serial")
+    ).strip(): i
 
     for i in estado_anterior.get(
         "impresoras",
         []
     )
 
+    if i.get("serial")
+
 }
 
 actuales = {
 
-    i.get("serial"): i
+    str(
+        i.get("serial")
+    ).strip(): i
 
     for i in estado_actual.get(
         "impresoras",
         []
     )
 
+    if i.get("serial")
+
 }
 
 
-# -------------------------
+# -------------------------------------------------
 # COMPARACION
-# -------------------------
+# -------------------------------------------------
+
+eventos_nuevos = 0
 
 for serial, actual in actuales.items():
 
@@ -86,12 +98,13 @@ for serial, actual in actuales.items():
     fecha = datetime.now().isoformat()
 
     nombre = actual.get(
-        "nombre"
+        "nombre",
+        serial
     )
 
-    # -------------------------
+    # -------------------------------------
     # CAMBIO DE IP
-    # -------------------------
+    # -------------------------------------
 
     ip_anterior = anterior.get(
         "ip"
@@ -102,113 +115,172 @@ for serial, actual in actuales.items():
     )
 
     if (
+
         ip_anterior
+
         and
+
         ip_actual
+
         and
+
         ip_anterior != ip_actual
+
     ):
 
         eventos.append({
 
-            "fecha": fecha,
+            "fecha":
+                fecha,
 
-            "tipo": "cambio_ip",
+            "tipo":
+                "cambio_ip",
 
-            "equipo": nombre,
+            "equipo":
+                nombre,
 
-            "serial": serial,
+            "serial":
+                serial,
 
-            "ip_anterior":
-                ip_anterior,
-
-            "ip_nueva":
-                ip_actual
+            "detalle":
+                f"{ip_anterior} → {ip_actual}"
 
         })
 
+        eventos_nuevos += 1
+
         print(
-            f"Cambio IP: {nombre}"
+            f"Cambio IP: "
+            f"{nombre}"
         )
 
-    # -------------------------
+    # -------------------------------------
     # OFFLINE
-    # -------------------------
+    # -------------------------------------
 
     if (
-        anterior.get("online")
-        is True
+
+        anterior.get(
+            "online"
+        ) is True
+
         and
-        actual.get("online")
-        is False
+
+        actual.get(
+            "online"
+        ) is False
+
     ):
 
         eventos.append({
 
-            "fecha": fecha,
+            "fecha":
+                fecha,
 
-            "tipo": "offline",
+            "tipo":
+                "offline",
 
-            "equipo": nombre,
+            "equipo":
+                nombre,
 
-            "serial": serial,
+            "serial":
+                serial,
 
-            "ip": ip_actual
+            "detalle":
+                "Equipo sin respuesta"
 
         })
 
+        eventos_nuevos += 1
+
         print(
-            f"Offline: {nombre}"
+            f"Offline: "
+            f"{nombre}"
         )
 
-    # -------------------------
+    # -------------------------------------
     # ONLINE
-    # -------------------------
+    # -------------------------------------
 
     if (
-        anterior.get("online")
-        is False
+
+        anterior.get(
+            "online"
+        ) is False
+
         and
-        actual.get("online")
-        is True
+
+        actual.get(
+            "online"
+        ) is True
+
     ):
 
         eventos.append({
 
-            "fecha": fecha,
+            "fecha":
+                fecha,
 
-            "tipo": "online",
+            "tipo":
+                "online",
 
-            "equipo": nombre,
+            "equipo":
+                nombre,
 
-            "serial": serial,
+            "serial":
+                serial,
 
-            "ip": ip_actual
+            "detalle":
+                "Equipo recuperado"
 
         })
 
+        eventos_nuevos += 1
+
         print(
-            f"Recuperado: {nombre}"
+            f"Online: "
+            f"{nombre}"
         )
 
 
-# -------------------------
+# -------------------------------------------------
 # GUARDAR
-# -------------------------
+# -------------------------------------------------
 
 with open(
-    "eventos.json",
+
+    ARCHIVO_EVENTOS,
+
     "w",
+
     encoding="utf-8"
+
 ) as f:
 
     json.dump(
+
         eventos,
+
         f,
+
         indent=2,
+
         ensure_ascii=False
+
     )
 
+print()
+
 print(
-    f"Eventos registrados: {len(eventos)}"
+    f"Eventos nuevos: "
+    f"{eventos_nuevos}"
+)
+
+print(
+    f"Eventos acumulados: "
+    f"{len(eventos)}"
+)
+
+print(
+    "eventos.json actualizado"
 )

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Eventos - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#f5f5f5;
+    border-radius:8px;
+    padding:15px;
+    min-width:180px;
+    text-align:center;
+}
+
+.valor{
+    font-size:28px;
+    font-weight:bold;
+    color:#1976d2;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+    cursor:pointer;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+th:hover{
+    background:#1565c0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a href="index.html">🏠 Dashboard</a>
+    |
+
+    <a href="inventario.html">🖨️ Inventario</a>
+    |
+
+    as.html">🚨 Alertas</a>
+
+</nav>
+
+<h1>🔔 Eventos</h1>
+
+<div class="cards">
+
+    <div class="card">
+        <div>Eventos</div>
+        <div
+            class="valor"
+            id="totalEventos"
+        >
+            0
+        </div>
+    </div>
+
+    <div class="card">
+        <div>🔄 Cambio IP</div>
+        <div
+            class="valor"
+            id="totalIP"
+        >
+            0
+        </div>
+    </div>
+
+    <div class="card">
+        <div>🟢 Recuperados</div>
+        <div
+            class="valor"
+            id="totalOnline"
+        >
+            0
+        </div>
+    </div>
+
+    <div class="card">
+        <div>⚫ Offline</div>
+        <div
+            class="valor"
+            id="totalOffline"
+        >
+            0
+        </div>
+    </div>
+
+</div>
+
+<input
+    id="busqueda"
+    type="text"
+    placeholder="Buscar equipo, serial, tipo o detalle..."
+>
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th onclick="ordenarPor('fecha')">
+        Fecha ▲▼
+    </th>
+
+    <th onclick="ordenarPor('tipo')">
+        Tipo ▲▼
+    </th>
+
+    <th onclick="ordenarPor('equipo')">
+        Equipo ▲▼
+    </th>
+
+    <th onclick="ordenarPor('serial')">
+        Serial ▲▼
+    </th>
+
+    <th>
+        Detalle
+    </th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaEventos">
+</tbody>
+
+</table>
+
+<script>
+
+let eventos = [];
+
+let columnaOrden = "fecha";
+
+let ascendente = false;
+
+function icono(tipo){
+
+    if(tipo === "offline")
+        return "⚫";
+
+    if(tipo === "online")
+        return "🟢";
+
+    if(tipo === "cambio_ip")
+        return "🔄";
+
+    if(tipo === "instalacion")
+        return "✅";
+
+    if(tipo === "estado_alerta")
+        return "📦";
+
+    return "ℹ️";
+}
+
+function ordenarPor(columna){
+
+    if(
+        columnaOrden === columna
+    ){
+
+        ascendente =
+            !ascendente;
+
+    }
+    else{
+
+        columnaOrden =
+            columna;
+
+        ascendente =
+            true;
+
+    }
+
+    renderTabla(
+        document
+        .getElementById(
+            "busqueda"
+        )
+        .value
+    );
+
+}
+
+function renderTabla(
+    filtro = ""
+){
+
+    const tabla =
+        document.getElementById(
+            "tablaEventos"
+        );
+
+    tabla.innerHTML = "";
+
+    eventos
+
+    .filter(e => {
+
+        const texto = (
+
+            (e.equipo || "")
+            + " "
+            + (e.serial || "")
+            + " "
+            + (e.tipo || "")
+            + " "
+            + (e.detalle || "")
+
+        ).toLowerCase();
+
+        return texto.includes(
+            filtro.toLowerCase()
+        );
+
+    })
+
+    .sort((a,b) => {
+
+        let resultado = 0;
+
+        if(
+            columnaOrden === "fecha"
+        ){
+
+            resultado =
+                new Date(a.fecha)
+                -
+                new Date(b.fecha);
+
+        }
+        else{
+
+            resultado =
+                String(
+                    a[columnaOrden] || ""
+                )
+
+                .localeCompare(
+
+                    String(
+                        b[columnaOrden] || ""
+                    )
+
+                );
+
+        }
+
+        return ascendente
+            ? resultado
+            : -resultado;
+
+    })
+
+    .forEach(e => {
+
+        tabla.innerHTML += `
+
+        <tr>
+
+            <td>
+                ${
+                    new Date(
+                        e.fecha
+                    ).toLocaleString(
+                        "es-CL"
+                    )
+                }
+            </td>
+
+            <td>
+                ${icono(e.tipo)}
+                ${e.tipo}
+            </td>
+
+            <td>
+                ${e.equipo ?? "-"}
+            </td>
+
+            <td>
+                ${e.serial ?? "-"}
+            </td>
+
+            <td>
+                ${
+                    e.detalle
+                    ?? "-"
+                }
+            </td>
+
+        </tr>
+
+        `;
+
+    });
+
+}
+
+fetch("eventos.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    eventos = data;
+
+    document.getElementById(
+        "totalEventos"
+    ).textContent =
+        eventos.length;
+
+    document.getElementById(
+        "totalIP"
+    ).textContent =
+        eventos.filter(
+            e =>
+                e.tipo ===
+                "cambio_ip"
+        ).length;
+
+    document.getElementById(
+        "totalOnline"
+    ).textContent =
+        eventos.filter(
+            e =>
+                e.tipo ===
+                "online"
+        ).length;
+
+    document.getElementById(
+        "totalOffline"
+    ).textContent =
+        eventos.filter(
+            e =>
+                e.tipo ===
+                "offline"
+        ).length;
+
+    renderTabla();
+
+    document
+
+        .getElementById(
+            "busqueda"
+        )
+
+        .addEventListener(
+            "keyup",
+            e => {
+
+                renderTabla(
+                    e.target.value
+                );
+
+            }
+        );
+
+});
+
+</script>
+
+</body>
+
+</html>

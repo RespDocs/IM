@@ -432,6 +432,8 @@ fetch("dashboard.json")
                 a.tipo === "consumible"
                 &&
                 a.criticidad === "critico"
+                &&
+                a.estado === "instalado"
         );
 
     advertencias =
@@ -440,6 +442,8 @@ fetch("dashboard.json")
                 a.tipo === "consumible"
                 &&
                 a.criticidad === "advertencia"
+                &&
+                a.estado === "instalado"
         );
 
     offline =
