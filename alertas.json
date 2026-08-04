@@ -593,8 +593,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-03T10:01:43.772242"
     },
@@ -818,8 +818,17 @@
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-04T14:00:44.806248",
+      "fecha_resolucion": "2026-08-04T15:00:59.294853"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-04T14:00:44.806248"
+      "fecha_notificacion": "2026-08-04T15:00:59.107018"
     }
   ]
 }
