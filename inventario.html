@@ -87,6 +87,10 @@ th:hover{
 
 <tr>
 
+    <th>
+    #
+    </th>
+
     <th onclick="ordenarPor('nombre')">
         Nombre ▲▼
     </th>
@@ -289,7 +293,7 @@ function renderTabla(
 
         })
 
-        .forEach(i => {
+        .forEach(i, index => {
 
             const ultima =
                 i.ultima_lectura
@@ -303,6 +307,10 @@ function renderTabla(
             tabla.innerHTML += `
 
             <tr>
+
+                <td>
+                ${index + 1}
+                </td>
 
                 <td>
                     ${i.nombre ?? "-"}
