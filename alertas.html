@@ -433,7 +433,7 @@ fetch("dashboard.json")
                 &&
                 a.criticidad === "critico"
                 &&
-                a.estado === "instalado"
+                a.estado !== "instalado"
         );
 
     advertencias =
@@ -443,7 +443,7 @@ fetch("dashboard.json")
                 &&
                 a.criticidad === "advertencia"
                 &&
-                a.estado === "instalado"
+                a.estado !== "instalado"
         );
 
     offline =

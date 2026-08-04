@@ -1,6 +1,18 @@
 {
   "consumibles": [
     {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B605",
+      "consumible": "drum_black",
+      "pn": "101R00582",
+      "vida_nominal": 60000,
+      "contador_instalacion": 473907,
+      "contador_actual": 12156,
+      "uso_real": -461751,
+      "restante": 521751,
+      "restante_pct": 870
+    },
+    {
       "equipo": "Central de Apuntes",
       "modelo": "Xerox VersaLink C7025",
       "consumible": "toner_magenta",
@@ -19,9 +31,9 @@
       "pn": null,
       "vida_nominal": 46700,
       "contador_instalacion": 829470,
-      "contador_actual": 829470,
-      "uso_real": 0,
-      "restante": 46700,
+      "contador_actual": 829548,
+      "uso_real": 78,
+      "restante": 46622,
       "restante_pct": 100
     }
   ]

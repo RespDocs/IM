@@ -1,12 +1,5 @@
 {
-  "Xerox WorkCentre 3655S v1": {
-    "toner_black": {
-      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
-      "pn": "unknown",
-      "vida_nominal": 25000,
-      "origen": "snmp"
-    }
-  },
+  "Xerox WorkCentre 3655S v1": {},
   "Xerox VersaLink B7025": {
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN80053C015E080000",
@@ -45,7 +38,7 @@
     "toner_black": {
       "descripcion": "Xerox Black Print Cartridge, Replace with PN 106R02306;SN 18111028484",
       "pn": "106R02306",
-      "vida_nominal": 11000,
+      "vida_nominal": null,
       "origen": "snmp"
     }
   },
@@ -256,12 +249,6 @@
       "vida_nominal": 10500,
       "origen": "snmp"
     },
-    "toner_yellow": {
-      "descripcion": "Yellow Toner Cartridge, PN 106R03537;SN4D00190015670000",
-      "pn": "106R03537",
-      "vida_nominal": 8000,
-      "origen": "snmp"
-    },
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03539;SN5E00B4002A180000",
       "pn": "106R03539",
@@ -274,12 +261,6 @@
       "vida_nominal": 8000,
       "origen": "snmp"
     },
-    "waste_toner": {
-      "descripcion": "Waste Cartridge, PN 108R01124",
-      "pn": "108R01124",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
     "fuser": {
       "descripcion": "Fuser, PN 115R00089",
       "pn": "115R00089",
@@ -287,20 +268,7 @@
       "origen": "snmp"
     }
   },
-  "Xerox VersaLink B405": {
-    "toner_black": {
-      "descripcion": "Toner Cartridge;SNCBCC1968DB860000",
-      "pn": null,
-      "vida_nominal": 24600,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00554;SN3000C900370D0000",
-      "pn": "101R00554",
-      "vida_nominal": 85000,
-      "origen": "snmp"
-    }
-  },
+  "Xerox VersaLink B405": {},
   "Xerox VersaLink C7025": {
     "toner_black": {
       "descripcion": "Black Toner Cartridge, PN 106R03733;SN803D4617F2070000",
@@ -338,12 +306,6 @@
       "vida_nominal": 109200,
       "origen": "snmp"
     },
-    "drum_yellow": {
-      "descripcion": "Yellow Drum Cartridge, PN 113R00780;SN80175D2B03070000",
-      "pn": "113R00780",
-      "vida_nominal": 87000,
-      "origen": "snmp"
-    },
     "drum_magenta": {
       "descripcion": "Magenta Drum Cartridge, PN 113R00780;SN80B6080449080000",
       "pn": "113R00780",
@@ -353,7 +315,7 @@
     "drum_cyan": {
       "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80BE060449080000",
       "pn": "113R00780",
-      "vida_nominal": 87000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
