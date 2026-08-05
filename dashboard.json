@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-04T23:00:06.160296",
+  "actualizado": "2026-08-05T00:00:08.694510",
   "metricas": {
-    "actualizado": "2026-08-04T23:00:06.072643",
+    "actualizado": "2026-08-05T00:00:08.604758",
     "impresoras": {
       "total": 64,
-      "online": 63,
-      "offline": 1
+      "online": 62,
+      "offline": 2
     },
     "alertas": {
-      "abiertas": 19,
+      "abiertas": 20,
       "criticas": 9,
       "advertencias": 9
     },
@@ -26,12 +26,8 @@
       "modelo": "Xerox WorkCentre 3655S v1",
       "serial": "3353184511",
       "ip": "172.16.79.100",
-      "contador": 43689,
-      "consumibles": {
-        "toner_black": 79
-      },
-      "online": true,
-      "ultima_lectura": "2026-08-04T22:58:04.772166",
+      "online": false,
+      "ultima_lectura": "2026-08-04T23:58:04.637182",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -48,7 +44,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:07.159138",
+      "ultima_lectura": "2026-08-04T23:58:07.200118",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -64,7 +60,7 @@
         "toner_black": 75
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:08.093069",
+      "ultima_lectura": "2026-08-04T23:58:08.129943",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -80,7 +76,7 @@
         "toner_black": 67
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:09.196299",
+      "ultima_lectura": "2026-08-04T23:58:09.225505",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -97,7 +93,7 @@
         "drum_black": 98
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:10.093781",
+      "ultima_lectura": "2026-08-04T23:58:10.128620",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -114,7 +110,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:10.984673",
+      "ultima_lectura": "2026-08-04T23:58:11.014366",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -131,7 +127,7 @@
         "drum_black": 56
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:11.865184",
+      "ultima_lectura": "2026-08-04T23:58:11.895060",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -148,7 +144,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:12.741518",
+      "ultima_lectura": "2026-08-04T23:58:12.782236",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -165,7 +161,7 @@
         "drum_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:13.629807"
+      "ultima_lectura": "2026-08-04T23:58:13.717417"
     },
     {
       "nombre": "DARA 2do piso",
@@ -178,7 +174,7 @@
         "drum_black": 39
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:14.584427",
+      "ultima_lectura": "2026-08-04T23:58:14.592489",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -195,7 +191,7 @@
         "drum_black": 42
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:15.479925",
+      "ultima_lectura": "2026-08-04T23:58:15.550840",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -212,7 +208,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:16.377831",
+      "ultima_lectura": "2026-08-04T23:58:16.433208",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -229,7 +225,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:17.266934"
+      "ultima_lectura": "2026-08-04T23:58:17.323299"
     },
     {
       "nombre": "DARA_COLOR",
@@ -248,7 +244,7 @@
         "drum_cyan": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:18.210052",
+      "ultima_lectura": "2026-08-04T23:58:18.198997",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -265,7 +261,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:22.868843",
+      "ultima_lectura": "2026-08-04T23:58:23.803672",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -284,7 +280,7 @@
         "toner_cyan": 8
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:23.756087",
+      "ultima_lectura": "2026-08-04T23:58:25.684282",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -301,7 +297,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:26.969769",
+      "ultima_lectura": "2026-08-04T23:58:29.813430",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -318,7 +314,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:27.867900",
+      "ultima_lectura": "2026-08-04T23:58:30.681071",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -335,7 +331,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:28.757649",
+      "ultima_lectura": "2026-08-04T23:58:32.629798",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -352,7 +348,7 @@
         "drum_black": 42
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:29.654144",
+      "ultima_lectura": "2026-08-04T23:58:33.502006",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -369,7 +365,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:30.541616",
+      "ultima_lectura": "2026-08-04T23:58:34.366622",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -386,7 +382,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:32.223872",
+      "ultima_lectura": "2026-08-04T23:58:35.235437",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -403,7 +399,7 @@
         "drum_black": 7
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:33.108719",
+      "ultima_lectura": "2026-08-04T23:58:36.151966",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -420,7 +416,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:33.997281",
+      "ultima_lectura": "2026-08-04T23:58:37.021145",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -437,7 +433,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:35.103381",
+      "ultima_lectura": "2026-08-04T23:58:38.844529",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -454,7 +450,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:36.035097",
+      "ultima_lectura": "2026-08-04T23:58:39.921601",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -471,7 +467,7 @@
         "drum_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:36.915185",
+      "ultima_lectura": "2026-08-04T23:58:40.805435",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -488,7 +484,7 @@
         "drum_black": 4
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:37.784908",
+      "ultima_lectura": "2026-08-04T23:58:41.679282",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -511,7 +507,7 @@
         "drum_cyan": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:39.250133",
+      "ultima_lectura": "2026-08-04T23:58:42.548646",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -527,7 +523,7 @@
         "toner_black": 50
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:43.477785",
+      "ultima_lectura": "2026-08-04T23:58:45.964987",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -544,7 +540,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:44.348120",
+      "ultima_lectura": "2026-08-04T23:58:46.842502",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -561,7 +557,7 @@
         "drum_black": 96
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:45.517574",
+      "ultima_lectura": "2026-08-04T23:58:47.716542",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -578,7 +574,7 @@
         "drum_black": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:46.509938",
+      "ultima_lectura": "2026-08-04T23:58:48.868145",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -595,7 +591,7 @@
         "drum_black": 100
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:47.390033",
+      "ultima_lectura": "2026-08-04T23:58:49.747711",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -612,7 +608,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:48.313534",
+      "ultima_lectura": "2026-08-04T23:58:50.624999",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -629,7 +625,7 @@
         "drum_black": 61
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:49.246562",
+      "ultima_lectura": "2026-08-04T23:58:51.499873",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -646,7 +642,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:50.142591",
+      "ultima_lectura": "2026-08-04T23:58:52.383877",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -663,7 +659,7 @@
         "drum_black": 97
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:51.270647",
+      "ultima_lectura": "2026-08-04T23:58:54.545505",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -675,7 +671,7 @@
       "serial": "3940619229",
       "ip": "172.16.79.64",
       "online": false,
-      "ultima_lectura": "2026-08-04T22:58:52.158228",
+      "ultima_lectura": "2026-08-04T23:58:55.464266",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -692,7 +688,7 @@
         "drum_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:54.594686",
+      "ultima_lectura": "2026-08-04T23:58:57.941679",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -709,7 +705,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:55.508977",
+      "ultima_lectura": "2026-08-04T23:58:58.850407",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -726,7 +722,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:56.432995",
+      "ultima_lectura": "2026-08-04T23:58:59.729047",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -743,7 +739,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:57.690572",
+      "ultima_lectura": "2026-08-04T23:59:00.619492",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -760,7 +756,7 @@
         "drum_black": 90
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:58.619269",
+      "ultima_lectura": "2026-08-04T23:59:01.861978",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -777,7 +773,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:58:59.513310",
+      "ultima_lectura": "2026-08-04T23:59:02.744274",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -794,7 +790,7 @@
         "drum_black": 86
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:00.410153",
+      "ultima_lectura": "2026-08-04T23:59:03.632367",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -813,7 +809,7 @@
         "toner_cyan": 64
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:02.594131",
+      "ultima_lectura": "2026-08-04T23:59:04.580194",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -830,7 +826,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:05.663887",
+      "ultima_lectura": "2026-08-04T23:59:08.873671",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -846,7 +842,7 @@
         "toner_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:06.602782",
+      "ultima_lectura": "2026-08-04T23:59:09.757497",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -863,7 +859,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:07.685004",
+      "ultima_lectura": "2026-08-04T23:59:10.830724",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -880,7 +876,7 @@
         "drum_black": 22
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:08.585927",
+      "ultima_lectura": "2026-08-04T23:59:11.718855",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -897,7 +893,7 @@
         "drum_black": 35
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:10.754672",
+      "ultima_lectura": "2026-08-04T23:59:13.058953",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -914,7 +910,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:11.707488",
+      "ultima_lectura": "2026-08-04T23:59:14.469099",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -931,7 +927,7 @@
         "drum_black": 21
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:12.621936",
+      "ultima_lectura": "2026-08-04T23:59:15.384638",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -945,7 +941,7 @@
       "contador": 19802,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:13.540388",
+      "ultima_lectura": "2026-08-04T23:59:17.595390",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -961,7 +957,7 @@
         "toner_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:14.624877",
+      "ultima_lectura": "2026-08-04T23:59:18.674198",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -977,7 +973,7 @@
         "toner_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:15.552541",
+      "ultima_lectura": "2026-08-04T23:59:19.578168",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -993,7 +989,7 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:16.788330",
+      "ultima_lectura": "2026-08-04T23:59:20.486985",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1010,7 +1006,7 @@
         "drum_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:17.713155",
+      "ultima_lectura": "2026-08-04T23:59:22.553433",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1027,7 +1023,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:18.632831",
+      "ultima_lectura": "2026-08-04T23:59:24.575763",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1043,7 +1039,7 @@
         "toner_black": 31
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:19.552719"
+      "ultima_lectura": "2026-08-04T23:59:25.478452"
     },
     {
       "nombre": "Direccion de Biblioteca",
@@ -1056,7 +1052,7 @@
         "drum_black": 10
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:20.460459"
+      "ultima_lectura": "2026-08-04T23:59:26.438135"
     },
     {
       "nombre": "Facultad de Trabajo Social",
@@ -1069,7 +1065,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:21.390737"
+      "ultima_lectura": "2026-08-04T23:59:27.951501"
     },
     {
       "nombre": "Centro Uni. Ignaciano 2do piso",
@@ -1082,7 +1078,7 @@
         "drum_black": 14
       },
       "online": true,
-      "ultima_lectura": "2026-08-04T22:59:22.305791"
+      "ultima_lectura": "2026-08-04T23:59:28.848977"
     }
   ],
   "alertas": [
@@ -2230,6 +2226,17 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-04T20:00:10.205618",
+      "pn": null,
+      "estado_gestion": 1,
+      "estado_texto": "NOTIFICADO"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T00:00:08.299388",
       "pn": null,
       "estado_gestion": 1,
       "estado_texto": "NOTIFICADO"
