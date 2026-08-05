@@ -597,7 +597,7 @@
     {
       "id_alerta": "UAH_00019",
       "clave_alerta": "3940618222_drum_black",
-      "equipo": null,
+      "equipo": "Direccion de Biblioteca",
       "serial": "3940618222",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -971,7 +971,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316"
@@ -1065,6 +1065,27 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-05T16:30:17.902907",
       "fecha_resolucion": "2026-08-05T17:01:31.434895"
+    },
+    {
+      "id_alerta": "UAH_00023",
+      "clave_alerta": "3391871700_toner_cyan",
+      "equipo": "Central de Apuntes",
+      "serial": "3391871700",
+      "modelo": "Xerox VersaLink C7025",
+      "tipo": "consumible",
+      "consumible": "toner_cyan",
+      "porcentaje": 8,
+      "criticidad": "critico",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T18:02:30.361615"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T18:02:30.361738"
     }
   ]
 }
