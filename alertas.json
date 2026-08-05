@@ -110,15 +110,18 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": "Facultad de Filosofia y Humanida",
+      "equipo": null,
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
       "porcentaje": 7,
       "criticidad": "critico",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T01:42:47.298822"
+      "estado": "instalado",
+      "fecha_notificacion": "2026-07-31T01:42:47.298822",
+      "fecha_instalacion": "2026-07-29T18:14:16.403835",
+      "contador_instalacion": 473907,
+      "porcentaje_reemplazo": 7
     },
     {
       "id_alerta": "UAH_00010",
@@ -223,7 +226,7 @@
     {
       "id_alerta": "UAH_00017",
       "clave_alerta": "3940616513_toner_black",
-      "equipo": null,
+      "equipo": "Antropologia",
       "serial": "3940616513",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -1011,32 +1014,36 @@
       "serial": "3399951533",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:34:31.048507"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:34:31.048507",
+      "fecha_resolucion": "2026-08-05T16:01:37.002053"
     },
     {
       "equipo": "Decanato Facso",
       "serial": "3399950731",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:34:31.048584"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:34:31.048584",
+      "fecha_resolucion": "2026-08-05T16:01:37.002095"
     },
     {
       "equipo": "Sec_Educa",
       "serial": "3942937600",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:34:31.048617"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:34:31.048617",
+      "fecha_resolucion": "2026-08-05T16:01:37.002109"
     },
     {
       "equipo": "Facultad de Trabajo Social",
       "serial": "3940616548",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:34:31.048657"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:34:31.048657",
+      "fecha_resolucion": "2026-08-05T16:01:37.002122"
     }
   ]
 }
