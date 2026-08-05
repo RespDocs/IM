@@ -53,6 +53,11 @@ gestion = cargar_json(
     {}
 )
 
+eventos = cargar_json(
+    "eventos.json",
+    []
+)
+
 # --------------------------------------------------
 # CONFIG ALERTAS
 # --------------------------------------------------
@@ -167,6 +172,8 @@ for impresora in estado.get(
 
             })
 
+            
+
         continue
 
     # --------------------------------------------------
@@ -274,6 +281,33 @@ for impresora in estado.get(
             nueva_alerta
         )
 
+        eventos.append({
+
+            "fecha":
+                datetime.now().isoformat(),
+
+            "tipo":
+                (
+                    "alerta_critica_generada"
+                    if criticidad == "critico"
+                    else
+                    "alerta_advertencia_generada"
+                ),
+
+            "equipo":
+                nombre,
+
+            "serial":
+                serial,
+
+            "id_alerta":
+                nuevo_id,
+
+            "detalle":
+                f"{consumible} ({porcentaje}%)"
+                
+        })
+
         alertas_consumibles[
             clave_alerta
         ] = nueva_alerta
@@ -365,6 +399,19 @@ with open(
 
     json.dump(
         gestion,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
+with open(
+    "eventos.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        eventos,
         f,
         indent=2,
         ensure_ascii=False
