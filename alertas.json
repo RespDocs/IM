@@ -993,16 +993,50 @@
       "serial": "3399945975",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:00:44.033904"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:00:44.033904",
+      "fecha_resolucion": "2026-08-05T15:34:31.246167"
     },
     {
       "equipo": "Vice de Investigacion y Postgrad",
       "serial": "3940617021",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-05T15:00:44.034011",
+      "fecha_resolucion": "2026-08-05T15:34:31.246211"
+    },
+    {
+      "equipo": "Direccion de Docencia",
+      "serial": "3399951533",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-05T15:00:44.034011"
+      "fecha_notificacion": "2026-08-05T15:34:31.048507"
+    },
+    {
+      "equipo": "Decanato Facso",
+      "serial": "3399950731",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T15:34:31.048584"
+    },
+    {
+      "equipo": "Sec_Educa",
+      "serial": "3942937600",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T15:34:31.048617"
+    },
+    {
+      "equipo": "Facultad de Trabajo Social",
+      "serial": "3940616548",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T15:34:31.048657"
     }
   ]
 }
