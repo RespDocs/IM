@@ -107,8 +107,16 @@ th:hover{
         IP ▲▼
     </th>
 
+    <th onclick="ordenarPor('contador_negro')">
+        Negro ▲▼
+    </th>
+
+    <th onclick="ordenarPor('contador_color')">
+        Color ▲▼
+    </th>
+
     <th onclick="ordenarPor('contador')">
-        Contador ▲▼
+        Total ▲▼
     </th>
 
     <th onclick="ordenarPor('online')">
@@ -199,12 +207,28 @@ function renderTabla(
             if(
                 columnaOrden === "contador"
             ){
-
                 resultado =
                     (a.contador || 0)
                     -
                     (b.contador || 0);
+            }
 
+            else if(
+                columnaOrden === "contador_negro"
+            ){
+                resultado =
+                    (a.contador_negro || a.contador || 0)
+                    -
+                    (b.contador_negro || b.contador || 0);
+            }
+
+            else if(
+                columnaOrden === "contador_color"
+            ){
+                resultado =
+                    (a.contador_color || 0)
+                    -
+                    (b.contador_color || 0);
             }
 
             else if(
@@ -329,7 +353,27 @@ function renderTabla(
                 </td>
 
                 <td>
-                    ${i.contador ?? "-"}
+                    ${
+                        i.contador_negro != null
+                        ? i.contador_negro.toLocaleString("es-CL")
+                        : i.contador?.toLocaleString("es-CL") ?? "-"
+                    }
+                </td>
+
+                <td>
+                    ${
+                        i.contador_color != null
+                        ? i.contador_color.toLocaleString("es-CL")
+                        : "-"
+                    }
+                </td>
+
+                <td>
+                    ${
+                        i.contador != null
+                        ? i.contador.toLocaleString("es-CL")
+                        : "-"
+                    }
                 </td>
 
                 <td>

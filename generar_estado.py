@@ -138,6 +138,34 @@ async def procesar_impresora(impresora):
 
         }
 
+    contador = int(contador)
+
+    # -------------------------
+    # CONTADOR COLOR
+    # -------------------------
+
+    contador_color = None
+    contador_negro = None
+
+    color = await consultar(
+        ip,
+        "1.3.6.1.4.1.253.8.53.13.2.1.6.1.20.33"
+    )
+
+    try:
+
+        contador_color = int(color)
+
+        contador_negro = max(
+            0,
+            contador - contador_color
+        )
+
+    except:
+
+        contador_color = None
+        contador_negro = None
+
     modelo = impresora["modelo"]
 
     consumibles = {}
@@ -183,7 +211,13 @@ async def procesar_impresora(impresora):
             ip,
 
         "contador":
-            int(contador),
+            contador,
+
+        "contador_negro":
+            contador_negro,
+
+        "contador_color":
+            contador_color,
 
         "consumibles":
             consumibles,
