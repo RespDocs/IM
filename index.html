@@ -271,6 +271,13 @@ fetch("dashboard.json")
 .then(data => {
 
     document.getElementById(
+        "ultima_actualizacion"
+    ).innerText =
+        new Date(
+            data.actualizado
+        ).toLocaleTimeString("es-CL");
+
+    document.getElementById(
         "total"
     ).innerText =
         data.metricas.impresoras.total;
