@@ -110,7 +110,7 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": null,
+      "equipo": "FilHum",
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -1044,6 +1044,22 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-05T15:34:31.048657",
       "fecha_resolucion": "2026-08-05T16:01:37.002122"
+    },
+    {
+      "equipo": "Facultad de Ciencias Politicas",
+      "serial": "3940616270",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T16:30:17.902824"
+    },
+    {
+      "equipo": "Facultad de Psicologia",
+      "serial": "3399945398",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T16:30:17.902907"
     }
   ]
 }
