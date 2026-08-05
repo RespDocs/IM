@@ -271,21 +271,6 @@ fetch("dashboard.json")
 .then(data => {
 
     document.getElementById(
-        "actualizado"
-    ).innerText =
-
-        "Actualizado: "
-
-        +
-
-        new Date(
-            data.actualizado
-        ).toLocaleString(
-            "es-CL"
-        );
-
-    
-    document.getElementById(
         "total"
     ).innerText =
         data.metricas.impresoras.total;
@@ -311,20 +296,6 @@ fetch("dashboard.json")
         "advertencias"
     ).innerText =
         data.metricas.alertas.advertencias;
-
-    document.getElementById(
-        "offline_alertas"
-    ).innerText =
-
-        data.alertas.filter(
-
-            a =>
-
-                a.tipo === "offline"
-                &&
-                a.estado === "notificado"
-
-        ).length;
 
     document.getElementById(
         "inventario_total"
