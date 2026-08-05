@@ -601,15 +601,18 @@
     {
       "id_alerta": "UAH_00020",
       "clave_alerta": "3399952335_drum_black",
-      "equipo": "Centro Uni. Ignaciano 2do piso",
+      "equipo": null,
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
       "porcentaje": 14,
       "criticidad": "advertencia",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-03T10:01:43.772276"
+      "estado": "instalado",
+      "fecha_notificacion": "2026-08-03T10:01:43.772276",
+      "fecha_instalacion": "2026-07-29T18:14:16.403835",
+      "contador_instalacion": 473907,
+      "porcentaje_reemplazo": 14
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -901,6 +904,22 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-05T02:00:04.905956",
       "fecha_resolucion": "2026-08-05T03:00:06.873650"
+    },
+    {
+      "equipo": "DERECHO",
+      "serial": "3399946262",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T08:00:09.896083"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T08:00:09.896189"
     }
   ]
 }
