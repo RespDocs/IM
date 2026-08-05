@@ -34,7 +34,14 @@
       "origen": "snmp"
     }
   },
-  "Xerox Phaser 3320": {},
+  "Xerox Phaser 3320": {
+    "toner_black": {
+      "descripcion": "Xerox Black Print Cartridge, Replace with PN 106R02306;SN 18111028484",
+      "pn": "106R02306",
+      "vida_nominal": 11000,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B605": {
     "toner_black": {
       "descripcion": "Toner Cartridge;SN558070489CD30000",
