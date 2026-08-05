@@ -8,12 +8,12 @@ async def consultar():
         SnmpEngine(),
         CommunityData("public"),
         await UdpTransportTarget.create(
-            ("172.16.79.199", 161)
+            ("172.16.79.73", 161)
         ),
         ContextData(),
         ObjectType(
             ObjectIdentity(
-                "1.3.6.1.2.1.43.10.2.1.4.1.1"
+                "1.3.6.1.4.1.253.8.53.13.2.1.6.1.20.33"
             )
         )
     )

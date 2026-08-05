@@ -199,7 +199,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.301896"
@@ -207,15 +207,18 @@
     {
       "id_alerta": "UAH_00016",
       "clave_alerta": "3399946009_toner_black",
-      "equipo": "Facultad de Geografia",
+      "equipo": null,
       "serial": "3399946009",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
       "porcentaje": 9,
       "criticidad": "critico",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T01:42:47.302438"
+      "estado": "instalado",
+      "fecha_notificacion": "2026-07-31T01:42:47.302438",
+      "fecha_instalacion": "2026-08-05T12:02:33.892432",
+      "contador_instalacion": 218738,
+      "porcentaje_reemplazo": 9
     },
     {
       "id_alerta": "UAH_00017",
@@ -793,7 +796,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 16,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-04T12:01:10.617597"
@@ -940,6 +943,27 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-05T09:00:24.104420",
       "fecha_resolucion": "2026-08-05T10:00:04.710275"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T12:02:33.754133"
+    },
+    {
+      "id_alerta": "UAH_00022",
+      "clave_alerta": "3942939786_drum_black",
+      "equipo": "Modulo2",
+      "serial": "3942939786",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T12:02:33.754316"
     }
   ]
 }

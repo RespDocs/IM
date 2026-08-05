@@ -7,10 +7,10 @@
       "pn": "101R00582",
       "vida_nominal": 60000,
       "contador_instalacion": 473907,
-      "contador_actual": 27971,
-      "uso_real": -445936,
-      "restante": 505936,
-      "restante_pct": 843
+      "contador_actual": 19802,
+      "uso_real": -454105,
+      "restante": 514105,
+      "restante_pct": 857
     },
     {
       "equipo": "Central de Apuntes",
@@ -35,6 +35,18 @@
       "uso_real": 728,
       "restante": 45972,
       "restante_pct": 98
+    },
+    {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B7030",
+      "consumible": "toner_black",
+      "pn": "106R03392",
+      "vida_nominal": 30000,
+      "contador_instalacion": 218738,
+      "contador_actual": 19802,
+      "uso_real": -198936,
+      "restante": 228936,
+      "restante_pct": 763
     }
   ]
 }
