@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-08-05T13:02:21.442974",
+  "actualizado": "2026-08-05T14:01:13.923651",
   "metricas": {
-    "actualizado": "2026-08-05T13:02:21.293993",
+    "actualizado": "2026-08-05T14:01:13.824907",
     "impresoras": {
       "total": 64,
-      "online": 64,
-      "offline": 0
+      "online": 62,
+      "offline": 2
     },
     "alertas": {
-      "abiertas": 17,
+      "abiertas": 19,
       "criticas": 8,
       "advertencias": 9
     },
@@ -26,14 +26,8 @@
       "modelo": "Xerox WorkCentre 3655S v1",
       "serial": "3353184511",
       "ip": "172.16.79.100",
-      "contador": 43689,
-      "contador_negro": null,
-      "contador_color": null,
-      "consumibles": {
-        "toner_black": 79
-      },
-      "online": true,
-      "ultima_lectura": "2026-08-05T12:59:08.180847",
+      "online": false,
+      "ultima_lectura": "2026-08-05T13:58:42.079808",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -52,7 +46,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:09.971210",
+      "ultima_lectura": "2026-08-05T13:58:44.701257",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -70,7 +64,7 @@
         "toner_black": 75
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:11.545618",
+      "ultima_lectura": "2026-08-05T13:58:45.921969",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -88,7 +82,7 @@
         "toner_black": 67
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:13.284097",
+      "ultima_lectura": "2026-08-05T13:58:47.220603",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -107,7 +101,7 @@
         "drum_black": 98
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:15.269453",
+      "ultima_lectura": "2026-08-05T13:58:48.332426",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -126,7 +120,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:16.837792",
+      "ultima_lectura": "2026-08-05T13:58:49.672164",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -145,7 +139,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:18.332594",
+      "ultima_lectura": "2026-08-05T13:58:50.788230",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -164,7 +158,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:21.169775",
+      "ultima_lectura": "2026-08-05T13:58:51.929735",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -183,7 +177,7 @@
         "drum_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:22.712255"
+      "ultima_lectura": "2026-08-05T13:58:53.109397"
     },
     {
       "nombre": "DARA 2do piso",
@@ -198,7 +192,7 @@
         "drum_black": 39
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:24.252836",
+      "ultima_lectura": "2026-08-05T13:58:54.215681",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -217,7 +211,7 @@
         "drum_black": 41
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:26.531883",
+      "ultima_lectura": "2026-08-05T13:58:55.305719",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -236,7 +230,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:27.975920",
+      "ultima_lectura": "2026-08-05T13:58:56.468673",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -247,7 +241,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616556",
       "ip": "172.16.79.27",
-      "contador": 24764,
+      "contador": 24765,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -255,16 +249,16 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:29.439838"
+      "ultima_lectura": "2026-08-05T13:58:57.558520"
     },
     {
       "nombre": "DARA_COLOR",
       "modelo": "Xerox VersaLink C9000",
       "serial": "3770720973",
       "ip": "172.16.79.28",
-      "contador": 128078,
+      "contador": 128080,
       "contador_negro": 109504,
-      "contador_color": 18574,
+      "contador_color": 18576,
       "consumibles": {
         "toner_black": 45,
         "toner_yellow": 74,
@@ -276,7 +270,7 @@
         "drum_cyan": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:32.352036",
+      "ultima_lectura": "2026-08-05T13:58:58.649521",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -287,7 +281,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940617064",
       "ip": "172.16.79.29",
-      "contador": 200261,
+      "contador": 200271,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -295,7 +289,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:37.115275",
+      "ultima_lectura": "2026-08-05T13:59:02.646883",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -316,7 +310,7 @@
         "toner_cyan": 8
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:39.040604",
+      "ultima_lectura": "2026-08-05T13:59:03.906559",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -327,15 +321,8 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991545",
       "ip": "172.16.79.32",
-      "contador": 93119,
-      "contador_negro": null,
-      "contador_color": null,
-      "consumibles": {
-        "toner_black": 12,
-        "drum_black": 43
-      },
-      "online": true,
-      "ultima_lectura": "2026-08-05T12:59:44.398586",
+      "online": false,
+      "ultima_lectura": "2026-08-05T13:59:08.766066",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -346,7 +333,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991685",
       "ip": "172.16.79.34",
-      "contador": 309036,
+      "contador": 309037,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -354,7 +341,7 @@
         "drum_black": 87
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:45.860507",
+      "ultima_lectura": "2026-08-05T13:59:11.250264",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -373,7 +360,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:47.511025",
+      "ultima_lectura": "2026-08-05T13:59:12.426122",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -384,7 +371,7 @@
       "modelo": "Xerox VersaLink B405",
       "serial": "3714669752",
       "ip": "172.16.79.36",
-      "contador": 149371,
+      "contador": 149392,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -392,7 +379,7 @@
         "drum_black": 42
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:49.041440",
+      "ultima_lectura": "2026-08-05T13:59:13.512664",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -411,7 +398,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:50.881840",
+      "ultima_lectura": "2026-08-05T13:59:14.607729",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -430,7 +417,7 @@
         "drum_black": 44
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:52.732369",
+      "ultima_lectura": "2026-08-05T13:59:15.758591",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -449,7 +436,7 @@
         "drum_black": 7
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:54.186847",
+      "ultima_lectura": "2026-08-05T13:59:17.096752",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -460,7 +447,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616998",
       "ip": "172.16.79.42",
-      "contador": 167748,
+      "contador": 167749,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -468,7 +455,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:55.830077",
+      "ultima_lectura": "2026-08-05T13:59:18.179409",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -487,7 +474,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:57.347712",
+      "ultima_lectura": "2026-08-05T13:59:19.295146",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -506,7 +493,7 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T12:59:59.159803",
+      "ultima_lectura": "2026-08-05T13:59:23.984026",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -525,7 +512,7 @@
         "drum_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:01.166982",
+      "ultima_lectura": "2026-08-05T13:59:26.370650",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -536,7 +523,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946181",
       "ip": "172.16.79.46",
-      "contador": 130114,
+      "contador": 130121,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -544,7 +531,7 @@
         "drum_black": 4
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:02.816413",
+      "ultima_lectura": "2026-08-05T13:59:27.473673",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -555,13 +542,13 @@
       "modelo": "Xerox VersaLink C7025",
       "serial": "3391871700",
       "ip": "172.16.79.50",
-      "contador": 324432,
-      "contador_negro": 49886,
-      "contador_color": 274546,
+      "contador": 324514,
+      "contador_negro": 49890,
+      "contador_color": 274624,
       "consumibles": {
         "toner_black": 49,
         "toner_yellow": 55,
-        "toner_magenta": 86,
+        "toner_magenta": 85,
         "toner_cyan": 36,
         "drum_black": 40,
         "drum_yellow": 73,
@@ -569,7 +556,7 @@
         "drum_cyan": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:05.409504",
+      "ultima_lectura": "2026-08-05T13:59:28.578974",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -580,14 +567,14 @@
       "modelo": "Xerox AltaLink B8075",
       "serial": "3669690826",
       "ip": "172.16.79.51",
-      "contador": 1259306,
+      "contador": 1259466,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 50
+        "toner_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:11.094927",
+      "ultima_lectura": "2026-08-05T13:59:33.374143",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -606,7 +593,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:12.633532",
+      "ultima_lectura": "2026-08-05T13:59:34.491576",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -625,7 +612,7 @@
         "drum_black": 96
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:14.138244",
+      "ultima_lectura": "2026-08-05T13:59:35.630639",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -644,7 +631,7 @@
         "drum_black": 77
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:15.630637",
+      "ultima_lectura": "2026-08-05T13:59:36.746565",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -663,7 +650,7 @@
         "drum_black": 100
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:17.109323",
+      "ultima_lectura": "2026-08-05T13:59:37.855642",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -682,7 +669,7 @@
         "drum_black": 76
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:20.620395",
+      "ultima_lectura": "2026-08-05T13:59:38.962533",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -701,7 +688,7 @@
         "drum_black": 61
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:22.288925",
+      "ultima_lectura": "2026-08-05T13:59:40.123563",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -712,7 +699,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940617021",
       "ip": "172.16.79.62",
-      "contador": 163378,
+      "contador": 163394,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -720,7 +707,7 @@
         "drum_black": 26
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:23.798407",
+      "ultima_lectura": "2026-08-05T13:59:41.621572",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -731,7 +718,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399951533",
       "ip": "172.16.79.63",
-      "contador": 144593,
+      "contador": 144595,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -739,7 +726,7 @@
         "drum_black": 97
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:26.472010",
+      "ultima_lectura": "2026-08-05T13:59:42.730073",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -758,7 +745,7 @@
         "drum_black": 73
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:29.127771",
+      "ultima_lectura": "2026-08-05T13:59:43.831690",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -777,7 +764,7 @@
         "drum_black": 30
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:31.006419",
+      "ultima_lectura": "2026-08-05T13:59:45.186469",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -788,7 +775,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399943565",
       "ip": "172.16.79.66",
-      "contador": 218776,
+      "contador": 218778,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -796,7 +783,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:32.638982",
+      "ultima_lectura": "2026-08-05T13:59:46.558344",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -815,7 +802,7 @@
         "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:35.340297",
+      "ultima_lectura": "2026-08-05T13:59:47.668724",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -834,7 +821,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:38.094862",
+      "ultima_lectura": "2026-08-05T13:59:48.777950",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -853,7 +840,7 @@
         "drum_black": 90
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:39.731035",
+      "ultima_lectura": "2026-08-05T13:59:49.893542",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -872,7 +859,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:43.212361",
+      "ultima_lectura": "2026-08-05T13:59:51.068977",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -883,7 +870,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946009",
       "ip": "172.16.79.72",
-      "contador": 91479,
+      "contador": 91482,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -891,7 +878,7 @@
         "drum_black": 86
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:44.832809",
+      "ultima_lectura": "2026-08-05T13:59:52.206595",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -912,7 +899,7 @@
         "toner_cyan": 64
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:46.427318",
+      "ultima_lectura": "2026-08-05T13:59:53.784843",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -923,7 +910,7 @@
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74",
-      "contador": 11392,
+      "contador": 11399,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -931,7 +918,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:51.169502",
+      "ultima_lectura": "2026-08-05T13:59:57.657015",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -949,7 +936,7 @@
         "toner_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:52.810178",
+      "ultima_lectura": "2026-08-05T13:59:58.778761",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -968,7 +955,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:54.335249",
+      "ultima_lectura": "2026-08-05T14:00:00.112675",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -983,11 +970,10 @@
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 17,
         "drum_black": 22
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:55.857167",
+      "ultima_lectura": "2026-08-05T14:00:01.265692",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1006,7 +992,7 @@
         "drum_black": 35
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:57.357622",
+      "ultima_lectura": "2026-08-05T14:00:05.314006",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1025,7 +1011,7 @@
         "drum_black": 99
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:00:59.204585",
+      "ultima_lectura": "2026-08-05T14:00:06.555726",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1036,7 +1022,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3942939786",
       "ip": "172.16.79.82",
-      "contador": 249782,
+      "contador": 249856,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -1044,7 +1030,7 @@
         "drum_black": 20
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:01.574157",
+      "ultima_lectura": "2026-08-05T14:00:07.685731",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1060,7 +1046,7 @@
       "contador_color": null,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:04.419744",
+      "ultima_lectura": "2026-08-05T14:00:08.808548",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1078,7 +1064,7 @@
         "toner_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:05.994157",
+      "ultima_lectura": "2026-08-05T14:00:10.685636",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1096,7 +1082,7 @@
         "toner_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:07.553819",
+      "ultima_lectura": "2026-08-05T14:00:11.849555",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1114,7 +1100,7 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:09.140228",
+      "ultima_lectura": "2026-08-05T14:00:12.988684",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1125,7 +1111,7 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399952378",
       "ip": "172.16.79.30",
-      "contador": 49964,
+      "contador": 49991,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -1133,7 +1119,7 @@
         "drum_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:10.925888",
+      "ultima_lectura": "2026-08-05T14:00:14.309635",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1152,7 +1138,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:12.594629",
+      "ultima_lectura": "2026-08-05T14:00:16.360342",
       "referencia": "",
       "departamento": "",
       "contacto": "",
@@ -1163,21 +1149,21 @@
       "modelo": "Xerox WorkCentre 3655X v1",
       "serial": "3353215298",
       "ip": "172.16.79.56",
-      "contador": 121174,
+      "contador": 121176,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
         "toner_black": 31
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:14.209729"
+      "ultima_lectura": "2026-08-05T14:00:17.577359"
     },
     {
       "nombre": "Direccion de Biblioteca",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618222",
       "ip": "172.16.79.33",
-      "contador": 54045,
+      "contador": 54070,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -1185,7 +1171,7 @@
         "drum_black": 10
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:15.729725"
+      "ultima_lectura": "2026-08-05T14:00:18.718254"
     },
     {
       "nombre": "Facultad de Trabajo Social",
@@ -1200,7 +1186,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:17.276023"
+      "ultima_lectura": "2026-08-05T14:00:22.172760"
     },
     {
       "nombre": "Centro Uni. Ignaciano 2do piso",
@@ -1215,7 +1201,7 @@
         "drum_black": 14
       },
       "online": true,
-      "ultima_lectura": "2026-08-05T13:01:18.960687"
+      "ultima_lectura": "2026-08-05T14:00:23.312813"
     }
   ],
   "alertas": [
@@ -2473,6 +2459,28 @@
       "pn": "113R00779",
       "estado_gestion": 1,
       "estado_texto": "NOTIFICADO"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T14:01:13.483622",
+      "pn": null,
+      "estado_gestion": 1,
+      "estado_texto": "NOTIFICADO"
+    },
+    {
+      "equipo": "Rectoria",
+      "serial": "3394991545",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-05T14:01:13.483722",
+      "pn": null,
+      "estado_gestion": 1,
+      "estado_texto": "NOTIFICADO"
     }
   ],
   "instalaciones": [
@@ -2529,9 +2537,9 @@
       "pn": "106R03735",
       "vida_nominal": 15000,
       "contador_instalacion": 323718,
-      "contador_actual": 324432,
-      "uso_real": 714,
-      "restante": 14286,
+      "contador_actual": 324514,
+      "uso_real": 796,
+      "restante": 14204,
       "restante_pct": 95
     },
     {

@@ -26,6 +26,17 @@ h1{
     margin-bottom:20px;
 }
 
+.modulos{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(220px,1fr));
+    gap:15px;
+    margin-top:30px;
+}
+
+.actividad{
+    margin-top:30px;
+}
+
 .kpis{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -33,9 +44,11 @@ h1{
 }
 
 .card{
+    text-align:center;
     background:white;
     border-radius:10px;
-    padding:20px;
+    padding:15px;
+    min-height:140px;
     box-shadow:0 2px 5px rgba(0,0,0,.10);
 }
 
@@ -68,6 +81,14 @@ h1{
 .evento{
     padding:6px 0;
     border-bottom:1px solid #eee;
+}
+
+.modulos .card{
+    transition:.2s;
+}
+
+.modulos .card:hover{
+    transform:translateY(-3px);
 }
 
 .evento:last-child{
@@ -110,7 +131,7 @@ h1{
     </div>
 
 </div>
-<div class="section">
+<div class="modulos">
 
     <a
         href="alertas.html"
@@ -132,21 +153,12 @@ h1{
             </p>
 
             <p>
-                ⚫ Offline:
-                <span id="offline_alertas"></span>
-            </p>
-
-            <p>
                 <b>Ver detalle →</b>
             </p>
 
         </div>
 
     </a>
-
-</div>
-
-<div class="section">
 
     <a
         href="inventario.html"
@@ -170,8 +182,31 @@ h1{
 
     </a>
 
-</div>
-<div class="section">
+    <a
+        href="instalaciones.html"
+        class="card-link"
+    >
+
+        <div class="card">
+
+            <h2>✅ INSTALACIONES</h2>
+
+            <p>
+                Cambios de suministros
+            </p>
+
+            <p>
+                Historial técnico
+            </p>
+
+             <p>
+                <b>Ver detalle →</b>
+            </p>
+
+        </div>
+
+    </a>
+
     <a
         href="metricas.html"
         class="card-link"
@@ -203,7 +238,7 @@ h1{
 
     <a
         href="eventos.html"
-        class="card-link
+        class="card-link"
 
     >
 
@@ -275,7 +310,9 @@ fetch("dashboard.json")
     document.getElementById(
         "alertas"
     ).innerText =
-        data.metricas.alertas.abiertas;
+        data.metricas.alertas.criticas
+        +
+        data.metricas.alertas.advertencias;
 
     document.getElementById(
         "criticas"
