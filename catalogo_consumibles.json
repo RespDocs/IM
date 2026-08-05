@@ -246,7 +246,7 @@
     "toner_black": {
       "descripcion": "Black Toner Cartridge, PN 106R03536;SN7000D2001D160000",
       "pn": "106R03536",
-      "vida_nominal": null,
+      "vida_nominal": 10500,
       "origen": "snmp"
     },
     "toner_yellow": {
