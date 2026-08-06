@@ -147,7 +147,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 4,
+      "porcentaje": 3,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.299719",
@@ -1138,8 +1138,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-06T11:00:36.677924"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-06T11:00:36.677924",
+      "fecha_resolucion": "2026-08-06T11:29:21.459413"
     }
   ]
 }
