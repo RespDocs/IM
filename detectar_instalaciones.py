@@ -109,9 +109,10 @@ for equipo_actual in estado_actual["impresoras"]:
 
             if modelo in catalogo:
 
-            if consumible in catalogopn = (
-                    catalogo[modelo][consumible]
-                    .get("pn")
+                if consumible in catalogo[modelo]:
+                    pn = (
+                        catalogo[modelo][consumible]
+                        .get("pn")
                     )
 
                     vida_nominal = (

@@ -1,0 +1,48 @@
+{
+  "instalaciones": [
+    {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B605",
+      "consumible": "drum_black",
+      "pn": "101R00582",
+      "vida_nominal": 60000,
+      "fecha_instalacion": "2026-07-29T18:14:16.403835",
+      "contador_instalacion": 473907,
+      "porcentaje_instalacion": 100,
+      "origen": "auto_detectado"
+    },
+    {
+      "equipo": "Central de Apuntes",
+      "modelo": "Xerox VersaLink C7025",
+      "consumible": "toner_magenta",
+      "pn": "106R03735",
+      "vida_nominal": 15000,
+      "fecha_instalacion": "2026-08-03T17:01:14.828311",
+      "contador_instalacion": 323718,
+      "porcentaje_instalacion": 92,
+      "origen": "auto_detectado"
+    },
+    {
+      "equipo": "Modulo5",
+      "modelo": "Xerox VersaLink B605",
+      "consumible": "toner_black",
+      "pn": null,
+      "vida_nominal": 46700,
+      "fecha_instalacion": "2026-08-04T14:00:44.897733",
+      "contador_instalacion": 829470,
+      "porcentaje_instalacion": 100,
+      "origen": "auto_detectado"
+    },
+    {
+      "equipo": null,
+      "modelo": "Xerox VersaLink B7030",
+      "consumible": "toner_black",
+      "pn": "106R03392",
+      "vida_nominal": 30000,
+      "fecha_instalacion": "2026-08-05T12:02:33.892432",
+      "contador_instalacion": 218738,
+      "porcentaje_instalacion": 94,
+      "origen": "auto_detectado"
+    }
+  ]
+}
