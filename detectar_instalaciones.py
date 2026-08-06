@@ -4,17 +4,30 @@ from datetime import datetime
 LIMITE_ANTERIOR = 70
 LIMITE_NUEVO = 90
 
-try:
 
-    with open(
-        "estado_anterior.json",
-        "r",
-        encoding="utf-8"
-    ) as f:
+def cargar_json(nombre, defecto):
 
-        estado_anterior = json.load(f)
+    try:
 
-except:
+        with open(
+            nombre,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            return json.load(f)
+
+    except:
+
+        return defecto
+
+
+estado_anterior = cargar_json(
+    "estado_anterior.json",
+    None
+)
+
+if estado_anterior is None:
 
     print(
         "No existe estado_anterior.json"
@@ -22,29 +35,27 @@ except:
 
     exit()
 
-with open(
+
+estado_actual = cargar_json(
     "estado.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {"impresoras": []}
+)
 
-    estado_actual = json.load(f)
-
-with open(
+catalogo = cargar_json(
     "catalogo_consumibles.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {}
+)
 
-    catalogo = json.load(f)
-
-with open(
+instalaciones = cargar_json(
     "instalaciones.json",
-    "r",
-    encoding="utf-8"
-) as f:
+    {"instalaciones": []}
+)
 
-    instalaciones = json.load(f)
+eventos = cargar_json(
+    "eventos.json",
+    []
+)
+
 
 equipos_anteriores = {}
 
@@ -53,6 +64,7 @@ for equipo in estado_anterior["impresoras"]:
     equipos_anteriores[
         equipo["nombre"]
     ] = equipo
+
 
 for equipo_actual in estado_actual["impresoras"]:
 
@@ -85,9 +97,13 @@ for equipo_actual in estado_actual["impresoras"]:
             continue
 
         if (
+
             valor_anterior < LIMITE_ANTERIOR
+
             and
+
             valor_actual > LIMITE_NUEVO
+
         ):
 
             modelo = equipo_actual["modelo"]
@@ -97,9 +113,7 @@ for equipo_actual in estado_actual["impresoras"]:
 
             if modelo in catalogo:
 
-                if consumible in catalogo[modelo]:
-
-                    pn = (
+                if consumible in catalogopn = (
                         catalogo[modelo]
                         [consumible]
                         .get("pn")
@@ -118,12 +132,21 @@ for equipo_actual in estado_actual["impresoras"]:
             ]:
 
                 if (
+
                     item["equipo"] == nombre
+
                     and
-                    item["consumible"] == consumible
+
+                    item["consumible"]
+                    == consumible
+
                     and
-                    item["contador_instalacion"]
+
+                    item[
+                        "contador_instalacion"
+                    ]
                     == equipo_actual["contador"]
+
                 ):
 
                     duplicado = True
@@ -169,10 +192,33 @@ for equipo_actual in estado_actual["impresoras"]:
                 evento
             )
 
+            eventos.append({
+
+                "fecha":
+                    datetime.now().isoformat(),
+
+                "tipo":
+                    "instalacion",
+
+                "equipo":
+                    nombre,
+
+                "modelo":
+                    modelo,
+
+                "consumible":
+                    consumible,
+
+                "detalle":
+                    f"{consumible} reemplazado"
+
+            })
+
             print(
                 f"Cambio detectado: "
                 f"{nombre} - {consumible}"
             )
+
 
 with open(
     "instalaciones.json",
@@ -186,6 +232,21 @@ with open(
         indent=2,
         ensure_ascii=False
     )
+
+
+with open(
+    "eventos.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        eventos,
+        f,
+        indent=2,
+        ensure_ascii=False
+    )
+
 
 print()
 print(
