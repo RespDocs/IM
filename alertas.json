@@ -102,8 +102,8 @@
       "modelo": "Xerox VersaLink B405",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 9,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.298383"
     },
@@ -1129,8 +1129,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-06T09:00:29.114838"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-06T09:00:29.114838",
+      "fecha_resolucion": "2026-08-06T10:01:05.237322"
     }
   ]
 }
