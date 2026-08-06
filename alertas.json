@@ -187,15 +187,18 @@
     {
       "id_alerta": "UAH_00014",
       "clave_alerta": "3399952459_toner_black",
-      "equipo": "Facultad de Ingenieria",
+      "equipo": null,
       "serial": "3399952459",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
       "porcentaje": 1,
       "criticidad": "critico",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-07-31T01:42:47.301421"
+      "estado": "instalado",
+      "fecha_notificacion": "2026-07-31T01:42:47.301421",
+      "fecha_instalacion": "2026-08-05T12:02:33.892432",
+      "contador_instalacion": 218738,
+      "porcentaje_reemplazo": 1
     },
     {
       "id_alerta": "UAH_00015",
@@ -234,7 +237,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 16,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302894",
@@ -1141,6 +1144,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-06T11:00:36.677924",
       "fecha_resolucion": "2026-08-06T11:29:21.459413"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-06T13:00:28.872019"
     }
   ]
 }
