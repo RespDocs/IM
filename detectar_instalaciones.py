@@ -97,13 +97,9 @@ for equipo_actual in estado_actual["impresoras"]:
             continue
 
         if (
-
             valor_anterior < LIMITE_ANTERIOR
-
             and
-
             valor_actual > LIMITE_NUEVO
-
         ):
 
             modelo = equipo_actual["modelo"]
@@ -113,15 +109,13 @@ for equipo_actual in estado_actual["impresoras"]:
 
             if modelo in catalogo:
 
-                if consumible in catalogopn = (
-                        catalogo[modelo]
-                        [consumible]
+                if consumible in catalogo[modelo] = (
+                        catalogo[modelo][consumible]
                         .get("pn")
                     )
 
                     vida_nominal = (
-                        catalogo[modelo]
-                        [consumible]
+                        catalogo[modelo][consumible]
                         .get("vida_nominal")
                     )
 
@@ -132,21 +126,12 @@ for equipo_actual in estado_actual["impresoras"]:
             ]:
 
                 if (
-
                     item["equipo"] == nombre
-
                     and
-
-                    item["consumible"]
-                    == consumible
-
+                    item["consumible"] == consumible
                     and
-
-                    item[
-                        "contador_instalacion"
-                    ]
+                    item["contador_instalacion"]
                     == equipo_actual["contador"]
-
                 ):
 
                     duplicado = True
@@ -155,7 +140,7 @@ for equipo_actual in estado_actual["impresoras"]:
             if duplicado:
                 continue
 
-            evento = {
+            evento_instalacion = {
 
                 "equipo":
                     nombre,
@@ -189,7 +174,7 @@ for equipo_actual in estado_actual["impresoras"]:
             instalaciones[
                 "instalaciones"
             ].append(
-                evento
+                evento_instalacion
             )
 
             eventos.append({
@@ -203,11 +188,8 @@ for equipo_actual in estado_actual["impresoras"]:
                 "equipo":
                     nombre,
 
-                "modelo":
-                    modelo,
-
-                "consumible":
-                    consumible,
+                "serial":
+                    equipo_actual.get("serial"),
 
                 "detalle":
                     f"{consumible} reemplazado"
@@ -233,7 +215,6 @@ with open(
         ensure_ascii=False
     )
 
-
 with open(
     "eventos.json",
     "w",
@@ -246,7 +227,6 @@ with open(
         indent=2,
         ensure_ascii=False
     )
-
 
 print()
 print(
