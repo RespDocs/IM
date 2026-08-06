@@ -109,9 +109,9 @@ for equipo_actual in estado_actual["impresoras"]:
 
             if modelo in catalogo:
 
-                if consumible in catalogo[modelo] = (
-                        catalogo[modelo][consumible]
-                        .get("pn")
+            if consumible in catalogopn = (
+                    catalogo[modelo][consumible]
+                    .get("pn")
                     )
 
                     vida_nominal = (
@@ -126,11 +126,11 @@ for equipo_actual in estado_actual["impresoras"]:
             ]:
 
                 if (
-                    item["equipo"] == nombre
+                    item.get("equipo") == nombre
                     and
-                    item["consumible"] == consumible
+                    item.get("consumible") == consumible
                     and
-                    item["contador_instalacion"]
+                    item.get("contador_instalacion")
                     == equipo_actual["contador"]
                 ):
 
@@ -144,6 +144,16 @@ for equipo_actual in estado_actual["impresoras"]:
 
                 "equipo":
                     nombre,
+
+                "serial":
+                    equipo_actual.get(
+                        "serial"
+                    ),
+
+                "ip":
+                    equipo_actual.get(
+                        "ip"
+                    ),
 
                 "modelo":
                     modelo,
@@ -186,10 +196,14 @@ for equipo_actual in estado_actual["impresoras"]:
                     "instalacion",
 
                 "equipo":
-                    nombre,
+                    equipo_actual.get("serial")
+                    or nombre
+                    or equipo_actual.get("ip"),
 
                 "serial":
-                    equipo_actual.get("serial"),
+                    equipo_actual.get(
+                        "serial"
+                    ),
 
                 "detalle":
                     f"{consumible} reemplazado"
@@ -215,6 +229,7 @@ with open(
         ensure_ascii=False
     )
 
+
 with open(
     "eventos.json",
     "w",
@@ -227,6 +242,7 @@ with open(
         indent=2,
         ensure_ascii=False
     )
+
 
 print()
 print(

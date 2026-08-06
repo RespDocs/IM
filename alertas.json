@@ -187,7 +187,7 @@
     {
       "id_alerta": "UAH_00014",
       "clave_alerta": "3399952459_toner_black",
-      "equipo": null,
+      "equipo": "Facultad de Ingenieria",
       "serial": "3399952459",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -811,7 +811,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-04T12:01:10.617597",
@@ -1150,8 +1150,17 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-06T13:00:28.872019",
+      "fecha_resolucion": "2026-08-06T15:00:43.822737"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-06T13:00:28.872019"
+      "fecha_notificacion": "2026-08-06T15:00:43.593793"
     }
   ]
 }

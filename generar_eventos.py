@@ -37,14 +37,21 @@ eventos = cargar(
     ARCHIVO_EVENTOS
 )
 
+instalaciones_anterior = cargar(
+    "instalaciones_anterior.json"
+)
+
+instalaciones_actual = cargar(
+    "instalaciones.json"
+)
+
 if not isinstance(
     eventos,
     list
 ):
 
     eventos = []
-
-
+    
 # -------------------------------------------------
 # INDICES POR SERIAL
 # -------------------------------------------------
@@ -242,6 +249,85 @@ for serial, actual in actuales.items():
             f"{nombre}"
         )
 
+# -------------------------------------------------
+# INSTALACIONES
+# -------------------------------------------------
+
+anteriores_inst = {
+
+    (
+        i.get("equipo"),
+        i.get("consumible"),
+        i.get("contador_instalacion")
+    )
+
+    for i in instalaciones_anterior.get(
+        "instalaciones",
+        []
+    )
+
+}
+
+for instalacion in instalaciones_actual.get(
+    "instalaciones",
+    []
+):
+
+    clave = (
+
+        instalacion.get("equipo"),
+
+        instalacion.get("consumible"),
+
+        instalacion.get(
+            "contador_instalacion"
+        )
+
+    )
+
+    if clave in anteriores_inst:
+        continue
+
+    eventos.append({
+
+        "fecha":
+            instalacion.get(
+                "fecha_instalacion",
+                datetime.now().isoformat()
+            ),
+
+        "tipo":
+            "instalacion",
+
+        "equipo":
+            instalacion.get("serial")
+            or instalacion.get("equipo")
+            or instalacion.get("ip")
+            or "Sin identificar",
+
+        "detalle":
+            (
+                f"{instalacion.get('consumible')} "
+                f"reemplazado"
+            )
+
+    })
+
+    eventos_nuevos += 1
+
+    print(
+
+        "Instalacion: "
+
+        +
+
+        str(
+            instalacion.get(
+                "equipo"
+            )
+        )
+
+    )
 
 # -------------------------------------------------
 # GUARDAR
