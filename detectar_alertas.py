@@ -177,6 +177,28 @@ for impresora in estado.get(
         continue
 
     # --------------------------------------------------
+    # CERRAR ALERTAS OFFLINE RECUPERADAS
+    # --------------------------------------------------
+
+    if online:
+
+        for alerta in alertas["alertas"]:
+
+            if (
+                alerta.get("tipo") == "offline"
+                and
+                alerta.get("serial") == serial
+                and
+                alerta.get("estado") == "notificado"
+            ):
+
+                alerta["estado"] = "resuelto"
+
+                alerta["fecha_resolucion"] = (
+                    datetime.now().isoformat()
+                )   
+
+    # --------------------------------------------------
     # CONSUMIBLES
     # --------------------------------------------------
 
@@ -368,7 +390,7 @@ with open(
         f,
         indent=2,
         ensure_ascii=False
-    )
+    )       
 
 # --------------------------------------------------
 # GUARDAR CONTROL IDS
@@ -386,6 +408,8 @@ with open(
         indent=2,
         ensure_ascii=False
     )
+
+
 
 # --------------------------------------------------
 # GUARDAR GESTION

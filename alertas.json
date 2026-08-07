@@ -102,7 +102,7 @@
       "modelo": "Xerox VersaLink B405",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 7,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.298383"
@@ -1159,8 +1159,9 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-06T15:00:43.593793"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-06T15:00:43.593793",
+      "fecha_resolucion": "2026-08-07T12:26:01.233431"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -1175,16 +1176,18 @@
       "serial": "3399945975",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-07T09:00:26.131309"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-07T09:00:26.131309",
+      "fecha_resolucion": "2026-08-07T12:26:01.232717"
     },
     {
       "equipo": "DERECHO",
       "serial": "3399946262",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-07T11:01:00.696660"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-07T11:01:00.696660",
+      "fecha_resolucion": "2026-08-07T12:26:01.232940"
     }
   ]
 }
