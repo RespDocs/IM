@@ -386,45 +386,70 @@ fetch("eventos.json")
             "tablaInstalaciones"
         );
 
-    eventos.forEach(e => {
+    eventos
 
-        if(
-            e.tipo ===
-            "alerta_critica_generada"
-            ||
-            e.tipo ===
-            "alerta_advertencia_generada"
-        ){
-            agregarFilaAlerta(
-                tablaAlertas,
-                e
-            );
-        }
+.filter(e =>
 
-        if(
-            e.tipo === "offline"
-            ||
-            e.tipo === "online"
-            ||
-            e.tipo === "cambio_ip"
-        ){
-            agregarFilaConectividad(
-                tablaConectividad,
-                e
-            );
-        }
+    e.tipo ===
+    "alerta_critica_generada"
+    ||
+    e.tipo ===
+    "alerta_advertencia_generada"
 
-        if(
-            e.tipo ===
-            "instalacion"
-        ){
-            agregarFilaInstalacion(
-                tablaInstalaciones,
-                e
-            );
-        }
+)
 
-    });
+.slice(0,2)
+
+.forEach(e => {
+
+    agregarFilaAlerta(
+        tablaAlertas,
+        e
+    );
+
+});
+
+eventos
+
+.filter(e =>
+
+    e.tipo === "offline"
+    ||
+    e.tipo === "online"
+    ||
+    e.tipo === "cambio_ip"
+
+)
+
+.slice(0,2)
+
+.forEach(e => {
+
+    agregarFilaConectividad(
+        tablaConectividad,
+        e
+    );
+
+});
+
+eventos
+
+.filter(e =>
+
+    e.tipo === "instalacion"
+
+)
+
+.slice(0,2)
+
+.forEach(e => {
+
+    agregarFilaInstalacion(
+        tablaInstalaciones,
+        e
+    );
+
+});
 
 });
 

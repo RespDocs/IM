@@ -137,140 +137,290 @@ td{
 
     <div class="card">
         <div>✅ Instalaciones</div>
-        <div id="kpiInstalaciones" class="valor">0</div>
+        <div id="kpiInstalaciones" class="valor">
+            0
+        </div>
     </div>
 
     <div class="card">
         <div>🚨 Alertas</div>
-        <div id="kpiAlertas" class="valor">0</div>
+        <div id="kpiAlertas" class="valor">
+            0
+        </div>
     </div>
 
     <div class="card">
         <div>⚫ Offline</div>
-        <div id="kpiOffline" class="valor">0</div>
+        <div id="kpiOffline" class="valor">
+            0
+        </div>
     </div>
 
     <div class="card">
         <div>🔄 Cambios IP</div>
-        <div id="kpiIp" class="valor">0</div>
+        <div id="kpiIp" class="valor">
+            0
+        </div>
     </div>
 
     <div class="card">
         <div>🖨️ Equipos Intervenidos</div>
-        <div id="kpiEquipos" class="valor">0</div>
+        <div id="kpiEquipos" class="valor">
+            0
+        </div>
     </div>
 
 </div>
 <div class="section">
 
-<h2>📄 Producción por Serie</h2>
+    <h2>📄 Producción por Serie</h2>
 
-<table>
+    <table>
 
-<thead>
+        <thead>
 
-<tr>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Modelo</th>
-    <th>Negro</th>
-    <th>Color</th>
-    <th>Total</th>
-</tr>
+            <tr>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Modelo</th>
+                <th>Negro</th>
+                <th>Color</th>
+                <th>Total</th>
+            </tr>
 
-</thead>
+        </thead>
 
-<tbody id="tablaProduccion">
-</tbody>
+        <tbody id="tablaProduccion">
+        </tbody>
 
-</table>
-
-</div>
-``
-<div class="section">
-
-<h2>🧰 Suministros por Serie</h2>
-
-<table>
-
-<thead>
-
-<tr>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Modelo</th>
-    <th>Consumible</th>
-    <th>PN</th>
-    <th>Instalaciones</th>
-</tr>
-
-</thead>
-
-<tbody id="tablaSuministros">
-</tbody>
-
-</table>
+    </table>
 
 </div>
 <div class="section">
 
-<h2>🔧 Equipos Más Intervenidos</h2>
+    <h2>🧰 Suministros por Serie</h2>
 
-<table>
+    <table>
 
-<thead>
+        <thead>
 
-<tr>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Instalaciones</th>
-</tr>
+            <tr>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Modelo</th>
+                <th>Consumible</th>
+                <th>PN</th>
+                <th>Instalaciones</th>
+            </tr>
 
-</thead>
+        </thead>
 
-<tbody id="tablaIntervenidos">
-</tbody>
+        <tbody id="tablaSuministros">
+        </tbody>
 
-</table>
+    </table>
 
 </div>
 <div class="section">
 
-<h2>🚨 Alertas por Serie</h2>
+    <h2>🔧 Equipos Más Intervenidos</h2>
 
-<table>
+    <table>
 
-<thead>
+        <thead>
 
-<tr>
-    <th>Serie</th>
-    <th>Equipo</th>
-    <th>Total Alertas</th>
-</tr>
+            <tr>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Instalaciones</th>
+            </tr>
 
-</thead>
+        </thead>
 
-<tbody id="tablaAlertasSerie">
-</tbody>
+        <tbody id="tablaIntervenidos">
+        </tbody>
 
-</table>
+    </table>
+
+</div>
+<div class="section">
+
+    <h2>🚨 Alertas por Serie</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Serie</th>
+                <th>Equipo</th>
+                <th>Total Alertas</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="tablaAlertasSerie">
+        </tbody>
+
+    </table>
+
+</div>
+<div class="section">
+
+    <h2>📑 Informes</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div>
+                📄 Informe de Producción
+            </div>
+
+            <button onclick="generarInformeProduccion()">
+                Generar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div>
+                🧰 Informe de Suministros
+            </div>
+
+            <button onclick="generarInformeSuministros()">
+                Generar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div>
+                🚨 Informe de Alertas
+            </div>
+
+            <button onclick="generarInformeAlertas()">
+                Generar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div>
+                🔧 Informe de Intervenciones
+            </div>
+
+            <button onclick="generarInformeIntervenciones()">
+                Generar
+            </button>
+
+        </div>
+
+    </div>
+
+    <pre
+        id="resultadoInforme"
+        style="
+            background:#f5f5f5;
+            padding:15px;
+            border-radius:8px;
+            white-space:pre-wrap;
+        "
+    >
+Seleccione un informe
+    </pre>
 
 </div>
 <script>
 
+function generarInformeProduccion(){
+
+    document.getElementById(
+        "resultadoInforme"
+    ).textContent =
+
+`INFORME DE PRODUCCIÓN
+
+Serie
+Equipo
+
+Negro Inicial
+Negro Final
+Consumo Negro
+
+Color Inicial
+Color Final
+Consumo Color
+
+Total Inicial
+Total Final
+Consumo Total`;
+
+}
+
+function generarInformeSuministros(){
+
+    document.getElementById(
+        "resultadoInforme"
+    ).textContent =
+
+`INFORME DE SUMINISTROS
+
+Serie
+Equipo
+Consumible
+Cantidad`;
+
+}
+
+function generarInformeAlertas(){
+
+    document.getElementById(
+        "resultadoInforme"
+    ).textContent =
+
+`INFORME DE ALERTAS
+
+Serie
+Equipo
+
+Críticas
+Advertencias
+
+Total`;
+
+}
+
+function generarInformeIntervenciones(){
+
+    document.getElementById(
+        "resultadoInforme"
+    ).textContent =
+
+`INFORME DE INTERVENCIONES
+
+Serie
+Equipo
+
+Instalaciones`;
+
+}
 async function cargarMetricas(){
 
     const estado =
         await fetch("estado.json")
-        .then(r=>r.json());
+        .then(r => r.json());
 
     const instalacionesJson =
         await fetch("instalaciones.json")
-        .then(r=>r.json());
+        .then(r => r.json());
 
     const eventos =
         await fetch("eventos.json")
-        .then(r=>r.json());
+        .then(r => r.json());
 
     const instalaciones =
         instalacionesJson.instalaciones || [];
@@ -333,7 +483,6 @@ async function cargarMetricas(){
     );
 
 }
-
 function cargarProduccion(impresoras){
 
     const tabla =
@@ -343,23 +492,43 @@ function cargarProduccion(impresoras){
 
     tabla.innerHTML = "";
 
-    impresoras.forEach(p=>{
+    impresoras.forEach(p => {
 
         tabla.innerHTML += `
+
         <tr>
-            <td>${p.serial || "-"}</td>
-            <td>${p.nombre || "-"}</td>
-            <td>${p.modelo || "-"}</td>
-            <td>${p.contador_negro || 0}</td>
-            <td>${p.contador_color || 0}</td>
-            <td>${p.contador || 0}</td>
+
+            <td>
+                ${p.serial || "-"}
+            </td>
+
+            <td>
+                ${p.nombre || "-"}
+            </td>
+
+            <td>
+                ${p.modelo || "-"}
+            </td>
+
+            <td>
+                ${p.contador_negro || 0}
+            </td>
+
+            <td>
+                ${p.contador_color || 0}
+            </td>
+
+            <td>
+                ${p.contador || 0}
+            </td>
+
         </tr>
+
         `;
 
     });
 
 }
-
 function cargarSuministros(datos){
 
     const tabla =
@@ -371,7 +540,7 @@ function cargarSuministros(datos){
 
     const resumen = {};
 
-    datos.forEach(i=>{
+    datos.forEach(i => {
 
         const clave =
             i.serial
@@ -381,12 +550,12 @@ function cargarSuministros(datos){
         if(!resumen[clave]){
 
             resumen[clave] = {
-                serial:i.serial,
-                equipo:i.equipo,
-                modelo:i.modelo,
-                consumible:i.consumible,
-                pn:i.pn,
-                cantidad:0
+                serial: i.serial,
+                equipo: i.equipo,
+                modelo: i.modelo,
+                consumible: i.consumible,
+                pn: i.pn,
+                cantidad: 0
             };
 
         }
@@ -398,27 +567,47 @@ function cargarSuministros(datos){
     Object.values(resumen)
 
     .sort(
-        (a,b)=>
+        (a,b) =>
         b.cantidad - a.cantidad
     )
 
-    .forEach(r=>{
+    .forEach(r => {
 
         tabla.innerHTML += `
+
         <tr>
-            <td>${r.serial}</td>
-            <td>${r.equipo}</td>
-            <td>${r.modelo}</td>
-            <td>${r.consumible}</td>
-            <td>${r.pn || "-"}</td>
-            <td>${r.cantidad}</td>
+
+            <td>
+                ${r.serial}
+            </td>
+
+            <td>
+                ${r.equipo}
+            </td>
+
+            <td>
+                ${r.modelo}
+            </td>
+
+            <td>
+                ${r.consumible}
+            </td>
+
+            <td>
+                ${r.pn || "-"}
+            </td>
+
+            <td>
+                ${r.cantidad}
+            </td>
+
         </tr>
+
         `;
 
     });
 
 }
-
 function cargarIntervenidos(datos){
 
     const tabla =
@@ -430,13 +619,13 @@ function cargarIntervenidos(datos){
 
     const resumen = {};
 
-    datos.forEach(i=>{
+    datos.forEach(i => {
 
         if(!resumen[i.serial]){
 
             resumen[i.serial] = {
-                equipo:i.equipo,
-                cantidad:0
+                equipo: i.equipo,
+                cantidad: 0
             };
 
         }
@@ -448,26 +637,37 @@ function cargarIntervenidos(datos){
     Object.entries(resumen)
 
     .sort(
-        (a,b)=>
+        (a,b) =>
         b[1].cantidad
         -
         a[1].cantidad
     )
 
-    .forEach(([serie,info])=>{
+    .forEach(([serie,info]) => {
 
         tabla.innerHTML += `
+
         <tr>
-            <td>${serie}</td>
-            <td>${info.equipo}</td>
-            <td>${info.cantidad}</td>
+
+            <td>
+                ${serie}
+            </td>
+
+            <td>
+                ${info.equipo}
+            </td>
+
+            <td>
+                ${info.cantidad}
+            </td>
+
         </tr>
+
         `;
 
     });
 
 }
-
 function cargarAlertas(eventos){
 
     const tabla =
@@ -479,7 +679,7 @@ function cargarAlertas(eventos){
 
     const resumen = {};
 
-    eventos.forEach(e=>{
+    eventos.forEach(e => {
 
         if(
             e.tipo !== "alerta_critica_generada"
@@ -492,8 +692,8 @@ function cargarAlertas(eventos){
         if(!resumen[e.serial]){
 
             resumen[e.serial] = {
-                equipo:e.equipo,
-                cantidad:0
+                equipo: e.equipo,
+                cantidad: 0
             };
 
         }
@@ -505,28 +705,41 @@ function cargarAlertas(eventos){
     Object.entries(resumen)
 
     .sort(
-        (a,b)=>
+        (a,b) =>
         b[1].cantidad
         -
         a[1].cantidad
     )
 
-    .forEach(([serie,info])=>{
+    .forEach(([serie,info]) => {
 
         tabla.innerHTML += `
+
         <tr>
-            <td>${serie}</td>
-            <td>${info.equipo}</td>
-            <td>${info.cantidad}</td>
+
+            <td>
+                ${serie}
+            </td>
+
+            <td>
+                ${info.equipo}
+            </td>
+
+            <td>
+                ${info.cantidad}
+            </td>
+
         </tr>
+
         `;
 
     });
 
 }
-
 cargarMetricas();
 
 </script>
+
 </body>
+
 </html>
