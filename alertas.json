@@ -1168,8 +1168,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-06T15:36:45.155278"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-06T15:36:45.155278",
+      "fecha_resolucion": "2026-08-07T13:01:00.188434"
     },
     {
       "equipo": "Facultad de Ciencias Sociales",
@@ -1188,6 +1189,22 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-07T11:01:00.696660",
       "fecha_resolucion": "2026-08-07T12:26:01.232940"
+    },
+    {
+      "equipo": "Facultad de Ciencias Politicas",
+      "serial": "3940616270",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-07T13:01:00.189500"
+    },
+    {
+      "equipo": "Direccion de Comunicaciones",
+      "serial": "3940616696",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-07T13:01:00.189781"
     }
   ]
 }

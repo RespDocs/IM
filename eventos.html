@@ -26,45 +26,69 @@ nav a{
     font-weight:bold;
 }
 
-input{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    margin-bottom:20px;
-}
-
 .cards{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:15px;
-    margin-bottom:20px;
-    flex-wrap:wrap;
+    margin-bottom:30px;
 }
 
 .card{
-    background:#f5f5f5;
-    border-radius:8px;
+    background:white;
+    border-radius:10px;
     padding:15px;
-    min-width:180px;
     text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,.10);
 }
 
 .valor{
-    font-size:28px;
+    font-size:30px;
     font-weight:bold;
-    color:#1976d2;
+    margin-top:10px;
+}
+
+.critica{
+    color:#dc3545;
+}
+
+.advertencia{
+    color:#fd7e14;
+}
+
+.offline{
+    color:#b00020;
+}
+
+.online{
+    color:#198754;
+}
+
+.ip{
+    color:#0d6efd;
+}
+
+.instalacion{
+    color:#198754;
+}
+
+.seccion{
+    margin-top:35px;
+}
+
+.seccion h2{
+    margin-bottom:15px;
 }
 
 table{
     width:100%;
     border-collapse:collapse;
+    margin-bottom:30px;
 }
 
 th{
     background:#1976d2;
     color:white;
     padding:10px;
-    cursor:pointer;
 }
 
 td{
@@ -77,10 +101,6 @@ tr:hover{
     background:#f5f5f5;
 }
 
-th:hover{
-    background:#1565c0;
-}
-
 </style>
 
 </head>
@@ -89,13 +109,11 @@ th:hover{
 
 <nav>
 
-    <a href="index.html">🏠 Dashboard</a>
-    |
-
-    <a href="inventario.html">🖨️ Inventario</a>
-    |
-
-    as.html">🚨 Alertas</a>
+<a href="index.html">🏠 Dashboard</a>
+|
+<a href="inventario.html">🖨️ Inventario</a>
+|
+<a href="alertas.html">🚨 Alertas</a>
 
 </nav>
 
@@ -104,257 +122,180 @@ th:hover{
 <div class="cards">
 
     <div class="card">
-        <div>Eventos</div>
-        <div
-            class="valor"
-            id="totalEventos"
-        >
-            0
-        </div>
+        <div>🚨 Críticas</div>
+        <div id="kpiCriticas" class="valor critica">0</div>
     </div>
 
     <div class="card">
-        <div>🔄 Cambio IP</div>
-        <div
-            class="valor"
-            id="totalIP"
-        >
-            0
-        </div>
-    </div>
-
-    <div class="card">
-        <div>🟢 Recuperados</div>
-        <div
-            class="valor"
-            id="totalOnline"
-        >
-            0
-        </div>
+        <div>🟡 Advertencias</div>
+        <div id="kpiAdvertencias" class="valor advertencia">0</div>
     </div>
 
     <div class="card">
         <div>⚫ Offline</div>
-        <div
-            class="valor"
-            id="totalOffline"
-        >
-            0
-        </div>
+        <div id="kpiOffline" class="valor offline">0</div>
+    </div>
+
+    <div class="card">
+        <div>🟢 Recuperados</div>
+        <div id="kpiOnline" class="valor online">0</div>
+    </div>
+
+    <div class="card">
+        <div>🔄 Cambios IP</div>
+        <div id="kpiIP" class="valor ip">0</div>
+    </div>
+
+    <div class="card">
+        <div>✅ Instalaciones</div>
+        <div id="kpiInstalaciones" class="valor instalacion">0</div>
+    </div>
+
+    <div class="card">
+        <div>📋 Total Eventos</div>
+        <div id="kpiTotal" class="valor">0</div>
     </div>
 
 </div>
 
-<input
-    id="busqueda"
-    type="text"
-    placeholder="Buscar equipo, serial, tipo o detalle..."
->
+<div class="seccion">
+
+<h2>🚨 Alertas Generadas</h2>
 
 <table>
 
 <thead>
-
 <tr>
-
-    <th onclick="ordenarPor('fecha')">
-        Fecha ▲▼
-    </th>
-
-    <th onclick="ordenarPor('tipo')">
-        Tipo ▲▼
-    </th>
-
-    <th onclick="ordenarPor('equipo')">
-        Equipo ▲▼
-    </th>
-
-    <th onclick="ordenarPor('serial')">
-        Serial ▲▼
-    </th>
-
-    <th>
-        Detalle
-    </th>
-
+    <th>Fecha</th>
+    <th>Tipo</th>
+    <th>Equipo</th>
+    <th>Serial</th>
+    <th>Detalle</th>
 </tr>
-
 </thead>
 
-<tbody id="tablaEventos">
+<tbody id="tablaAlertas">
 </tbody>
 
 </table>
 
+</div>
+
+<div class="seccion">
+
+<h2>🌐 Conectividad</h2>
+
+<table>
+
+<thead>
+<tr>
+    <th>Fecha</th>
+    <th>Tipo</th>
+    <th>Equipo</th>
+    <th>Serial</th>
+    <th>Detalle</th>
+</tr>
+</thead>
+
+<tbody id="tablaConectividad">
+</tbody>
+
+</table>
+
+</div>
+
+<div class="seccion">
+
+<h2>✅ Instalaciones</h2>
+
+<table>
+
+<thead>
+<tr>
+    <th>Fecha</th>
+    <th>Equipo</th>
+    <th>Serial</th>
+    <th>Detalle</th>
+</tr>
+</thead>
+
+<tbody id="tablaInstalaciones">
+</tbody>
+
+</table>
+
+</div>
+
 <script>
 
-let eventos = [];
+function fechaTexto(fecha){
 
-let columnaOrden = "fecha";
+    if(!fecha)
+        return "-";
 
-let ascendente = false;
-
-function icono(tipo){
-
-    if(tipo === "offline")
-        return "⚫";
-
-    if(tipo === "online")
-        return "🟢";
-
-    if(tipo === "cambio_ip")
-        return "🔄";
-
-    if(tipo === "instalacion")
-        return "✅";
-
-    if(tipo === "estado_alerta")
-        return "📦";
-
-    return "ℹ️";
-}
-
-function ordenarPor(columna){
-
-    if(
-        columnaOrden === columna
-    ){
-
-        ascendente =
-            !ascendente;
-
-    }
-    else{
-
-        columnaOrden =
-            columna;
-
-        ascendente =
-            true;
-
-    }
-
-    renderTabla(
-        document
-        .getElementById(
-            "busqueda"
-        )
-        .value
+    return new Date(
+        fecha
+    ).toLocaleString(
+        "es-CL"
     );
 
 }
 
-function renderTabla(
-    filtro = ""
-){
+function agregarFilaAlerta(tbody,e){
 
-    const tabla =
-        document.getElementById(
-            "tablaEventos"
-        );
+    const tipo =
+        e.tipo ===
+        "alerta_critica_generada"
+        ? "🚨 Crítica"
+        : "🟡 Advertencia";
 
-    tabla.innerHTML = "";
+    tbody.innerHTML += `
+    <tr>
+        <td>${fechaTexto(e.fecha)}</td>
+        <td>${tipo}</td>
+        <td>${e.equipo ?? "-"}</td>
+        <td>${e.serial ?? "-"}</td>
+        <td>${e.detalle ?? "-"}</td>
+    </tr>
+    `;
 
-    eventos
+}
 
-    .filter(e => {
+function agregarFilaConectividad(tbody,e){
 
-        const texto = (
+    let tipo = e.tipo;
 
-            (e.equipo || "")
-            + " "
-            + (e.serial || "")
-            + " "
-            + (e.tipo || "")
-            + " "
-            + (e.detalle || "")
+    if(tipo === "offline")
+        tipo = "⚫ Offline";
 
-        ).toLowerCase();
+    if(tipo === "online")
+        tipo = "🟢 Online";
 
-        return texto.includes(
-            filtro.toLowerCase()
-        );
+    if(tipo === "cambio_ip")
+        tipo = "🔄 Cambio IP";
 
-    })
+    tbody.innerHTML += `
+    <tr>
+        <td>${fechaTexto(e.fecha)}</td>
+        <td>${tipo}</td>
+        <td>${e.equipo ?? "-"}</td>
+        <td>${e.serial ?? "-"}</td>
+        <td>${e.detalle ?? "-"}</td>
+    </tr>
+    `;
 
-    .sort((a,b) => {
+}
 
-        let resultado = 0;
+function agregarFilaInstalacion(tbody,e){
 
-        if(
-            columnaOrden === "fecha"
-        ){
-
-            resultado =
-                new Date(a.fecha)
-                -
-                new Date(b.fecha);
-
-        }
-        else{
-
-            resultado =
-                String(
-                    a[columnaOrden] || ""
-                )
-
-                .localeCompare(
-
-                    String(
-                        b[columnaOrden] || ""
-                    )
-
-                );
-
-        }
-
-        return ascendente
-            ? resultado
-            : -resultado;
-
-    })
-
-    .forEach(e => {
-
-        tabla.innerHTML += `
-
-        <tr>
-
-            <td>
-                ${
-                    new Date(
-                        e.fecha
-                    ).toLocaleString(
-                        "es-CL"
-                    )
-                }
-            </td>
-
-            <td>
-                ${icono(e.tipo)}
-                ${e.tipo}
-            </td>
-
-            <td>
-                ${e.equipo ?? "-"}
-            </td>
-
-            <td>
-                ${e.serial ?? "-"}
-            </td>
-
-            <td>
-                ${
-                    e.detalle
-                    ?? "-"
-                }
-            </td>
-
-        </tr>
-
-        `;
-
-    });
+    tbody.innerHTML += `
+    <tr>
+        <td>${fechaTexto(e.fecha)}</td>
+        <td>${e.equipo ?? "-"}</td>
+        <td>${e.serial ?? "-"}</td>
+        <td>${e.detalle ?? "-"}</td>
+    </tr>
+    `;
 
 }
 
@@ -362,65 +303,132 @@ fetch("eventos.json")
 
 .then(r => r.json())
 
-.then(data => {
+.then(eventos => {
 
-    eventos = data;
+    eventos.sort(
+        (a,b)=>
+        new Date(b.fecha)
+        -
+        new Date(a.fecha)
+    );
 
     document.getElementById(
-        "totalEventos"
+        "kpiTotal"
     ).textContent =
         eventos.length;
 
     document.getElementById(
-        "totalIP"
+        "kpiCriticas"
     ).textContent =
         eventos.filter(
             e =>
-                e.tipo ===
-                "cambio_ip"
+            e.tipo ===
+            "alerta_critica_generada"
         ).length;
 
     document.getElementById(
-        "totalOnline"
+        "kpiAdvertencias"
     ).textContent =
         eventos.filter(
             e =>
-                e.tipo ===
-                "online"
+            e.tipo ===
+            "alerta_advertencia_generada"
         ).length;
 
     document.getElementById(
-        "totalOffline"
+        "kpiOffline"
     ).textContent =
         eventos.filter(
             e =>
-                e.tipo ===
-                "offline"
+            e.tipo ===
+            "offline"
         ).length;
 
-    renderTabla();
+    document.getElementById(
+        "kpiOnline"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo ===
+            "online"
+        ).length;
 
-    document
+    document.getElementById(
+        "kpiIP"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo ===
+            "cambio_ip"
+        ).length;
 
-        .getElementById(
-            "busqueda"
-        )
+    document.getElementById(
+        "kpiInstalaciones"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo ===
+            "instalacion"
+        ).length;
 
-        .addEventListener(
-            "keyup",
-            e => {
-
-                renderTabla(
-                    e.target.value
-                );
-
-            }
+    const tablaAlertas =
+        document.getElementById(
+            "tablaAlertas"
         );
+
+    const tablaConectividad =
+        document.getElementById(
+            "tablaConectividad"
+        );
+
+    const tablaInstalaciones =
+        document.getElementById(
+            "tablaInstalaciones"
+        );
+
+    eventos.forEach(e => {
+
+        if(
+            e.tipo ===
+            "alerta_critica_generada"
+            ||
+            e.tipo ===
+            "alerta_advertencia_generada"
+        ){
+            agregarFilaAlerta(
+                tablaAlertas,
+                e
+            );
+        }
+
+        if(
+            e.tipo === "offline"
+            ||
+            e.tipo === "online"
+            ||
+            e.tipo === "cambio_ip"
+        ){
+            agregarFilaConectividad(
+                tablaConectividad,
+                e
+            );
+        }
+
+        if(
+            e.tipo ===
+            "instalacion"
+        ){
+            agregarFilaInstalacion(
+                tablaInstalaciones,
+                e
+            );
+        }
+
+    });
 
 });
 
 </script>
 
 </body>
-
 </html>

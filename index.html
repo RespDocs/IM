@@ -337,54 +337,71 @@ fetch("eventos.json")
 
         .slice()
         .reverse()
-        .slice(0, 5)
+        .slice(0, 8)
 
         .forEach(evento => {
 
             let icono = "ℹ️";
 
-            if(
-                evento.tipo === "offline"
-            ){
-                icono = "⚫";
+            switch(evento.tipo){
+
+                case "offline":
+                    icono = "⚫";
+                    break;
+
+                case "online":
+                    icono = "🟢";
+                    break;
+
+                case "cambio_ip":
+                    icono = "🔄";
+                    break;
+
+                case "instalacion":
+                    icono = "✅";
+                    break;
+
+                case "alerta_critica_generada":
+                    icono = "🚨";
+                    break;
+
+                case "alerta_advertencia_generada":
+                    icono = "🟡";
+                    break;
+
             }
 
-            if(
-                evento.tipo === "online"
-            ){
-                icono = "🟢";
-            }
+            const descripcion =
+                evento.detalle
+                || evento.tipo
+                || "";
 
-            if(
-                evento.tipo === "cambio_ip"
-            ){
-                icono = "🔄";
-            }
-
-            if(
-                evento.tipo === "instalacion"
-            ){
-                icono = "✅";
-            }
+            const fecha =
+                evento.fecha
+                ? new Date(evento.fecha)
+                    .toLocaleString("es-CL")
+                : "";
 
             contenedor.innerHTML += `
 
                 <div class="evento">
 
                     ${icono}
-                    <b>${evento.equipo}</b>
+                    <b>${evento.equipo || "Sin identificar"}</b>
 
                     <br>
 
-                    ${
-                        evento.detalle
-                        || evento.tipo
-                    }
+                    ${descripcion}
+
+                    <br>
+
+                    <small style="color:#666">
+                        ${fecha}
+                    </small>
 
                 </div>
 
             `;
-
         });
 
 })
