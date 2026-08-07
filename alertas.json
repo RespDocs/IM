@@ -102,7 +102,7 @@
       "modelo": "Xerox VersaLink B405",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 5,
+      "porcentaje": 4,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.298383"
@@ -131,7 +131,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 3,
+      "porcentaje": 2,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.299298",
@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 0,
+      "porcentaje": 4,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -1207,6 +1207,27 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-07T13:01:00.189781",
       "fecha_resolucion": "2026-08-07T15:00:56.729075"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-07T17:00:19.072196"
+    },
+    {
+      "id_alerta": "UAH_00024",
+      "clave_alerta": "3391871700_toner_yellow",
+      "equipo": "Central de Apuntes",
+      "serial": "3391871700",
+      "modelo": "Xerox VersaLink C7025",
+      "tipo": "consumible",
+      "consumible": "toner_yellow",
+      "porcentaje": 19,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-07T17:00:19.073161"
     }
   ]
 }

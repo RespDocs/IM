@@ -1183,5 +1183,20 @@
     "equipo": "Direccion de Comunicaciones",
     "serial": "3940616696",
     "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-07T16:59:41.399871",
+    "tipo": "offline",
+    "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+    "serial": "3353184511",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-07T17:00:19.073166",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Central de Apuntes",
+    "serial": "3391871700",
+    "id_alerta": "UAH_00024",
+    "detalle": "toner_yellow (19%)"
   }
 ]
