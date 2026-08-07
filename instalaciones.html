@@ -1,9 +1,406 @@
-.catch(error => {
+<!DOCTYPE html>
+<html lang="es">
 
-    console.error(
-        "Error cargando dashboard:",
-        error
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Instalaciones - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,.10);
+}
+
+.valor{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:10px;
+    color:#198754;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">🏠 Dashboard</a>
+|
+<a href="eventos.html">🔔 Eventos</a>
+
+</nav>
+
+<h1>✅ Instalaciones</h1>
+
+<div class="cards">
+
+    <div class="card">
+        <div>✅ Instalaciones</div>
+        <div id="totalInstalaciones" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>🖨️ Equipos</div>
+        <div id="equiposUnicos" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>🧰 Consumibles</div>
+        <div id="consumiblesUnicos" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>📅 Última</div>
+        <div id="ultimaFecha" class="valor" style="font-size:18px">
+            -
+        </div>
+    </div>
+
+</div>
+
+<input
+    id="busqueda"
+    type="text"
+    placeholder="Buscar equipo, serial, modelo, consumible o PN..."
+>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Fecha</th>
+    <th>Equipo</th>
+    <th>Serial</th>
+    <th>Modelo</th>
+    <th>Consumible</th>
+    <th>PN</th>
+    <th>Vida</th>
+    <th>Contador</th>
+    <th>%</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaInstalaciones">
+</tbody>
+
+</table>
+
+<script>
+
+let instalaciones = [];
+
+function consumibleVisual(c){
+
+    if(!c)
+        return "-";
+
+    const nombre =
+        c.toLowerCase();
+
+    if(nombre.includes("toner")){
+
+        if(nombre.includes("black"))
+            return "■ <span style='color:black'>Toner Black</span>";
+
+        if(nombre.includes("cyan"))
+            return "■ <span style='color:#00BCD4'>Toner Cyan</span>";
+
+        if(nombre.includes("magenta"))
+            return "■ <span style='color:#E91E63'>Toner Magenta</span>";
+
+        if(nombre.includes("yellow"))
+            return "■ <span style='color:#FFC107'>Toner Yellow</span>";
+
+        return "■ " + c;
+    }
+
+    if(nombre.includes("drum")){
+
+        if(nombre.includes("black"))
+            return "● <span style='color:black'>Drum Black</span>";
+
+        if(nombre.includes("cyan"))
+            return "● <span style='color:#00BCD4'>Drum Cyan</span>";
+
+        if(nombre.includes("magenta"))
+            return "● <span style='color:#E91E63'>Drum Magenta</span>";
+
+        if(nombre.includes("yellow"))
+            return "● <span style='color:#FFC107'>Drum Yellow</span>";
+
+        return "● " + c;
+    }
+
+    return c;
+
+}
+
+function fechaTexto(fecha){
+
+    if(!fecha)
+        return "-";
+
+    return new Date(
+        fecha
+    ).toLocaleString(
+        "es-CL"
     );
+
+}
+
+function render(filtro=""){
+
+    const tabla =
+        document.getElementById(
+            "tablaInstalaciones"
+        );
+
+    tabla.innerHTML = "";
+
+    instalaciones
+
+    .filter(i => {
+
+        const texto = (
+
+            (i.equipo || "")
+            + " " +
+            (i.serial || "")
+            + " " +
+            (i.modelo || "")
+            + " " +
+            (i.consumible || "")
+            + " " +
+            (i.pn || "")
+
+        ).toLowerCase();
+
+        return texto.includes(
+            filtro.toLowerCase()
+        );
+
+    })
+
+    .sort(
+
+        (a,b) =>
+
+        new Date(
+            b.fecha_instalacion
+        )
+
+        -
+
+        new Date(
+            a.fecha_instalacion
+        )
+
+    )
+
+    .forEach(i => {
+
+        tabla.innerHTML += `
+
+        <tr>
+
+            <td>
+                ${fechaTexto(
+                    i.fecha_instalacion
+                )}
+            </td>
+
+            <td>
+                ${i.equipo ?? "-"}
+            </td>
+
+            <td>
+                ${i.serial ?? "-"}
+            </td>
+
+            <td>
+                ${i.modelo ?? "-"}
+            </td>
+
+            <td>
+                ${consumibleVisual(
+                    i.consumible
+                )}
+            </td>
+
+            <td>
+                ${i.pn ?? "-"}
+            </td>
+
+            <td>
+                ${i.vida_nominal ?? "-"}
+            </td>
+
+            <td>
+                ${
+                    i.contador_instalacion
+                    ?? "-"
+                }
+            </td>
+
+            <td>
+                ${
+                    i.porcentaje_instalacion
+                    ?? "-"
+                }%
+            </td>
+
+        </tr>
+
+        `;
+
+    });
+
+}
+
+fetch("instalaciones.json")
+
+.then(r => r.json())
+
+.then(data => {
+
+    instalaciones =
+        data.instalaciones || [];
+
+    document.getElementById(
+        "totalInstalaciones"
+    ).textContent =
+        instalaciones.length;
+
+    document.getElementById(
+        "equiposUnicos"
+    ).textContent =
+
+        new Set(
+            instalaciones.map(
+                i =>
+                i.serial
+            )
+        ).size;
+
+    document.getElementById(
+        "consumiblesUnicos"
+    ).textContent =
+
+        new Set(
+            instalaciones.map(
+                i =>
+                i.consumible
+            )
+        ).size;
+
+    if(
+        instalaciones.length > 0
+    ){
+
+        instalaciones.sort(
+            (a,b)=>
+
+            new Date(
+                b.fecha_instalacion
+            )
+
+            -
+
+            new Date(
+                a.fecha_instalacion
+            )
+
+        );
+
+        document.getElementById(
+            "ultimaFecha"
+        ).textContent =
+
+            new Date(
+                instalaciones[0]
+                .fecha_instalacion
+            )
+            .toLocaleDateString(
+                "es-CL"
+            );
+
+    }
+
+    render();
+
+    document
+        .getElementById(
+            "busqueda"
+        )
+        .addEventListener(
+            "keyup",
+            e => render(
+                e.target.value
+            )
+        );
 
 });
 

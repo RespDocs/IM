@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Métricas - ImpresorasMonitor</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    color:#333;
+}
+
+nav{
+    margin-bottom:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,.10);
+}
+
+.valor{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.filtros{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+input{
+    padding:8px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.section{
+    margin-top:40px;
+}
+
+.section h2{
+    border-bottom:2px solid #1976d2;
+    padding-bottom:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">🏠 Dashboard</a>
+|
+<a href="eventos.html">🔔 Eventos</a>
+|
+<a href="instalaciones.html">✅ Instalaciones</a>
+
+</nav>
+
+<h1>📊 Métricas</h1>
+
+<div class="filtros">
+
+    <label>
+        Desde:
+        <input
+            type="date"
+            id="fechaInicio"
+        >
+    </label>
+
+    <label>
+        Hasta:
+        <input
+            type="date"
+            id="fechaFin"
+        >
+    </label>
+
+    <button onclick="cargarMetricas()">
+        Consultar
+    </button>
+
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <div>✅ Instalaciones</div>
+        <div id="kpiInstalaciones" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>🚨 Alertas</div>
+        <div id="kpiAlertas" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>⚫ Offline</div>
+        <div id="kpiOffline" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>🔄 Cambios IP</div>
+        <div id="kpiIp" class="valor">0</div>
+    </div>
+
+    <div class="card">
+        <div>🖨️ Equipos Intervenidos</div>
+        <div id="kpiEquipos" class="valor">0</div>
+    </div>
+
+</div>
+<div class="section">
+
+<h2>📄 Producción por Serie</h2>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Modelo</th>
+    <th>Negro</th>
+    <th>Color</th>
+    <th>Total</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaProduccion">
+</tbody>
+
+</table>
+
+</div>
+``
+<div class="section">
+
+<h2>🧰 Suministros por Serie</h2>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Modelo</th>
+    <th>Consumible</th>
+    <th>PN</th>
+    <th>Instalaciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaSuministros">
+</tbody>
+
+</table>
+
+</div>
+<div class="section">
+
+<h2>🔧 Equipos Más Intervenidos</h2>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Instalaciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaIntervenidos">
+</tbody>
+
+</table>
+
+</div>
+<div class="section">
+
+<h2>🚨 Alertas por Serie</h2>
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Serie</th>
+    <th>Equipo</th>
+    <th>Total Alertas</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaAlertasSerie">
+</tbody>
+
+</table>
+
+</div>
+<script>
+
+async function cargarMetricas(){
+
+    const estado =
+        await fetch("estado.json")
+        .then(r=>r.json());
+
+    const instalacionesJson =
+        await fetch("instalaciones.json")
+        .then(r=>r.json());
+
+    const eventos =
+        await fetch("eventos.json")
+        .then(r=>r.json());
+
+    const instalaciones =
+        instalacionesJson.instalaciones || [];
+
+    document.getElementById(
+        "kpiInstalaciones"
+    ).textContent =
+        instalaciones.length;
+
+    document.getElementById(
+        "kpiAlertas"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo === "alerta_critica_generada"
+            ||
+            e.tipo === "alerta_advertencia_generada"
+        ).length;
+
+    document.getElementById(
+        "kpiOffline"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo === "offline"
+        ).length;
+
+    document.getElementById(
+        "kpiIp"
+    ).textContent =
+        eventos.filter(
+            e =>
+            e.tipo === "cambio_ip"
+        ).length;
+
+    document.getElementById(
+        "kpiEquipos"
+    ).textContent =
+
+        new Set(
+            instalaciones.map(
+                i => i.serial
+            )
+        ).size;
+
+    cargarProduccion(
+        estado.impresoras || []
+    );
+
+    cargarSuministros(
+        instalaciones
+    );
+
+    cargarIntervenidos(
+        instalaciones
+    );
+
+    cargarAlertas(
+        eventos
+    );
+
+}
+
+function cargarProduccion(impresoras){
+
+    const tabla =
+        document.getElementById(
+            "tablaProduccion"
+        );
+
+    tabla.innerHTML = "";
+
+    impresoras.forEach(p=>{
+
+        tabla.innerHTML += `
+        <tr>
+            <td>${p.serial || "-"}</td>
+            <td>${p.nombre || "-"}</td>
+            <td>${p.modelo || "-"}</td>
+            <td>${p.contador_negro || 0}</td>
+            <td>${p.contador_color || 0}</td>
+            <td>${p.contador || 0}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
+function cargarSuministros(datos){
+
+    const tabla =
+        document.getElementById(
+            "tablaSuministros"
+        );
+
+    tabla.innerHTML = "";
+
+    const resumen = {};
+
+    datos.forEach(i=>{
+
+        const clave =
+            i.serial
+            + "|"
+            + i.consumible;
+
+        if(!resumen[clave]){
+
+            resumen[clave] = {
+                serial:i.serial,
+                equipo:i.equipo,
+                modelo:i.modelo,
+                consumible:i.consumible,
+                pn:i.pn,
+                cantidad:0
+            };
+
+        }
+
+        resumen[clave].cantidad++;
+
+    });
+
+    Object.values(resumen)
+
+    .sort(
+        (a,b)=>
+        b.cantidad - a.cantidad
+    )
+
+    .forEach(r=>{
+
+        tabla.innerHTML += `
+        <tr>
+            <td>${r.serial}</td>
+            <td>${r.equipo}</td>
+            <td>${r.modelo}</td>
+            <td>${r.consumible}</td>
+            <td>${r.pn || "-"}</td>
+            <td>${r.cantidad}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
+function cargarIntervenidos(datos){
+
+    const tabla =
+        document.getElementById(
+            "tablaIntervenidos"
+        );
+
+    tabla.innerHTML = "";
+
+    const resumen = {};
+
+    datos.forEach(i=>{
+
+        if(!resumen[i.serial]){
+
+            resumen[i.serial] = {
+                equipo:i.equipo,
+                cantidad:0
+            };
+
+        }
+
+        resumen[i.serial].cantidad++;
+
+    });
+
+    Object.entries(resumen)
+
+    .sort(
+        (a,b)=>
+        b[1].cantidad
+        -
+        a[1].cantidad
+    )
+
+    .forEach(([serie,info])=>{
+
+        tabla.innerHTML += `
+        <tr>
+            <td>${serie}</td>
+            <td>${info.equipo}</td>
+            <td>${info.cantidad}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
+function cargarAlertas(eventos){
+
+    const tabla =
+        document.getElementById(
+            "tablaAlertasSerie"
+        );
+
+    tabla.innerHTML = "";
+
+    const resumen = {};
+
+    eventos.forEach(e=>{
+
+        if(
+            e.tipo !== "alerta_critica_generada"
+            &&
+            e.tipo !== "alerta_advertencia_generada"
+        ){
+            return;
+        }
+
+        if(!resumen[e.serial]){
+
+            resumen[e.serial] = {
+                equipo:e.equipo,
+                cantidad:0
+            };
+
+        }
+
+        resumen[e.serial].cantidad++;
+
+    });
+
+    Object.entries(resumen)
+
+    .sort(
+        (a,b)=>
+        b[1].cantidad
+        -
+        a[1].cantidad
+    )
+
+    .forEach(([serie,info])=>{
+
+        tabla.innerHTML += `
+        <tr>
+            <td>${serie}</td>
+            <td>${info.equipo}</td>
+            <td>${info.cantidad}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
+cargarMetricas();
+
+</script>
+</body>
+</html>
