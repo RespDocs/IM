@@ -30,7 +30,7 @@
     "toner_black": {
       "descripcion": "Xerox Black Toner Cartridge, Replace with P/N 106R03625; S/N CRUM-24043007291",
       "pn": null,
-      "vida_nominal": 11000,
+      "vida_nominal": null,
       "origen": "snmp"
     }
   },
@@ -91,12 +91,6 @@
       "descripcion": "Toner Cartridge;SN8489E80494AE0000",
       "pn": null,
       "vida_nominal": 46700,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00582;SN8000D8003F0F0000",
-      "pn": "101R00582",
-      "vida_nominal": 60000,
       "origen": "snmp"
     },
     "transfer": {
