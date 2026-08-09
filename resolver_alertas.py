@@ -56,6 +56,27 @@ for alerta in alertas["alertas"]:
                 instalacion["contador_instalacion"]
             )
 
+            alerta["contador_total_instalacion"] = (
+                instalacion.get(
+                    "contador_total_instalacion",
+                    instalacion["contador_instalacion"]
+                )
+            )
+
+            alerta["contador_color_instalacion"] = (
+                instalacion.get(
+                    "contador_color_instalacion",
+                    0
+                )
+            )
+
+            alerta["contador_negro_instalacion"] = (
+                instalacion.get(
+                    "contador_negro_instalacion",
+                    0
+                )
+            )
+
             alerta["porcentaje_reemplazo"] = (
                 alerta["porcentaje"]
             )
@@ -63,41 +84,6 @@ for alerta in alertas["alertas"]:
             cambios += 1
             break
 
-# -------------------------------------------------
-# RESOLVER ALERTAS OFFLINE
-# -------------------------------------------------
-
-for alerta in alertas["alertas"]:
-
-    if alerta.get("tipo") != "offline":
-        continue
-
-    if alerta.get("estado") != "notificado":
-        continue
-
-    equipo = next(
-        (
-            e
-            for e in estado["impresoras"]
-            if e.get("serial")
-            == alerta.get("serial")
-        ),
-        None
-    )
-
-    if (
-        equipo
-        and
-        equipo.get("online") is True
-    ):
-
-        alerta["estado"] = "resuelto"
-
-        alerta["fecha_resolucion"] = (
-            datetime.now().isoformat()
-        )
-
-        cambios += 1
 
 # -------------------------------------------------
 # GUARDAR
