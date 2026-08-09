@@ -126,7 +126,7 @@
     {
       "id_alerta": "UAH_00010",
       "clave_alerta": "3399945975_drum_black",
-      "equipo": "Facultad de Ciencias Sociales",
+      "equipo": null,
       "serial": "3399945975",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1314,8 +1314,9 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-09T15:00:23.845376"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-09T15:00:23.845376",
+      "fecha_resolucion": "2026-08-09T17:00:18.742747"
     }
   ]
 }
