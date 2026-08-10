@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T14:58:05.112414",
+  "actualizado": "2026-08-10T15:30:52.971217",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -146,7 +146,7 @@
       "ip": "172.16.79.42"
     },
     {
-      "nombre": null,
+      "nombre": "instituto de Teologia y Estudios",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940618834",
       "ip": "172.16.79.43"
@@ -296,7 +296,7 @@
       "ip": "172.16.79.75"
     },
     {
-      "nombre": null,
+      "nombre": "Decanato Facso",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399950731",
       "ip": "172.16.79.76"
@@ -402,6 +402,12 @@
       "modelo": "Xerox VersaLink B400",
       "serial": "3351396805",
       "ip": "172.16.81.64"
+    },
+    {
+      "nombre": "Modulo 3",
+      "modelo": "Xerox VersaLink B605",
+      "serial": "3940636271",
+      "ip": "172.16.79.86"
     }
   ]
 }
