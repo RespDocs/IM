@@ -8,7 +8,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 8,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
@@ -1327,6 +1327,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-10T03:00:16.303466",
       "fecha_resolucion": "2026-08-10T05:00:15.723308"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-10T15:00:37.863451"
     }
   ]
 }
