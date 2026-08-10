@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-10T10:59:03.428574",
+  "actualizado": "2026-08-10T11:39:27.280049",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -62,13 +62,13 @@
       "ip": "172.16.79.24"
     },
     {
-      "nombre": "Direccion de Asuntos Estudiantil",
+      "nombre": "08.- DAE",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616424",
       "ip": "172.16.79.25"
     },
     {
-      "nombre": "Centro Universitario Ignaciano",
+      "nombre": "05.- CUI",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394992134",
       "ip": "172.16.79.26"
@@ -98,13 +98,13 @@
       "ip": "172.16.79.31"
     },
     {
-      "nombre": "Rectoria",
+      "nombre": "02.- Rectoria",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991545",
       "ip": "172.16.79.32"
     },
     {
-      "nombre": "Facultad de Educacion 2do piso",
+      "nombre": "03.- CIDE",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991685",
       "ip": "172.16.79.34"
@@ -122,7 +122,7 @@
       "ip": "172.16.79.36"
     },
     {
-      "nombre": "Facultad Educacion Doctorado",
+      "nombre": "10.- Doc. Educa",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616491",
       "ip": "172.16.79.37"
@@ -152,7 +152,7 @@
       "ip": "172.16.79.43"
     },
     {
-      "nombre": "Facultad de Periodismo",
+      "nombre": "04.- Periodismo",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394992100",
       "ip": "172.16.79.44"
@@ -200,7 +200,7 @@
       "ip": "172.16.79.54"
     },
     {
-      "nombre": "Facultad de Ciencias Politicas",
+      "nombre": "01.- Ciencias Politica",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616270",
       "ip": "172.16.79.55"
@@ -248,7 +248,7 @@
       "ip": "172.16.79.66"
     },
     {
-      "nombre": "Facultad de Economia Subterraneo",
+      "nombre": "09.- Sub Economia",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616432",
       "ip": "172.16.79.67"
@@ -266,7 +266,7 @@
       "ip": "172.16.79.70"
     },
     {
-      "nombre": "Facultad de Psicologia sub",
+      "nombre": "06.- Psicologia Subterraneo",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616190",
       "ip": "172.16.79.71"
@@ -284,7 +284,7 @@
       "ip": "172.16.79.73"
     },
     {
-      "nombre": "Biblioteca San ignacio",
+      "nombre": "07.- SNIG",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940616416",
       "ip": "172.16.79.74"
@@ -384,6 +384,24 @@
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399952335",
       "ip": "172.16.79.68"
+    },
+    {
+      "nombre": "Campus B 1er piso",
+      "modelo": "Xerox VersaLink B7030",
+      "serial": "3399951754",
+      "ip": "172.16.81.149"
+    },
+    {
+      "nombre": "Campus_B_piso6",
+      "modelo": "Xerox Phaser 3330",
+      "serial": "3384969746",
+      "ip": "172.16.81.30"
+    },
+    {
+      "nombre": "Modulo 4",
+      "modelo": "Xerox VersaLink B400",
+      "serial": "3351396805",
+      "ip": "172.16.81.64"
     }
   ]
 }
