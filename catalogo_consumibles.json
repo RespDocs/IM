@@ -100,12 +100,6 @@
       "vida_nominal": 46700,
       "origen": "snmp"
     },
-    "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00582;SN8000D8003F0F0000",
-      "pn": "101R00582",
-      "vida_nominal": 60000,
-      "origen": "snmp"
-    },
     "transfer": {
       "descripcion": "Transfer Roller, PN 116R00009",
       "pn": "116R00009",
@@ -115,12 +109,6 @@
     "fuser": {
       "descripcion": "Fuser, PN 115R00140",
       "pn": "115R00140",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
-    "tray1_roller": {
-      "descripcion": "Tray 1 Feed Roller, PN 116R00010",
-      "pn": "116R00010",
       "vida_nominal": null,
       "origen": "snmp"
     },
