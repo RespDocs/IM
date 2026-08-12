@@ -142,7 +142,7 @@
     {
       "id_alerta": "UAH_00011",
       "clave_alerta": "3399946181_drum_black",
-      "equipo": "DOP",
+      "equipo": null,
       "serial": "3399946181",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1404,8 +1404,9 @@
       "serial": "3399952459",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-12T03:00:21.897554"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-12T03:00:21.897554",
+      "fecha_resolucion": "2026-08-12T05:00:25.032859"
     }
   ]
 }
