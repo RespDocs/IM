@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 16,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1414,16 +1414,18 @@
       "serial": "3394992134",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-12T11:00:55.813488"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-12T11:00:55.813488",
+      "fecha_resolucion": "2026-08-12T15:00:49.974364"
     },
     {
       "equipo": "TicsDesarrollo",
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-12T13:00:27.417842"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-12T13:00:27.417842",
+      "fecha_resolucion": "2026-08-12T15:00:49.976267"
     },
     {
       "equipo": "Campus_B_piso6",
@@ -1432,6 +1434,22 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-12T13:00:27.418466"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-12T15:00:49.973761"
+    },
+    {
+      "equipo": "Direccion de Comunicaciones",
+      "serial": "3940616696",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-12T15:00:49.975958"
     }
   ]
 }

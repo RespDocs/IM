@@ -33,7 +33,14 @@
       "origen": "snmp"
     }
   },
-  "Xerox Phaser 3330": {},
+  "Xerox Phaser 3330": {
+    "toner_black": {
+      "descripcion": "Xerox Black Toner Cartridge, Replace with P/N 106R03625; S/N CRUM-24043007291",
+      "pn": null,
+      "vida_nominal": 11000,
+      "origen": "snmp"
+    }
+  },
   "Xerox Phaser 3320": {
     "toner_black": {
       "descripcion": "Xerox Black Print Cartridge, Replace with PN 106R02306;SN 18111028484",
@@ -130,32 +137,7 @@
       "origen": "snmp"
     }
   },
-  "Xerox VersaLink B7030": {
-    "toner_black": {
-      "descripcion": "Cartucho de tÃ³ner, PN 106R03392;SN8031490227070000",
-      "pn": "106R03392",
-      "vida_nominal": 30000,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Cartucho de cilindro, PN 113R00779;SN803869165B070000",
-      "pn": "113R00779",
-      "vida_nominal": 82700,
-      "origen": "snmp"
-    },
-    "transfer": {
-      "descripcion": "Rodillo de transferencia, PN 115R00116",
-      "pn": "115R00116",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
-    "fuser": {
-      "descripcion": "Fusor, PN 115R00115",
-      "pn": "115R00115",
-      "vida_nominal": null,
-      "origen": "snmp"
-    }
-  },
+  "Xerox VersaLink B7030": {},
   "Xerox VersaLink C9000": {
     "toner_black": {
       "descripcion": "Cartucho de tÃ³ner negro, PN 106R04085;SN80B85E08DB070000",
