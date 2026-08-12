@@ -144,12 +144,6 @@
       "vida_nominal": 30000,
       "origen": "snmp"
     },
-    "drum_black": {
-      "descripcion": "Cartucho de cilindro, PN 113R00779;SN803869165B070000",
-      "pn": "113R00779",
-      "vida_nominal": 82700,
-      "origen": "snmp"
-    },
     "transfer": {
       "descripcion": "Rodillo de transferencia, PN 115R00116",
       "pn": "115R00116",
@@ -317,7 +311,7 @@
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN8023171262080000",
       "pn": "106R03735",
-      "vida_nominal": 15000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "toner_cyan": {
@@ -332,12 +326,6 @@
       "vida_nominal": 30000,
       "origen": "snmp"
     },
-    "drum_black": {
-      "descripcion": "Black Drum Cartridge, PN 113R00780;SN804A220C44080000",
-      "pn": "113R00780",
-      "vida_nominal": 109200,
-      "origen": "snmp"
-    },
     "drum_yellow": {
       "descripcion": "Yellow Drum Cartridge, PN 113R00780;SN80175D2B03070000",
       "pn": "113R00780",
@@ -346,12 +334,6 @@
     },
     "drum_magenta": {
       "descripcion": "Magenta Drum Cartridge, PN 113R00780;SN80B6080449080000",
-      "pn": "113R00780",
-      "vida_nominal": 87000,
-      "origen": "snmp"
-    },
-    "drum_cyan": {
-      "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80BE060449080000",
       "pn": "113R00780",
       "vida_nominal": 87000,
       "origen": "snmp"

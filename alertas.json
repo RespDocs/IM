@@ -232,7 +232,7 @@
     {
       "id_alerta": "UAH_00017",
       "clave_alerta": "3940616513_toner_black",
-      "equipo": "Antropologia",
+      "equipo": null,
       "serial": "3940616513",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -1238,7 +1238,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 6,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.007943"
@@ -1407,6 +1407,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-12T03:00:21.897554",
       "fecha_resolucion": "2026-08-12T05:00:25.032859"
+    },
+    {
+      "equipo": "05.- CUI",
+      "serial": "3394992134",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-12T11:00:55.813488"
     }
   ]
 }
