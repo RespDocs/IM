@@ -1225,7 +1225,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 5,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -1535,8 +1535,22 @@
       "serial": "3394992134",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-13T17:00:26.521061",
+      "fecha_resolucion": "2026-08-13T19:00:24.609074"
+    },
+    {
+      "id_alerta": "UAH_00028",
+      "clave_alerta": "3391871700_drum_cyan",
+      "equipo": "Central de Apuntes",
+      "serial": "3391871700",
+      "modelo": "Xerox VersaLink C7025",
+      "tipo": "consumible",
+      "consumible": "drum_cyan",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-13T17:00:26.521061"
+      "fecha_notificacion": "2026-08-13T19:00:24.609807"
     }
   ]
 }

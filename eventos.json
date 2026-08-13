@@ -1297,5 +1297,20 @@
     "equipo": "05.- CUI",
     "serial": "3394992134",
     "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-13T18:59:41.972370",
+    "tipo": "online",
+    "equipo": "05.- CUI",
+    "serial": "3394992134",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-13T19:00:24.609814",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Central de Apuntes",
+    "serial": "3391871700",
+    "id_alerta": "UAH_00028",
+    "detalle": "drum_cyan (20%)"
   }
 ]
