@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -1526,8 +1526,17 @@
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-13T15:00:42.329734",
+      "fecha_resolucion": "2026-08-13T17:00:26.520706"
+    },
+    {
+      "equipo": "05.- CUI",
+      "serial": "3394992134",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-13T15:00:42.329734"
+      "fecha_notificacion": "2026-08-13T17:00:26.521061"
     }
   ]
 }
