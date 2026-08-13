@@ -32,7 +32,7 @@
     {
       "id_alerta": "UAH_00003",
       "clave_alerta": "3358981312_toner_yellow",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -45,7 +45,7 @@
     {
       "id_alerta": "UAH_00004",
       "clave_alerta": "3358981312_toner_magenta",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -58,7 +58,7 @@
     {
       "id_alerta": "UAH_00005",
       "clave_alerta": "3358981312_toner_cyan",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -1483,6 +1483,30 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-12T23:00:24.056281",
       "fecha_resolucion": "2026-08-13T01:00:18.666107"
+    },
+    {
+      "equipo": "DARA 1er piso",
+      "serial": "3940617064",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-13T11:00:57.958570"
+    },
+    {
+      "equipo": "11.- Pastoral",
+      "serial": "3940616505",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-13T11:00:57.958768"
+    },
+    {
+      "equipo": "Cienfuego 33",
+      "serial": "3351674686",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-13T11:00:57.960218"
     }
   ]
 }
