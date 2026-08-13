@@ -1,5 +1,12 @@
 {
-  "Xerox WorkCentre 3655S v1": {},
+  "Xerox WorkCentre 3655S v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B7025": {
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN80053C015E080000",
@@ -69,12 +76,6 @@
     },
     "tray1_roller": {
       "descripcion": "Tray 1 Feed Roller, PN 116R00010",
-      "pn": "116R00010",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
-    "tray2_roller": {
-      "descripcion": "Tray 2 Feed Roller, PN 116R00010",
       "pn": "116R00010",
       "vida_nominal": null,
       "origen": "snmp"
