@@ -174,7 +174,7 @@
     {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
-      "equipo": "Direccion de Admision Patio",
+      "equipo": null,
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1586,6 +1586,19 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-14T07:00:30.542650",
       "fecha_resolucion": "2026-08-14T09:00:36.960481"
+    },
+    {
+      "id_alerta": "UAH_00029",
+      "clave_alerta": "3669690826_toner_black",
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-14T11:00:32.019838"
     }
   ]
 }
