@@ -208,7 +208,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 16,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.301896"
@@ -1608,6 +1608,22 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T19:00:28.946722"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-14T21:00:15.360620"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-14T21:00:15.361445"
     }
   ]
 }
