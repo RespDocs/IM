@@ -1606,8 +1606,9 @@
       "serial": "3394992134",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-14T19:00:28.946722"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-14T19:00:28.946722",
+      "fecha_resolucion": "2026-08-15T07:00:25.434804"
     },
     {
       "equipo": "LASER_UAH",
@@ -1653,6 +1654,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-15T01:00:30.743374",
       "fecha_resolucion": "2026-08-15T05:00:28.826114"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-15T07:00:25.435623"
     }
   ]
 }
