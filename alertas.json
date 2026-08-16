@@ -1732,8 +1732,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-16T07:00:17.924446"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-16T07:00:17.924446",
+      "fecha_resolucion": "2026-08-16T11:00:22.025285"
     },
     {
       "equipo": "05.- CUI",
@@ -1742,6 +1743,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-16T09:00:23.817274"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-16T11:00:22.026661"
     }
   ]
 }
