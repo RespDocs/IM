@@ -8,7 +8,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 7,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1596,7 +1596,7 @@
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 16,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
@@ -1780,6 +1780,35 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-17T07:00:22.995997",
       "fecha_resolucion": "2026-08-17T09:00:26.656079"
+    },
+    {
+      "equipo": "Facultad de Ciencias Sociales",
+      "serial": "3399945975",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-17T13:01:29.048301"
+    },
+    {
+      "id_alerta": "UAH_00030",
+      "clave_alerta": "3940616513_drum_black",
+      "equipo": "Antropologia",
+      "serial": "3940616513",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "consumible",
+      "consumible": "drum_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-17T13:01:29.049434"
+    },
+    {
+      "equipo": null,
+      "serial": "3384970779",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-17T13:01:29.049645"
     }
   ]
 }

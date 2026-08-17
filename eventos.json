@@ -1656,5 +1656,27 @@
     "equipo": "TicsDesarrollo",
     "serial": "3384970868",
     "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-17T13:00:51.092693",
+    "tipo": "offline",
+    "equipo": "Facultad de Ciencias Sociales",
+    "serial": "3399945975",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-17T13:00:51.092814",
+    "tipo": "offline",
+    "equipo": null,
+    "serial": "3384970779",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-17T13:01:29.049439",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Antropologia",
+    "serial": "3940616513",
+    "id_alerta": "UAH_00030",
+    "detalle": "drum_black (20%)"
   }
 ]
