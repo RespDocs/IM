@@ -9,7 +9,7 @@
   },
   "Xerox VersaLink B7025": {
     "toner_black": {
-      "descripcion": "Toner Cartridge, PN 106R03396;SN80053C015E080000",
+      "descripcion": "Toner Cartridge, PN 106R03396;SN8060221741080000",
       "pn": "106R03396",
       "vida_nominal": 30000,
       "origen": "snmp"
@@ -103,7 +103,7 @@
     "drum_black": {
       "descripcion": "Drum Cartridge, PN 101R00582;SN8000D8003F0F0000",
       "pn": "101R00582",
-      "vida_nominal": null,
+      "vida_nominal": 60000,
       "origen": "snmp"
     },
     "transfer": {
@@ -216,6 +216,12 @@
       "descripcion": "Cartucho de cilindro cian, PN 101R00602;SN8032560E43070000",
       "pn": "101R00602",
       "vida_nominal": 157000,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Rodillo de transferencia, PN 116R00015",
+      "pn": "116R00015",
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "fuser": {
