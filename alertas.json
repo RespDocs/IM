@@ -8,7 +8,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 5,
+      "porcentaje": 0,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
@@ -980,8 +980,8 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 12,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
       "fecha_instalacion": "2026-07-29T18:14:16.403835",
@@ -1786,8 +1786,9 @@
       "serial": "3399945975",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-17T13:01:29.048301"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-17T13:01:29.048301",
+      "fecha_resolucion": "2026-08-17T15:00:53.548131"
     },
     {
       "id_alerta": "UAH_00030",
@@ -1807,8 +1808,22 @@
       "serial": "3384970779",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-17T13:01:29.049645",
+      "fecha_resolucion": "2026-08-17T15:00:53.549608"
+    },
+    {
+      "id_alerta": "UAH_00031",
+      "clave_alerta": "3399951738_toner_black",
+      "equipo": "Derecho - Clinica Juridica",
+      "serial": "3399951738",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-17T13:01:29.049645"
+      "fecha_notificacion": "2026-08-17T15:00:53.548376"
     }
   ]
 }

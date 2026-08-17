@@ -1678,5 +1678,27 @@
     "serial": "3940616513",
     "id_alerta": "UAH_00030",
     "detalle": "drum_black (20%)"
+  },
+  {
+    "fecha": "2026-08-17T15:00:10.801985",
+    "tipo": "online",
+    "equipo": "Facultad de Ciencias Sociales",
+    "serial": "3399945975",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-17T15:00:10.802108",
+    "tipo": "online",
+    "equipo": "CentroDeportivoDAE",
+    "serial": "3384970779",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-17T15:00:53.548382",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Derecho - Clinica Juridica",
+    "serial": "3399951738",
+    "id_alerta": "UAH_00031",
+    "detalle": "toner_black (20%)"
   }
 ]

@@ -95,7 +95,7 @@
   },
   "Xerox VersaLink B600": {
     "toner_black": {
-      "descripcion": "Toner Cartridge;SN8489E80494AE0000",
+      "descripcion": "Toner Cartridge;SN2564638B4F610000",
       "pn": null,
       "vida_nominal": 46700,
       "origen": "snmp"
@@ -103,7 +103,7 @@
     "drum_black": {
       "descripcion": "Drum Cartridge, PN 101R00582;SN8000D8003F0F0000",
       "pn": "101R00582",
-      "vida_nominal": 60000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
@@ -216,12 +216,6 @@
       "descripcion": "Cartucho de cilindro cian, PN 101R00602;SN8032560E43070000",
       "pn": "101R00602",
       "vida_nominal": 157000,
-      "origen": "snmp"
-    },
-    "transfer": {
-      "descripcion": "Rodillo de transferencia, PN 116R00015",
-      "pn": "116R00015",
-      "vida_nominal": null,
       "origen": "snmp"
     },
     "fuser": {
