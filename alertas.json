@@ -203,7 +203,7 @@
     {
       "id_alerta": "UAH_00015",
       "clave_alerta": "3940617021_toner_black",
-      "equipo": "Vice de Investigacion y Postgrad",
+      "equipo": null,
       "serial": "3940617021",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -232,7 +232,7 @@
     {
       "id_alerta": "UAH_00017",
       "clave_alerta": "3940616513_toner_black",
-      "equipo": "Antropologia",
+      "equipo": null,
       "serial": "3940616513",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -1793,7 +1793,7 @@
     {
       "id_alerta": "UAH_00030",
       "clave_alerta": "3940616513_drum_black",
-      "equipo": "Antropologia",
+      "equipo": null,
       "serial": "3940616513",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -1846,8 +1846,9 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-17T21:00:40.814168"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-17T21:00:40.814168",
+      "fecha_resolucion": "2026-08-17T23:00:12.671307"
     }
   ]
 }
