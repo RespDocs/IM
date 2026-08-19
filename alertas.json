@@ -1940,8 +1940,17 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-18T23:00:41.019891",
+      "fecha_resolucion": "2026-08-19T01:00:26.909909"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-18T23:00:41.019891"
+      "fecha_notificacion": "2026-08-19T01:00:26.912642"
     }
   ]
 }
