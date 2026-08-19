@@ -975,7 +975,7 @@
     {
       "id_alerta": "UAH_00022",
       "clave_alerta": "3942939786_drum_black",
-      "equipo": null,
+      "equipo": "Modulo2",
       "serial": "3942939786",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1923,8 +1923,9 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-18T21:00:35.745736"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-18T21:00:35.745736",
+      "fecha_resolucion": "2026-08-18T23:00:41.022623"
     },
     {
       "equipo": "Facultad de Psicologia 2do piso",
@@ -1933,6 +1934,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T21:00:35.745992"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-18T23:00:41.019891"
     }
   ]
 }
