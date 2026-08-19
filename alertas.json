@@ -37,7 +37,7 @@
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 5,
+      "porcentaje": 4,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.295534"
@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 18,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 2,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1596,7 +1596,7 @@
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
@@ -1933,8 +1933,9 @@
       "serial": "3940619199",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-18T21:00:35.745992"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-18T21:00:35.745992",
+      "fecha_resolucion": "2026-08-19T13:01:54.486049"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -1977,8 +1978,9 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-19T09:01:04.047733"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-19T09:01:04.047733",
+      "fecha_resolucion": "2026-08-19T13:01:54.482256"
     },
     {
       "id_alerta": "UAH_00033",
@@ -1988,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 20,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
