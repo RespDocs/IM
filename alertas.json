@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 1,
+      "porcentaje": 0,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1990,10 +1990,18 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 17,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-19T15:00:41.788108"
     }
   ]
 }
