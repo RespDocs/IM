@@ -115,7 +115,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.298822",
@@ -608,7 +608,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 10,
+      "porcentaje": 9,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-03T10:01:43.772242",
@@ -1990,8 +1990,8 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 13,
-      "criticidad": "advertencia",
+      "porcentaje": 9,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
     },
@@ -2000,8 +2000,17 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-19T15:00:41.788108",
+      "fecha_resolucion": "2026-08-19T17:00:30.885830"
+    },
+    {
+      "equipo": "Facultad de Filosofia y Humanida",
+      "serial": "3940616998",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-19T15:00:41.788108"
+      "fecha_notificacion": "2026-08-19T17:00:30.886073"
     }
   ]
 }
