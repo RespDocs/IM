@@ -1820,7 +1820,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 0,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T15:00:53.548376"
@@ -2070,6 +2070,19 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
+    },
+    {
+      "id_alerta": "UAH_00035",
+      "clave_alerta": "3399951754_toner_black",
+      "equipo": "Campus B 1er piso",
+      "serial": "3399951754",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-20T19:00:19.099240"
     }
   ]
 }
