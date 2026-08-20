@@ -32,7 +32,7 @@
     {
       "id_alerta": "UAH_00003",
       "clave_alerta": "3358981312_toner_yellow",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -45,7 +45,7 @@
     {
       "id_alerta": "UAH_00004",
       "clave_alerta": "3358981312_toner_magenta",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -58,7 +58,7 @@
     {
       "id_alerta": "UAH_00005",
       "clave_alerta": "3358981312_toner_cyan",
-      "equipo": null,
+      "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "consumible",
@@ -619,7 +619,7 @@
     {
       "id_alerta": "UAH_00020",
       "clave_alerta": "3399952335_drum_black",
-      "equipo": "Centro Uni. Ignaciano 2do piso",
+      "equipo": null,
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1820,7 +1820,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T15:00:53.548376"
@@ -2056,6 +2056,19 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T13:00:49.219973"
+    },
+    {
+      "id_alerta": "UAH_00034",
+      "clave_alerta": "3399945436_toner_black",
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-20T15:00:39.980530"
     }
   ]
 }

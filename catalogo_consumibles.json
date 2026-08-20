@@ -103,7 +103,7 @@
     "drum_black": {
       "descripcion": "Drum Cartridge, PN 101R00582;SN8000D8003F0F0000",
       "pn": "101R00582",
-      "vida_nominal": 60000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
@@ -191,7 +191,7 @@
     "waste_toner": {
       "descripcion": "Cartucho de residuos, PN 108R01504",
       "pn": "108R01504",
-      "vida_nominal": 83000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "drum_black": {
@@ -209,7 +209,7 @@
     "drum_magenta": {
       "descripcion": "Cartucho de cilindro magenta, PN 101R00602;SN8054590E43070000",
       "pn": "101R00602",
-      "vida_nominal": 157000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "drum_cyan": {
