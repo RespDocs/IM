@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 16,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -619,7 +619,7 @@
     {
       "id_alerta": "UAH_00020",
       "clave_alerta": "3399952335_drum_black",
-      "equipo": null,
+      "equipo": "Centro Uni. Ignaciano 2do piso",
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1547,7 +1547,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_cyan",
-      "porcentaje": 19,
+      "porcentaje": 18,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-13T19:00:24.609807"
@@ -1820,8 +1820,8 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 13,
-      "criticidad": "advertencia",
+      "porcentaje": 0,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T15:00:53.548376"
     },
@@ -2054,8 +2054,9 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-20T13:00:49.219973"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-20T13:00:49.219973",
+      "fecha_resolucion": "2026-08-20T17:00:51.868634"
     },
     {
       "id_alerta": "UAH_00034",

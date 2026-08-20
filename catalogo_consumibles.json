@@ -191,7 +191,7 @@
     "waste_toner": {
       "descripcion": "Cartucho de residuos, PN 108R01504",
       "pn": "108R01504",
-      "vida_nominal": null,
+      "vida_nominal": 83000,
       "origen": "snmp"
     },
     "drum_black": {
@@ -209,19 +209,13 @@
     "drum_magenta": {
       "descripcion": "Cartucho de cilindro magenta, PN 101R00602;SN8054590E43070000",
       "pn": "101R00602",
-      "vida_nominal": null,
+      "vida_nominal": 157000,
       "origen": "snmp"
     },
     "drum_cyan": {
       "descripcion": "Cartucho de cilindro cian, PN 101R00602;SN8032560E43070000",
       "pn": "101R00602",
       "vida_nominal": 157000,
-      "origen": "snmp"
-    },
-    "transfer": {
-      "descripcion": "Rodillo de transferencia, PN 116R00015",
-      "pn": "116R00015",
-      "vida_nominal": null,
       "origen": "snmp"
     },
     "fuser": {
@@ -287,20 +281,7 @@
       "origen": "snmp"
     }
   },
-  "Xerox VersaLink B405": {
-    "toner_black": {
-      "descripcion": "Toner Cartridge;SNA1EC8D6D747D0000",
-      "pn": null,
-      "vida_nominal": 24600,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00554;SN3000C900370D0000",
-      "pn": "101R00554",
-      "vida_nominal": 85000,
-      "origen": "snmp"
-    }
-  },
+  "Xerox VersaLink B405": {},
   "Xerox VersaLink C7025": {
     "toner_black": {
       "descripcion": "Black Toner Cartridge, PN 106R03733;SN80720B045E080000",
