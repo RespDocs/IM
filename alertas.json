@@ -1820,7 +1820,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T15:00:53.548376"
@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 7,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -2039,6 +2039,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-20T07:00:34.900084",
       "fecha_resolucion": "2026-08-20T09:00:42.098079"
+    },
+    {
+      "equipo": "DIPER",
+      "serial": "3384970914",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-20T11:01:03.224003"
     }
   ]
 }
