@@ -110,7 +110,7 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": null,
+      "equipo": "FilHum",
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -2083,6 +2083,22 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T19:00:19.099240"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-20T23:00:26.965423"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-20T23:00:26.967032"
     }
   ]
 }
