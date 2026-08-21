@@ -2116,8 +2116,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-21T05:00:19.843128"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-21T05:00:19.843128",
+      "fecha_resolucion": "2026-08-21T07:00:31.993249"
     },
     {
       "equipo": "Facultad Educacion",
@@ -2132,8 +2133,17 @@
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-21T05:00:19.846705",
+      "fecha_resolucion": "2026-08-21T07:00:31.997283"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-21T05:00:19.846705"
+      "fecha_notificacion": "2026-08-21T07:00:31.996277"
     }
   ]
 }
