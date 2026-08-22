@@ -2178,8 +2178,9 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-21T19:00:50.982916"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-21T19:00:50.982916",
+      "fecha_resolucion": "2026-08-22T05:00:21.296481"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -2189,6 +2190,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-22T01:00:33.973644",
       "fecha_resolucion": "2026-08-22T03:00:34.359338"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-22T05:00:21.294972"
     }
   ]
 }
