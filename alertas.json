@@ -174,7 +174,7 @@
     {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
-      "equipo": null,
+      "equipo": "Direccion de Admision Patio",
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -2268,8 +2268,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-23T11:00:26.833530"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-23T11:00:26.833530",
+      "fecha_resolucion": "2026-08-23T19:00:24.724345"
     },
     {
       "equipo": "TicsDesarrollo",
