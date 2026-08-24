@@ -10,7 +10,7 @@
     "drum_black": {
       "descripcion": "Drum Cartridge, PN 113R00779;SN807B3F1651080000",
       "pn": "113R00779",
-      "vida_nominal": 84800,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
@@ -310,7 +310,7 @@
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN8023171262080000",
       "pn": "106R03735",
-      "vida_nominal": 15000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "toner_cyan": {
