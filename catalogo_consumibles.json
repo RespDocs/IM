@@ -74,6 +74,12 @@
       "vida_nominal": null,
       "origen": "snmp"
     },
+    "tray1_roller": {
+      "descripcion": "Tray 1 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
     "tray2_roller": {
       "descripcion": "Tray 2 Feed Roller, PN 116R00010",
       "pn": "116R00010",
@@ -339,13 +345,13 @@
       "origen": "snmp"
     },
     "drum_magenta": {
-      "descripcion": "Magenta Drum Cartridge, PN 113R00780;SN80B6080449080000",
+      "descripcion": "Magenta Drum Cartridge, PN 113R00780;SN80BE060449080000",
       "pn": "113R00780",
       "vida_nominal": 87000,
       "origen": "snmp"
     },
     "drum_cyan": {
-      "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80BE060449080000",
+      "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80B6080449080000",
       "pn": "113R00780",
       "vida_nominal": 87000,
       "origen": "snmp"
