@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -2345,16 +2345,18 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-24T19:00:42.782472"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-24T19:00:42.782472",
+      "fecha_resolucion": "2026-08-25T09:00:27.739948"
     },
     {
       "equipo": "Facultad de Filosofia y Humanida",
       "serial": "3940616998",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-24T19:00:42.782754"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-24T19:00:42.782754",
+      "fecha_resolucion": "2026-08-25T09:00:27.740211"
     },
     {
       "equipo": "TicsDesarrollo",
@@ -2370,8 +2372,17 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-25T07:00:43.931526",
+      "fecha_resolucion": "2026-08-25T09:00:27.738326"
+    },
+    {
+      "equipo": "Modulo5",
+      "serial": "3940617030",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-25T07:00:43.931526"
+      "fecha_notificacion": "2026-08-25T09:00:27.738613"
     }
   ]
 }
