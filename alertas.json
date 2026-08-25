@@ -624,7 +624,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 14,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-03T10:01:43.772276",
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -2074,7 +2074,7 @@
     {
       "id_alerta": "UAH_00035",
       "clave_alerta": "3399951754_toner_black",
-      "equipo": "Campus B 1er piso",
+      "equipo": null,
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -2381,8 +2381,25 @@
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-25T09:00:27.738613",
+      "fecha_resolucion": "2026-08-25T11:01:10.954555"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-25T09:00:27.738613"
+      "fecha_notificacion": "2026-08-25T11:01:10.955945"
+    },
+    {
+      "equipo": "Direccion de Extension 2do piso",
+      "serial": "3356010522",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-25T11:01:10.958362"
     }
   ]
 }
