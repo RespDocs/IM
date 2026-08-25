@@ -237,8 +237,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302894",
       "fecha_instalacion": "2026-08-05T12:02:33.892432",
@@ -1905,8 +1905,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 0,
-      "criticidad": "critico",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T17:00:46.992520"
     },
@@ -2441,6 +2441,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-25T17:01:17.126736"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-25T19:00:29.781681"
     }
   ]
 }

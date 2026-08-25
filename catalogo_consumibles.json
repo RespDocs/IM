@@ -1,7 +1,7 @@
 {
   "Xerox WorkCentre 3655S v1": {
     "toner_black": {
-      "descripcion": "Black Toner, PN unknown;SN43434300bd00090c3121",
+      "descripcion": "Black Toner, PN unknown;SN434300bd00090c3121",
       "pn": "unknown",
       "vida_nominal": 25000,
       "origen": "snmp"
@@ -65,6 +65,12 @@
     "transfer": {
       "descripcion": "Transfer Roller, PN 116R00009",
       "pn": "116R00009",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fuser, PN 115R00140",
+      "pn": "115R00140",
       "vida_nominal": null,
       "origen": "snmp"
     },
