@@ -2545,5 +2545,27 @@
     "equipo": "Direccion de Extension 2do piso",
     "serial": "3356010522",
     "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-25T15:00:07.541587",
+    "tipo": "online",
+    "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+    "serial": "3353184511",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-25T15:00:07.541714",
+    "tipo": "offline",
+    "equipo": "Facultad Educacion",
+    "serial": "3714669752",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-25T15:00:53.344712",
+    "tipo": "alerta_critica_generada",
+    "equipo": "Modulo6",
+    "serial": "3394178631",
+    "id_alerta": "UAH_00037",
+    "detalle": "toner_black (1%)"
   }
 ]
