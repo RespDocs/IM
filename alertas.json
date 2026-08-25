@@ -2430,8 +2430,17 @@
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-25T15:00:53.345576",
+      "fecha_resolucion": "2026-08-25T17:01:17.125197"
+    },
+    {
+      "equipo": "Direccion de Comunicaciones",
+      "serial": "3940616696",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-25T15:00:53.345576"
+      "fecha_notificacion": "2026-08-25T17:01:17.126736"
     }
   ]
 }

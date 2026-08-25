@@ -68,12 +68,6 @@
       "vida_nominal": null,
       "origen": "snmp"
     },
-    "fuser": {
-      "descripcion": "Fuser, PN 115R00140",
-      "pn": "115R00140",
-      "vida_nominal": null,
-      "origen": "snmp"
-    },
     "tray1_roller": {
       "descripcion": "Tray 1 Feed Roller, PN 116R00010",
       "pn": "116R00010",
@@ -95,7 +89,7 @@
   },
   "Xerox VersaLink B600": {
     "toner_black": {
-      "descripcion": "Toner Cartridge;SN9024BEF5797A0000",
+      "descripcion": "Toner Cartridge;SN5F0616469D510000",
       "pn": null,
       "vida_nominal": 46700,
       "origen": "snmp"
@@ -287,20 +281,7 @@
       "origen": "snmp"
     }
   },
-  "Xerox VersaLink B405": {
-    "toner_black": {
-      "descripcion": "Toner Cartridge;SNA1EC8D6D747D0000",
-      "pn": null,
-      "vida_nominal": 24600,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00554;SN3000C900370D0000",
-      "pn": "101R00554",
-      "vida_nominal": 85000,
-      "origen": "snmp"
-    }
-  },
+  "Xerox VersaLink B405": {},
   "Xerox VersaLink C7025": {
     "toner_black": {
       "descripcion": "Black Toner Cartridge, PN 106R03733;SN80720B045E080000",
