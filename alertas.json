@@ -21,7 +21,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.294388",
@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 2,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -1251,8 +1251,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
     },
@@ -2501,16 +2501,26 @@
       "serial": "3384970779",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T15:00:34.850367"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T15:00:34.850367",
+      "fecha_resolucion": "2026-08-26T17:00:40.184331"
     },
     {
       "equipo": "Cienfuego 33",
       "serial": "3351674686",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T15:00:34.850425",
+      "fecha_resolucion": "2026-08-26T17:00:40.184400"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T15:00:34.850425"
+      "fecha_notificacion": "2026-08-26T17:00:40.183911"
     }
   ]
 }
