@@ -1462,7 +1462,7 @@
       "modelo": "Xerox Phaser 3330",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 10,
+      "porcentaje": 8,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-12T17:00:22.307356"
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 17,
+      "porcentaje": 16,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -2487,6 +2487,30 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-26T09:01:08.204672",
       "fecha_resolucion": "2026-08-26T11:00:48.839524"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T15:00:34.848019"
+    },
+    {
+      "equipo": "CentroDeportivoDAE",
+      "serial": "3384970779",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T15:00:34.850367"
+    },
+    {
+      "equipo": "Cienfuego 33",
+      "serial": "3351674686",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T15:00:34.850425"
     }
   ]
 }
