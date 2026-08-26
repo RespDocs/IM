@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 8,
+      "porcentaje": 6,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -2459,6 +2459,30 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-26T05:00:21.150352",
       "fecha_resolucion": "2026-08-26T07:00:22.678493"
+    },
+    {
+      "equipo": "Modulo5",
+      "serial": "3940617030",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T09:01:08.202126"
+    },
+    {
+      "equipo": "Facultad Educacion",
+      "serial": "3714669752",
+      "modelo": "Xerox VersaLink B405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T09:01:08.203207"
+    },
+    {
+      "equipo": "Facultad Economia 1er piso",
+      "serial": "3399943565",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-26T09:01:08.204672"
     }
   ]
 }
