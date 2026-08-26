@@ -110,7 +110,7 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": "FilHum",
+      "equipo": null,
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -163,7 +163,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_magenta",
-      "porcentaje": 6,
+      "porcentaje": 2,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.300167",
@@ -1905,7 +1905,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
+      "porcentaje": 18,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T17:00:46.992520"
@@ -2439,8 +2439,9 @@
       "serial": "3940616696",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-25T17:01:17.126736"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-25T17:01:17.126736",
+      "fecha_resolucion": "2026-08-26T11:00:48.839658"
     },
     {
       "equipo": "Facultad Educacion",
@@ -2465,24 +2466,27 @@
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T09:01:08.202126"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T09:01:08.202126",
+      "fecha_resolucion": "2026-08-26T11:00:48.837115"
     },
     {
       "equipo": "Facultad Educacion",
       "serial": "3714669752",
       "modelo": "Xerox VersaLink B405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T09:01:08.203207"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T09:01:08.203207",
+      "fecha_resolucion": "2026-08-26T11:00:48.838140"
     },
     {
       "equipo": "Facultad Economia 1er piso",
       "serial": "3399943565",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T09:01:08.204672"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T09:01:08.204672",
+      "fecha_resolucion": "2026-08-26T11:00:48.839524"
     }
   ]
 }

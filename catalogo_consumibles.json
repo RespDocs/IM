@@ -49,7 +49,50 @@
       "origen": "snmp"
     }
   },
-  "Xerox VersaLink B605": {},
+  "Xerox VersaLink B605": {
+    "toner_black": {
+      "descripcion": "Toner Cartridge;SN02FB4D2B63550000",
+      "pn": null,
+      "vida_nominal": 46700,
+      "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Drum Cartridge, PN 101R00582;SN9000D600350F0000",
+      "pn": "101R00582",
+      "vida_nominal": 60000,
+      "origen": "snmp"
+    },
+    "transfer": {
+      "descripcion": "Transfer Roller, PN 116R00009",
+      "pn": "116R00009",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "fuser": {
+      "descripcion": "Fuser, PN 115R00140",
+      "pn": "115R00140",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray1_roller": {
+      "descripcion": "Tray 1 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray2_roller": {
+      "descripcion": "Tray 2 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
+    "tray3_roller": {
+      "descripcion": "Tray 3 Feed Roller, PN 116R00010",
+      "pn": "116R00010",
+      "vida_nominal": null,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B600": {
     "toner_black": {
       "descripcion": "Toner Cartridge;SN5F0616469D510000",
