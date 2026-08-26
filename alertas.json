@@ -110,7 +110,7 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": null,
+      "equipo": "FilHum",
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -179,7 +179,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.300962"
@@ -1905,8 +1905,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 18,
-      "criticidad": "advertencia",
+      "porcentaje": 1,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T17:00:46.992520"
     },
