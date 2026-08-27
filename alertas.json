@@ -174,7 +174,7 @@
     {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
-      "equipo": null,
+      "equipo": "Direccion de Admision Patio",
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 10,
+      "porcentaje": 9,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -2420,8 +2420,8 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
-      "criticidad": "advertencia",
+      "porcentaje": 0,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-25T15:00:53.344704"
     },
@@ -2538,8 +2538,9 @@
       "serial": "3940616998",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-08-26T21:00:20.637602"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-26T21:00:20.637602",
+      "fecha_resolucion": "2026-08-27T15:00:37.181752"
     },
     {
       "equipo": "Facultad de Ingenieria",
@@ -2558,6 +2559,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-27T01:00:25.740646",
       "fecha_resolucion": "2026-08-27T09:00:43.477910"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-27T15:00:37.184171"
     }
   ]
 }
