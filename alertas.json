@@ -8,8 +8,8 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 0,
-      "criticidad": "critico",
+      "porcentaje": 19,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
     },
@@ -2568,6 +2568,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-08-27T15:00:37.184171",
       "fecha_resolucion": "2026-08-27T17:00:52.914535"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-27T19:00:36.064807"
     }
   ]
 }
