@@ -11,7 +11,7 @@
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN8060221741080000",
       "pn": "106R03396",
-      "vida_nominal": null,
+      "vida_nominal": 30000,
       "origen": "snmp"
     },
     "drum_black": {
