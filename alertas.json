@@ -3,12 +3,12 @@
     {
       "id_alerta": "UAH_00001",
       "clave_alerta": "3390576217_toner_black",
-      "equipo": null,
+      "equipo": "Modulo1",
       "serial": "3390576217",
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 19,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
@@ -131,7 +131,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 1,
+      "porcentaje": 0,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.299298",
@@ -174,7 +174,7 @@
     {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
-      "equipo": null,
+      "equipo": "Direccion de Admision Patio",
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -221,7 +221,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 8,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302438",
@@ -2625,6 +2625,14 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-28T11:00:31.466727"
     }
   ]
 }
