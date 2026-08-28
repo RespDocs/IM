@@ -2833,5 +2833,27 @@
     "equipo": "LASER_UAH",
     "serial": "3669690826",
     "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-28T08:59:47.717939",
+    "tipo": "online",
+    "equipo": "DIPER",
+    "serial": "3384970914",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-28T08:59:47.718058",
+    "tipo": "offline",
+    "equipo": "LASER_UAH",
+    "serial": "3669690826",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-28T09:00:25.758527",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Sec_Educa",
+    "serial": "3942937600",
+    "id_alerta": "UAH_00038",
+    "detalle": "toner_black (20%)"
   }
 ]

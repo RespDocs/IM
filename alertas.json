@@ -3,7 +3,7 @@
     {
       "id_alerta": "UAH_00001",
       "clave_alerta": "3390576217_toner_black",
-      "equipo": "Modulo1",
+      "equipo": null,
       "serial": "3390576217",
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
@@ -174,7 +174,7 @@
     {
       "id_alerta": "UAH_00013",
       "clave_alerta": "3399952017_toner_black",
-      "equipo": "Direccion de Admision Patio",
+      "equipo": null,
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -2601,8 +2601,30 @@
       "serial": "3384970914",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-28T07:00:20.439832",
+      "fecha_resolucion": "2026-08-28T09:00:25.754906"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-28T07:00:20.439832"
+      "fecha_notificacion": "2026-08-28T09:00:25.756895"
+    },
+    {
+      "id_alerta": "UAH_00038",
+      "clave_alerta": "3942937600_toner_black",
+      "equipo": "Sec_Educa",
+      "serial": "3942937600",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-08-28T09:00:25.758521"
     }
   ]
 }
