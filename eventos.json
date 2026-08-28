@@ -2862,5 +2862,34 @@
     "equipo": "DIRECCION DE GESTION Y DESARROLLO",
     "serial": "3353184511",
     "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-28T12:59:38.234534",
+    "tipo": "online",
+    "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+    "serial": "3353184511",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-28T12:59:38.234660",
+    "tipo": "offline",
+    "equipo": "11.- Pastoral",
+    "serial": "3940616505",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-28T12:59:38.234708",
+    "tipo": "online",
+    "equipo": "LASER_UAH",
+    "serial": "3669690826",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-28T13:00:16.597500",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Modulo 3",
+    "serial": "3940636271",
+    "id_alerta": "UAH_00039",
+    "detalle": "drum_black (20%)"
   }
 ]
