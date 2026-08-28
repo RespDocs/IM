@@ -2592,8 +2592,17 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-28T05:00:28.776035",
+      "fecha_resolucion": "2026-08-28T07:00:20.441742"
+    },
+    {
+      "equipo": "DIPER",
+      "serial": "3384970914",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-28T05:00:28.776035"
+      "fecha_notificacion": "2026-08-28T07:00:20.439832"
     }
   ]
 }
