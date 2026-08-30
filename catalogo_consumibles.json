@@ -180,6 +180,12 @@
       "vida_nominal": null,
       "origen": "snmp"
     },
+    "belt_cleaner": {
+      "descripcion": "Limpiador de la correa de transferencia, PN 104R00256",
+      "pn": "104R00256",
+      "vida_nominal": null,
+      "origen": "snmp"
+    },
     "tray1_roller": {
       "descripcion": "Rodillo de alimentaciÃ³n de la bandeja 1, PN 109R00790",
       "pn": "109R00790",
