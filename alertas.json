@@ -2748,8 +2748,17 @@
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-08-30T01:00:55.020647",
+      "fecha_resolucion": "2026-08-30T03:00:49.783854"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-08-30T01:00:55.020647"
+      "fecha_notificacion": "2026-08-30T03:00:49.782061"
     }
   ]
 }
