@@ -3143,5 +3143,35 @@
     "equipo": "10.- Doc. Educa",
     "serial": "3940616491",
     "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-31T15:00:05.743861",
+    "tipo": "online",
+    "equipo": "Modulo5",
+    "serial": "3940617030",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-08-31T15:00:05.744042",
+    "tipo": "offline",
+    "equipo": "TicsDesarrollo",
+    "serial": "3384970868",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-08-31T15:00:47.428731",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Modulo1",
+    "serial": "3390576217",
+    "id_alerta": "UAH_00040",
+    "detalle": "drum_black (20%)"
+  },
+  {
+    "fecha": "2026-08-31T15:00:47.430860",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Central de Apuntes",
+    "serial": "3391871700",
+    "id_alerta": "UAH_00041",
+    "detalle": "drum_black (16%)"
   }
 ]
