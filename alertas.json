@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 18,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -2653,7 +2653,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 2,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T13:00:16.597494"
@@ -2896,16 +2896,18 @@
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-01T07:00:34.715852"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-01T07:00:34.715852",
+      "fecha_resolucion": "2026-09-01T11:00:49.505982"
     },
     {
       "equipo": "Modulo5",
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-01T09:00:44.794627"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-01T09:00:44.794627",
+      "fecha_resolucion": "2026-09-01T11:00:49.501699"
     }
   ]
 }
