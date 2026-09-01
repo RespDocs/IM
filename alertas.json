@@ -1905,8 +1905,8 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 1,
-      "criticidad": "critico",
+      "porcentaje": 16,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T17:00:46.992520"
     },
@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 6,
+      "porcentaje": 4,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -2828,7 +2828,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 18,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.428695"
