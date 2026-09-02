@@ -2941,8 +2941,25 @@
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-01T21:00:31.711739",
+      "fecha_resolucion": "2026-09-02T05:00:35.835789"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-01T21:00:31.711739"
+      "fecha_notificacion": "2026-09-02T05:00:35.829316"
+    },
+    {
+      "equipo": "Direccion de Admision Patio",
+      "serial": "3399952017",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-02T05:00:35.832701"
     }
   ]
 }
