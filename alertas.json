@@ -1905,7 +1905,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 16,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-18T17:00:46.992520"
@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 4,
+      "porcentaje": 2,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -2934,6 +2934,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-01T15:00:25.303357",
       "fecha_resolucion": "2026-09-01T17:00:24.534577"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-01T21:00:31.711739"
     }
   ]
 }
