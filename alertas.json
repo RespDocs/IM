@@ -1596,7 +1596,7 @@
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 14,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -2977,16 +2977,26 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T11:01:00.609334"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T11:01:00.609334",
+      "fecha_resolucion": "2026-09-02T15:00:26.341122"
     },
     {
       "equipo": "TicsDesarrollo",
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T11:01:00.613281",
+      "fecha_resolucion": "2026-09-02T15:00:26.345405"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T11:01:00.613281"
+      "fecha_notificacion": "2026-09-02T15:00:26.346360"
     }
   ]
 }

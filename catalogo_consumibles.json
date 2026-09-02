@@ -1,5 +1,12 @@
 {
-  "Xerox WorkCentre 3655S v1": {},
+  "Xerox WorkCentre 3655S v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B7025": {
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN80AD34015E080000",
@@ -264,7 +271,7 @@
     "toner_cyan": {
       "descripcion": "Cyan Toner Cartridge, PN 106R03538;SN9000D700160C0000",
       "pn": "106R03538",
-      "vida_nominal": 8000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "waste_toner": {
@@ -302,7 +309,7 @@
       "origen": "snmp"
     },
     "toner_yellow": {
-      "descripcion": "Yellow Toner Cartridge, PN 106R03734;SN80E83C1162080000",
+      "descripcion": "Yellow Toner Cartridge, PN 106R03734;SN80A83A1162080000",
       "pn": "106R03734",
       "vida_nominal": 15000,
       "origen": "snmp"
