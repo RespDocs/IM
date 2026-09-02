@@ -980,8 +980,8 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 0,
-      "criticidad": "critico",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
       "fecha_instalacion": "2026-07-29T18:14:16.403835",
@@ -1798,7 +1798,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 16,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T13:01:29.049434"
@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -2828,7 +2828,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 17,
+      "porcentaje": 15,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.428695"
@@ -2841,7 +2841,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.430854"
@@ -2995,8 +2995,25 @@
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T15:00:26.346360",
+      "fecha_resolucion": "2026-09-02T17:00:36.755470"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T15:00:26.346360"
+      "fecha_notificacion": "2026-09-02T17:00:36.749400"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-02T17:00:36.752896"
     }
   ]
 }
