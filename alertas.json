@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -3004,16 +3004,34 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T17:00:36.749400"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T17:00:36.749400",
+      "fecha_resolucion": "2026-09-02T19:00:25.168394"
     },
     {
       "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T17:00:36.752896",
+      "fecha_resolucion": "2026-09-02T19:00:25.170689"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T17:00:36.752896"
+      "fecha_notificacion": "2026-09-02T19:00:25.172494"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-02T19:00:25.173427"
     }
   ]
 }

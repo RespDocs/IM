@@ -181,6 +181,12 @@
       "vida_nominal": 26000,
       "origen": "snmp"
     },
+    "waste_toner": {
+      "descripcion": "Cartucho de residuos, PN 108R01504",
+      "pn": "108R01504",
+      "vida_nominal": 83000,
+      "origen": "snmp"
+    },
     "drum_black": {
       "descripcion": "Cartucho de cilindro negro, PN 101R00602;SN8053590E43070000",
       "pn": "101R00602",
@@ -356,14 +362,7 @@
       "origen": "snmp"
     }
   },
-  "Xerox AltaLink B8075": {
-    "toner_black": {
-      "descripcion": "Toner Cartridge, PN 006R01604;SND0027D3E14122A38",
-      "pn": "006R01604",
-      "vida_nominal": 4600,
-      "origen": "snmp"
-    }
-  },
+  "Xerox AltaLink B8075": {},
   "Xerox WorkCentre 3655X v1": {
     "toner_black": {
       "descripcion": "Black Toner, PN unknown;SNb5010a0100013121",
