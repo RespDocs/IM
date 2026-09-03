@@ -175,22 +175,10 @@
       "vida_nominal": 26000,
       "origen": "snmp"
     },
-    "toner_cyan": {
-      "descripcion": "Cartucho de tÃ³ner cian, PN 106R04082;SN809E5C05E6070000",
-      "pn": "106R04082",
-      "vida_nominal": 26000,
-      "origen": "snmp"
-    },
     "waste_toner": {
       "descripcion": "Cartucho de residuos, PN 108R01504",
       "pn": "108R01504",
       "vida_nominal": 83000,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Cartucho de cilindro negro, PN 101R00602;SN8053590E43070000",
-      "pn": "101R00602",
-      "vida_nominal": 157000,
       "origen": "snmp"
     },
     "drum_yellow": {
