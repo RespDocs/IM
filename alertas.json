@@ -208,7 +208,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 14,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.301896"
@@ -221,7 +221,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 7,
+      "porcentaje": 6,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302438",
@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 18,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1238,8 +1238,8 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 1,
-      "criticidad": "critico",
+      "porcentaje": 15,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.007943"
     },
@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 9,
+      "porcentaje": 8,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -2420,8 +2420,8 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 0,
-      "criticidad": "critico",
+      "porcentaje": 14,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-25T15:00:53.344704"
     },
@@ -2841,7 +2841,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 14,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.430854"
@@ -3075,8 +3075,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-03T09:00:31.758740"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-03T09:00:31.758740",
+      "fecha_resolucion": "2026-09-03T11:00:51.508012"
     }
   ]
 }
