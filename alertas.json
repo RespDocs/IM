@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 19,
+      "porcentaje": 18,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -3022,16 +3022,18 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T19:00:25.172494"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T19:00:25.172494",
+      "fecha_resolucion": "2026-09-02T21:00:20.546884"
     },
     {
       "equipo": "DARA-ADMISION",
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-02T19:00:25.173427"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-02T19:00:25.173427",
+      "fecha_resolucion": "2026-09-02T21:00:20.547886"
     }
   ]
 }
