@@ -208,7 +208,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.301896"
@@ -608,7 +608,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 9,
+      "porcentaje": 8,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-03T10:01:43.772242",
@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 7,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -3180,6 +3180,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-04T17:00:14.832693"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-04T19:01:50.048272"
     }
   ]
 }
