@@ -21,7 +21,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 14,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.294388",
@@ -237,7 +237,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 7,
+      "porcentaje": 6,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302894",
@@ -980,8 +980,8 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
       "fecha_instalacion": "2026-07-29T18:14:16.403835",
@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 8,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -1596,8 +1596,8 @@
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
-      "criticidad": "advertencia",
+      "porcentaje": 10,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
     },
@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -2828,7 +2828,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.428695"
@@ -3129,24 +3129,35 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-04T09:00:34.871754"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-04T09:00:34.871754",
+      "fecha_resolucion": "2026-09-04T13:00:35.675349"
     },
     {
       "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-04T11:00:33.813213"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-04T11:00:33.813213",
+      "fecha_resolucion": "2026-09-04T13:00:35.678158"
     },
     {
       "equipo": "TicsDesarrollo",
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-04T11:00:33.814824",
+      "fecha_resolucion": "2026-09-04T13:00:35.679904"
+    },
+    {
+      "equipo": "Direccion de Extension 2do piso",
+      "serial": "3356010522",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-04T11:00:33.814824"
+      "fecha_notificacion": "2026-09-04T13:00:35.679706"
     }
   ]
 }
