@@ -3304,8 +3304,9 @@
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-06T11:00:29.081200"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-06T11:00:29.081200",
+      "fecha_resolucion": "2026-09-06T15:00:26.681131"
     },
     {
       "equipo": "LASER_UAH",
@@ -3314,6 +3315,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-06T13:00:45.724576"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-06T15:00:26.675754"
     }
   ]
 }
