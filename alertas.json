@@ -3259,16 +3259,26 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-06T03:00:39.719651"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-06T03:00:39.719651",
+      "fecha_resolucion": "2026-09-06T05:00:25.727484"
     },
     {
       "equipo": "DARA-ADMISION",
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-06T03:00:39.724699",
+      "fecha_resolucion": "2026-09-06T05:00:25.733104"
+    },
+    {
+      "equipo": "LASER_UAH",
+      "serial": "3669690826",
+      "modelo": "Xerox AltaLink B8075",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-06T03:00:39.724699"
+      "fecha_notificacion": "2026-09-06T05:00:25.730075"
     }
   ]
 }
