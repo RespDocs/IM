@@ -160,7 +160,7 @@
     "toner_black": {
       "descripcion": "Cartucho de tÃ³ner negro, PN 106R04085;SN80B85E08DB070000",
       "pn": "106R04085",
-      "vida_nominal": 30000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "toner_yellow": {
@@ -258,12 +258,6 @@
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03539;SN9300DC0004090000",
       "pn": "106R03539",
-      "vida_nominal": 8000,
-      "origen": "snmp"
-    },
-    "toner_cyan": {
-      "descripcion": "Cyan Toner Cartridge, PN 106R03538;SN9000D700160C0000",
-      "pn": "106R03538",
       "vida_nominal": 8000,
       "origen": "snmp"
     },

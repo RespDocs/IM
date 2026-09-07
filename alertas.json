@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 5,
+      "porcentaje": 4,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1591,7 +1591,7 @@
     {
       "id_alerta": "UAH_00029",
       "clave_alerta": "3669690826_toner_black",
-      "equipo": "LASER_UAH",
+      "equipo": null,
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
@@ -1798,7 +1798,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 15,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T13:01:29.049434"
@@ -3369,6 +3369,30 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T09:01:02.650708"
+    },
+    {
+      "equipo": "Modulo5",
+      "serial": "3940617030",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-07T11:00:46.787956"
+    },
+    {
+      "equipo": "Rectoria Color",
+      "serial": "3358981312",
+      "modelo": "Xerox VersaLink C405",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-07T11:00:46.788967"
+    },
+    {
+      "equipo": "10.- Doc. Educa",
+      "serial": "3940616491",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-07T11:00:46.789408"
     }
   ]
 }
