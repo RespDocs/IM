@@ -3347,8 +3347,17 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-06T23:00:33.372384",
+      "fecha_resolucion": "2026-09-07T01:00:33.904529"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-06T23:00:33.372384"
+      "fecha_notificacion": "2026-09-07T01:00:33.906533"
     }
   ]
 }
