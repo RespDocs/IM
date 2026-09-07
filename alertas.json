@@ -237,7 +237,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302894",
@@ -980,7 +980,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 4,
+      "porcentaje": 3,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-05T12:02:33.754316",
@@ -1238,7 +1238,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 2,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.007943"
@@ -1591,12 +1591,12 @@
     {
       "id_alerta": "UAH_00029",
       "clave_alerta": "3669690826_toner_black",
-      "equipo": null,
+      "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 7,
+      "porcentaje": 3,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
@@ -1798,7 +1798,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 14,
+      "porcentaje": 13,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-17T13:01:29.049434"
@@ -2841,7 +2841,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 12,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.430854"
@@ -3367,32 +3367,36 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-07T09:01:02.650708"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-07T09:01:02.650708",
+      "fecha_resolucion": "2026-09-07T13:00:25.629024"
     },
     {
       "equipo": "Modulo5",
       "serial": "3940617030",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-07T11:00:46.787956"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-07T11:00:46.787956",
+      "fecha_resolucion": "2026-09-07T13:00:25.629464"
     },
     {
       "equipo": "Rectoria Color",
       "serial": "3358981312",
       "modelo": "Xerox VersaLink C405",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-07T11:00:46.788967"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-07T11:00:46.788967",
+      "fecha_resolucion": "2026-09-07T13:00:25.630518"
     },
     {
       "equipo": "10.- Doc. Educa",
       "serial": "3940616491",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-07T11:00:46.789408"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-07T11:00:46.789408",
+      "fecha_resolucion": "2026-09-07T13:00:25.631004"
     }
   ]
 }
