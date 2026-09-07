@@ -1596,7 +1596,7 @@
       "modelo": "Xerox AltaLink B8075",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 10,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-14T11:00:32.019838"
@@ -3313,8 +3313,9 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-06T13:00:45.724576"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-06T13:00:45.724576",
+      "fecha_resolucion": "2026-09-07T09:01:02.653466"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -3360,6 +3361,14 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-07T01:00:33.906533",
       "fecha_resolucion": "2026-09-07T03:00:31.909748"
+    },
+    {
+      "equipo": "DIRECCION DE GESTION Y DESARROLLO",
+      "serial": "3353184511",
+      "modelo": "Xerox WorkCentre 3655S v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-07T09:01:02.650708"
     }
   ]
 }
