@@ -811,7 +811,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 14,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "instalado",
       "fecha_notificacion": "2026-08-04T12:01:10.617597",
@@ -1086,8 +1086,8 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_cyan",
-      "porcentaje": 1,
-      "criticidad": "critico",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-05T18:02:30.361615"
     },
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 10,
+      "porcentaje": 9,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 10,
+      "porcentaje": 9,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -3406,7 +3406,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 14,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T15:01:12.472194"
@@ -3532,8 +3532,9 @@
       "serial": "3394991545",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-08T11:00:45.688296"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-08T11:00:45.688296",
+      "fecha_resolucion": "2026-09-08T13:00:41.060774"
     },
     {
       "equipo": "10.- Doc. Educa",
@@ -3550,6 +3551,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-08T11:00:45.690110"
+    },
+    {
+      "equipo": "Modulo1",
+      "serial": "3390576217",
+      "modelo": "Xerox VersaLink B7025",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-08T13:00:41.059073"
     }
   ]
 }
