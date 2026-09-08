@@ -1,5 +1,12 @@
 {
-  "Xerox WorkCentre 3655S v1": {},
+  "Xerox WorkCentre 3655S v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SN4300bd00090c3121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  },
   "Xerox VersaLink B7025": {
     "toner_black": {
       "descripcion": "Toner Cartridge, PN 106R03396;SN80AD34015E080000",
@@ -52,7 +59,7 @@
     "drum_black": {
       "descripcion": "Drum Cartridge, PN 101R00582;SN9000D600350F0000",
       "pn": "101R00582",
-      "vida_nominal": 60000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
@@ -346,7 +353,7 @@
     "drum_cyan": {
       "descripcion": "Cyan Drum Cartridge, PN 113R00780;SN80B6080449080000",
       "pn": "113R00780",
-      "vida_nominal": 87000,
+      "vida_nominal": null,
       "origen": "snmp"
     },
     "transfer": {
