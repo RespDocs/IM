@@ -1081,7 +1081,7 @@
     {
       "id_alerta": "UAH_00023",
       "clave_alerta": "3391871700_toner_cyan",
-      "equipo": null,
+      "equipo": "Central de Apuntes",
       "serial": "3391871700",
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
@@ -1233,7 +1233,7 @@
     {
       "id_alerta": "UAH_00025",
       "clave_alerta": "3391871700_toner_black",
-      "equipo": null,
+      "equipo": "Central de Apuntes",
       "serial": "3391871700",
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
@@ -2836,7 +2836,7 @@
     {
       "id_alerta": "UAH_00041",
       "clave_alerta": "3391871700_drum_black",
-      "equipo": null,
+      "equipo": "Central de Apuntes",
       "serial": "3391871700",
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
@@ -3406,7 +3406,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 8,
+      "porcentaje": 6,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T15:01:12.472194"
@@ -3427,7 +3427,7 @@
     {
       "id_alerta": "UAH_00045",
       "clave_alerta": "3391871700_drum_yellow",
-      "equipo": null,
+      "equipo": "Central de Apuntes",
       "serial": "3391871700",
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
