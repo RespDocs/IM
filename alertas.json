@@ -3460,8 +3460,25 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-07T21:00:16.267110",
+      "fecha_resolucion": "2026-09-07T23:00:19.475632"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-07T21:00:16.267110"
+      "fecha_notificacion": "2026-09-07T23:00:19.477899"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-07T23:00:19.482106"
     }
   ]
 }
