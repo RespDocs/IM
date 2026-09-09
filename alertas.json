@@ -1225,7 +1225,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
@@ -1251,7 +1251,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T19:00:24.009480"
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 8,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -2617,7 +2617,7 @@
     {
       "id_alerta": "UAH_00038",
       "clave_alerta": "3942937600_toner_black",
-      "equipo": "Sec_Educa",
+      "equipo": null,
       "serial": "3942937600",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -2828,7 +2828,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 4,
+      "porcentaje": 2,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.428695"
@@ -3049,8 +3049,9 @@
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-03T03:00:32.753439"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-03T03:00:32.753439",
+      "fecha_resolucion": "2026-09-09T19:00:15.390816"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
