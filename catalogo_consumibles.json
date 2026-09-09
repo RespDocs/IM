@@ -182,6 +182,12 @@
       "vida_nominal": 26000,
       "origen": "snmp"
     },
+    "toner_cyan": {
+      "descripcion": "Cartucho de tÃ³ner cian, PN 106R04082;SN809E5C05E6070000",
+      "pn": "106R04082",
+      "vida_nominal": 26000,
+      "origen": "snmp"
+    },
     "waste_toner": {
       "descripcion": "Cartucho de residuos, PN 108R01504",
       "pn": "108R01504",
