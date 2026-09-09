@@ -8,8 +8,8 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 4,
-      "criticidad": "critico",
+      "porcentaje": 14,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.294080"
     },
@@ -1086,7 +1086,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_cyan",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-05T18:02:30.361615"
@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -2828,7 +2828,7 @@
       "modelo": "Xerox VersaLink B7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.428695"
@@ -3406,7 +3406,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 4,
+      "porcentaje": 3,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T15:01:12.472194"
@@ -3640,16 +3640,34 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-09T11:00:32.909245"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-09T11:00:32.909245",
+      "fecha_resolucion": "2026-09-09T13:00:29.700071"
     },
     {
       "equipo": "Facultad de Economia 2do piso",
       "serial": "3940618249",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-09T11:00:32.913444",
+      "fecha_resolucion": "2026-09-09T13:00:29.703965"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-09T11:00:32.913444"
+      "fecha_notificacion": "2026-09-09T13:00:29.702205"
+    },
+    {
+      "equipo": "Tics 3er piso",
+      "serial": "3399952025",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-09T13:00:29.703462"
     }
   ]
 }
