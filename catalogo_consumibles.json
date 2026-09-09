@@ -308,12 +308,6 @@
       "vida_nominal": 22000,
       "origen": "snmp"
     },
-    "toner_yellow": {
-      "descripcion": "Yellow Toner Cartridge, PN 106R03734;SN80A83A1162080000",
-      "pn": "106R03734",
-      "vida_nominal": 15000,
-      "origen": "snmp"
-    },
     "toner_magenta": {
       "descripcion": "Magenta Toner Cartridge, PN 106R03735;SN800D4D10F2070000",
       "pn": "106R03735",
@@ -330,12 +324,6 @@
       "descripcion": "Waste Cartridge, PN 115R00128",
       "pn": "115R00128",
       "vida_nominal": 30000,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Black Drum Cartridge, PN 113R00780;SN80BE060449080000",
-      "pn": "113R00780",
-      "vida_nominal": 109200,
       "origen": "snmp"
     },
     "drum_yellow": {
