@@ -221,7 +221,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "instalado",
       "fecha_notificacion": "2026-07-31T01:42:47.302438",
@@ -2066,7 +2066,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 9,
+      "porcentaje": 8,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-20T15:00:39.980530"
@@ -3406,7 +3406,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 6,
+      "porcentaje": 5,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T15:01:12.472194"
@@ -3577,24 +3577,35 @@
       "serial": "3399945436",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-08T17:00:45.201540"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-08T17:00:45.201540",
+      "fecha_resolucion": "2026-09-08T21:00:17.254612"
     },
     {
       "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-08T17:00:45.202317"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-08T17:00:45.202317",
+      "fecha_resolucion": "2026-09-08T21:00:17.255408"
     },
     {
       "equipo": "DARA-ADMISION",
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-08T17:00:45.205279",
+      "fecha_resolucion": "2026-09-08T21:00:17.258655"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-08T17:00:45.205279"
+      "fecha_notificacion": "2026-09-08T21:00:17.257521"
     }
   ]
 }
