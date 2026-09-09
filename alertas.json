@@ -1086,7 +1086,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_cyan",
-      "porcentaje": 6,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-05T18:02:30.361615"
@@ -1225,8 +1225,8 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 1,
-      "criticidad": "critico",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
     },
@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 4,
+      "porcentaje": 3,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -3675,8 +3675,9 @@
       "serial": "3384970779",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-09T15:00:31.088074"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-09T15:00:31.088074",
+      "fecha_resolucion": "2026-09-09T17:00:20.120533"
     }
   ]
 }
