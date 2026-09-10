@@ -619,7 +619,7 @@
     {
       "id_alerta": "UAH_00020",
       "clave_alerta": "3399952335_drum_black",
-      "equipo": null,
+      "equipo": "Centro Uni. Ignaciano 2do piso",
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -3778,8 +3778,9 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T11:00:34.185365"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T11:00:34.185365",
+      "fecha_resolucion": "2026-09-10T13:00:21.613123"
     },
     {
       "equipo": "DARA-ADMISION",
