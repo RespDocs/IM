@@ -2622,7 +2622,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 3,
+      "porcentaje": 2,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-28T09:00:25.758521"
@@ -3737,16 +3737,18 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T05:00:31.143171"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T05:00:31.143171",
+      "fecha_resolucion": "2026-09-10T09:00:41.455684"
     },
     {
       "equipo": "LASER_UAH",
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T05:00:31.146278"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T05:00:31.146278",
+      "fecha_resolucion": "2026-09-10T09:00:41.458750"
     },
     {
       "equipo": "DARA-ADMISION",
@@ -3756,6 +3758,19 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-10T05:00:31.149499",
       "fecha_resolucion": "2026-09-10T07:00:35.184368"
+    },
+    {
+      "id_alerta": "UAH_00046",
+      "clave_alerta": "3399946262_toner_black",
+      "equipo": "DERECHO",
+      "serial": "3399946262",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-10T09:00:41.459071"
     }
   ]
 }
