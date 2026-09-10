@@ -3693,8 +3693,9 @@
       "serial": "3399945436",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-09T21:00:22.562277"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-09T21:00:22.562277",
+      "fecha_resolucion": "2026-09-09T23:00:23.818910"
     },
     {
       "equipo": "DARA-ADMISION",
@@ -3703,6 +3704,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-09T21:00:22.566194"
+    },
+    {
+      "equipo": "Direccion de Admision Patio",
+      "serial": "3399952017",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-09T23:00:23.820353"
     }
   ]
 }
