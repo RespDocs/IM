@@ -2420,8 +2420,8 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 11,
-      "criticidad": "advertencia",
+      "porcentaje": 7,
+      "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-25T15:00:53.344704"
     },
@@ -3768,7 +3768,7 @@
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 20,
+      "porcentaje": 19,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-10T09:00:41.459071"
@@ -3796,8 +3796,17 @@
       "serial": "3353184511",
       "modelo": "Xerox WorkCentre 3655S v1",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T17:00:42.085961",
+      "fecha_resolucion": "2026-09-10T19:00:32.360740"
+    },
+    {
+      "equipo": "Facultad de Ciencias Sociales",
+      "serial": "3399945975",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T17:00:42.085961"
+      "fecha_notificacion": "2026-09-10T19:00:32.363723"
     }
   ]
 }

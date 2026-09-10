@@ -325,6 +325,12 @@
       "vida_nominal": 30000,
       "origen": "snmp"
     },
+    "drum_black": {
+      "descripcion": "Black Drum Cartridge, PN 113R00780;SN80BE060449080000",
+      "pn": "113R00780",
+      "vida_nominal": 109200,
+      "origen": "snmp"
+    },
     "drum_yellow": {
       "descripcion": "Yellow Drum Cartridge, PN 113R00780;SN804A220C44080000",
       "pn": "113R00780",
