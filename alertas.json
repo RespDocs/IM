@@ -2617,7 +2617,7 @@
     {
       "id_alerta": "UAH_00038",
       "clave_alerta": "3942937600_toner_black",
-      "equipo": null,
+      "equipo": "Sec_Educa",
       "serial": "3942937600",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -3679,6 +3679,30 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-09T15:00:31.088074",
       "fecha_resolucion": "2026-09-09T17:00:20.120533"
+    },
+    {
+      "equipo": "08.- DAE",
+      "serial": "3940616424",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-09T21:00:22.561137"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-09T21:00:22.562277"
+    },
+    {
+      "equipo": "DARA-ADMISION",
+      "serial": "3353215298",
+      "modelo": "Xerox WorkCentre 3655X v1",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-09T21:00:22.566194"
     }
   ]
 }
