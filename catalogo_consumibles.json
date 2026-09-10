@@ -50,9 +50,9 @@
       "origen": "snmp"
     },
     "drum_black": {
-      "descripcion": "Drum Cartridge, PN 101R00582;SN9000D600350F0000",
+      "descripcion": "Drum Cartridge, PN 101R00582;SND900D6000B0F0000",
       "pn": "101R00582",
-      "vida_nominal": null,
+      "vida_nominal": 60000,
       "origen": "snmp"
     },
     "transfer": {
@@ -286,6 +286,12 @@
       "pn": null,
       "vida_nominal": 24600,
       "origen": "snmp"
+    },
+    "drum_black": {
+      "descripcion": "Drum Cartridge, PN 101R00554;SN3000C900370D0000",
+      "pn": "101R00554",
+      "vida_nominal": 85000,
+      "origen": "snmp"
     }
   },
   "Xerox VersaLink C7025": {
@@ -317,12 +323,6 @@
       "descripcion": "Waste Cartridge, PN 115R00128",
       "pn": "115R00128",
       "vida_nominal": 30000,
-      "origen": "snmp"
-    },
-    "drum_black": {
-      "descripcion": "Black Drum Cartridge, PN 113R00780;SN80BE060449080000",
-      "pn": "113R00780",
-      "vida_nominal": 109200,
       "origen": "snmp"
     },
     "drum_yellow": {
@@ -364,5 +364,12 @@
       "origen": "snmp"
     }
   },
-  "Xerox WorkCentre 3655X v1": {}
+  "Xerox WorkCentre 3655X v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SNb5010a0100013121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  }
 }
