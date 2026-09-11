@@ -1225,7 +1225,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
@@ -3805,8 +3805,9 @@
       "serial": "3399945975",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T19:00:32.363723"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T19:00:32.363723",
+      "fecha_resolucion": "2026-09-11T09:00:48.303037"
     },
     {
       "equipo": "DIRECCION DE GESTION Y DESARROLLO",
@@ -3822,8 +3823,9 @@
       "serial": "3669690826",
       "modelo": "Xerox AltaLink B8075",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-10T21:00:34.297463"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-10T21:00:34.297463",
+      "fecha_resolucion": "2026-09-11T09:00:48.303384"
     },
     {
       "equipo": "DARA-ADMISION",
