@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-11T06:59:51.706602",
+  "actualizado": "2026-09-11T09:00:03.557164",
   "impresoras": [
     {
       "nombre": "DIRECCION DE GESTION Y DESARROLLO",
@@ -13,14 +13,14 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:04.002558"
+      "ultima_lectura": "2026-09-11T08:58:14.219110"
     },
     {
       "nombre": "Modulo1",
       "modelo": "Xerox VersaLink B7025",
       "serial": "3390576217",
       "ip": "172.16.79.124",
-      "contador": 1139393,
+      "contador": 1139403,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -28,21 +28,21 @@
         "drum_black": 23
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:05.229553"
+      "ultima_lectura": "2026-09-11T08:58:15.524444"
     },
     {
       "nombre": "DIPER",
       "modelo": "Xerox Phaser 3330",
       "serial": "3384970914",
       "ip": "172.16.79.146",
-      "contador": 27566,
+      "contador": 27569,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
         "toner_black": 69
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:06.316548"
+      "ultima_lectura": "2026-09-11T08:58:16.630683"
     },
     {
       "nombre": "DirecciÃ³n de Finanzas",
@@ -56,14 +56,14 @@
         "toner_black": 67
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:07.553917"
+      "ultima_lectura": "2026-09-11T08:58:17.886923"
     },
     {
       "nombre": "Modulo5",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940617030",
       "ip": "172.16.79.199",
-      "contador": 937591,
+      "contador": 937593,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -71,7 +71,7 @@
         "drum_black": 96
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:08.628179"
+      "ultima_lectura": "2026-09-11T08:58:18.995136"
     },
     {
       "nombre": "Vicerectoria de Adm y Finanzas",
@@ -86,22 +86,22 @@
         "drum_black": 74
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:09.684467"
+      "ultima_lectura": "2026-09-11T08:58:20.073325"
     },
     {
       "nombre": "Modulo6",
       "modelo": "Xerox VersaLink B600",
       "serial": "3394178631",
       "ip": "172.16.79.200",
-      "contador": 1103563,
+      "contador": 1103652,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 0,
+        "toner_black": 100,
         "drum_black": 20
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:10.743308"
+      "ultima_lectura": "2026-09-11T08:58:21.863490"
     },
     {
       "nombre": "Finanzas, Alameda 1845 piso 3",
@@ -116,7 +116,7 @@
         "drum_black": 55
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:11.876777"
+      "ultima_lectura": "2026-09-11T08:58:23.012494"
     },
     {
       "nombre": "PMI ( Plan de Mejoramiento Int.)",
@@ -131,7 +131,7 @@
         "drum_black": 40
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:12.942881"
+      "ultima_lectura": "2026-09-11T08:58:24.080651"
     },
     {
       "nombre": "DARA 2do piso",
@@ -146,7 +146,7 @@
         "drum_black": 38
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:14.004650"
+      "ultima_lectura": "2026-09-11T08:58:26.455689"
     },
     {
       "nombre": "08.- DAE",
@@ -161,7 +161,7 @@
         "drum_black": 38
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:15.891775"
+      "ultima_lectura": "2026-09-11T08:58:28.550018"
     },
     {
       "nombre": "05.- CUI",
@@ -176,7 +176,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:17.692993"
+      "ultima_lectura": "2026-09-11T08:58:29.760682"
     },
     {
       "nombre": " Asuntos Estudiantiles Recepcion",
@@ -191,7 +191,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:18.740172"
+      "ultima_lectura": "2026-09-11T08:58:30.862591"
     },
     {
       "nombre": "DARA_COLOR",
@@ -212,7 +212,7 @@
         "drum_cyan": 77
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:19.790247"
+      "ultima_lectura": "2026-09-11T08:58:31.928077"
     },
     {
       "nombre": "DARA 1er piso",
@@ -227,7 +227,7 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:24.738506"
+      "ultima_lectura": "2026-09-11T08:58:35.915904"
     },
     {
       "nombre": "Rectoria Color",
@@ -244,14 +244,14 @@
         "toner_cyan": 99
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:26.708818"
+      "ultima_lectura": "2026-09-11T08:58:36.972013"
     },
     {
       "nombre": "02.- Rectoria",
       "modelo": "Xerox VersaLink B605",
       "serial": "3394991545",
       "ip": "172.16.79.32",
-      "contador": 94510,
+      "contador": 94518,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -259,7 +259,7 @@
         "drum_black": 41
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:31.264750"
+      "ultima_lectura": "2026-09-11T08:58:40.241966"
     },
     {
       "nombre": "03.- CIDE",
@@ -274,7 +274,7 @@
         "drum_black": 68
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:33.551138"
+      "ultima_lectura": "2026-09-11T08:58:41.350729"
     },
     {
       "nombre": "11.- Pastoral",
@@ -289,7 +289,7 @@
         "drum_black": 43
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:34.613399"
+      "ultima_lectura": "2026-09-11T08:58:43.757080"
     },
     {
       "nombre": "Facultad Educacion",
@@ -304,7 +304,7 @@
         "drum_black": 32
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:35.657445"
+      "ultima_lectura": "2026-09-11T08:58:44.818074"
     },
     {
       "nombre": "10.- Doc. Educa",
@@ -319,7 +319,7 @@
         "drum_black": 47
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:36.923308"
+      "ultima_lectura": "2026-09-11T08:58:46.096908"
     },
     {
       "nombre": "Facultad de Literatura",
@@ -334,7 +334,7 @@
         "drum_black": 37
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:38.075368"
+      "ultima_lectura": "2026-09-11T08:58:48.425010"
     },
     {
       "nombre": "FilHum",
@@ -349,7 +349,7 @@
         "drum_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:39.123336"
+      "ultima_lectura": "2026-09-11T08:58:49.486957"
     },
     {
       "nombre": "Facultad de Filosofia y Humanida",
@@ -364,7 +364,7 @@
         "drum_black": 18
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:40.183471"
+      "ultima_lectura": "2026-09-11T08:58:50.634106"
     },
     {
       "nombre": "instituto de Teologia y Estudios",
@@ -379,7 +379,7 @@
         "drum_black": 74
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:41.242337"
+      "ultima_lectura": "2026-09-11T08:58:53.020917"
     },
     {
       "nombre": "04.- Periodismo",
@@ -394,22 +394,29 @@
         "drum_black": 82
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:42.295688"
+      "ultima_lectura": "2026-09-11T08:58:54.084684"
     },
     {
       "nombre": "Facultad de Ciencias Sociales",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399945975",
       "ip": "172.16.79.45",
-      "online": false,
-      "ultima_lectura": "2026-09-11T06:58:44.620403"
+      "contador": 258121,
+      "contador_negro": null,
+      "contador_color": null,
+      "consumibles": {
+        "toner_black": 53,
+        "drum_black": 98
+      },
+      "online": true,
+      "ultima_lectura": "2026-09-11T08:58:55.148613"
     },
     {
       "nombre": "DOP",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946181",
       "ip": "172.16.79.46",
-      "contador": 133965,
+      "contador": 133992,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -417,7 +424,7 @@
         "drum_black": 98
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:47.062172"
+      "ultima_lectura": "2026-09-11T08:58:56.227687"
     },
     {
       "nombre": "Central de Apuntes",
@@ -429,7 +436,7 @@
       "contador_color": 300851,
       "consumibles": {
         "toner_black": 1,
-        "toner_yellow": 13,
+        "toner_yellow": 12,
         "toner_magenta": 24,
         "toner_cyan": 1,
         "drum_black": 9,
@@ -438,15 +445,21 @@
         "drum_cyan": 76
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:49.288620"
+      "ultima_lectura": "2026-09-11T08:58:57.578432"
     },
     {
       "nombre": "LASER_UAH",
       "modelo": "Xerox AltaLink B8075",
       "serial": "3669690826",
       "ip": "172.16.79.51",
-      "online": false,
-      "ultima_lectura": "2026-09-11T06:58:54.025120"
+      "contador": 1297638,
+      "contador_negro": null,
+      "contador_color": null,
+      "consumibles": {
+        "toner_black": 81
+      },
+      "online": true,
+      "ultima_lectura": "2026-09-11T08:59:02.193314"
     },
     {
       "nombre": "Derecho - Clinica Juridica",
@@ -461,7 +474,7 @@
         "drum_black": 49
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:56.451506"
+      "ultima_lectura": "2026-09-11T08:59:03.261040"
     },
     {
       "nombre": "Direccion de Admision Patio",
@@ -469,14 +482,14 @@
       "serial": "3399952017",
       "ip": "172.16.79.53",
       "online": false,
-      "ultima_lectura": "2026-09-11T06:58:57.525225"
+      "ultima_lectura": "2026-09-11T08:59:04.682794"
     },
     {
       "nombre": "DERECHO",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399946262",
       "ip": "172.16.79.54",
-      "contador": 761625,
+      "contador": 761715,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -484,7 +497,7 @@
         "drum_black": 70
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:58:59.954683"
+      "ultima_lectura": "2026-09-11T08:59:07.137305"
     },
     {
       "nombre": "01.- Ciencias Politica",
@@ -499,7 +512,7 @@
         "drum_black": 84
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:01.131969"
+      "ultima_lectura": "2026-09-11T08:59:08.493776"
     },
     {
       "nombre": "Tics 3er piso",
@@ -507,7 +520,7 @@
       "serial": "3399952025",
       "ip": "172.16.79.57",
       "online": false,
-      "ultima_lectura": "2026-09-11T06:59:03.420371"
+      "ultima_lectura": "2026-09-11T08:59:09.570750"
     },
     {
       "nombre": "Facultad de Ingenieria",
@@ -522,7 +535,7 @@
         "drum_black": 58
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:05.846106"
+      "ultima_lectura": "2026-09-11T08:59:12.019637"
     },
     {
       "nombre": "Vice de Investigacion y Postgrad",
@@ -537,7 +550,7 @@
         "drum_black": 21
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:06.934275"
+      "ultima_lectura": "2026-09-11T08:59:13.521740"
     },
     {
       "nombre": "Direccion de Docencia",
@@ -552,7 +565,7 @@
         "drum_black": 93
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:08.551964"
+      "ultima_lectura": "2026-09-11T08:59:14.605378"
     },
     {
       "nombre": "Direccion de Aprendizaje Institu",
@@ -567,7 +580,7 @@
         "drum_black": 73
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:09.974539"
+      "ultima_lectura": "2026-09-11T08:59:15.690465"
     },
     {
       "nombre": "Facultad de Economia 2do piso",
@@ -582,7 +595,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:11.071380"
+      "ultima_lectura": "2026-09-11T08:59:17.129800"
     },
     {
       "nombre": "Facultad Economia 1er piso",
@@ -597,7 +610,7 @@
         "drum_black": 22
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:12.146920"
+      "ultima_lectura": "2026-09-11T08:59:18.216358"
     },
     {
       "nombre": "09.- Sub Economia",
@@ -612,7 +625,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:13.281558"
+      "ultima_lectura": "2026-09-11T08:59:19.304356"
     },
     {
       "nombre": "Direccion de Comunicaciones",
@@ -627,7 +640,7 @@
         "drum_black": 59
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:14.392028"
+      "ultima_lectura": "2026-09-11T08:59:20.398265"
     },
     {
       "nombre": "Facultad de Psicologia",
@@ -642,7 +655,7 @@
         "drum_black": 81
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:15.462581"
+      "ultima_lectura": "2026-09-11T08:59:21.493155"
     },
     {
       "nombre": "06.- Psicologia Subterraneo",
@@ -657,7 +670,7 @@
         "drum_black": 65
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:17.302620"
+      "ultima_lectura": "2026-09-11T08:59:22.623842"
     },
     {
       "nombre": "Facultad de Geografia",
@@ -672,7 +685,7 @@
         "drum_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:18.384172"
+      "ultima_lectura": "2026-09-11T08:59:24.955545"
     },
     {
       "nombre": "Direccion de Extension 2do piso",
@@ -689,7 +702,7 @@
         "toner_cyan": 63
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:19.460320"
+      "ultima_lectura": "2026-09-11T08:59:27.404120"
     },
     {
       "nombre": "07.- SNIG",
@@ -704,7 +717,7 @@
         "drum_black": 81
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:24.393340"
+      "ultima_lectura": "2026-09-11T08:59:30.759446"
     },
     {
       "nombre": "TicsDesarrollo",
@@ -718,7 +731,7 @@
         "toner_black": 84
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:25.483141"
+      "ultima_lectura": "2026-09-11T08:59:32.535588"
     },
     {
       "nombre": "Decanato Facso",
@@ -733,7 +746,7 @@
         "drum_black": 64
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:26.740996"
+      "ultima_lectura": "2026-09-11T08:59:33.634659"
     },
     {
       "nombre": "Antropologia",
@@ -744,11 +757,10 @@
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 3,
-        "drum_black": 12
+        "toner_black": 3
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:27.834857"
+      "ultima_lectura": "2026-09-11T08:59:35.836820"
     },
     {
       "nombre": "Facultad de Psicologia 2do piso",
@@ -763,7 +775,7 @@
         "drum_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:28.939808"
+      "ultima_lectura": "2026-09-11T08:59:39.997413"
     },
     {
       "nombre": "Sec_Educa",
@@ -778,22 +790,22 @@
         "drum_black": 80
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:30.019928"
+      "ultima_lectura": "2026-09-11T08:59:41.093094"
     },
     {
       "nombre": "Modulo2",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3942939786",
       "ip": "172.16.79.82",
-      "contador": 385712,
+      "contador": 385808,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 59,
-        "drum_black": 55
+        "toner_black": 58,
+        "drum_black": 54
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:31.109769"
+      "ultima_lectura": "2026-09-11T08:59:42.188207"
     },
     {
       "nombre": "CentroDeportivoDAE",
@@ -805,7 +817,7 @@
       "contador_color": null,
       "consumibles": {},
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:32.254371"
+      "ultima_lectura": "2026-09-11T08:59:43.351253"
     },
     {
       "nombre": "Cienfuego 33",
@@ -819,7 +831,7 @@
         "toner_black": 29
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:33.333516"
+      "ultima_lectura": "2026-09-11T08:59:44.992734"
     },
     {
       "nombre": "biblioteca P3",
@@ -833,7 +845,7 @@
         "toner_black": 58
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:34.431541"
+      "ultima_lectura": "2026-09-11T08:59:46.118872"
     },
     {
       "nombre": "XRX9C934E754E90",
@@ -847,7 +859,7 @@
         "toner_black": 78
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:36.077446"
+      "ultima_lectura": "2026-09-11T08:59:47.558830"
     },
     {
       "nombre": "DARA",
@@ -862,14 +874,14 @@
         "drum_black": 27
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:37.174067"
+      "ultima_lectura": "2026-09-11T08:59:48.836201"
     },
     {
       "nombre": "Facultad de Musica",
       "modelo": "Xerox VersaLink B7030",
       "serial": "3399944995",
       "ip": "172.16.79.38",
-      "contador": 53045,
+      "contador": 53048,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -877,7 +889,7 @@
         "drum_black": 27
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:38.266052"
+      "ultima_lectura": "2026-09-11T08:59:49.954892"
     },
     {
       "nombre": "DARA-ADMISION",
@@ -891,7 +903,7 @@
         "toner_black": 28
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:39.425817"
+      "ultima_lectura": "2026-09-11T08:59:51.074593"
     },
     {
       "nombre": "Direccion de Biblioteca",
@@ -906,7 +918,7 @@
         "drum_black": 8
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:42.656144"
+      "ultima_lectura": "2026-09-11T08:59:53.554208"
     },
     {
       "nombre": "Facultad de Trabajo Social",
@@ -921,7 +933,7 @@
         "drum_black": 54
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:43.750284"
+      "ultima_lectura": "2026-09-11T08:59:54.660625"
     },
     {
       "nombre": "Centro Uni. Ignaciano 2do piso",
@@ -936,7 +948,7 @@
         "drum_black": 10
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:44.852523"
+      "ultima_lectura": "2026-09-11T08:59:57.056589"
     },
     {
       "nombre": "Campus B 1er piso",
@@ -951,7 +963,7 @@
         "drum_black": 85
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:45.951211"
+      "ultima_lectura": "2026-09-11T08:59:58.248966"
     },
     {
       "nombre": "Campus_B_piso6",
@@ -965,14 +977,14 @@
         "toner_black": 7
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:47.663841"
+      "ultima_lectura": "2026-09-11T08:59:59.953250"
     },
     {
       "nombre": "Modulo 4",
       "modelo": "Xerox VersaLink B400",
       "serial": "3351396805",
       "ip": "172.16.81.64",
-      "contador": 383401,
+      "contador": 383443,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
@@ -980,22 +992,22 @@
         "drum_black": 88
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:48.963118"
+      "ultima_lectura": "2026-09-11T09:00:01.292082"
     },
     {
       "nombre": "Modulo 3",
       "modelo": "Xerox VersaLink B605",
       "serial": "3940636271",
       "ip": "172.16.79.86",
-      "contador": 171690,
+      "contador": 171808,
       "contador_negro": null,
       "contador_color": null,
       "consumibles": {
-        "toner_black": 52,
-        "drum_black": 67
+        "toner_black": 51,
+        "drum_black": 66
       },
       "online": true,
-      "ultima_lectura": "2026-09-11T06:59:50.595500"
+      "ultima_lectura": "2026-09-11T09:00:02.398713"
     }
   ]
 }
