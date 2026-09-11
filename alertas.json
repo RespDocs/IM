@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 17,
+      "porcentaje": 14,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -3845,6 +3845,38 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-11T11:00:18.052695",
       "fecha_resolucion": "2026-09-11T13:00:28.684915"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-11T15:00:32.281298"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-11T15:00:32.284435"
+    },
+    {
+      "equipo": "CentroDeportivoDAE",
+      "serial": "3384970779",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-11T15:00:32.285111"
+    },
+    {
+      "equipo": "Modulo 4",
+      "serial": "3351396805",
+      "modelo": "Xerox VersaLink B400",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-11T15:00:32.286489"
     }
   ]
 }
