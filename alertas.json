@@ -2074,7 +2074,7 @@
     {
       "id_alerta": "UAH_00035",
       "clave_alerta": "3399951754_toner_black",
-      "equipo": "Campus B 1er piso",
+      "equipo": null,
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -3912,8 +3912,9 @@
       "serial": "3353215298",
       "modelo": "Xerox WorkCentre 3655X v1",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-13T05:00:34.925062"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-13T05:00:34.925062",
+      "fecha_resolucion": "2026-09-13T07:00:30.767013"
     }
   ]
 }
