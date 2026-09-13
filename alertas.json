@@ -619,7 +619,7 @@
     {
       "id_alerta": "UAH_00020",
       "clave_alerta": "3399952335_drum_black",
-      "equipo": "Centro Uni. Ignaciano 2do piso",
+      "equipo": null,
       "serial": "3399952335",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -1225,7 +1225,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 7,
+      "porcentaje": 6,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
@@ -2074,7 +2074,7 @@
     {
       "id_alerta": "UAH_00035",
       "clave_alerta": "3399951754_toner_black",
-      "equipo": null,
+      "equipo": "Campus B 1er piso",
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -3433,7 +3433,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_yellow",
-      "porcentaje": 19,
+      "porcentaje": 18,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T17:01:05.121919"
