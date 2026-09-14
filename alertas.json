@@ -4016,8 +4016,9 @@
       "serial": "3399945436",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T15:00:37.920219"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T15:00:37.920219",
+      "fecha_resolucion": "2026-09-14T17:00:27.940726"
     },
     {
       "id_alerta": "UAH_00048",
@@ -4031,6 +4032,14 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-14T15:00:37.922554"
+    },
+    {
+      "equipo": "Direccion de Docencia",
+      "serial": "3399951533",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T17:00:27.942776"
     }
   ]
 }
