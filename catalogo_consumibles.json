@@ -370,5 +370,12 @@
       "origen": "snmp"
     }
   },
-  "Xerox WorkCentre 3655X v1": {}
+  "Xerox WorkCentre 3655X v1": {
+    "toner_black": {
+      "descripcion": "Black Toner, PN unknown;SNb5010a0100013121",
+      "pn": "unknown",
+      "vida_nominal": 25000,
+      "origen": "snmp"
+    }
+  }
 }
