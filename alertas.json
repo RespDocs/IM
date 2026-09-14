@@ -216,7 +216,7 @@
     {
       "id_alerta": "UAH_00016",
       "clave_alerta": "3399946009_toner_black",
-      "equipo": null,
+      "equipo": "Facultad de Geografia",
       "serial": "3399946009",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -3948,8 +3948,17 @@
       "serial": "3399951754",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T05:00:36.716567",
+      "fecha_resolucion": "2026-09-14T07:00:33.752544"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
       "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T05:00:36.716567"
+      "fecha_notificacion": "2026-09-14T07:00:33.750786"
     }
   ]
 }
