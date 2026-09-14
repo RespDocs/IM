@@ -2841,7 +2841,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 8,
+      "porcentaje": 7,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.430854"
@@ -4040,6 +4040,14 @@
       "tipo": "offline",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-14T17:00:27.942776"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T19:00:20.493851"
     }
   ]
 }
