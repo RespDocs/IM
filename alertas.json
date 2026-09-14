@@ -1990,7 +1990,7 @@
       "modelo": "Xerox VersaLink B600",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 13,
+      "porcentaje": 12,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-19T11:00:57.417522"
@@ -2841,7 +2841,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_black",
-      "porcentaje": 9,
+      "porcentaje": 8,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-31T15:00:47.430854"
@@ -3433,7 +3433,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "drum_yellow",
-      "porcentaje": 18,
+      "porcentaje": 17,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-07T17:01:05.121919"
@@ -3887,8 +3887,9 @@
       "serial": "3399952017",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-12T03:00:26.529306"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-12T03:00:26.529306",
+      "fecha_resolucion": "2026-09-14T15:00:37.921307"
     },
     {
       "equipo": "DARA-ADMISION",
@@ -3984,16 +3985,18 @@
       "serial": "3384970868",
       "modelo": "Xerox Phaser 3330",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T13:00:31.240814"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T13:00:31.240814",
+      "fecha_resolucion": "2026-09-14T15:00:37.923099"
     },
     {
       "equipo": "Facultad de Psicologia 2do piso",
       "serial": "3940619199",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T13:00:31.241124"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T13:00:31.241124",
+      "fecha_resolucion": "2026-09-14T15:00:37.923420"
     },
     {
       "id_alerta": "UAH_00047",
@@ -4007,6 +4010,27 @@
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-09-14T13:00:31.241465"
+    },
+    {
+      "equipo": "Facultad de Literatura",
+      "serial": "3399945436",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T15:00:37.920219"
+    },
+    {
+      "id_alerta": "UAH_00048",
+      "clave_alerta": "3399945398_toner_black",
+      "equipo": "Facultad de Psicologia",
+      "serial": "3399945398",
+      "modelo": "Xerox VersaLink B7030",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 20,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T15:00:37.922554"
     }
   ]
 }

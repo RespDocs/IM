@@ -4873,5 +4873,41 @@
     "serial": "3384970779",
     "id_alerta": "UAH_00047",
     "detalle": "toner_black (14%)"
+  },
+  {
+    "fecha": "2026-09-14T14:59:58.519383",
+    "tipo": "offline",
+    "equipo": "Facultad de Literatura",
+    "serial": "3399945436",
+    "detalle": "Equipo sin respuesta"
+  },
+  {
+    "fecha": "2026-09-14T14:59:58.519439",
+    "tipo": "online",
+    "equipo": "Direccion de Admision Patio",
+    "serial": "3399952017",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-09-14T14:59:58.519505",
+    "tipo": "online",
+    "equipo": "TicsDesarrollo",
+    "serial": "3384970868",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-09-14T14:59:58.519522",
+    "tipo": "online",
+    "equipo": "Facultad de Psicologia 2do piso",
+    "serial": "3940619199",
+    "detalle": "Equipo recuperado"
+  },
+  {
+    "fecha": "2026-09-14T15:00:37.922560",
+    "tipo": "alerta_advertencia_generada",
+    "equipo": "Facultad de Psicologia",
+    "serial": "3399945398",
+    "id_alerta": "UAH_00048",
+    "detalle": "toner_black (20%)"
   }
 ]
