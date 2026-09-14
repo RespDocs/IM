@@ -208,7 +208,7 @@
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
       "consumible": "toner_black",
-      "porcentaje": 12,
+      "porcentaje": 11,
       "criticidad": "advertencia",
       "estado": "notificado",
       "fecha_notificacion": "2026-07-31T01:42:47.301896"
@@ -1225,7 +1225,7 @@
       "modelo": "Xerox VersaLink C7025",
       "tipo": "consumible",
       "consumible": "toner_yellow",
-      "porcentaje": 6,
+      "porcentaje": 1,
       "criticidad": "critico",
       "estado": "notificado",
       "fecha_notificacion": "2026-08-07T17:00:19.073161"
@@ -3851,8 +3851,9 @@
       "serial": "3399945436",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-11T15:00:32.281298"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-11T15:00:32.281298",
+      "fecha_resolucion": "2026-09-14T13:00:31.237916"
     },
     {
       "equipo": "TicsDesarrollo",
@@ -3969,6 +3970,43 @@
       "estado": "resuelto",
       "fecha_notificacion": "2026-09-14T09:00:36.954596",
       "fecha_resolucion": "2026-09-14T11:01:38.452606"
+    },
+    {
+      "equipo": "07.- SNIG",
+      "serial": "3940616416",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T13:00:31.240709"
+    },
+    {
+      "equipo": "TicsDesarrollo",
+      "serial": "3384970868",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T13:00:31.240814"
+    },
+    {
+      "equipo": "Facultad de Psicologia 2do piso",
+      "serial": "3940619199",
+      "modelo": "Xerox VersaLink B605",
+      "tipo": "offline",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T13:00:31.241124"
+    },
+    {
+      "id_alerta": "UAH_00047",
+      "clave_alerta": "3384970779_toner_black",
+      "equipo": "CentroDeportivoDAE",
+      "serial": "3384970779",
+      "modelo": "Xerox Phaser 3330",
+      "tipo": "consumible",
+      "consumible": "toner_black",
+      "porcentaje": 14,
+      "criticidad": "advertencia",
+      "estado": "notificado",
+      "fecha_notificacion": "2026-09-14T13:00:31.241465"
     }
   ]
 }
