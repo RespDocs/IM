@@ -110,7 +110,7 @@
     {
       "id_alerta": "UAH_00009",
       "clave_alerta": "3940618842_drum_black",
-      "equipo": "FilHum",
+      "equipo": null,
       "serial": "3940618842",
       "modelo": "Xerox VersaLink B605",
       "tipo": "consumible",
@@ -3977,8 +3977,9 @@
       "serial": "3940616416",
       "modelo": "Xerox VersaLink B605",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T13:00:31.240709"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T13:00:31.240709",
+      "fecha_resolucion": "2026-09-15T11:00:30.442448"
     },
     {
       "equipo": "TicsDesarrollo",
