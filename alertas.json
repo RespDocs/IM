@@ -4023,7 +4023,7 @@
     {
       "id_alerta": "UAH_00048",
       "clave_alerta": "3399945398_toner_black",
-      "equipo": "Facultad de Psicologia",
+      "equipo": null,
       "serial": "3399945398",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "consumible",
@@ -4046,8 +4046,9 @@
       "serial": "3399945436",
       "modelo": "Xerox VersaLink B7030",
       "tipo": "offline",
-      "estado": "notificado",
-      "fecha_notificacion": "2026-09-14T19:00:20.493851"
+      "estado": "resuelto",
+      "fecha_notificacion": "2026-09-14T19:00:20.493851",
+      "fecha_resolucion": "2026-09-14T21:00:34.377388"
     }
   ]
 }
